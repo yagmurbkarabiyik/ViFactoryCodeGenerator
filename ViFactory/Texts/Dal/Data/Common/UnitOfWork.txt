@@ -1,4 +1,4 @@
-﻿using ViFactorySample.Dal;
+﻿using [CurrentProjectName].Dal;
 
 namespace [NamespaceName]
 {

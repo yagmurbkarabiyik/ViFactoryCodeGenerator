@@ -25,7 +25,7 @@ namespace ViFactory.Services.Domain
 		{
 			ProjectGeneratorModel projectGeneratorModel = new ProjectGeneratorModel()
 			{
-				ProjectName = "ViFactorySample.Domain",
+				ProjectName = "Artfy.Domain",
 				ProjectFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Domain\\CreateDomainEntitiesProject.txt",
 			};
 			_projectGenerator.GenerateProject(projectGeneratorModel);	

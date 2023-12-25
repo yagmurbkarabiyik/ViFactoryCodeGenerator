@@ -1,4 +1,4 @@
-﻿namespace [NamespaceName]
+namespace [NamespaceName]
 {
     public class [ClassName]
     {

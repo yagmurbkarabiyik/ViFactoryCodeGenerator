@@ -1,5 +1,5 @@
-﻿using ViFactorySampleSolution;
-using ViFactorySample.Dal;
+﻿using [CurrentProjectName]Solution;
+using [CurrentProjectName].Dal;
 
 namespace [NamespaceName]
 {

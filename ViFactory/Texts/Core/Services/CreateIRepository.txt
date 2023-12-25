@@ -1,7 +1,7 @@
-﻿using System.Linq.Expressions;
-using ViFactorySample.Core.Models;
-using ViFactorySample.Core.Models.RepositoryModels;
-using ViFactorySample.Core.RepositoryModels;
+using System.Linq.Expressions;
+using [CurrentProjectName].Models;
+using [CurrentProjectName].Models.RepositoryModels;
+using [CurrentProjectName].RepositoryModels;
 namespace [NamespaceName]
 {
     public interface [ClassName]<T> where T : class, IBaseEntity

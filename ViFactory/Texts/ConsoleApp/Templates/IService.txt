@@ -1,0 +1,14 @@
+﻿using [CurrentProjectName].Bll.Dtos;
+using [CurrentProjectName].Bll.Models;
+
+namespace [CurrentProjectName].Bll.Services.Abstract
+{
+    public interface I[EntityName]Service
+    {
+        Task<ResponseCommon<[EntityName]CreateDto>> Create([EntityName]CreateDto model);
+        Task<ResponseCommon<[EntityName]GetDto>> Get(int id);
+        Task<ResponseCommon<[EntityName]UpdateDto>> Update(int id,[EntityName]UpdateDto model);
+        Task<ResponseCommon> Read(int id);
+        Task<ResponseCommon<List<[EntityName]GetListDto>>> ListTable();
+    }
+}

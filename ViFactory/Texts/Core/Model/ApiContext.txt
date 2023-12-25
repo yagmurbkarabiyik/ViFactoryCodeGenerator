@@ -1,4 +1,4 @@
-﻿namespace [NamespaceName]
+namespace [NamespaceName]
 {
     /// <summary>
     /// This will be added as scoped

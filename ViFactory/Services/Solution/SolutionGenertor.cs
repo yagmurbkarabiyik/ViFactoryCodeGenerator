@@ -19,7 +19,7 @@ namespace ViFactory.Services.Solution
 			string solutionContent = GenerateSolutionCode(solutionFilePath);
 
 			//Generate and save .sln file 
-			string solutionCreatedFile = solutionGeneratorModel.TargetFilePath+ solutionName+".sln";
+			string solutionCreatedFile = Path.Combine(solutionGeneratorModel.TargetFilePath,solutionName+".sln");
 
 			if (!Directory.Exists(solutionGeneratorModel.TargetFilePath))
 			{

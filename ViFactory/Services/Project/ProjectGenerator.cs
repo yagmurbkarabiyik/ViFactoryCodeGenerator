@@ -2,14 +2,14 @@
 
 namespace ViFactory.Services.Project
 {
-    public class ProjectGenerator : IProjectGenerator
-    {
-        public void GenerateProject(ProjectGeneratorModel projectGeneratorModel)
-        {
+	public class ProjectGenerator : IProjectGenerator
+	{
+		public void GenerateProject(ProjectGeneratorModel projectGeneratorModel)
+		{
 			string codeTemplate = File.ReadAllText(projectGeneratorModel.ProjectFilePath);
 
 			//Create a project
-			string projectDirectory = Path.Combine($"C:\\Users\\ygmr4\\Desktop\\ViFactorySample\\{projectGeneratorModel.ProjectName}");
+			string projectDirectory = Path.Combine(projectGeneratorModel.OutputFolderPath,projectGeneratorModel.ProjectName);
 			Directory.CreateDirectory(projectDirectory);
 
 			File.WriteAllText(Path.Combine(projectDirectory, projectGeneratorModel.ProjectName + ".csproj"), codeTemplate);
@@ -21,8 +21,7 @@ namespace ViFactory.Services.Project
 
 
 			File.WriteAllText(projectGeneratorModel.SolutionFilePath, existSolution);
-
 			File.ReadAllText(projectGeneratorModel.SolutionFilePath);
 		}
-    }
+	}
 }

@@ -1,4 +1,4 @@
-﻿using ViFactorySample.Core.Models;
+using [CurrentProjectName].Models;
 
 namespace [NamespaceName]
 {

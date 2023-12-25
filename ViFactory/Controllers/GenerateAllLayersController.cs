@@ -12,7 +12,6 @@ namespace ViFactory.Controllers
     public class GenerateAllLayersController : Controller
 	{
 		private readonly ICoreGenerator _coreGenerator;
-		//private readonly IDomainGenerator _domainGenerator;
 		private readonly IDalGenerator _dalGenerator;
 		private readonly IDtoGenerator _dtoGenerator;
 		private readonly IBllGenerator _bllGenerator;
@@ -28,62 +27,84 @@ namespace ViFactory.Controllers
 			_consoleGenerator = consoleGenerator;
 		}
 
-		public IActionResult GenerateAll()
+		public IActionResult GenerateAll(string outputFolderPath, string solutionName)
 		{
+			solutionName = "Yamur";
+			outputFolderPath = "C:\\Users\\ygmr4\\Desktop\\" + solutionName;
+
 			//Identify the solutions features in detail
 			SolutionGeneratorModel solutionGeneratorModel = new()
 			{
-				SolutionName = "ViFactorySample",
+				SolutionName = solutionName,
 				SolutionFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\CreateSolution.txt",
 				ProjectGuid = Guid.NewGuid().ToString("D"),
-				TargetFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactorySample\\"
+				TargetFilePath = outputFolderPath
 			};
 			_solutionGenerator.GenerateSolution(solutionGeneratorModel);
 
-			//Create core layer
+			#region Create Core Layer
 			ProjectGeneratorModel coreGenerator = new ProjectGeneratorModel
 			{
-				ProjectName = "ViFactorySample.Core",
+				ProjectName = solutionName+".Core",
 				ProjectFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\CreateCoreProject.txt",
-				SolutionFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactorySample\\ViFactorySample.sln"
+				SolutionFilePath = Path.Combine(outputFolderPath, solutionName+".sln"),
+				OutputFolderPath = outputFolderPath
 			};
+			
 			_coreGenerator.GenerateCoreLayer(coreGenerator);
+			#endregion
 
-			//Create console application
+			#region Create Console Application
 			ProjectGeneratorModel consoleProjectGenerator = new ProjectGeneratorModel()
 			{
-				ProjectName = "VFConsoleApp",
-				ProjectFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\CreateConsoleApp.txt",
-				SolutionFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactorySample\\ViFactorySample.sln"
+				ProjectName = "ViFactory",
+				ProjectFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\ConsoleApp\\CreateConsoleApp.txt",
+				SolutionFilePath = Path.Combine(outputFolderPath, solutionName + ".sln"),
+				OutputFolderPath = outputFolderPath
 			};
 			_consoleGenerator.GenerateConsoleProject(consoleProjectGenerator);
+			#endregion
 
-			//Create dal layer
+			#region Create Dal Layer
 			ProjectGeneratorModel dalProjectGenerator = new ProjectGeneratorModel()
 			{
-				ProjectName = "ViFactorySample.Dal",
-				ProjectFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Dal\\CreateDalProject.txt",
-				SolutionFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactorySample\\ViFactorySample.sln"
+				ProjectName = solutionName+".Dal",
+			    ProjectFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Dal\\CreateDalProject.txt",
+				SolutionFilePath = Path.Combine(outputFolderPath, solutionName + ".sln"),
+				OutputFolderPath = outputFolderPath
 			};
-			_dalGenerator.GenerateDalLayer(dalProjectGenerator);
+			// Replace operation
+			string dalContent = System.IO.File.ReadAllText(dalProjectGenerator.ProjectFilePath);
+			dalContent = dalContent.Replace("[CurrentProjectName]", $"{solutionName}");
+			System.IO.File.WriteAllText(dalProjectGenerator.ProjectFilePath, dalContent);
 
-			//Create dto layer
+			_dalGenerator.GenerateDalLayer(dalProjectGenerator);
+			#endregion
+
+			#region Create Dto Layer
 			ProjectGeneratorModel dtoProjectGenerator = new ProjectGeneratorModel()
 			{
-				ProjectName = "ViFactorySample.Bll.Dtos",
+				ProjectName = solutionName+".Bll.Dtos",
 				ProjectFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Dtos\\CreateDtoProject.txt",
-				SolutionFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactorySample\\ViFactorySample.sln"
+				SolutionFilePath = Path.Combine(outputFolderPath, solutionName + ".sln"),
+				OutputFolderPath = outputFolderPath
 			};
+
 			_dtoGenerator.GenerateDtoLayer(dtoProjectGenerator);
 
-			//Create bll layer
+			#endregion
+
+			#region Create Bll Layer
 			ProjectGeneratorModel bllGenerator = new ProjectGeneratorModel()
 			{
-				ProjectName = "ViFactorySample.Bll",
+				ProjectName = solutionName+".Bll",
 				ProjectFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Bll\\CreateBllProject.txt",
-				SolutionFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactorySample\\ViFactorySample.sln"
+				SolutionFilePath = Path.Combine(outputFolderPath, solutionName + ".sln"),
+				OutputFolderPath = outputFolderPath,
 			};
+
 			_bllGenerator.GenerateBllLayer(bllGenerator);
+			#endregion
 
 			return Ok();
 		}

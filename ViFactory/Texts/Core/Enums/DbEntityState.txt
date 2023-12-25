@@ -1,5 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
-using ViFactorySample.Core.Enums;
+using System.ComponentModel.DataAnnotations;
+using Yamur.Core.Enums;
 
 namespace [NamespaceName]
 {

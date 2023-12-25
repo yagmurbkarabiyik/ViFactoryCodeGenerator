@@ -6,7 +6,7 @@ namespace ViFactory.Services.Generators
 {
 	public class Generator : IGenerator
 	{
-		public string GenerateCSharpCode(string codeTemplate, string namespaceName, string classNameDf, Dictionary<string, string>? properties, Dictionary<string, string>? methods, string? connectionString, string? entityName, string? interfaceName)
+		public string GenerateCSharpCode(string codeTemplate, string namespaceName, string classNameDf, Dictionary<string, string>? properties, Dictionary<string, string>? methods, string? connectionString, string? entityName, string? interfaceName, string? currentProjectName)
 
 		{
 			var propertiesText = string.Empty;
@@ -26,7 +26,8 @@ namespace ViFactory.Services.Generators
 											   .Replace("[Methods]", methodsText)
 											   .Replace("[ConnectionString]", connectionString)
 											   .Replace("[EntityName]", entityName)
-											   .Replace("[InterfaceName]", interfaceName);
+											   .Replace("[InterfaceName]", interfaceName)
+											   .Replace("[CurrentProjectName]", currentProjectName);
 			return generatedCode;
 		}
 
@@ -39,7 +40,7 @@ namespace ViFactory.Services.Generators
 			string namespaceName = generateModel.NamespaceNameDefault;
 			string className = generateModel.ClassNameDefault;
 
-			string generatedCode = GenerateCSharpCode(codeTemplate, namespaceName, className, generateModel.Properties, generateModel.Methods, generateModel.ConnectionString, generateModel.EntityName, generateModel.InterfaceName);
+			string generatedCode = GenerateCSharpCode(codeTemplate, namespaceName, className, generateModel.Properties, generateModel.Methods, generateModel.ConnectionString, generateModel.EntityName, generateModel.InterfaceName, generateModel.CurrentProjectName);
 
 			SyntaxTree syntaxTree = CSharpSyntaxTree.ParseText(generatedCode);
 

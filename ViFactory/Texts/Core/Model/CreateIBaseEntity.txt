@@ -1,4 +1,4 @@
-﻿using ViFactorySample.Core.Enums;
+using [CurrentProjectName].Enums;
 
 namespace [NamespaceName]
 {

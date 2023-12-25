@@ -2,21 +2,28 @@
 using System.Xml.Linq;
 class Program
 {
-	static void Main()
-	{
+	 static void Main()
+	 {
+		string solutionName = "Artfy";
+		string outputFolderPath = "C:\\Users\\ygmr4\\Desktop\\" + solutionName;
+
 		// Find class name from domain.entities layer | used as general
-		var entities = GetTypesFromAssembly("ViFactorySample.Domain.Entities", "ViFactorySample.Domain.Entities.Entities");
+		var entities = GetTypesFromAssembly("Artfy.Domain.Entities", "Artfy.Domain.Entities");
+		string dtoFolderPath = Path.Combine(outputFolderPath, solutionName + ".Bll.Dtos"); ;
+		string csprojDtoFilePath = Path.Combine(outputFolderPath,dtoFolderPath, solutionName+".Bll.Dtos.csproj");
 
-		string dtoFolderPath = "C:\\Users\\ygmr4\\Desktop\\ViFactorySample\\ViFactorySample.Dto\\";
-		string csprojDtoFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactorySample\\ViFactorySample.Dto\\ViFactorySample.Domain.Dtos.csproj";
+		string dalFolderPath = Path.Combine(outputFolderPath, solutionName + ".Dal");
+		string csprojDalFilePath = Path.Combine(outputFolderPath, dalFolderPath, solutionName + ".Dal.csproj");
 
-		string dalFolderPath = "C:\\Users\\ygmr4\\Desktop\\ViFactorySample\\ViFactorySample.Dal\\";
-		string csprojDalFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactorySample\\ViFactorySample.Dal\\ViFactorySample.Dal.csproj";
+		string bllFolderPath = Path.Combine(outputFolderPath, solutionName + ".Bll");
+		string csprojBllFilePath = Path.Combine(outputFolderPath, bllFolderPath, solutionName + ".Bll.csproj"); 
 
 		GenerateDtos(csprojDtoFilePath, dtoFolderPath, entities);
 		GenerateDal(csprojDalFilePath, dalFolderPath, entities);
-	}
+		GenerateBll(csprojBllFilePath, bllFolderPath, entities);
+	 }
 
+	#region Assembly Load
 	static List<Type> GetTypesFromAssembly(string assemblyName, string typeNameStart)
 	{
 		return Assembly.Load(assemblyName)
@@ -24,15 +31,14 @@ class Program
 			.Where(x => x.FullName.StartsWith(typeNameStart))
 			.ToList();
 	}
+	#endregion
 
-	#region Generate Dto
+	#region Generate Bll.Dto
 	static void GenerateDtos(string csprojFilePath, string rootFolderPath, IEnumerable<Type> entities)
 	{
 		string currentProjectName = "ViFactorySample";
-
 		XDocument csprojDoc = XDocument.Load(csprojFilePath);
 
-		// Check if the <ItemGroup> already exists; if not, create it
 		XElement itemGroup = csprojDoc.Root.Elements("ItemGroup").FirstOrDefault();
 		if (itemGroup == null)
 		{
@@ -42,36 +48,151 @@ class Program
 
 		foreach (var entity in entities)
 		{
-			string className = entity.Name;
-			string folderPath = Path.Combine(rootFolderPath, className + "Dtos");
+			string folderPath = Path.Combine(rootFolderPath, entity.Name + "Dtos");
 
-			// Create empty C# class files for request and response
-			string responseClassPath = Path.Combine(folderPath, $"{className}ResponseDto.cs");
-			string requestClassPath = Path.Combine(folderPath, $"{className}RequestDto.cs");
+			EnsureDirectoryExists(folderPath);
 
-			if (className != "BaseEntity")
+			string createDtoClass = Path.Combine(folderPath, $"{entity.Name}CreateDto.cs");
+			string readDtoClass = Path.Combine(folderPath, $"{entity.Name}ReadDto.cs");
+			string updateDtoClass = Path.Combine(folderPath, $"{entity.Name}UpdateDto.cs");
+			string getDtoClass = Path.Combine(folderPath, $"{entity.Name}GetDto.cs");
+			string getListDtoClass = Path.Combine(folderPath, $"{entity.Name}GetListDto.cs");
+
+			if (entity.Name != "BaseEntity")
 			{
-				Directory.CreateDirectory(folderPath);
-				itemGroup.Add(new XElement("Folder", new XAttribute("Include", $"{folderPath}\\")));
+				EnsureFileExists(createDtoClass, File.ReadAllText("./Templates/CreateDto.txt")
+					.Replace("[CurrentProjectName]", currentProjectName)
+					.Replace("[EntityName]", entity.Name + "CreateDto"));
 
-				File.WriteAllText(responseClassPath, $"namespace {currentProjectName}.Domain.Dtos.{className}Dtos \n{{ \n\tpublic class {className}ResponseDto \n\t{{\n\t}} \n}}");
-				File.WriteAllText(requestClassPath, $"namespace {currentProjectName}.Domain.Dtos.{className}Dtos \n{{ \n\tpublic class {className}RequestDto \n\t{{\n\t}} \n}}");
+				EnsureFileExists(readDtoClass, File.ReadAllText("./Templates/CreateDto.txt")
+					.Replace("[CurrentProjectName]", currentProjectName)
+					.Replace("[EntityName]", entity.Name + "ReadDto"));
+
+				EnsureFileExists(updateDtoClass, File.ReadAllText("./Templates/CreateDto.txt")
+					.Replace("[CurrentProjectName]", currentProjectName)
+					.Replace("[EntityName]", entity.Name + "UpdateDto"));
+
+				EnsureFileExists(getDtoClass, File.ReadAllText("./Templates/CreateDto.txt")
+					.Replace("[CurrentProjectName]", currentProjectName)
+					.Replace("[EntityName]", entity.Name + "GetDto"));
+
+				EnsureFileExists(getListDtoClass, File.ReadAllText("./Templates/CreateDto.txt")
+					.Replace("[CurrentProjectName]", currentProjectName)
+					.Replace("[EntityName]", entity.Name + "GetListDto"));
 			}
-
-			Console.WriteLine($"Class files added: {requestClassPath}, {responseClassPath}");
 		}
-
 		csprojDoc.Save(csprojFilePath);
 	}
+	#endregion
+	#region Generate Bll
+
+	static void GenerateBll(string csprojFilePath, string rootFolderPath, IEnumerable<Type> entities)
+	{
+		string currentProjectName = "ViFactorySample";
+
+		XDocument csprojDoc = XDocument.Load(csprojFilePath);
+		XElement itemGroup = csprojDoc.Root.Elements("ItemGroup").FirstOrDefault();
+		if (itemGroup == null)
+		{
+			itemGroup = new XElement("ItemGroup");
+			csprojDoc.Root.Add(itemGroup);
+		}
+
+		string serviceFolderPath = Path.Combine(rootFolderPath, "Services", "Concrete");
+		string iServiceFolderPath = Path.Combine(rootFolderPath, "Services", "Abstract");
+		string modelsFolderPath = Path.Combine(rootFolderPath, "Models");
+		string enumsFolderPath = Path.Combine(rootFolderPath, "Enums");
+		string commonServiceFolderPath = Path.Combine(rootFolderPath, "Services", "Common");
+
+		EnsureDirectoryExists(serviceFolderPath);
+		EnsureDirectoryExists(iServiceFolderPath);
+		EnsureDirectoryExists(modelsFolderPath);
+		EnsureDirectoryExists(enumsFolderPath);
+		EnsureDirectoryExists(commonServiceFolderPath);
+
+		foreach (var entity in entities)
+		{
+			string serviceClass = Path.Combine(serviceFolderPath, $"{entity.Name}Service.cs");
+			string iServiceClass = Path.Combine(iServiceFolderPath, $"I{entity.Name}Service.cs");
+			string jwtSettingsClass = Path.Combine(modelsFolderPath, "JwtSettings.cs");
+			string emailSettingsClass = Path.Combine(modelsFolderPath, "EmailSettings.cs");
+			string responseCommonClass = Path.Combine(modelsFolderPath, "ResponseCommon.cs");
+			string responseExceptionClass = Path.Combine(modelsFolderPath, "ResponseException.cs");
+			string responseTypeClass = Path.Combine(enumsFolderPath, "ExceptionResponseType.cs");
+			string exceptionDataClass = Path.Combine(modelsFolderPath, "ResponseExceptionData.cs");
+			string smsNetGsmClass = Path.Combine(modelsFolderPath, "SmsNetGsmSettings.cs");
+			string emailServiceClass = Path.Combine(commonServiceFolderPath, "EmailService.cs");
+			string memoryCacheClass = Path.Combine(commonServiceFolderPath, "MemoryCacheService.cs");
+			string smsNetGsmServiceClass = Path.Combine(commonServiceFolderPath, "SmsNetGsmService.cs");
+			string tokenServiceClass = Path.Combine(commonServiceFolderPath, "TokenService.cs");
+
+			if (entity.Name != "BaseEntity")
+			{
+				EnsureFileExists(serviceClass, File.ReadAllText("./Templates/Service.txt")
+					.Replace("[CurrentProjectName]", currentProjectName)
+					.Replace("[EntityName]", entity.Name));
+
+				EnsureFileExists(iServiceClass, File.ReadAllText("./Templates/IService.txt")
+					.Replace("[CurrentProjectName]", currentProjectName)
+					.Replace("[EntityName]", entity.Name));
+
+				EnsureFileExists(jwtSettingsClass, File.ReadAllText("./Templates/JwtSettings.txt")
+					.Replace("[CurrentProjectName]", currentProjectName)
+					.Replace("[EntityName]", entity.Name));
+
+				EnsureFileExists(emailSettingsClass, File.ReadAllText("./Templates/EmailSettings.txt")
+					.Replace("[CurrentProjectName]", currentProjectName)
+					.Replace("[EntityName]", entity.Name));
+
+				EnsureFileExists(responseCommonClass, File.ReadAllText("./Templates/ResponseCommon.txt")
+					.Replace("[CurrentProjectName]", currentProjectName)
+					.Replace("[EntityName]", entity.Name));
+
+				EnsureFileExists(responseExceptionClass, File.ReadAllText("./Templates/ResponseException.txt")
+					.Replace("[CurrentProjectName]", currentProjectName)
+					.Replace("[EntityName]", entity.Name));
+
+				EnsureFileExists(responseTypeClass, File.ReadAllText("./Templates/ExceptionResponseType.txt")
+					.Replace("[CurrentProjectName]", currentProjectName)
+					.Replace("[EntityName]", entity.Name));
+
+				EnsureFileExists(exceptionDataClass, File.ReadAllText("./Templates/ResponseExceptionData.txt")
+					.Replace("[CurrentProjectName]", currentProjectName)
+					.Replace("[EntityName]", entity.Name));
+
+				EnsureFileExists(smsNetGsmClass, File.ReadAllText("./Templates/SmsNetGsm.txt")
+					.Replace("[CurrentProjectName]", currentProjectName)
+					.Replace("[EntityName]", entity.Name));
+
+				EnsureFileExists(emailServiceClass, File.ReadAllText("./Templates/EmailService.txt")
+					.Replace("[CurrentProjectName]", currentProjectName)
+					.Replace("[EntityName]", entity.Name));
+
+				EnsureFileExists(memoryCacheClass, File.ReadAllText("./Templates/MemoryCacheService.txt")
+					.Replace("[CurrentProjectName]", currentProjectName)
+					.Replace("[EntityName]", entity.Name));
+
+				EnsureFileExists(smsNetGsmServiceClass, File.ReadAllText("./Templates/SmsNetGsmService.txt")
+					.Replace("[CurrentProjectName]", currentProjectName)
+					.Replace("[EntityName]", entity.Name));
+
+				EnsureFileExists(tokenServiceClass, File.ReadAllText("./Templates/TokenService.txt")
+					.Replace("[CurrentProjectName]", currentProjectName)
+					.Replace("[EntityName]", entity.Name));
+			}
+		}
+		csprojDoc.Save(csprojFilePath);
+	}
+
 	#endregion
 
 	#region Generate Dal
 	static void GenerateDal(string csprojFilePath, string rootFolderPath, IEnumerable<Type> entities)
 	{
 		string currentProjectName = "ViFactorySample";
+		string connectionString = "User ID=postgres;Password=12345;Host=localhost;Port=5432;Database=visdb;";
 
 		XDocument csprojDoc = XDocument.Load(csprojFilePath);
-		// Check if the <ItemGroup> already exists; if not, create it
 		XElement itemGroup = csprojDoc.Root.Elements("ItemGroup").FirstOrDefault();
 		if (itemGroup == null)
 		{
@@ -79,41 +200,71 @@ class Program
 			csprojDoc.Root.Add(itemGroup);
 		}
 
+		string folderDalReposPath = Path.Combine(rootFolderPath, "Data", "DalRepos");
+		string folderIDalReposPath = Path.Combine(rootFolderPath, "Data", "IDalRepos");
+		string commonFolderPath = Path.Combine(rootFolderPath, "Data", "Common");
+		string contextFolderPath = Path.Combine(rootFolderPath, "Context");
+
+		EnsureDirectoryExists(folderDalReposPath);
+		EnsureDirectoryExists(folderIDalReposPath);
+		EnsureDirectoryExists(commonFolderPath);
+		EnsureDirectoryExists(contextFolderPath);
+
 		foreach (var entity in entities)
 		{
-			string className = entity.Name;
-			string folderDalReposPath = Path.Combine(rootFolderPath, "Data", "DalRepos");
-			string folderIDalReposPath = Path.Combine(rootFolderPath, "Data", "IDalRepos");
-			string commonFolderPath = Path.Combine(rootFolderPath, "Data", "Common");
-			string contextFolderPath = Path.Combine(rootFolderPath, "Context");
-
-			Directory.CreateDirectory(folderDalReposPath);
-			Directory.CreateDirectory(folderIDalReposPath);
-			Directory.CreateDirectory(commonFolderPath);
-			Directory.CreateDirectory(contextFolderPath);
-
-			// Add the Folder element for the folder
-			itemGroup.Add(new XElement("Folder", new XAttribute("Include", $"{folderDalReposPath}\\")));
-			itemGroup.Add(new XElement("Folder", new XAttribute("Include", $"{folderIDalReposPath}\\")));
-			itemGroup.Add(new XElement("Folder", new XAttribute("Include", $"{commonFolderPath}\\")));
-			itemGroup.Add(new XElement("Folder", new XAttribute("Include", $"{contextFolderPath}\\")));
-
 			// Create empty C# class files for dalRepos and IDalRepos
-			string dalReposClass = Path.Combine(folderDalReposPath, $"{className}Repository.cs");
-			string iDalReposClass = Path.Combine(folderIDalReposPath, $"I{className}Repository.cs");
-			string commonFolder = Path.Combine(commonFolderPath, "Repository.cs");
-			string contextFolder = Path.Combine(contextFolderPath, $"{currentProjectName}DbContext.cs");
+			string dalReposClass = Path.Combine(folderDalReposPath, $"{entity.Name}Repository.cs");
+			string iDalReposClass = Path.Combine(folderIDalReposPath, $"I{entity.Name}Repository.cs");
+			string repositoryClass = Path.Combine(commonFolderPath, "Repository.cs");
+			string unitOfWorkClass = Path.Combine(commonFolderPath, "UnitOfWork.cs");
+			string contextClass = Path.Combine(contextFolderPath, "Context.cs");
 
-			if (className != "BaseEntity")
+			if (entity.Name != "BaseEntity")
 			{
-				File.WriteAllText(dalReposClass, $"namespace {currentProjectName}.Dal.Data.DalRepos \n{{ \n\tpublic class {className}Repository : Repository<{className}, " +
-													$"{currentProjectName}DbContext>, I{className}Repository \n\t{{\n\t}} \n}}");
-				File.WriteAllText(iDalReposClass, $"namespace {currentProjectName}.Dal.Data.IDalRepos \n{{ \n\tpublic interface I{className}Repository : IRepository<{className}> \n\t{{\n\t}} \n}}");
-				File.WriteAllText(commonFolder, $"namespace {currentProjectName}.Dal.Data.Common \n{{ \n\tpublic class Repository  \n\t{{\n\t}} \n}}");
-				File.WriteAllText(contextFolder, $"namespace {currentProjectName}.Dal.Data.Context \n{{ \n\tpublic class {currentProjectName}DbContext \n\t{{\n\t}} \n}}");
+				EnsureFileExists(iDalReposClass, File.ReadAllText("./Templates/IDalRepository.txt")
+					.Replace("[CurrentProjectName]", currentProjectName)
+					.Replace("[EntityName]", entity.Name));
+
+				EnsureFileExists(dalReposClass, File.ReadAllText("./Templates/DalRepository.txt")
+					.Replace("[CurrentProjectName]", currentProjectName)
+					.Replace("[EntityName]", entity.Name)
+					.Replace("[DbContext]", currentProjectName));
+
+				EnsureFileExists(repositoryClass, File.ReadAllText("./Templates/Repository.txt")
+					.Replace("[CurrentProjectName]", currentProjectName)
+					.Replace("[EntityName]", entity.Name));
+
+				EnsureFileExists(unitOfWorkClass, File.ReadAllText("./Templates/UnitOfWork.txt")
+					.Replace("[CurrentProjectName]", currentProjectName)
+					.Replace("[EntityName]", "UnitOfWork")
+					.Replace("[DbContext]", currentProjectName + "DbContext"));
+
+				EnsureFileExists(contextClass, File.ReadAllText("./Templates/Context.txt")
+					 .Replace("[CurrentProjectName]", currentProjectName)
+					 .Replace("[EntityName]", entity.Name)
+					 .Replace("[DbSetLine]", $"public DbSet<{entity.Name}> {entity.Name}Table {{ get; set; }}")
+					 .Replace("[ConnectionString]", connectionString));
 			}
-			csprojDoc.Save(csprojFilePath);
+		}
+		csprojDoc.Save(csprojFilePath);
+	}
+	#endregion
+
+	#region Helper Methods
+	static void EnsureFileExists(string filePath, string content)
+	{
+		if (!File.Exists(filePath))
+		{
+			File.WriteAllText(filePath, content);
+		}
+	}
+
+	static void EnsureDirectoryExists(string directoryPath)
+	{
+		if (!Directory.Exists(directoryPath))
+		{
+			Directory.CreateDirectory(directoryPath);
 		}
 	}
 	#endregion
-}
+}	

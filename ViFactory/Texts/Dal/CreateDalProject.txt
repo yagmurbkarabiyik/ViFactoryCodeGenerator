@@ -19,7 +19,7 @@
   </ItemGroup>
 
  <ItemGroup>
-    <ProjectReference Include="..\ViFactorySample.Core\ViFactorySample.Core.csproj" />
+    <ProjectReference Include="..\Yamur.Core\Yamur.Core.csproj" />
   </ItemGroup>
 </Project>
 

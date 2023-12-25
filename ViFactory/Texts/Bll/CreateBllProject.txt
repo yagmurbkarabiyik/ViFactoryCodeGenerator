@@ -19,9 +19,9 @@
 	<PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.21.0" />
   </ItemGroup>
   
-   <ItemGroup>
-    <ProjectReference Include="..\ViFactorySample.Dal\ViFactorySample.Dal.csproj" />
-    <ProjectReference Include="..\ViFactorySample.Dto\ViFactorySample.Dto.csproj" />
+    <ItemGroup>
+    <ProjectReference Include="..\Yamur.Bll.Dtos\Yamur.Bll.Dtos.csproj" />
+    <ProjectReference Include="..\Yamur.Core\Yamur.Core.csproj" />
   </ItemGroup>
 
 </Project>

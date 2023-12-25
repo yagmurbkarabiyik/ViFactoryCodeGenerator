@@ -1,4 +1,5 @@
 ﻿using ViFactory.Models;
+using ViFactory.Services.Bll;
 using ViFactory.Services.Generators;
 using ViFactory.Services.Project;
 
@@ -17,37 +18,37 @@ namespace ViFactory.Services.Core
 		{
 			_projectGenerator.GenerateProject(projectGeneratorModel);
 
-			GenerateIRepository(projectGeneratorModel.ProjectName, "C:\\Users\\ygmr4\\Desktop\\ViFactorySample\\ViFactorySample.Core\\Services\\");
-			GenerateIBaseEntity(projectGeneratorModel.ProjectName, "C:\\Users\\ygmr4\\Desktop\\ViFactorySample\\ViFactorySample.Core\\Models\\");
-			GenerateIUnitOfWork(projectGeneratorModel.ProjectName, "C:\\Users\\ygmr4\\Desktop\\ViFactorySample\\ViFactorySample.Core\\Services\\");
-			GenerateUnitOfWorkResponse(projectGeneratorModel.ProjectName, "C:\\Users\\ygmr4\\Desktop\\ViFactorySample\\ViFactorySample.Core\\Models\\");
-			GeneratePaginationRequest(projectGeneratorModel.ProjectName, "C:\\Users\\ygmr4\\Desktop\\ViFactorySample\\ViFactorySample.Core\\Models\\");
-			GeneratePaginationResponse(projectGeneratorModel.ProjectName, "C:\\Users\\ygmr4\\Desktop\\ViFactorySample\\ViFactorySample.Core\\Models\\");
-			GenerateISmsNetGsmService(projectGeneratorModel.ProjectName, "C:\\Users\\ygmr4\\Desktop\\ViFactorySample\\ViFactorySample.Core\\Services\\");
-			GenerateSmsNetGsmSendData(projectGeneratorModel.ProjectName, "C:\\Users\\ygmr4\\Desktop\\ViFactorySample\\ViFactorySample.Core\\Models\\");
-			GenerateIEmailService(projectGeneratorModel.ProjectName, "C:\\Users\\ygmr4\\Desktop\\ViFactorySample\\ViFactorySample.Core\\Services\\");
-			GenerateEmailSendData(projectGeneratorModel.ProjectName, "C:\\Users\\ygmr4\\Desktop\\ViFactorySample\\ViFactorySample.Core\\Models\\");
-			GenerateIMemoryCache(projectGeneratorModel.ProjectName, "C:\\Users\\ygmr4\\Desktop\\ViFactorySample\\ViFactorySample.Core\\Services\\");
-			GenerateDbEntityState(projectGeneratorModel.ProjectName, "C:\\Users\\ygmr4\\Desktop\\ViFactorySample\\ViFactorySample.Core\\Enums\\");
-			GenerateApiContext(projectGeneratorModel.ProjectName, "C:\\Users\\ygmr4\\Desktop\\ViFactorySample\\ViFactorySample.Core\\Models\\");
-			GenerateITokenService(projectGeneratorModel.ProjectName, "C:\\Users\\ygmr4\\Desktop\\ViFactorySample\\ViFactorySample.Core\\Services\\");
-			GenerateRepositoryCreateRequest(projectGeneratorModel.ProjectName, "C:\\Users\\ygmr4\\Desktop\\ViFactorySample\\ViFactorySample.Core\\Models\\RepositoryModels\\");
-			GenerateRepositoryDeleteRequest(projectGeneratorModel.ProjectName, "C:\\Users\\ygmr4\\Desktop\\ViFactorySample\\ViFactorySample.Core\\Models\\RepositoryModels\\");
-			GenerateRepositoryGetAsTResultRequest(projectGeneratorModel.ProjectName, "C:\\Users\\ygmr4\\Desktop\\ViFactorySample\\ViFactorySample.Core\\Models\\RepositoryModels\\");
-			GenerateRepositoryGetRequest(projectGeneratorModel.ProjectName, "C:\\Users\\ygmr4\\Desktop\\ViFactorySample\\ViFactorySample.Core\\Models\\RepositoryModels\\");
-			GenerateRepositoryIsExistRequest(projectGeneratorModel.ProjectName, "C:\\Users\\ygmr4\\Desktop\\ViFactorySample\\ViFactorySample.Core\\Models\\RepositoryModels\\");
-			GenerateRepositoryListAsTResultRequest(projectGeneratorModel.ProjectName, "C:\\Users\\ygmr4\\Desktop\\ViFactorySample\\ViFactorySample.Core\\Models\\RepositoryModels\\");
-			GenerateRepositoryListRequest(projectGeneratorModel.ProjectName, "C:\\Users\\ygmr4\\Desktop\\ViFactorySample\\ViFactorySample.Core\\Models\\RepositoryModels\\");
-			GenerateRepositoryPaginationAsTResultRequest(projectGeneratorModel.ProjectName, "C:\\Users\\ygmr4\\Desktop\\ViFactorySample\\ViFactorySample.Core\\Models\\RepositoryModels\\");
-			GenerateRepositoryPaginationRequest(projectGeneratorModel.ProjectName, "C:\\Users\\ygmr4\\Desktop\\ViFactorySample\\ViFactorySample.Core\\Models\\RepositoryModels\\");
-			GenerateRepositorySoftDeleteRequest(projectGeneratorModel.ProjectName, "C:\\Users\\ygmr4\\Desktop\\ViFactorySample\\ViFactorySample.Core\\Models\\RepositoryModels\\");
-			GenerateRepositoryUpdateRequest(projectGeneratorModel.ProjectName, "C:\\Users\\ygmr4\\Desktop\\ViFactorySample\\ViFactorySample.Core\\Models\\RepositoryModels\\");
-			GenerateGetClientTokenRequest(projectGeneratorModel.ProjectName, "C:\\Users\\ygmr4\\Desktop\\ViFactorySample\\ViFactorySample.Core\\Models\\TokenModels\\");
-			GenerateGetClientTokenResult(projectGeneratorModel.ProjectName, "C:\\Users\\ygmr4\\Desktop\\ViFactorySample\\ViFactorySample.Core\\Models\\TokenModels\\");
-			GenerateGetTokenRequest(projectGeneratorModel.ProjectName, "C:\\Users\\ygmr4\\Desktop\\ViFactorySample\\ViFactorySample.Core\\Models\\TokenModels\\");
-			GenereateGetTokenResponse(projectGeneratorModel.ProjectName, "C:\\Users\\ygmr4\\Desktop\\ViFactorySample\\ViFactorySample.Core\\Models\\TokenModels\\");
-			GenerateValidateTokenRequest(projectGeneratorModel.ProjectName, "C:\\Users\\ygmr4\\Desktop\\ViFactorySample\\ViFactorySample.Core\\Models\\TokenModels\\");
-			GenerateExceptionHelper(projectGeneratorModel.ProjectName, "C:\\Users\\ygmr4\\Desktop\\ViFactorySample\\ViFactorySample.Core\\Enums\\");
+			GenerateIRepository(projectGeneratorModel.ProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath,projectGeneratorModel.ProjectName,"Services"));
+			GenerateIBaseEntity(projectGeneratorModel.ProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Models"));
+			GenerateIUnitOfWork(projectGeneratorModel.ProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Services"));
+			GenerateUnitOfWorkResponse(projectGeneratorModel.ProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Models"));
+			GeneratePaginationRequest(projectGeneratorModel.ProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Models"));
+			GeneratePaginationResponse(projectGeneratorModel.ProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Models"));
+			GenerateISmsNetGsmService(projectGeneratorModel.ProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Services"));
+			GenerateSmsNetGsmSendData(projectGeneratorModel.ProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Models"));
+			GenerateIEmailService(projectGeneratorModel.ProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Services"));
+			GenerateEmailSendData(projectGeneratorModel.ProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Models"));
+			GenerateIMemoryCache(projectGeneratorModel.ProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Services"));
+			GenerateDbEntityState(projectGeneratorModel.ProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Enums"));
+			GenerateApiContext(projectGeneratorModel.ProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Models"));
+			GenerateITokenService(projectGeneratorModel.ProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Services"));
+			GenerateRepositoryCreateRequest(projectGeneratorModel.ProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "RepositoryModels"));
+			GenerateRepositoryDeleteRequest(projectGeneratorModel.ProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "RepositoryModels"));
+			GenerateRepositoryGetAsTResultRequest(projectGeneratorModel.ProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "RepositoryModels"));
+			GenerateRepositoryGetRequest(projectGeneratorModel.ProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "RepositoryModels"));
+			GenerateRepositoryIsExistRequest(projectGeneratorModel.ProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "RepositoryModels"));
+			GenerateRepositoryListAsTResultRequest(projectGeneratorModel.ProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "RepositoryModels"));
+			GenerateRepositoryListRequest(projectGeneratorModel.ProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "RepositoryModels"));
+			GenerateRepositoryPaginationAsTResultRequest(projectGeneratorModel.ProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "RepositoryModels"));
+			GenerateRepositoryPaginationRequest(projectGeneratorModel.ProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "RepositoryModels"));
+			GenerateRepositorySoftDeleteRequest(projectGeneratorModel.ProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "RepositoryModels"));
+			GenerateRepositoryUpdateRequest(projectGeneratorModel.ProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "RepositoryModels"));
+			GenerateGetClientTokenRequest(projectGeneratorModel.ProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "TokenModels"));
+			GenerateGetClientTokenResult(projectGeneratorModel.ProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "TokenModels"));
+			GenerateGetTokenRequest(projectGeneratorModel.ProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "TokenModels"));
+			GenereateGetTokenResponse(projectGeneratorModel.ProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "TokenModels"));
+			GenerateValidateTokenRequest(projectGeneratorModel.ProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "TokenModels"));
+			GenerateExceptionHelper(projectGeneratorModel.ProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Enums"));
 		}
 
 		private void GenerateIRepository(string projectName, string outputFilePath)
@@ -67,6 +68,7 @@ namespace ViFactory.Services.Core
 					{"GetAsync", "Task<T>?" }
 				}
 			};
+
 			_generator.GenerateClass(generateIRepositoryModel);
 		}
 		private void GenerateIBaseEntity(string projectName, string outputFilePath)
@@ -78,6 +80,7 @@ namespace ViFactory.Services.Core
 				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\Model\\CreateIBaseEntity.txt",
 				OutputFilePath = outputFilePath
 			};
+
 			_generator.GenerateClass(generateIBaseEntity);
 		}
 		private void GenerateIUnitOfWork(string projectName, string outputFilePath)
@@ -94,7 +97,7 @@ namespace ViFactory.Services.Core
 		}
 		private void GenerateUnitOfWorkResponse(string projectName, string outputFilePath)
 		{
-			GeneratorModel generatUnitOfWorkResponse = new()
+			GeneratorModel generateUnitOfWorkResponse = new()
 			{
 				NamespaceNameDefault = projectName + ".Models",
 				ClassNameDefault = "UnitOfWorkResponse",
@@ -102,7 +105,7 @@ namespace ViFactory.Services.Core
 				OutputFilePath = outputFilePath
 			};
 
-			_generator.GenerateClass(generatUnitOfWorkResponse);
+			_generator.GenerateClass(generateUnitOfWorkResponse);
 		}
 		private void GeneratePaginationRequest(string projectName, string outputFilePath)
 		{
@@ -125,6 +128,7 @@ namespace ViFactory.Services.Core
 				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\Model\\PaginationResponse.txt",
 				OutputFilePath = outputFilePath
 			};
+
 			_generator.GenerateClass(generatePaginationResponse);
 		}
 		private void GenerateISmsNetGsmService(string projectName, string outputFilePath)
@@ -136,6 +140,7 @@ namespace ViFactory.Services.Core
 				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\Services\\ISmsNetGsmService.txt",
 				OutputFilePath = outputFilePath
 			};
+
 			_generator.GenerateClass(generateISmsNewGsmService);
 		}
 		private void GenerateSmsNetGsmSendData(string projectName, string outputFilePath)
@@ -147,6 +152,7 @@ namespace ViFactory.Services.Core
 				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\Model\\SmsNetGsmSendData.txt",
 				OutputFilePath = outputFilePath
 			};
+
 			_generator.GenerateClass(generateSmsNetGsmSendData);
 		}
 		private void GenerateIEmailService(string projectName, string outputFilePath)
@@ -158,6 +164,7 @@ namespace ViFactory.Services.Core
 				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\Services\\IEmailService.txt",
 				OutputFilePath = outputFilePath
 			};
+
 			_generator.GenerateClass(generateIEmailService);
 		}
 		private void GenerateEmailSendData(string projectName, string outputFilePath)
@@ -180,6 +187,7 @@ namespace ViFactory.Services.Core
 				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\Services\\IMemoryCache.txt",
 				OutputFilePath = outputFilePath
 			};
+
 			_generator.GenerateClass(generateIMemoryCache);
 		}
 		private void GenerateDbEntityState(string projectName, string outputFilePath)
@@ -191,6 +199,7 @@ namespace ViFactory.Services.Core
 				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\Enums\\DbEntityState.txt",
 				OutputFilePath = outputFilePath
 			};
+
 			_generator.GenerateClass(generatedbEntityState);
 		}
 		private void GenerateApiContext(string projectName, string outputFilePath)
@@ -202,6 +211,7 @@ namespace ViFactory.Services.Core
 				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\Model\\ApiContext.txt",
 				OutputFilePath = outputFilePath
 			};
+
 			_generator.GenerateClass(generateApiContext);
 		}
 		private void GenerateITokenService(string projectName, string outputFilePath)
@@ -213,6 +223,7 @@ namespace ViFactory.Services.Core
 				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\Services\\TokenService.txt",
 				OutputFilePath = outputFilePath
 			};
+
 			_generator.GenerateClass(generateITokenService);
 		}
 		private void GenerateRepositoryCreateRequest(string projectName, string outputFilePath)
@@ -224,6 +235,7 @@ namespace ViFactory.Services.Core
 				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\Model\\RepositoryModels\\RepositoryCreateRequest.txt",
 				OutputFilePath = outputFilePath
 			};
+
 			_generator.GenerateClass(generateRequest);
 		}
 		private void GenerateRepositoryDeleteRequest(string projectName, string outputFilePath)
@@ -235,6 +247,7 @@ namespace ViFactory.Services.Core
 				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\Model\\RepositoryModels\\RepositoryDeleteRequest.txt",
 				OutputFilePath = outputFilePath
 			};
+
 			_generator.GenerateClass(generateRepositoryDeleteRequest);
 		}
 		private void GenerateRepositoryGetAsTResultRequest(string projectName, string outputFilePath)
@@ -258,6 +271,7 @@ namespace ViFactory.Services.Core
 				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\Model\\RepositoryModels\\RepositoryGetRequest.txt",
 				OutputFilePath = outputFilePath
 			};
+
 			_generator.GenerateClass(generateRepositoryGetRequest);
 		}
 		private void GenerateRepositoryIsExistRequest(string projectName, string outputFilePath)
@@ -269,6 +283,7 @@ namespace ViFactory.Services.Core
 				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\Model\\RepositoryModels\\RepositoryIsExistRequest.txt",
 				OutputFilePath = outputFilePath
 			};
+
 			_generator.GenerateClass(generateRepositoryIsExistRequest);
 		}
 		private void GenerateRepositoryListAsTResultRequest(string projectName, string outputFilePath)
@@ -280,6 +295,7 @@ namespace ViFactory.Services.Core
 				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\Model\\RepositoryModels\\RepositoryListAsTResultRequest.txt",
 				OutputFilePath = outputFilePath
 			};
+
 			_generator.GenerateClass(generatorModel);
 		}
 		private void GenerateRepositoryListRequest(string projectName, string outputFilePath)
@@ -291,6 +307,7 @@ namespace ViFactory.Services.Core
 				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\Model\\RepositoryModels\\RepositoryListRequest.txt",
 				OutputFilePath = outputFilePath
 			};
+
 			_generator.GenerateClass(generateRepositoryListRequest);
 		}
 		private void GenerateRepositoryPaginationAsTResultRequest(string projectName, string outputFilePath)
@@ -302,6 +319,7 @@ namespace ViFactory.Services.Core
 				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\Model\\RepositoryModels\\RepositoryPaginationAsTResultRequest.txt",
 				OutputFilePath = outputFilePath
 			};
+
 			_generator.GenerateClass(generateRepositoryPaginationsAsTResultRequest);
 		}
 		private void GenerateRepositoryPaginationRequest(string projectName, string outputFilePath)
@@ -313,6 +331,7 @@ namespace ViFactory.Services.Core
 				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\Model\\RepositoryModels\\RepositoryPaginationRequest.txt",
 				OutputFilePath = outputFilePath
 			};
+
 			_generator.GenerateClass(generateRepositoryPaginationsRequest);
 		}
 		private void GenerateRepositorySoftDeleteRequest(string projectName, string outputFilePath)
@@ -324,6 +343,7 @@ namespace ViFactory.Services.Core
 				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\Model\\RepositoryModels\\RepositorySoftDeleteRequest.txt",
 				OutputFilePath = outputFilePath
 			};
+
 			_generator.GenerateClass(generateRepositorySoftDeleteRequest);
 		}
 		private void GenerateRepositoryUpdateRequest(string projectName, string outputFilePath)
@@ -335,6 +355,7 @@ namespace ViFactory.Services.Core
 				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\Model\\RepositoryModels\\RepositoryUpdateRequest.txt",
 				OutputFilePath = outputFilePath
 			};
+
 			_generator.GenerateClass(generateRepositoryUpdateRequest);
 		}
 		private void GenerateGetClientTokenRequest(string projectName, string outputFilePath)
@@ -346,6 +367,7 @@ namespace ViFactory.Services.Core
 				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\Model\\TokenModels\\GetClientTokenRequest.txt",
 				OutputFilePath = outputFilePath
 			};
+
 			_generator.GenerateClass(generateGetClientTokenRequest);
 		}
 		private void GenerateGetClientTokenResult(string projectName, string outputFilePath)
@@ -357,6 +379,7 @@ namespace ViFactory.Services.Core
 				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\Model\\TokenModels\\GetClientTokenResult.txt",
 				OutputFilePath = outputFilePath
 			};
+
 			_generator.GenerateClass(generateGetClientTokenResult);
 		}
 		private void GenerateGetTokenRequest(string projectName, string outputFilePath)
@@ -368,6 +391,7 @@ namespace ViFactory.Services.Core
 				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\Model\\TokenModels\\GetTokenRequest.txt",
 				OutputFilePath = outputFilePath
 			};
+
 			_generator.GenerateClass(generateaGetTokenRequest);
 		}
 		private void GenereateGetTokenResponse(string projectName, string outputFilePath)
@@ -379,6 +403,7 @@ namespace ViFactory.Services.Core
 				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\Model\\TokenModels\\GetTokenResponse.txt",
 				OutputFilePath = outputFilePath
 			};
+
 			_generator.GenerateClass(genereateGetTokenResponse);
 		}
 		private void GenerateValidateTokenRequest(string projectName, string outputFilePath)
@@ -390,9 +415,9 @@ namespace ViFactory.Services.Core
 				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\Model\\TokenModels\\ValidateTokenRequest.txt",
 				OutputFilePath = outputFilePath
 			};
+
 			_generator.GenerateClass(validateTokenRequest);
 		}
-
 		private void GenerateExceptionHelper(string projectName, string outputFilePath) 
 		{
 			GeneratorModel exceptionHelper = new()
@@ -402,6 +427,7 @@ namespace ViFactory.Services.Core
 				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\Helpers\\ExceptionHelper.txt",
 				OutputFilePath = outputFilePath
 			};
+
 			_generator.GenerateClass(exceptionHelper);
 		}
 	}

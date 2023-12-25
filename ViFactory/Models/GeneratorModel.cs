@@ -4,6 +4,7 @@
 	{
 		public string NamespaceNameDefault { get; set; }
 		public string ClassNameDefault { get; set; }
+		public string? CurrentProjectName { get; set; }
 		public Dictionary<string, string>? Properties{ get; set; }
 		public Dictionary<string, string>? Methods { get; set; }
 		public string? ConnectionString { get; set; }

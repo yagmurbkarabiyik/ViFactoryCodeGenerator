@@ -1,0 +1,35 @@
+﻿using [CurrentProjectName].Domain.Entities.Entities;
+using [CurrentProjectName].Bll.Dtos;
+using [CurrentProjectName].Bll.Models;
+using [CurrentProjectName].Bll.Services.Abstract;
+
+namespace [CurrentProjectName].Bll.Services.Concrete
+{
+    public class [EntityName]Service : I[EntityName]Service
+    {
+	    public Task<ResponseCommon<[EntityName]CreateDto>> Create([EntityName]CreateDto model)
+		{
+			throw new NotImplementedException();
+		}
+
+		public Task<ResponseCommon> Read(int id)
+		{
+			throw new NotImplementedException();
+		}
+
+		public Task<ResponseCommon<[EntityName]GetDto>> Get(int id)
+		{
+			throw new NotImplementedException();
+		}
+
+		public Task<ResponseCommon<List<[EntityName]GetListDto>>> ListTable()
+		{
+			throw new NotImplementedException();
+		}
+
+		public Task<ResponseCommon<[EntityName]UpdateDto>> Update(int id, [EntityName]UpdateDto model)
+		{
+			throw new NotImplementedException();
+		}
+    }
+}
