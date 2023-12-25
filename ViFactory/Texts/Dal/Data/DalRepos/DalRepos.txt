@@ -1,0 +1,13 @@
+﻿using ViFactorySampleSolution;
+using ViFactorySample.Dal;
+
+namespace [NamespaceName]
+{
+    public class [ClassName] : Repository<[EntityName], ViFactoryDbContext>, [InterfaceName]
+    {
+        public [ClassName](ViFactoryDbContext ctx) : base(ctx)
+        {
+
+        }
+    }
+}

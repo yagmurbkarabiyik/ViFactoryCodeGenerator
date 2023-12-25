@@ -1,0 +1,12 @@
+﻿using System.Net;
+
+namespace [NamespaceName]
+{
+    public class [ClassName] 
+    {
+        public HttpStatusCode HttpStatusCode { get; set; }
+        public ExceptionResponseType Type { get; set; }
+        public List<string> Errors { get; set; }
+        public Exception? Exception { get; set; }
+    }
+}

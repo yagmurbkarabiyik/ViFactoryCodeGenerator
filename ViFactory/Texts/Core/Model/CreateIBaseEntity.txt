@@ -1,0 +1,12 @@
+﻿using ViFactorySample.Core.Enums;
+
+namespace [NamespaceName]
+{
+    public interface [ClassName]
+    {
+       public int Id { get; set; }
+       public DbEntityState Status { get; set; }
+       public DateTime CreatedDate { get; set; }
+       public DateTime UpdatedDate { get; set; }
+    }
+}

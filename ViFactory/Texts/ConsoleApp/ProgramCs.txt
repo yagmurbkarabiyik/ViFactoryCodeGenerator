@@ -1,0 +1,119 @@
+﻿using System.Reflection;
+using System.Xml.Linq;
+class Program
+{
+	static void Main()
+	{
+		// Find class name from domain.entities layer | used as general
+		var entities = GetTypesFromAssembly("ViFactorySample.Domain.Entities", "ViFactorySample.Domain.Entities.Entities");
+
+		string dtoFolderPath = "C:\\Users\\ygmr4\\Desktop\\ViFactorySample\\ViFactorySample.Dto\\";
+		string csprojDtoFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactorySample\\ViFactorySample.Dto\\ViFactorySample.Domain.Dtos.csproj";
+
+		string dalFolderPath = "C:\\Users\\ygmr4\\Desktop\\ViFactorySample\\ViFactorySample.Dal\\";
+		string csprojDalFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactorySample\\ViFactorySample.Dal\\ViFactorySample.Dal.csproj";
+
+		GenerateDtos(csprojDtoFilePath, dtoFolderPath, entities);
+		GenerateDal(csprojDalFilePath, dalFolderPath, entities);
+	}
+
+	static List<Type> GetTypesFromAssembly(string assemblyName, string typeNameStart)
+	{
+		return Assembly.Load(assemblyName)
+			.GetTypes()
+			.Where(x => x.FullName.StartsWith(typeNameStart))
+			.ToList();
+	}
+
+	#region Generate Dto
+	static void GenerateDtos(string csprojFilePath, string rootFolderPath, IEnumerable<Type> entities)
+	{
+		string currentProjectName = "ViFactorySample";
+
+		XDocument csprojDoc = XDocument.Load(csprojFilePath);
+
+		// Check if the <ItemGroup> already exists; if not, create it
+		XElement itemGroup = csprojDoc.Root.Elements("ItemGroup").FirstOrDefault();
+		if (itemGroup == null)
+		{
+			itemGroup = new XElement("ItemGroup");
+			csprojDoc.Root.Add(itemGroup);
+		}
+
+		foreach (var entity in entities)
+		{
+			string className = entity.Name;
+			string folderPath = Path.Combine(rootFolderPath, className + "Dtos");
+
+			// Create empty C# class files for request and response
+			string responseClassPath = Path.Combine(folderPath, $"{className}ResponseDto.cs");
+			string requestClassPath = Path.Combine(folderPath, $"{className}RequestDto.cs");
+
+			if (className != "BaseEntity")
+			{
+				Directory.CreateDirectory(folderPath);
+				itemGroup.Add(new XElement("Folder", new XAttribute("Include", $"{folderPath}\\")));
+
+				File.WriteAllText(responseClassPath, $"namespace {currentProjectName}.Domain.Dtos.{className}Dtos \n{{ \n\tpublic class {className}ResponseDto \n\t{{\n\t}} \n}}");
+				File.WriteAllText(requestClassPath, $"namespace {currentProjectName}.Domain.Dtos.{className}Dtos \n{{ \n\tpublic class {className}RequestDto \n\t{{\n\t}} \n}}");
+			}
+
+			Console.WriteLine($"Class files added: {requestClassPath}, {responseClassPath}");
+		}
+
+		csprojDoc.Save(csprojFilePath);
+	}
+	#endregion
+
+	#region Generate Dal
+	static void GenerateDal(string csprojFilePath, string rootFolderPath, IEnumerable<Type> entities)
+	{
+		string currentProjectName = "ViFactorySample";
+
+		XDocument csprojDoc = XDocument.Load(csprojFilePath);
+		// Check if the <ItemGroup> already exists; if not, create it
+		XElement itemGroup = csprojDoc.Root.Elements("ItemGroup").FirstOrDefault();
+		if (itemGroup == null)
+		{
+			itemGroup = new XElement("ItemGroup");
+			csprojDoc.Root.Add(itemGroup);
+		}
+
+		foreach (var entity in entities)
+		{
+			string className = entity.Name;
+			string folderDalReposPath = Path.Combine(rootFolderPath, "Data", "DalRepos");
+			string folderIDalReposPath = Path.Combine(rootFolderPath, "Data", "IDalRepos");
+			string commonFolderPath = Path.Combine(rootFolderPath, "Data", "Common");
+			string contextFolderPath = Path.Combine(rootFolderPath, "Context");
+
+			Directory.CreateDirectory(folderDalReposPath);
+			Directory.CreateDirectory(folderIDalReposPath);
+			Directory.CreateDirectory(commonFolderPath);
+			Directory.CreateDirectory(contextFolderPath);
+
+			// Add the Folder element for the folder
+			itemGroup.Add(new XElement("Folder", new XAttribute("Include", $"{folderDalReposPath}\\")));
+			itemGroup.Add(new XElement("Folder", new XAttribute("Include", $"{folderIDalReposPath}\\")));
+			itemGroup.Add(new XElement("Folder", new XAttribute("Include", $"{commonFolderPath}\\")));
+			itemGroup.Add(new XElement("Folder", new XAttribute("Include", $"{contextFolderPath}\\")));
+
+			// Create empty C# class files for dalRepos and IDalRepos
+			string dalReposClass = Path.Combine(folderDalReposPath, $"{className}Repository.cs");
+			string iDalReposClass = Path.Combine(folderIDalReposPath, $"I{className}Repository.cs");
+			string commonFolder = Path.Combine(commonFolderPath, "Repository.cs");
+			string contextFolder = Path.Combine(contextFolderPath, $"{currentProjectName}DbContext.cs");
+
+			if (className != "BaseEntity")
+			{
+				File.WriteAllText(dalReposClass, $"namespace {currentProjectName}.Dal.Data.DalRepos \n{{ \n\tpublic class {className}Repository : Repository<{className}, " +
+													$"{currentProjectName}DbContext>, I{className}Repository \n\t{{\n\t}} \n}}");
+				File.WriteAllText(iDalReposClass, $"namespace {currentProjectName}.Dal.Data.IDalRepos \n{{ \n\tpublic interface I{className}Repository : IRepository<{className}> \n\t{{\n\t}} \n}}");
+				File.WriteAllText(commonFolder, $"namespace {currentProjectName}.Dal.Data.Common \n{{ \n\tpublic class Repository  \n\t{{\n\t}} \n}}");
+				File.WriteAllText(contextFolder, $"namespace {currentProjectName}.Dal.Data.Context \n{{ \n\tpublic class {currentProjectName}DbContext \n\t{{\n\t}} \n}}");
+			}
+			csprojDoc.Save(csprojFilePath);
+		}
+	}
+	#endregion
+}

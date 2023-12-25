@@ -1,0 +1,11 @@
+﻿using ViFactorySample.Core.Models;
+
+namespace [NamespaceName]
+{
+    public interface [ClassName]
+    {
+        Task<(bool IsSuccess, Exception? Exception)> SendAsync(EmailSendData emailData, CancellationToken? ct = default);
+    }
+}
+
+

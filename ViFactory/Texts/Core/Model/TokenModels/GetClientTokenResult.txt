@@ -1,0 +1,11 @@
+﻿using System.Security.Claims;
+
+namespace [NamespaceName]
+{
+    public class [ClassName]
+    {
+        public string AccessToken { get; set; } = null!;
+        public long AccessTokenUnixExpire { get; set; }
+        public DateTimeOffset AccessTokenExpire { get; set; }
+    }
+}

@@ -1,0 +1,8 @@
+﻿using ViFactorySampleSolution;
+
+namespace [NamespaceName]
+{
+    public interface [ClassName] : IRepository<[EntityName]>
+    {
+    }
+}

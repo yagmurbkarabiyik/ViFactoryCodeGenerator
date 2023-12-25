@@ -1,0 +1,9 @@
+﻿using System.Net;
+
+namespace [NamespaceName]
+{
+    public class [ClassName]
+    {
+     
+    }
+}
