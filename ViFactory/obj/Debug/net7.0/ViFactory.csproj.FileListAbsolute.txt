@@ -80,3 +80,5 @@ C:\Users\ygmr4\Desktop\ViFactory\ViFactory\obj\Debug\net7.0\refint\ViFactory.dll
 C:\Users\ygmr4\Desktop\ViFactory\ViFactory\obj\Debug\net7.0\ViFactory.pdb
 C:\Users\ygmr4\Desktop\ViFactory\ViFactory\obj\Debug\net7.0\ViFactory.genruntimeconfig.cache
 C:\Users\ygmr4\Desktop\ViFactory\ViFactory\obj\Debug\net7.0\ref\ViFactory.dll
+C:\Users\ygmr4\Desktop\ViFactory\ViFactory\bin\Debug\net7.0\Texts\Bll\UploadLocalService.txt
+C:\Users\ygmr4\Desktop\ViFactory\ViFactory\bin\Debug\net7.0\Texts\ConsoleApp\Templates\UploadService.txt

@@ -29,7 +29,7 @@ namespace ViFactory.Controllers
 
 		public IActionResult GenerateAll()
 		{
-			string projectName = "Ybk";
+			string projectName = "Yagmur";
 			string outputFolderPath = "C:\\Users\\ygmr4\\Desktop\\" + projectName;
 
 			//Identify the solutions features in detail

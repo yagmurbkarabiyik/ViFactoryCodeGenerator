@@ -460,5 +460,7 @@ namespace ViFactory.Services.Core
 
 			_generator.GenerateClass(exceptionHelper);
 		}
+
+		
 	}
 }

@@ -64,5 +64,11 @@
     <None Update="Templates\UnitOfWork.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+       <None Update="Templates\IUploadLocalService.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+     <None Update="Templates\UploadLocalService.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 </Project>

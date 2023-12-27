@@ -4,11 +4,11 @@ class Program
 {
 	 static void Main()
 	 {
-		string projectName = "Mssssst";
+		string projectName = "Yagmur";
 		string outputFolderPath = "C:\\Users\\ygmr4\\Desktop\\" + projectName;
 
 		// Find class name from domain.entities layer | used as general
-		var entities = GetTypesFromAssembly("Mssssst.Entities", "Mssssst.Entities");
+		var entities = GetTypesFromAssembly("Yagmur.Domain.Entities", "Yagmur.Domain.Entities");
 		string dtoFolderPath = Path.Combine(outputFolderPath, projectName + ".Bll.Dtos"); ;
 		string csprojDtoFilePath = Path.Combine(outputFolderPath,dtoFolderPath, projectName + ".Bll.Dtos.csproj");
 
@@ -122,6 +122,8 @@ class Program
 			string memoryCacheClass = Path.Combine(commonServiceFolderPath, "MemoryCacheService.cs");
 			string smsNetGsmServiceClass = Path.Combine(commonServiceFolderPath, "SmsNetGsmService.cs");
 			string tokenServiceClass = Path.Combine(commonServiceFolderPath, "TokenService.cs");
+			string uploadLocalServiceClass = Path.Combine(commonServiceFolderPath, "UploadLocalService.cs");
+			string iUploadLocalServiceClass = Path.Combine(commonServiceFolderPath, "IUploadLocalService.cs");
 
 			if (entity.Name != "BaseEntity")
 			{
@@ -172,10 +174,10 @@ class Program
 				EnsureFileExists(smsNetGsmServiceClass, File.ReadAllText("./Templates/SmsNetGsmService.txt")
 					.Replace("[CurrentProjectName]", currentProjectName)
 					.Replace("[EntityName]", entity.Name));
-
 				EnsureFileExists(tokenServiceClass, File.ReadAllText("./Templates/TokenService.txt")
 					.Replace("[CurrentProjectName]", currentProjectName)
 					.Replace("[EntityName]", entity.Name));
+					
 			}
 		}
 		csprojDoc.Save(csprojFilePath);

@@ -12,7 +12,7 @@ namespace [NamespaceName]
     /// <param name="quality"></param>
     /// <param name="isPrivate"></param>
     /// <returns></returns>
-    public interface [ClassName]
+    public interface IUploadService
     {
         Task<List<string>> MultiUpload(List<IFormFile> files, string folderPath, int? width = null, int? height = null, int? quality = 100, bool isPrivate = false);
         Task<string> Upload(IFormFile file, string folderPath, int? width = null, int? height = null, int? quality = 100, bool isPrivate = false);

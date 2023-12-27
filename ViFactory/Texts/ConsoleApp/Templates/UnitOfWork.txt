@@ -1,5 +1,5 @@
 ﻿using [CurrentProjectName].Core.Services;
-using [CurrentProjectName].Domain.Entities.Entities;
+using [CurrentProjectName].Domain.Entities;
 using [CurrentProjectName].Core.Models;
 using [CurrentProjectName].Dal.Context;
 

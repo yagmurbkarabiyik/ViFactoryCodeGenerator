@@ -17,12 +17,14 @@
     <PackageReference Include="SixLabors.ImageSharp" Version="3.0.2" />
 	<PackageReference Include="MailKit" Version="4.3.0" />
 	<PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.21.0" />
+    <PackageReference Include="Mapster" Version="7.4.0" />
   </ItemGroup>
   
     <ItemGroup>
     <ProjectReference Include="..\[CurrentProjectName].Bll.Dtos\[CurrentProjectName].Bll.Dtos.csproj" />
     <ProjectReference Include="..\[CurrentProjectName].Core\[CurrentProjectName].Core.csproj" />
+    <ProjectReference Include="..\[CurrentProjectName].Dal\[CurrentProjectName].Dal.csproj" />
+    <ProjectReference Include="..\[CurrentProjectName].Domain.Entities\[CurrentProjectName].Domain.Entities.csproj" />
   </ItemGroup>
-
 </Project>
 

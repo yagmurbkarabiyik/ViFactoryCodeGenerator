@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using [CurrentProjectName].Domain.Entities.Entities;
+using [CurrentProjectName].Domain.Entities;
 
 namespace [CurrentProjectName].Dal.Context
 {
@@ -25,7 +25,5 @@ namespace [CurrentProjectName].Dal.Context
             base.OnConfiguring(optionsBuilder);
             optionsBuilder.UseNpgsql("[ConnectionString]");
         }
-
-       [DbSetLine]
     }
 }

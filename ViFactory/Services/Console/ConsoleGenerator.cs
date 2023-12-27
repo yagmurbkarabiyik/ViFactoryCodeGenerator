@@ -127,6 +127,7 @@ namespace ViFactory.Services.Console
 			string unitOfWork = File.ReadAllText("C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\ConsoleApp\\Templates\\UnitOfWork.txt");
 			string unitOfWorkPath = Path.Combine(path, "UnitOfWork.txt");
 			File.WriteAllText(unitOfWorkPath, unitOfWork);
+
 		}
 	}
 }
