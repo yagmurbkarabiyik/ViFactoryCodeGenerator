@@ -20,8 +20,8 @@
   </ItemGroup>
   
     <ItemGroup>
-    <ProjectReference Include="..\[CurrentProjectName].Bll.Dtos\[CurrentProjectName].Bll.Dtos.csproj" />
-    <ProjectReference Include="..\[CurrentProjectName].Core\[CurrentProjectName].Core.csproj" />
+    <ProjectReference Include="..\Mst.Bll.Dtos\Mst.Bll.Dtos.csproj" />
+    <ProjectReference Include="..\Mst.Core\Mst.Core.csproj" />
   </ItemGroup>
 
 </Project>

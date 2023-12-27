@@ -27,15 +27,15 @@ namespace ViFactory.Controllers
 			_consoleGenerator = consoleGenerator;
 		}
 
-		public IActionResult GenerateAll(string outputFolderPath, string solutionName)
+		public IActionResult GenerateAll()
 		{
-			solutionName = "Yamur";
-			outputFolderPath = "C:\\Users\\ygmr4\\Desktop\\" + solutionName;
+			string projectName = "Yamur";
+			string outputFolderPath = "C:\\Users\\ygmr4\\Desktop\\" + projectName;
 
 			//Identify the solutions features in detail
 			SolutionGeneratorModel solutionGeneratorModel = new()
 			{
-				SolutionName = solutionName,
+				SolutionName = projectName,
 				SolutionFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\CreateSolution.txt",
 				ProjectGuid = Guid.NewGuid().ToString("D"),
 				TargetFilePath = outputFolderPath
@@ -45,10 +45,11 @@ namespace ViFactory.Controllers
 			#region Create Core Layer
 			ProjectGeneratorModel coreGenerator = new ProjectGeneratorModel
 			{
-				ProjectName = solutionName+".Core",
+				ProjectName = projectName + ".Core",
 				ProjectFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\CreateCoreProject.txt",
-				SolutionFilePath = Path.Combine(outputFolderPath, solutionName+".sln"),
-				OutputFolderPath = outputFolderPath
+				SolutionFilePath = Path.Combine(outputFolderPath, projectName + ".sln"),
+				OutputFolderPath = outputFolderPath,
+				CurrentProjectName= projectName
 			};
 			
 			_coreGenerator.GenerateCoreLayer(coreGenerator);
@@ -59,8 +60,10 @@ namespace ViFactory.Controllers
 			{
 				ProjectName = "ViFactory",
 				ProjectFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\ConsoleApp\\CreateConsoleApp.txt",
-				SolutionFilePath = Path.Combine(outputFolderPath, solutionName + ".sln"),
-				OutputFolderPath = outputFolderPath
+				SolutionFilePath = Path.Combine(outputFolderPath, projectName + ".sln"),
+				OutputFolderPath = outputFolderPath,
+				CurrentProjectName = projectName
+
 			};
 			_consoleGenerator.GenerateConsoleProject(consoleProjectGenerator);
 			#endregion
@@ -68,28 +71,27 @@ namespace ViFactory.Controllers
 			#region Create Dal Layer
 			ProjectGeneratorModel dalProjectGenerator = new ProjectGeneratorModel()
 			{
-				ProjectName = solutionName+".Dal",
+				ProjectName = projectName + ".Dal",
 			    ProjectFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Dal\\CreateDalProject.txt",
-				SolutionFilePath = Path.Combine(outputFolderPath, solutionName + ".sln"),
+				SolutionFilePath = Path.Combine(outputFolderPath, projectName + ".sln"),
 				OutputFolderPath = outputFolderPath
-			};
-			// Replace operation
-			string dalContent = System.IO.File.ReadAllText(dalProjectGenerator.ProjectFilePath);
-			dalContent = dalContent.Replace("[CurrentProjectName]", $"{solutionName}");
-			System.IO.File.WriteAllText(dalProjectGenerator.ProjectFilePath, dalContent);
 
+			};
+			
 			_dalGenerator.GenerateDalLayer(dalProjectGenerator);
 			#endregion
 
 			#region Create Dto Layer
 			ProjectGeneratorModel dtoProjectGenerator = new ProjectGeneratorModel()
 			{
-				ProjectName = solutionName+".Bll.Dtos",
+				ProjectName = projectName + ".Bll.Dtos",
 				ProjectFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Dtos\\CreateDtoProject.txt",
-				SolutionFilePath = Path.Combine(outputFolderPath, solutionName + ".sln"),
-				OutputFolderPath = outputFolderPath
-			};
+				SolutionFilePath = Path.Combine(outputFolderPath, projectName + ".sln"),
+				OutputFolderPath = outputFolderPath,
+				CurrentProjectName = projectName
 
+			};
+			
 			_dtoGenerator.GenerateDtoLayer(dtoProjectGenerator);
 
 			#endregion
@@ -97,10 +99,10 @@ namespace ViFactory.Controllers
 			#region Create Bll Layer
 			ProjectGeneratorModel bllGenerator = new ProjectGeneratorModel()
 			{
-				ProjectName = solutionName+".Bll",
+				ProjectName = projectName + ".Bll",
 				ProjectFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Bll\\CreateBllProject.txt",
-				SolutionFilePath = Path.Combine(outputFolderPath, solutionName + ".sln"),
-				OutputFolderPath = outputFolderPath,
+				SolutionFilePath = Path.Combine(outputFolderPath, projectName + ".sln"),
+				OutputFolderPath = outputFolderPath
 			};
 
 			_bllGenerator.GenerateBllLayer(bllGenerator);
@@ -110,3 +112,4 @@ namespace ViFactory.Controllers
 		}
 	}
 }
+

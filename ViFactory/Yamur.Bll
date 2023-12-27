@@ -20,8 +20,8 @@
   </ItemGroup>
   
     <ItemGroup>
-    <ProjectReference Include="..\[CurrentProjectName].Bll.Dtos\[CurrentProjectName].Bll.Dtos.csproj" />
-    <ProjectReference Include="..\[CurrentProjectName].Core\[CurrentProjectName].Core.csproj" />
+    <ProjectReference Include="..\Yamur.Bll.Dtos\Yamur.Bll.Dtos.csproj" />
+    <ProjectReference Include="..\Yamur.Core\Yamur.Core.csproj" />
   </ItemGroup>
 
 </Project>

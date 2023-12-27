@@ -1,5 +1,4 @@
 ﻿using ViFactory.Models;
-using ViFactory.Services.Bll;
 using ViFactory.Services.Generators;
 using ViFactory.Services.Project;
 
@@ -60,6 +59,7 @@ namespace ViFactory.Services.Core
 				ClassNameDefault = "IRepository",
 				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\Services\\CreateIRepository.txt",
 				OutputFilePath = outputFilePath,
+				CurrentProjectName = projectName,
 				Methods = new Dictionary<string, string>
 				{
 					{"InsertAsync", "void" },
@@ -78,7 +78,8 @@ namespace ViFactory.Services.Core
 				NamespaceNameDefault = projectName + ".Models",
 				ClassNameDefault = "IBaseEntity",
 				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\Model\\CreateIBaseEntity.txt",
-				OutputFilePath = outputFilePath
+				OutputFilePath = outputFilePath,
+				CurrentProjectName= projectName
 			};
 
 			_generator.GenerateClass(generateIBaseEntity);
@@ -90,7 +91,8 @@ namespace ViFactory.Services.Core
 				NamespaceNameDefault = projectName + ".Services",
 				ClassNameDefault = "IUnitOfWork",
 				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\Services\\CreateIUnitOfWork.txt",
-				OutputFilePath = outputFilePath
+				OutputFilePath = outputFilePath,
+				CurrentProjectName = projectName
 			};
 
 			_generator.GenerateClass(generateIUnitOfWork);
@@ -102,7 +104,8 @@ namespace ViFactory.Services.Core
 				NamespaceNameDefault = projectName + ".Models",
 				ClassNameDefault = "UnitOfWorkResponse",
 				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\Model\\CreateUnitOfWorkResponse.txt",
-				OutputFilePath = outputFilePath
+				OutputFilePath = outputFilePath,
+				CurrentProjectName = projectName
 			};
 
 			_generator.GenerateClass(generateUnitOfWorkResponse);
@@ -114,7 +117,8 @@ namespace ViFactory.Services.Core
 				NamespaceNameDefault = projectName + ".Models",
 				ClassNameDefault = "PaginationRequest",
 				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\Model\\PaginationRequest.txt",
-				OutputFilePath = outputFilePath
+				OutputFilePath = outputFilePath,
+				CurrentProjectName = projectName
 			};
 
 			_generator.GenerateClass(generatePaginationRequest);
@@ -126,7 +130,8 @@ namespace ViFactory.Services.Core
 				NamespaceNameDefault = projectName + ".Models",
 				ClassNameDefault = "PaginationResponse",
 				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\Model\\PaginationResponse.txt",
-				OutputFilePath = outputFilePath
+				OutputFilePath = outputFilePath,
+				CurrentProjectName = projectName
 			};
 
 			_generator.GenerateClass(generatePaginationResponse);
@@ -138,7 +143,8 @@ namespace ViFactory.Services.Core
 				NamespaceNameDefault = projectName + ".Services",
 				ClassNameDefault = "ISmsNetGsmService",
 				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\Services\\ISmsNetGsmService.txt",
-				OutputFilePath = outputFilePath
+				OutputFilePath = outputFilePath,
+				CurrentProjectName = projectName
 			};
 
 			_generator.GenerateClass(generateISmsNewGsmService);
@@ -150,7 +156,8 @@ namespace ViFactory.Services.Core
 				NamespaceNameDefault = projectName + ".Models",
 				ClassNameDefault = "SmsNetGsmSendData",
 				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\Model\\SmsNetGsmSendData.txt",
-				OutputFilePath = outputFilePath
+				OutputFilePath = outputFilePath,
+				CurrentProjectName = projectName
 			};
 
 			_generator.GenerateClass(generateSmsNetGsmSendData);
@@ -162,7 +169,8 @@ namespace ViFactory.Services.Core
 				NamespaceNameDefault = projectName + ".Services",
 				ClassNameDefault = "IEmailService",
 				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\Services\\IEmailService.txt",
-				OutputFilePath = outputFilePath
+				OutputFilePath = outputFilePath,
+				CurrentProjectName = projectName
 			};
 
 			_generator.GenerateClass(generateIEmailService);
@@ -174,7 +182,8 @@ namespace ViFactory.Services.Core
 				NamespaceNameDefault = projectName + ".Models",
 				ClassNameDefault = "EmailSendData",
 				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\Model\\EmailSendData.txt",
-				OutputFilePath = outputFilePath
+				OutputFilePath = outputFilePath,
+				CurrentProjectName = projectName
 			};
 			_generator.GenerateClass(generateEmailSendData);
 		}
@@ -185,7 +194,8 @@ namespace ViFactory.Services.Core
 				NamespaceNameDefault = projectName + ".Services",
 				ClassNameDefault = "IMemoryCache",
 				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\Services\\IMemoryCache.txt",
-				OutputFilePath = outputFilePath
+				OutputFilePath = outputFilePath,
+				CurrentProjectName = projectName
 			};
 
 			_generator.GenerateClass(generateIMemoryCache);
@@ -197,7 +207,8 @@ namespace ViFactory.Services.Core
 				NamespaceNameDefault = projectName + ".Enums",
 				ClassNameDefault = "DbEntityState",
 				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\Enums\\DbEntityState.txt",
-				OutputFilePath = outputFilePath
+				OutputFilePath = outputFilePath,
+				CurrentProjectName = projectName
 			};
 
 			_generator.GenerateClass(generatedbEntityState);
@@ -209,7 +220,8 @@ namespace ViFactory.Services.Core
 				NamespaceNameDefault = projectName + ".Models",
 				ClassNameDefault = "ApiContext",
 				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\Model\\ApiContext.txt",
-				OutputFilePath = outputFilePath
+				OutputFilePath = outputFilePath,
+				CurrentProjectName = projectName
 			};
 
 			_generator.GenerateClass(generateApiContext);
@@ -221,7 +233,8 @@ namespace ViFactory.Services.Core
 				NamespaceNameDefault = projectName + ".Services.TokenService",
 				ClassNameDefault = "ITokenService",
 				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\Services\\TokenService.txt",
-				OutputFilePath = outputFilePath
+				OutputFilePath = outputFilePath,
+				CurrentProjectName = projectName
 			};
 
 			_generator.GenerateClass(generateITokenService);
@@ -233,7 +246,8 @@ namespace ViFactory.Services.Core
 				NamespaceNameDefault = projectName + ".Models",
 				ClassNameDefault = "RepositoryCreateRequest",
 				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\Model\\RepositoryModels\\RepositoryCreateRequest.txt",
-				OutputFilePath = outputFilePath
+				OutputFilePath = outputFilePath,
+				CurrentProjectName = projectName
 			};
 
 			_generator.GenerateClass(generateRequest);
@@ -245,7 +259,8 @@ namespace ViFactory.Services.Core
 				NamespaceNameDefault = projectName + ".RepositoryModels",
 				ClassNameDefault = "RepositoryDeleteRequest",
 				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\Model\\RepositoryModels\\RepositoryDeleteRequest.txt",
-				OutputFilePath = outputFilePath
+				OutputFilePath = outputFilePath,
+				CurrentProjectName = projectName
 			};
 
 			_generator.GenerateClass(generateRepositoryDeleteRequest);
@@ -257,7 +272,8 @@ namespace ViFactory.Services.Core
 				NamespaceNameDefault =  projectName+ ".RepositoryModels",
 				ClassNameDefault = "RepositoryGetAsTResultRequest",
 				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\Model\\RepositoryModels\\RepositoryGetAsTResultRequest.txt",
-				OutputFilePath = outputFilePath 
+				OutputFilePath = outputFilePath,
+				CurrentProjectName = projectName
 			};
 
 			_generator.GenerateClass(generateRepositoryGetAsTResultRequest);
@@ -269,7 +285,8 @@ namespace ViFactory.Services.Core
 				NamespaceNameDefault = projectName + ".Models.RepositoryModels",
 				ClassNameDefault = "RepositoryGetRequest",
 				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\Model\\RepositoryModels\\RepositoryGetRequest.txt",
-				OutputFilePath = outputFilePath
+				OutputFilePath = outputFilePath,
+				CurrentProjectName = projectName
 			};
 
 			_generator.GenerateClass(generateRepositoryGetRequest);
@@ -281,7 +298,8 @@ namespace ViFactory.Services.Core
 				NamespaceNameDefault = projectName + ".Models.RepositoryModels",
 				ClassNameDefault = "RepositoryIsExistRequest",
 				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\Model\\RepositoryModels\\RepositoryIsExistRequest.txt",
-				OutputFilePath = outputFilePath
+				OutputFilePath = outputFilePath,
+				CurrentProjectName = projectName
 			};
 
 			_generator.GenerateClass(generateRepositoryIsExistRequest);
@@ -293,7 +311,8 @@ namespace ViFactory.Services.Core
 				NamespaceNameDefault = projectName + ".Models.RepositoryModels",
 				ClassNameDefault = "RepositoryListAsTResultRequest",
 				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\Model\\RepositoryModels\\RepositoryListAsTResultRequest.txt",
-				OutputFilePath = outputFilePath
+				OutputFilePath = outputFilePath,
+				CurrentProjectName = projectName
 			};
 
 			_generator.GenerateClass(generatorModel);
@@ -305,7 +324,8 @@ namespace ViFactory.Services.Core
 				NamespaceNameDefault = projectName + ".Models.RepositoryModels",
 				ClassNameDefault = "RepositoryListRequest",
 				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\Model\\RepositoryModels\\RepositoryListRequest.txt",
-				OutputFilePath = outputFilePath
+				OutputFilePath = outputFilePath,
+				CurrentProjectName = projectName
 			};
 
 			_generator.GenerateClass(generateRepositoryListRequest);
@@ -317,7 +337,8 @@ namespace ViFactory.Services.Core
 				NamespaceNameDefault = projectName + ".Models.RepositoryModels",
 				ClassNameDefault = "RepositoryPaginationAsTResultRequest",
 				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\Model\\RepositoryModels\\RepositoryPaginationAsTResultRequest.txt",
-				OutputFilePath = outputFilePath
+				OutputFilePath = outputFilePath,
+				CurrentProjectName = projectName
 			};
 
 			_generator.GenerateClass(generateRepositoryPaginationsAsTResultRequest);
@@ -329,7 +350,8 @@ namespace ViFactory.Services.Core
 				NamespaceNameDefault = projectName + ".Models.RepositoryModels",
 				ClassNameDefault = "RepositoryPaginationRequest",
 				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\Model\\RepositoryModels\\RepositoryPaginationRequest.txt",
-				OutputFilePath = outputFilePath
+				OutputFilePath = outputFilePath,
+				CurrentProjectName = projectName
 			};
 
 			_generator.GenerateClass(generateRepositoryPaginationsRequest);
@@ -341,7 +363,8 @@ namespace ViFactory.Services.Core
 				NamespaceNameDefault = projectName + ".Models.RepositoryModels",
 				ClassNameDefault = "RepositorySoftDeleteRequest",
 				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\Model\\RepositoryModels\\RepositorySoftDeleteRequest.txt",
-				OutputFilePath = outputFilePath
+				OutputFilePath = outputFilePath,
+				CurrentProjectName = projectName
 			};
 
 			_generator.GenerateClass(generateRepositorySoftDeleteRequest);
@@ -353,7 +376,8 @@ namespace ViFactory.Services.Core
 				NamespaceNameDefault = projectName + ".Models.RepositoryModels",
 				ClassNameDefault = "RepositoryUpdateRequest",
 				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\Model\\RepositoryModels\\RepositoryUpdateRequest.txt",
-				OutputFilePath = outputFilePath
+				OutputFilePath = outputFilePath,
+				CurrentProjectName = projectName
 			};
 
 			_generator.GenerateClass(generateRepositoryUpdateRequest);
@@ -365,7 +389,8 @@ namespace ViFactory.Services.Core
 				NamespaceNameDefault = projectName + ".Models.TokenModels",
 				ClassNameDefault = "GetClientTokenRequest",
 				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\Model\\TokenModels\\GetClientTokenRequest.txt",
-				OutputFilePath = outputFilePath
+				OutputFilePath = outputFilePath,
+				CurrentProjectName = projectName
 			};
 
 			_generator.GenerateClass(generateGetClientTokenRequest);
@@ -377,7 +402,8 @@ namespace ViFactory.Services.Core
 				NamespaceNameDefault = projectName + ".Models.TokenModels",
 				ClassNameDefault = "GetClientTokenResult",
 				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\Model\\TokenModels\\GetClientTokenResult.txt",
-				OutputFilePath = outputFilePath
+				OutputFilePath = outputFilePath,
+				CurrentProjectName = projectName
 			};
 
 			_generator.GenerateClass(generateGetClientTokenResult);
@@ -389,7 +415,8 @@ namespace ViFactory.Services.Core
 				NamespaceNameDefault = projectName + ".Models.TokenModels",
 				ClassNameDefault = "GetTokenRequest",
 				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\Model\\TokenModels\\GetTokenRequest.txt",
-				OutputFilePath = outputFilePath
+				OutputFilePath = outputFilePath,
+				CurrentProjectName = projectName
 			};
 
 			_generator.GenerateClass(generateaGetTokenRequest);
@@ -401,7 +428,8 @@ namespace ViFactory.Services.Core
 				NamespaceNameDefault = projectName + ".Models.TokenModels",
 				ClassNameDefault = "GetTokenResponse",
 				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\Model\\TokenModels\\GetTokenResponse.txt",
-				OutputFilePath = outputFilePath
+				OutputFilePath = outputFilePath,
+				CurrentProjectName = projectName
 			};
 
 			_generator.GenerateClass(genereateGetTokenResponse);
@@ -413,7 +441,8 @@ namespace ViFactory.Services.Core
 				NamespaceNameDefault = projectName + ".Models.TokenModels",
 				ClassNameDefault = "ValidateTokenRequest",
 				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\Model\\TokenModels\\ValidateTokenRequest.txt",
-				OutputFilePath = outputFilePath
+				OutputFilePath = outputFilePath,
+				CurrentProjectName = projectName
 			};
 
 			_generator.GenerateClass(validateTokenRequest);
@@ -425,7 +454,8 @@ namespace ViFactory.Services.Core
 				NamespaceNameDefault = projectName + ".Helpers",
 				ClassNameDefault = "ExceptionHelper",
 				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\Helpers\\ExceptionHelper.txt",
-				OutputFilePath = outputFilePath
+				OutputFilePath = outputFilePath,
+				CurrentProjectName = projectName
 			};
 
 			_generator.GenerateClass(exceptionHelper);

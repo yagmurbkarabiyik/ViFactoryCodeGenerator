@@ -19,8 +19,10 @@ namespace ViFactory.Services.Project
 
 			existSolution += Environment.NewLine + $"Project(\"{Guid.NewGuid()}\") = \"{projectGeneratorModel.ProjectName}\", \"{projectGeneratorModel.ProjectName}\\{projectGeneratorModel.ProjectName}.csproj\", \"{Guid.NewGuid()}\"\nEndProject";
 
+			codeTemplate = codeTemplate.Replace("[CurrentProjectName]", projectGeneratorModel.CurrentProjectName);
 
 			File.WriteAllText(projectGeneratorModel.SolutionFilePath, existSolution);
+			//File.WriteAllText(projectGeneratorModel.ProjectFilePath, codeTemplate);
 			File.ReadAllText(projectGeneratorModel.SolutionFilePath);
 		}
 	}

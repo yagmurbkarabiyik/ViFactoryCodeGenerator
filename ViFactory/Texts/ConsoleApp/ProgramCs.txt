@@ -4,23 +4,23 @@ class Program
 {
 	 static void Main()
 	 {
-		string solutionName = "Artfy";
-		string outputFolderPath = "C:\\Users\\ygmr4\\Desktop\\" + solutionName;
+		string projectName = "Mssssst";
+		string outputFolderPath = "C:\\Users\\ygmr4\\Desktop\\" + projectName;
 
 		// Find class name from domain.entities layer | used as general
-		var entities = GetTypesFromAssembly("Artfy.Domain.Entities", "Artfy.Domain.Entities");
-		string dtoFolderPath = Path.Combine(outputFolderPath, solutionName + ".Bll.Dtos"); ;
-		string csprojDtoFilePath = Path.Combine(outputFolderPath,dtoFolderPath, solutionName+".Bll.Dtos.csproj");
+		var entities = GetTypesFromAssembly("Mssssst.Entities", "Mssssst.Entities");
+		string dtoFolderPath = Path.Combine(outputFolderPath, projectName + ".Bll.Dtos"); ;
+		string csprojDtoFilePath = Path.Combine(outputFolderPath,dtoFolderPath, projectName + ".Bll.Dtos.csproj");
 
-		string dalFolderPath = Path.Combine(outputFolderPath, solutionName + ".Dal");
-		string csprojDalFilePath = Path.Combine(outputFolderPath, dalFolderPath, solutionName + ".Dal.csproj");
+		string dalFolderPath = Path.Combine(outputFolderPath, projectName + ".Dal");
+		string csprojDalFilePath = Path.Combine(outputFolderPath, dalFolderPath, projectName + ".Dal.csproj");
 
-		string bllFolderPath = Path.Combine(outputFolderPath, solutionName + ".Bll");
-		string csprojBllFilePath = Path.Combine(outputFolderPath, bllFolderPath, solutionName + ".Bll.csproj"); 
+		string bllFolderPath = Path.Combine(outputFolderPath, projectName + ".Bll");
+		string csprojBllFilePath = Path.Combine(outputFolderPath, bllFolderPath, projectName + ".Bll.csproj"); 
 
-		GenerateDtos(csprojDtoFilePath, dtoFolderPath, entities);
-		GenerateDal(csprojDalFilePath, dalFolderPath, entities);
-		GenerateBll(csprojBllFilePath, bllFolderPath, entities);
+		GenerateDtos(csprojDtoFilePath, dtoFolderPath, entities, projectName);
+		GenerateDal(csprojDalFilePath, dalFolderPath, entities, projectName);
+		GenerateBll(csprojBllFilePath, bllFolderPath, entities, projectName);
 	 }
 
 	#region Assembly Load
@@ -34,9 +34,8 @@ class Program
 	#endregion
 
 	#region Generate Bll.Dto
-	static void GenerateDtos(string csprojFilePath, string rootFolderPath, IEnumerable<Type> entities)
+	static void GenerateDtos(string csprojFilePath, string rootFolderPath, IEnumerable<Type> entities, string currentProjectName)
 	{
-		string currentProjectName = "ViFactorySample";
 		XDocument csprojDoc = XDocument.Load(csprojFilePath);
 
 		XElement itemGroup = csprojDoc.Root.Elements("ItemGroup").FirstOrDefault();
@@ -86,10 +85,8 @@ class Program
 	#endregion
 	#region Generate Bll
 
-	static void GenerateBll(string csprojFilePath, string rootFolderPath, IEnumerable<Type> entities)
+	static void GenerateBll(string csprojFilePath, string rootFolderPath, IEnumerable<Type> entities, string currentProjectName)
 	{
-		string currentProjectName = "ViFactorySample";
-
 		XDocument csprojDoc = XDocument.Load(csprojFilePath);
 		XElement itemGroup = csprojDoc.Root.Elements("ItemGroup").FirstOrDefault();
 		if (itemGroup == null)
@@ -187,9 +184,8 @@ class Program
 	#endregion
 
 	#region Generate Dal
-	static void GenerateDal(string csprojFilePath, string rootFolderPath, IEnumerable<Type> entities)
+	static void GenerateDal(string csprojFilePath, string rootFolderPath, IEnumerable<Type> entities, string currentProjectName)
 	{
-		string currentProjectName = "ViFactorySample";
 		string connectionString = "User ID=postgres;Password=12345;Host=localhost;Port=5432;Database=visdb;";
 
 		XDocument csprojDoc = XDocument.Load(csprojFilePath);

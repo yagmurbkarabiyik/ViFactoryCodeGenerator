@@ -18,7 +18,6 @@ namespace ViFactory.Services.Console
 		{
 			_projectGenerator.GenerateProject(projectGeneratorModel);
 			GenerateTemplates(projectGeneratorModel.OutputFolderPath);
-			//GenerateProgramCs("C:\\Users\\ygmr4\\Desktop\\Artfy\\VFConsoleApp\\");
 			GenerateProgramCs(Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName));
 		}
 
@@ -30,7 +29,22 @@ namespace ViFactory.Services.Console
 				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\ConsoleApp\\ProgramCs.txt",
 				OutputFilePath = outputFilePath
 			};
-			_generator.GenerateClass(generateProgramCs);
+			//_generator.GenerateClass(generateProgramCs);
+
+			string textFilePath = generateProgramCs.InputFilePath;
+			string codeTemplate = File.ReadAllText(textFilePath);
+			string modelsFolderPath = Path.Combine(generateProgramCs.OutputFilePath);
+
+			// Create the Models folder if it doesn't exist
+			if (!Directory.Exists(modelsFolderPath))
+			{
+				Directory.CreateDirectory(modelsFolderPath);
+			}
+
+			// Create the path for the new class file inside the Models folder
+			string classFilePath = Path.Combine(modelsFolderPath, $"{generateProgramCs.ClassNameDefault}.cs");
+
+			File.WriteAllText(classFilePath, codeTemplate);
 		}
 
 		public void GenerateTemplates(string outputFolderPath)

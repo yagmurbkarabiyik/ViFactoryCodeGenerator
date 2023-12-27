@@ -1,5 +1,5 @@
 using System.ComponentModel.DataAnnotations;
-using Yamur.Core.Enums;
+using [CurrentProjectName].Enums;
 
 namespace [NamespaceName]
 {
