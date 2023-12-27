@@ -192,7 +192,7 @@ namespace ViFactory.Services.Core
 			GeneratorModel generateIMemoryCache = new()
 			{
 				NamespaceNameDefault = projectName + ".Services",
-				ClassNameDefault = "IMemoryCache",
+				ClassNameDefault = "IMemoryCacheService",
 				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\Services\\IMemoryCache.txt",
 				OutputFilePath = outputFilePath,
 				CurrentProjectName = projectName

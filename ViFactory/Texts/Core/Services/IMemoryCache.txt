@@ -1,6 +1,6 @@
 namespace [NamespaceName]
 {
-    public interface I[ClassName]Service
+    public interface [ClassName]
     {
         /// <summary>
         /// keep hashIds

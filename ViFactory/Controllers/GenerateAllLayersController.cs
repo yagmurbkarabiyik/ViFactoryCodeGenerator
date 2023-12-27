@@ -41,7 +41,7 @@ namespace ViFactory.Controllers
 				TargetFilePath = outputFolderPath
 			};
 			_solutionGenerator.GenerateSolution(solutionGeneratorModel);
-
+			
 			#region Create Core Layer
 			ProjectGeneratorModel coreGenerator = new ProjectGeneratorModel
 			{
@@ -76,9 +76,7 @@ namespace ViFactory.Controllers
 				SolutionFilePath = Path.Combine(outputFolderPath, projectName + ".sln"),
 				OutputFolderPath = outputFolderPath,
 				CurrentProjectName = projectName
-
 			};
-			
 			_dalGenerator.GenerateDalLayer(dalProjectGenerator);
 			#endregion
 

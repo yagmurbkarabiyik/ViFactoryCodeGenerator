@@ -31,8 +31,6 @@ namespace ViFactory.Services.Generators
 			return generatedCode;
 		}
 
-		//todo currentProjectName replace ediliyor ama edilmiyorr xd
-
 		//Create a class
 		public void GenerateClass(GeneratorModel generateModel)
 		{

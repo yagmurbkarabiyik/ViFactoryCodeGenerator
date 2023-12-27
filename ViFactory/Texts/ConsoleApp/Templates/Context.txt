@@ -5,11 +5,6 @@ namespace [CurrentProjectName].Dal.Context
 {
     public class [CurrentProjectName]DbContext : DbContext
     {
-        public [CurrentProjectName]DbContext()
-        {
-
-        }
-
         public [CurrentProjectName]DbContext(DbContextOptions<[CurrentProjectName]DbContext> ctx) : base(ctx)
         {
 
@@ -17,13 +12,9 @@ namespace [CurrentProjectName].Dal.Context
         
          protected override void OnModelCreating(ModelBuilder builder)
         {
+            [FluentMapApi]
             base.OnModelCreating(builder);
         }
-
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            base.OnConfiguring(optionsBuilder);
-            optionsBuilder.UseNpgsql("[ConnectionString]");
-        }
+            [Properties]
     }
 }
