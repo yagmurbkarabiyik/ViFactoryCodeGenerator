@@ -29,7 +29,7 @@ namespace ViFactory.Controllers
 
 		public IActionResult GenerateAll()
 		{
-			string projectName = "Yamur";
+			string projectName = "Ybk";
 			string outputFolderPath = "C:\\Users\\ygmr4\\Desktop\\" + projectName;
 
 			//Identify the solutions features in detail
@@ -74,7 +74,8 @@ namespace ViFactory.Controllers
 				ProjectName = projectName + ".Dal",
 			    ProjectFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Dal\\CreateDalProject.txt",
 				SolutionFilePath = Path.Combine(outputFolderPath, projectName + ".sln"),
-				OutputFolderPath = outputFolderPath
+				OutputFolderPath = outputFolderPath,
+				CurrentProjectName = projectName
 
 			};
 			
@@ -102,7 +103,8 @@ namespace ViFactory.Controllers
 				ProjectName = projectName + ".Bll",
 				ProjectFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Bll\\CreateBllProject.txt",
 				SolutionFilePath = Path.Combine(outputFolderPath, projectName + ".sln"),
-				OutputFolderPath = outputFolderPath
+				OutputFolderPath = outputFolderPath,
+				CurrentProjectName = projectName
 			};
 
 			_bllGenerator.GenerateBllLayer(bllGenerator);
