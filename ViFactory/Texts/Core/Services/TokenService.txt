@@ -1,6 +1,5 @@
 using System.Security.Claims;
 using [CurrentProjectName].Models.TokenModels;
-using Microsoft.AspNetCore.DataProtection;
 
 namespace [NamespaceName]
 {

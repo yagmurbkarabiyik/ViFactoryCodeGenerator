@@ -1,8 +1,10 @@
-﻿using Microsoft.AspNetCore.Http;
-
+﻿using System.Linq.Expressions;
+using [CurrentProjectName].Models;
+using [CurrentProjectName].Models.RepositoryModels;
+using [CurrentProjectName].RepositoryModels;
 namespace [NamespaceName]
 {
-    // <summary>
+   /// <summary>
     /// common upload file service
     /// </summary>
     /// <param name="file"></param>
@@ -12,7 +14,7 @@ namespace [NamespaceName]
     /// <param name="quality"></param>
     /// <param name="isPrivate"></param>
     /// <returns></returns>
-    public interface IUploadService
+    public interface IUploadLocalService
     {
         Task<List<string>> MultiUpload(List<IFormFile> files, string folderPath, int? width = null, int? height = null, int? quality = 100, bool isPrivate = false);
         Task<string> Upload(IFormFile file, string folderPath, int? width = null, int? height = null, int? quality = 100, bool isPrivate = false);

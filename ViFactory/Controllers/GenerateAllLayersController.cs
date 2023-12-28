@@ -26,10 +26,9 @@ namespace ViFactory.Controllers
 			_solutionGenerator = solutionGenerator;
 			_consoleGenerator = consoleGenerator;
 		}
-
 		public IActionResult GenerateAll()
 		{
-			string projectName = "Yagmur";
+			string projectName = "Ybk";
 			string outputFolderPath = "C:\\Users\\ygmr4\\Desktop\\" + projectName;
 
 			//Identify the solutions features in detail
@@ -45,7 +44,7 @@ namespace ViFactory.Controllers
 			#region Create Core Layer
 			ProjectGeneratorModel coreGenerator = new ProjectGeneratorModel
 			{
-				ProjectName = projectName + ".Core",
+				ProjectName = $"{solutionGeneratorModel.SolutionName}.Core",
 				ProjectFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\CreateCoreProject.txt",
 				SolutionFilePath = Path.Combine(outputFolderPath, projectName + ".sln"),
 				OutputFolderPath = outputFolderPath,
@@ -71,7 +70,7 @@ namespace ViFactory.Controllers
 			#region Create Dal Layer
 			ProjectGeneratorModel dalProjectGenerator = new ProjectGeneratorModel()
 			{
-				ProjectName = projectName + ".Dal",
+				ProjectName = $"{solutionGeneratorModel.SolutionName}.Dal",
 			    ProjectFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Dal\\CreateDalProject.txt",
 				SolutionFilePath = Path.Combine(outputFolderPath, projectName + ".sln"),
 				OutputFolderPath = outputFolderPath,
@@ -83,7 +82,7 @@ namespace ViFactory.Controllers
 			#region Create Dto Layer
 			ProjectGeneratorModel dtoProjectGenerator = new ProjectGeneratorModel()
 			{
-				ProjectName = projectName + ".Bll.Dtos",
+				ProjectName = $"{solutionGeneratorModel.SolutionName}.Bll.Dtos",
 				ProjectFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Dtos\\CreateDtoProject.txt",
 				SolutionFilePath = Path.Combine(outputFolderPath, projectName + ".sln"),
 				OutputFolderPath = outputFolderPath,
@@ -98,7 +97,7 @@ namespace ViFactory.Controllers
 			#region Create Bll Layer
 			ProjectGeneratorModel bllGenerator = new ProjectGeneratorModel()
 			{
-				ProjectName = projectName + ".Bll",
+				ProjectName = $"{solutionGeneratorModel.SolutionName}.Bll",
 				ProjectFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Bll\\CreateBllProject.txt",
 				SolutionFilePath = Path.Combine(outputFolderPath, projectName + ".sln"),
 				OutputFolderPath = outputFolderPath,

@@ -10,6 +10,7 @@
 		public string? ConnectionString { get; set; }
 		public string? EntityName { get; set; }
 		public string? InterfaceName { get; set; }
+		public string? DbContext { get; set; }
 		public string?  ClassName { get; set; }
 		public string InputFilePath { get; set; }
 		public string OutputFilePath { get; set; }

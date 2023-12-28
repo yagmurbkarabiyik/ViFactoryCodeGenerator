@@ -1,12 +1,15 @@
 ﻿using Microsoft.Extensions.Options;
 using MimeKit;
 using MailKit.Security;
+using [CurrentProjectName].Core.Services;
+using [CurrentProjectName].Bll.Models;
+using [CurrentProjectName].Core.Models;
 
 namespace [NamespaceName]
 {
     public class [ClassName] : I[ClassName]
-    {
-            private readonly EmailSettings _settings;
+    { 
+       private readonly EmailSettings _settings;
 
         public EmailService(IOptions<EmailSettings> settings)
         {

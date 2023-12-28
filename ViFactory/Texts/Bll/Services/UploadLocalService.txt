@@ -4,13 +4,11 @@ using SixLabors.ImageSharp.Formats.Gif;
 using SixLabors.ImageSharp.Formats.Jpeg;
 using SixLabors.ImageSharp.Formats.Png;
 using System.Net;
-using [CurrentProjectName].Bll.Models;
-using [CurrentProjectName].Core.JsonModels;
-using [CurrentProjectName].Core.Services;
+using [CurrentProjectName].Models;
 
-namespace [CurrentProjectName].Bll.Dtos
+namespace [NamespaceName]
 {
-    public class UploadLocalService : IUploadLocalService
+     public class UploadLocalService : IUploadLocalService
     {
         private readonly string[] supportedMimeTypes = {
             "image/jpeg",
@@ -29,25 +27,6 @@ namespace [CurrentProjectName].Bll.Dtos
         {
             _basePrivateFolderPath = basePrivateFolderPath;
             _basePublicFolderPath = basePublicFolderPath;
-        }
-
-        public async Task<List<MultiLanguageString>> MultiLanguageUpload(List<MultiLanguageFormFile> files, string folderPath, int? width = null, int? height = null, int? quality = 100, bool isPrivate = false, List<MultiLanguageString>? currentImageUrls = null)
-        {
-            List<MultiLanguageString> result = currentImageUrls ?? new List<MultiLanguageString>();
-
-            foreach (var image in files)
-            {
-                var imageUrl = image.File != null ? await Upload(image.File, folderPath, width, height, quality, isPrivate) : null;
-
-                var current = currentImageUrls?.FirstOrDefault(x => x.Language == image.Language);
-
-                if (current != null)
-                    current.Value = imageUrl ?? current.Value;
-                else
-                    result.Add(new MultiLanguageString(image.Language, imageUrl));
-            }
-
-            return result;
         }
 
         public async Task<List<string>> MultiUpload(List<IFormFile> files, string folderPath, int? width = null, int? height = null, int? quality = 100, bool isPrivate = false)
@@ -212,3 +191,5 @@ namespace [CurrentProjectName].Bll.Dtos
         }
     }
 }
+
+

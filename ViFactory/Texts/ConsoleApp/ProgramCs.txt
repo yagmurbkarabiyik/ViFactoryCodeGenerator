@@ -83,6 +83,7 @@ class Program
 		csprojDoc.Save(csprojFilePath);
 	}
 	#endregion
+
 	#region Generate Bll
 
 	static void GenerateBll(string csprojFilePath, string rootFolderPath, IEnumerable<Type> entities, string currentProjectName)
@@ -100,12 +101,14 @@ class Program
 		string modelsFolderPath = Path.Combine(rootFolderPath, "Models");
 		string enumsFolderPath = Path.Combine(rootFolderPath, "Enums");
 		string commonServiceFolderPath = Path.Combine(rootFolderPath, "Services", "Common");
+		string uploadLocalServicePath = Path.Combine(rootFolderPath, "Services", "Common");
 
 		EnsureDirectoryExists(serviceFolderPath);
 		EnsureDirectoryExists(iServiceFolderPath);
 		EnsureDirectoryExists(modelsFolderPath);
 		EnsureDirectoryExists(enumsFolderPath);
 		EnsureDirectoryExists(commonServiceFolderPath);
+		EnsureDirectoryExists(uploadLocalServicePath);
 
 		foreach (var entity in entities)
 		{
@@ -122,8 +125,8 @@ class Program
 			string memoryCacheClass = Path.Combine(commonServiceFolderPath, "MemoryCacheService.cs");
 			string smsNetGsmServiceClass = Path.Combine(commonServiceFolderPath, "SmsNetGsmService.cs");
 			string tokenServiceClass = Path.Combine(commonServiceFolderPath, "TokenService.cs");
-			string uploadLocalServiceClass = Path.Combine(commonServiceFolderPath, "UploadLocalService.cs");
 			string iUploadLocalServiceClass = Path.Combine(commonServiceFolderPath, "IUploadLocalService.cs");
+			string uploadLocalServiceClass = Path.Combine(uploadLocalServicePath, "UploadLocalService.cs");
 
 			if (entity.Name != "BaseEntity")
 			{
@@ -134,50 +137,6 @@ class Program
 				EnsureFileExists(iServiceClass, File.ReadAllText("./Templates/IService.txt")
 					.Replace("[CurrentProjectName]", currentProjectName)
 					.Replace("[EntityName]", entity.Name));
-
-				EnsureFileExists(jwtSettingsClass, File.ReadAllText("./Templates/JwtSettings.txt")
-					.Replace("[CurrentProjectName]", currentProjectName)
-					.Replace("[EntityName]", entity.Name));
-
-				EnsureFileExists(emailSettingsClass, File.ReadAllText("./Templates/EmailSettings.txt")
-					.Replace("[CurrentProjectName]", currentProjectName)
-					.Replace("[EntityName]", entity.Name));
-
-				EnsureFileExists(responseCommonClass, File.ReadAllText("./Templates/ResponseCommon.txt")
-					.Replace("[CurrentProjectName]", currentProjectName)
-					.Replace("[EntityName]", entity.Name));
-
-				EnsureFileExists(responseExceptionClass, File.ReadAllText("./Templates/ResponseException.txt")
-					.Replace("[CurrentProjectName]", currentProjectName)
-					.Replace("[EntityName]", entity.Name));
-
-				EnsureFileExists(responseTypeClass, File.ReadAllText("./Templates/ExceptionResponseType.txt")
-					.Replace("[CurrentProjectName]", currentProjectName)
-					.Replace("[EntityName]", entity.Name));
-
-				EnsureFileExists(exceptionDataClass, File.ReadAllText("./Templates/ResponseExceptionData.txt")
-					.Replace("[CurrentProjectName]", currentProjectName)
-					.Replace("[EntityName]", entity.Name));
-
-				EnsureFileExists(smsNetGsmClass, File.ReadAllText("./Templates/SmsNetGsm.txt")
-					.Replace("[CurrentProjectName]", currentProjectName)
-					.Replace("[EntityName]", entity.Name));
-
-				EnsureFileExists(emailServiceClass, File.ReadAllText("./Templates/EmailService.txt")
-					.Replace("[CurrentProjectName]", currentProjectName)
-					.Replace("[EntityName]", entity.Name));
-
-				EnsureFileExists(memoryCacheClass, File.ReadAllText("./Templates/MemoryCacheService.txt")
-					.Replace("[CurrentProjectName]", currentProjectName)
-					.Replace("[EntityName]", entity.Name));
-
-				EnsureFileExists(smsNetGsmServiceClass, File.ReadAllText("./Templates/SmsNetGsmService.txt")
-					.Replace("[CurrentProjectName]", currentProjectName)
-					.Replace("[EntityName]", entity.Name));
-				EnsureFileExists(tokenServiceClass, File.ReadAllText("./Templates/TokenService.txt")
-					.Replace("[CurrentProjectName]", currentProjectName)
-					.Replace("[EntityName]", entity.Name));
-					
 			}
 		}
 		csprojDoc.Save(csprojFilePath);
@@ -202,11 +161,13 @@ class Program
 		string folderIDalReposPath = Path.Combine(rootFolderPath, "Data", "IDalRepos");
 		string commonFolderPath = Path.Combine(rootFolderPath, "Data", "Common");
 		string contextFolderPath = Path.Combine(rootFolderPath, "Context");
-
+		string fluentApiFolderPath = Path.Combine(rootFolderPath, "FluentApi");
+		
 		EnsureDirectoryExists(folderDalReposPath);
 		EnsureDirectoryExists(folderIDalReposPath);
 		EnsureDirectoryExists(commonFolderPath);
 		EnsureDirectoryExists(contextFolderPath);
+		EnsureDirectoryExists(fluentApiFolderPath);
 
 		foreach (var entity in entities)
 		{
@@ -214,8 +175,8 @@ class Program
 			string dalReposClass = Path.Combine(folderDalReposPath, $"{entity.Name}Repository.cs");
 			string iDalReposClass = Path.Combine(folderIDalReposPath, $"I{entity.Name}Repository.cs");
 			string repositoryClass = Path.Combine(commonFolderPath, "Repository.cs");
-			string unitOfWorkClass = Path.Combine(commonFolderPath, "UnitOfWork.cs");
-			string contextClass = Path.Combine(contextFolderPath, "Context.cs");
+			string fluentApiClass = Path.Combine(fluentApiFolderPath, $"{entity.Name}Map.cs");
+			string baseMapClass = Path.Combine(fluentApiFolderPath, "BaseMap.cs");
 
 			if (entity.Name != "BaseEntity")
 			{
@@ -227,23 +188,26 @@ class Program
 					.Replace("[CurrentProjectName]", currentProjectName)
 					.Replace("[EntityName]", entity.Name)
 					.Replace("[DbContext]", currentProjectName));
-
-				EnsureFileExists(repositoryClass, File.ReadAllText("./Templates/Repository.txt")
-					.Replace("[CurrentProjectName]", currentProjectName)
-					.Replace("[EntityName]", entity.Name));
-
-				EnsureFileExists(unitOfWorkClass, File.ReadAllText("./Templates/UnitOfWork.txt")
-					.Replace("[CurrentProjectName]", currentProjectName)
-					.Replace("[EntityName]", "UnitOfWork")
-					.Replace("[DbContext]", currentProjectName + "DbContext"));
-
-				EnsureFileExists(contextClass, File.ReadAllText("./Templates/Context.txt")
+				
+				EnsureFileExists(fluentApiClass, File.ReadAllText("./Templates/FluentApiMap.txt")
+					 .Replace("[TableName]", GetTableName(entity.Name))
 					 .Replace("[CurrentProjectName]", currentProjectName)
-					 .Replace("[EntityName]", entity.Name)
-					 .Replace("[DbSetLine]", $"public DbSet<{entity.Name}> {entity.Name}Table {{ get; set; }}")
-					 .Replace("[ConnectionString]", connectionString));
+					 .Replace("[EntityName]", entity.Name));
 			}
 		}
+		
+		string contextClass = Path.Combine(contextFolderPath, "Context.cs");
+	
+		EnsureFileExists(contextClass, File.ReadAllText("./Templates/Context.txt")
+					 .Replace("[CurrentProjectName]", currentProjectName)
+					 .Replace("[Properties]", string.Join("\n\t\t", entities
+							.Where(x => x.Name != "BaseEntity") 
+							.Select(x => $"public DbSet<{x.Name}> {GetTableName(x.Name)} {{ get; set; }}").ToList()))
+					.Replace("[FluentMapApi]", string.Join("\n\t\t", entities
+							.Where(x => x.Name != "BaseEntity") 
+							.Select(x => $"builder.ApplyConfiguration(new {x.Name}Map());").ToList()))
+					 .Replace("[ConnectionString]", connectionString));
+
 		csprojDoc.Save(csprojFilePath);
 	}
 	#endregion
@@ -264,5 +228,24 @@ class Program
 			Directory.CreateDirectory(directoryPath);
 		}
 	}
+
+	static string GetTableName(string entityName)
+	{
+		string tableName = entityName;
+
+		if (tableName.EndsWith("y", StringComparison.OrdinalIgnoreCase))
+		{
+			tableName = tableName.Substring(0, tableName.Length - 1) + "ies";
+		}
+		else
+		{
+			tableName += "s";
+		}
+
+		return tableName;
+	}
 	#endregion
-}	
+}
+
+
+	

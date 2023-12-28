@@ -1,6 +1,7 @@
 ﻿using Microsoft.Extensions.Caching.Memory;
 using [CurrentProjectName].Core.Services;
 
+
 namespace [CurrentProjectName].Bll.Services.Common
 {
      public class MemoryCacheService : IMemoryCacheService

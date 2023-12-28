@@ -1,15 +1,13 @@
 ﻿using Microsoft.Extensions.Options;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using [CurrentProjectName].Bll.Models;
+using [CurrentProjectName].Core.Models;
+using [CurrentProjectName].Core.Services;
 
 namespace [NamespaceName]
 {
-    public class [ClassName] 
+    public class SmsNetGsmService : ISmsNetGsmService
     {
-         private readonly SmsNetGsmSettings _smsSettings;
+        private readonly SmsNetGsmSettings _smsSettings;
 
         public SmsNetGsmService(IOptions<SmsNetGsmSettings> smsSettings)
         {

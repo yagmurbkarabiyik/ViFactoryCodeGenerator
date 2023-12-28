@@ -15,10 +15,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="Texts\Bll\UploadLocalService.txt">
+    <None Update="Texts\Bll\Services\UploadLocalService.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Texts\ConsoleApp\Templates\UploadService.txt">
+    <None Update="Texts\ConsoleApp\Templates\BaseMap.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Texts\ConsoleApp\Templates\FluentApiMap.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>

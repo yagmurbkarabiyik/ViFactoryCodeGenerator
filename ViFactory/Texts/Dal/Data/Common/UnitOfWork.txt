@@ -1,11 +1,13 @@
-﻿using [CurrentProjectName].Dal;
+﻿using [CurrentProjectName].Core.Models;
+using [CurrentProjectName].Core.Services;
+using [CurrentProjectName];
 
 namespace [NamespaceName]
 {
     public class [ClassName] : IUnitOfWork
     {
-      private readonly ViFactoryDbContext _ctx;
-        public UnitOfWork(ViFactoryDbContext ctx)
+      private readonly [DbContext] _ctx;
+        public UnitOfWork([DbContext] ctx)
         {
             _ctx = ctx;
         }

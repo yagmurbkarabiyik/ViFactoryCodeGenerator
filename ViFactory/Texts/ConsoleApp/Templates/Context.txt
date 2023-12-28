@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using [CurrentProjectName].Domain.Entities;
+using [CurrentProjectName].Dal.FluentApi;
 
 namespace [CurrentProjectName].Dal.Context
 {
@@ -12,8 +13,9 @@ namespace [CurrentProjectName].Dal.Context
         
          protected override void OnModelCreating(ModelBuilder builder)
         {
-            [FluentMapApi]
-            base.OnModelCreating(builder);
+           base.OnModelCreating(builder);
+
+           [FluentMapApi]
         }
             [Properties]
     }

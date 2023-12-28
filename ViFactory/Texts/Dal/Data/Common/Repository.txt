@@ -1,5 +1,10 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using [CurrentProjectName]Solution;
+using [CurrentProjectName].Core.Enums;
+using [CurrentProjectName].Core.Models;
+using [CurrentProjectName].Core.Models.RepositoryModels;
+using [CurrentProjectName].Core.RepositoryModels;
+using [CurrentProjectName].Core.Services;
+
 
 namespace [NamespaceName]
 {
