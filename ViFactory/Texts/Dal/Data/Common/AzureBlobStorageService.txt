@@ -7,12 +7,10 @@ namespace [CurrentProjectName].Dal.Data.Common
     public class AzureBlobStorageService
     {
         private readonly BlobServiceClient _blobServiceClient;
-
         public AzureBlobStorageService(string connectionString)
         {
             _blobServiceClient = new BlobServiceClient(connectionString);
         }
-
         public async Task<Response<BlobContentInfo>> Upload(string containerName, string folder, string fileName, byte[] bytes)
         {
             var containerClient = await GetContainerClient(containerName);
@@ -21,7 +19,6 @@ namespace [CurrentProjectName].Dal.Data.Common
 
             return await blobClient.UploadAsync(BinaryData.FromBytes(bytes));
         }
-
         public async Task<(Response<BlobDownloadResult> Response, byte[]? Content)> Download(string containerName, string folder, string fileName)
         {
             var containerClient = await GetContainerClient(containerName);
@@ -37,7 +34,6 @@ namespace [CurrentProjectName].Dal.Data.Common
 
             return (response, null);
         }
-
         public async Task<Response<bool>> Delete(string containerName, string folder, string fileName)
         {
             var containerClient = await GetContainerClient(containerName);
@@ -46,7 +42,6 @@ namespace [CurrentProjectName].Dal.Data.Common
 
             return await blobClient.DeleteIfExistsAsync();
         }
-
         public async Task<List<BlobItem>> ListBlobItems(string containerName)
         {
             var containerClient = await GetContainerClient(containerName);
@@ -60,7 +55,6 @@ namespace [CurrentProjectName].Dal.Data.Common
 
             return blobItems;
         }
-
         private async Task<BlobContainerClient> GetContainerClient(string containerName)
         {
             BlobContainerClient client = _blobServiceClient.GetBlobContainerClient(containerName);

@@ -31,6 +31,7 @@ namespace ViFactory.Services.Core
 			GenerateDbEntityState(projectGeneratorModel.ProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Enums"));
 			GenerateApiContext(projectGeneratorModel.ProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Models"));
 			GenerateITokenService(projectGeneratorModel.ProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Services"));
+			GenerateIUploadLocalService(projectGeneratorModel.ProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Services"));
 			GenerateRepositoryCreateRequest(projectGeneratorModel.ProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "RepositoryModels"));
 			GenerateRepositoryDeleteRequest(projectGeneratorModel.ProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "RepositoryModels"));
 			GenerateRepositoryGetAsTResultRequest(projectGeneratorModel.ProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "RepositoryModels"));
@@ -51,7 +52,6 @@ namespace ViFactory.Services.Core
 			GenerateMultiLanguageFormFile(projectGeneratorModel.ProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "JsonModels"));
 			GenerateMultiLanguageListString(projectGeneratorModel.ProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "JsonModels"));
 			GenerateMultiLanguageString(projectGeneratorModel.ProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "JsonModels"));
-			GenerateIUploadLocalService(projectGeneratorModel.ProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Services"));
 		}
 
 		private void GenerateIRepository(string projectName, string outputFilePath)

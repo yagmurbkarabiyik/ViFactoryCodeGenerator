@@ -9,7 +9,7 @@ namespace [NamespaceName]
 {
     public class [ClassName] : I[ClassName]
     { 
-       private readonly EmailSettings _settings;
+        private readonly EmailSettings _settings;
 
         public EmailService(IOptions<EmailSettings> settings)
         {

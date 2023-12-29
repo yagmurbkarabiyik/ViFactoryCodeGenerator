@@ -10,7 +10,7 @@ using [CurrentProjectName].Core.Core.Services;
 namespace [NamespaceName]
 {
      public class UploadLocalService : IUploadLocalService
-    {
+     {
         private readonly string[] supportedMimeTypes = {
             "image/jpeg",
             "image/png",

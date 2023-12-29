@@ -5,7 +5,6 @@ namespace [NamespaceName]
 {
     public class [ClassName]<T> where T : class, IBaseEntity
     {
-      
        required public T Model { get; set; }
     }
 }

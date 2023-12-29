@@ -31,7 +31,7 @@ namespace ViFactory.Services.Bll
 			GenerateMemoryCache(projectGeneratorModel.CurrentProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Services", "Common"));
 			GenerateUploadLocalService(projectGeneratorModel.CurrentProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Services", "Common"));
 		}
-
+		//Constant Classes
 		private void GenerateExceptionResponse(string projectName, string outputFilePath)
 		{
 			GeneratorModel generateExceptionResponse = new GeneratorModel()

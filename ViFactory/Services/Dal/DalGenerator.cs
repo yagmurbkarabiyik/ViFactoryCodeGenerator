@@ -21,6 +21,9 @@ namespace ViFactory.Services.Dal
 			GenerateRepository(projectGeneratorModel.CurrentProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Data", "Common"));
 			GenerateAzurBlobStorage(projectGeneratorModel.CurrentProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Data", "Common"));
 			GenerateBaseMap(projectGeneratorModel.CurrentProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "FluentApi"));
+			GenerateUnitOfWork(projectGeneratorModel.CurrentProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Data", "Common"));
+			GenerateContext(projectGeneratorModel.CurrentProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Context"));
+			GenerateContextPartial(projectGeneratorModel.CurrentProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Context"));
 		}
 
 		//Constant classes
@@ -60,6 +63,43 @@ namespace ViFactory.Services.Dal
 				DbContext = projectName +"DbContext"
 			};
 			_generator.GenerateClass(generateBaseMap);
+		}
+		private void GenerateUnitOfWork(string projectName, string outputFilePath)
+		{
+			GeneratorModel generatorUnitOfWork = new()
+			{
+				NamespaceNameDefault = projectName + ".Dal.Data.Common",
+				ClassNameDefault = "UnitOfWork",
+				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Dal\\Data\\Common\\UnitOfWork.txt",
+				OutputFilePath = outputFilePath,
+				CurrentProjectName = projectName,
+				DbContext = projectName+"DbContext"
+			};
+			_generator.GenerateClass(generatorUnitOfWork);
+		}
+		private void GenerateContext(string projectName, string outputFilePath)
+		{
+			GeneratorModel generatorContext = new()
+			{
+				NamespaceNameDefault = projectName + ".Dal.Context",
+				ClassNameDefault = projectName + "DbContext",
+				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Dal\\Data\\Context\\Context.txt",
+				OutputFilePath = outputFilePath,
+				CurrentProjectName = projectName
+			};
+			_generator.GenerateClass(generatorContext);
+		}
+		private void GenerateContextPartial(string projectName, string outputFilePath)
+		{
+			GeneratorModel generatorContextPartial = new()
+			{
+				NamespaceNameDefault = projectName + ".Dal.Context",
+				ClassNameDefault = projectName + "ContextPartial",
+				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Dal\\Data\\Context\\ContextPartial.txt",
+				OutputFilePath = outputFilePath,
+				CurrentProjectName = projectName
+			};
+			_generator.GenerateClass(generatorContextPartial);
 		}
 	}
 }

@@ -1,12 +1,12 @@
 ﻿using [CurrentProjectName].Core.Models;
 using [CurrentProjectName].Core.Services;
-using [CurrentProjectName];
+using [CurrentProjectName].Dal.Context;
 
-namespace [NamespaceName]
+namespace [CurrentProjectName].Dal.Data.Common
 {
-    public class [ClassName] : IUnitOfWork
-    {
-      private readonly [DbContext] _ctx;
+    public class UnitOfWork : IUnitOfWork
+    { 
+        private readonly  [DbContext] _ctx;
         public UnitOfWork([DbContext] ctx)
         {
             _ctx = ctx;

@@ -3,14 +3,12 @@
     public class [ClassName]
     {
         public string Language { get; set; } = null!;
-
         public string? Value { get; set; }
 
         public MultiLanguageString()
         {
                 
         }
-
         public MultiLanguageString(string language, string? value = null)
         {
             Language = language;

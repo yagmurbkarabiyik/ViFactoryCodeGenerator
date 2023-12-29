@@ -202,17 +202,17 @@ class Program
 			}
 		}
 		
-		string contextClass = Path.Combine(contextFolderPath, "Context.cs");
-	
-		EnsureFileExists(contextClass, File.ReadAllText("./Templates/Context.txt")
-					 .Replace("[CurrentProjectName]", currentProjectName)
-					 .Replace("[Properties]", string.Join("\n\t\t", entities
-							.Where(x => x.Name != "BaseEntity") 
-							.Select(x => $"public DbSet<{x.Name}> {GetTableName(x.Name)} {{ get; set; }}").ToList()))
-					.Replace("[FluentMapApi]", string.Join("\n\t\t", entities
-							.Where(x => x.Name != "BaseEntity") 
-							.Select(x => $"builder.ApplyConfiguration(new {x.Name}Map());").ToList()))
-					 .Replace("[ConnectionString]", connectionString));
+		string contextClass = Path.Combine(contextFolderPath, $"{currentProjectName}DbContext.cs");
+
+		File.WriteAllText(contextClass, File.ReadAllText("./Templates/Context.txt")
+					.Replace("[CurrentProjectName]", currentProjectName)
+					.Replace("[Properties]", string.Join("\n\t\t", entities
+						   .Where(x => x.Name != "BaseEntity")
+						   .Select(x => $"public DbSet<{x.Name}> {GetTableName(x.Name)} {{ get; set; }}").ToList()))
+				   .Replace("[FluentMapApi]", string.Join("\n\t\t", entities
+						   .Where(x => x.Name != "BaseEntity")
+						   .Select(x => $"builder.ApplyConfiguration(new {x.Name}Map());").ToList()))
+					.Replace("[ConnectionString]", connectionString));
 
 		csprojDoc.Save(csprojFilePath);
 	}

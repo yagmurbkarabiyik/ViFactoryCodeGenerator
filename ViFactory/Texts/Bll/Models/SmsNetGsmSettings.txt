@@ -4,7 +4,7 @@ namespace [NamespaceName]
 {
     public class [ClassName] 
     {
-         public string ApiUrl { get; set; } = null!;
+        public string ApiUrl { get; set; } = null!;
         /// <summary>
         /// Netgsm'den hizmet alınan abone numarası (850xxxxxxx, 312XXXXXXX vs.). İstek yapılırken gönderilmesi zorunludur.
         /// </summary>

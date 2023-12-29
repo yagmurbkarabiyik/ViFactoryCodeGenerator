@@ -4,7 +4,7 @@ namespace [NamespaceName]
 {
     public interface [ClassName]
     {
-         /// <summary>
+        /// <summary>
         /// Mesajin gonderileceği gsm numarasidir. Eğer yurtdisi telefon numarasina mesaj gondermek istiyorsaniz numaranin basina 00 ekleyerek gonderim islemini yapabilirsiniz. Briden fazla numaraya gonderim sağlamak icin virgulle numaralari ayirabilirsiniz.
         /// </summary>
         public string GsmNo { get; set; } 

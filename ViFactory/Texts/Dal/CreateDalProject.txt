@@ -18,7 +18,6 @@
 
     <ProjectReference Include="..\[CurrentProjectName].Core\[CurrentProjectName].Core.csproj" />
     <ProjectReference Include="..\[CurrentProjectName].Domain.Entities\[CurrentProjectName].Domain.Entities.csproj" />
-
   </ItemGroup>
 </Project>
 
