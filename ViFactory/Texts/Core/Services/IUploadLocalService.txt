@@ -2,6 +2,8 @@
 using [CurrentProjectName].Models;
 using [CurrentProjectName].Models.RepositoryModels;
 using [CurrentProjectName].RepositoryModels;
+using Microsoft.AspNetCore.Http;
+
 namespace [NamespaceName]
 {
    /// <summary>

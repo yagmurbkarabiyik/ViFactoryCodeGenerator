@@ -7,7 +7,6 @@ namespace ViFactory.Services.Generators
 	public class Generator : IGenerator
 	{
 		public string GenerateCSharpCode(string codeTemplate, string namespaceName, string classNameDf, Dictionary<string, string>? properties, Dictionary<string, string>? methods, string? connectionString, string? entityName, string? interfaceName, string? currentProjectName, string? dbContext)
-
 		{
 			var propertiesText = string.Empty;
 			var methodsText = string.Empty;

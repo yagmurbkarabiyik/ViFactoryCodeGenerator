@@ -5,11 +5,11 @@ class Program
 {
 	 static void Main()
 	 {
-		string projectName = "Ybbk";
+		string projectName = "Yagmur";
 		string outputFolderPath = "C:\\Users\\ygmr4\\Desktop\\" + projectName;
 
 		// Find class name from domain.entities layer | used as general
-		var entities = GetTypesFromAssembly("Ybbk.Domain.Entities", "Ybbk.Domain.Entities");
+		var entities = GetTypesFromAssembly("Yagmur.Domain.Entities", "Yagmur.Domain.Entities");
 		string dtoFolderPath = Path.Combine(outputFolderPath, projectName + ".Bll.Dtos"); ;
 		string csprojDtoFilePath = Path.Combine(outputFolderPath,dtoFolderPath, projectName + ".Bll.Dtos.csproj");
 

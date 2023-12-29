@@ -29,6 +29,7 @@ namespace ViFactory.Services.Bll
 			GenerateSmsNetGsmServices(projectGeneratorModel.CurrentProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Services", "Common"));
 			GenerateTokenService(projectGeneratorModel.CurrentProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Services", "Common"));
 			GenerateMemoryCache(projectGeneratorModel.CurrentProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Services", "Common"));
+			GenerateUploadLocalService(projectGeneratorModel.CurrentProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Services", "Common"));
 		}
 
 		private void GenerateExceptionResponse(string projectName, string outputFilePath)
@@ -163,6 +164,18 @@ namespace ViFactory.Services.Bll
 				CurrentProjectName = projectName
 			};
 			_generator.GenerateClass(generateMemoryCache);
+		}
+		private void GenerateUploadLocalService(string projectName, string outputFilePath)
+		{
+			GeneratorModel generateUploadLocalService = new()
+			{
+				NamespaceNameDefault = projectName + ".Bll.Services.Common",
+				ClassNameDefault = "UploadLocalService",
+				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Bll\\Services\\UploadLocalService.txt",
+				OutputFilePath = outputFilePath,
+				CurrentProjectName = projectName
+			};
+			_generator.GenerateClass(generateUploadLocalService);
 		}
 	}
 }

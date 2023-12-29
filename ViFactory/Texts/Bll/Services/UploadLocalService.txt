@@ -4,7 +4,8 @@ using SixLabors.ImageSharp.Formats.Gif;
 using SixLabors.ImageSharp.Formats.Jpeg;
 using SixLabors.ImageSharp.Formats.Png;
 using System.Net;
-using [CurrentProjectName].Models;
+using [CurrentProjectName].Bll.Models;
+using [CurrentProjectName].Core.Core.Services;
 
 namespace [NamespaceName]
 {
