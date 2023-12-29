@@ -1,7 +1,9 @@
-﻿namespace ViFactory.Services.Domain
+﻿using ViFactory.Models;
+
+namespace ViFactory.Services.Domain
 {
 	public interface IDomainGenerator
 	{
-		public void GenerateDomainLayer();
+		public void GenerateDomainLayer(ProjectGeneratorModel projectGeneratorModel);
 	}
 }

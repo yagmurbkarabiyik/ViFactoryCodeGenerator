@@ -1,0 +1,19 @@
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
+using ViFactoryNewSolution;
+
+namespace [NamespaceName]
+{
+    public class [ClassName] : IdentityDbContext<AppUser, AppRole, int>
+    {
+         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+		{
+
+		}
+
+		public DbSet<Announcement> Announcements { get; set; }	
+		public DbSet<AppUser> AppUsers{ get; set; }	
+		public DbSet<Company> Companies { get; set; }	
+		public DbSet<Department> Departments { get; set; }
+    }
+}

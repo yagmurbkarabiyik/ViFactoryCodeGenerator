@@ -1,0 +1,12 @@
+﻿@model ProjectCreateDto
+
+<form method="post" asp-action="ProjectCreate">
+	<div asp-validation-summary="ModelOnly"></div>
+	<div class="flex gap-2 flex-col items-center">
+		<div>
+			<input asp-for="ProjectName" type="text" placeholder="Project Name" class="input input-bordered input-primary w-72" />
+			<span asp-validation-for="ProjectName"></span>
+		</div>
+		<button class="btn btn-outline btn-primary w-72" type="submit">Create Project</button>
+	</div>
+</form>

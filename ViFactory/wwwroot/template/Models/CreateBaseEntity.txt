@@ -1,0 +1,13 @@
+﻿using [CurrentProjectName].Core.Enums;
+using [CurrentProjectName].Core.Models;
+
+namespace [NamespaceName]
+{
+    public class BaseEntity : IBaseEntity
+    {
+       public int Id { get; set; }
+       public DbEntityState Status { get; set; }
+       public DateTime CreatedDate { get; set; }
+       public DateTime UpdatedDate { get; set; }
+    }
+}

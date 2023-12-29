@@ -1,0 +1,11 @@
+﻿using [CurrentProjectName].Bll.Enums;
+
+namespace [NamespaceName]
+{
+    public class [ClassName] 
+    {
+        public ExceptionResponseType Type { get; set; }
+        public List<string>? Errors { get; set; }
+        public Dictionary<string, List<string>?>? ValidationErrors { get; set; }
+    }
+}

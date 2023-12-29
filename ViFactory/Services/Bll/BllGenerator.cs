@@ -8,13 +8,15 @@ namespace ViFactory.Services.Bll
 	{
 		private readonly IGenerator _generator;
 		private readonly IProjectGenerator _projectGenerator;
-		public BllGenerator(IGenerator generator, IProjectGenerator projectGenerator)
-		{
-			_generator = generator;
-			_projectGenerator = projectGenerator;
-		}
+        private readonly IWebHostEnvironment _webHostEnvironment;
+        public BllGenerator(IGenerator generator, IProjectGenerator projectGenerator, IWebHostEnvironment webHostEnvironment)
+        {
+            _generator = generator;
+            _projectGenerator = projectGenerator;
+            _webHostEnvironment = webHostEnvironment;
+        }
 
-		public void GenerateBllLayer(ProjectGeneratorModel projectGeneratorModel)
+        public void GenerateBllLayer(ProjectGeneratorModel projectGeneratorModel)
 		{
 			_projectGenerator.GenerateProject(projectGeneratorModel);
 
@@ -38,7 +40,7 @@ namespace ViFactory.Services.Bll
 			{
 				NamespaceNameDefault = projectName +".Bll.Enums",
 				ClassNameDefault = "ExceptionResponseType",
-				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Bll\\Enums\\ExceptionResponseType.txt",
+				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") +"\\Bll\\Enums\\ExceptionResponseType.txt",
 				OutputFilePath = outputFilePath,
 				CurrentProjectName = projectName
 			};
@@ -51,7 +53,7 @@ namespace ViFactory.Services.Bll
 			{
 				NamespaceNameDefault = projectName + ".Bll.Models",
 				ClassNameDefault = "EmailSettings",
-				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Bll\\Models\\EmailSettings.txt",
+				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") +"\\Bll\\Models\\EmailSettings.txt",
 				OutputFilePath = outputFilePath,
 				CurrentProjectName = projectName
 			};
@@ -63,7 +65,7 @@ namespace ViFactory.Services.Bll
 			{
 				NamespaceNameDefault = projectName + ".Bll.Models",
 				ClassNameDefault = "JwtSettings",
-				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Bll\\Models\\JwtSettings.txt",
+				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") +"\\Bll\\Models\\JwtSettings.txt",
 				OutputFilePath = outputFilePath,
 				CurrentProjectName = projectName
 			};
@@ -75,7 +77,7 @@ namespace ViFactory.Services.Bll
 			{
 				NamespaceNameDefault = projectName + ".Bll.Models",
 				ClassNameDefault = "ResponseCommon",
-				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Bll\\Models\\ResponseCommon.txt",
+				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") +"\\Bll\\Models\\ResponseCommon.txt",
 				OutputFilePath = outputFilePath,
 				CurrentProjectName = projectName
 			};
@@ -87,7 +89,7 @@ namespace ViFactory.Services.Bll
 			{
 				NamespaceNameDefault = projectName + ".Bll.Models",
 				ClassNameDefault = "ResponseException",
-				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Bll\\Models\\ResponseException.txt",
+				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") +"\\Bll\\Models\\ResponseException.txt",
 				OutputFilePath = outputFilePath,
 				CurrentProjectName = projectName
 			};
@@ -99,7 +101,7 @@ namespace ViFactory.Services.Bll
 			{
 				NamespaceNameDefault = projectName + ".Bll.Models",
 				ClassNameDefault = "ResponseExceptionData",
-				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Bll\\Models\\ResponseExceptionData.txt",
+				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") +"\\Bll\\Models\\ResponseExceptionData.txt",
 				OutputFilePath = outputFilePath,
 				CurrentProjectName = projectName
 			};
@@ -111,7 +113,7 @@ namespace ViFactory.Services.Bll
 			{
 				NamespaceNameDefault = projectName + ".Bll.Models",
 				ClassNameDefault = "SmsNetGsmSettings",
-				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Bll\\Models\\SmsNetGsmSettings.txt",
+				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") +"\\Bll\\Models\\SmsNetGsmSettings.txt",
 				OutputFilePath = outputFilePath,
 				CurrentProjectName = projectName
 			};
@@ -123,7 +125,7 @@ namespace ViFactory.Services.Bll
 			{
 				NamespaceNameDefault = projectName + ".Bll.Services.Common",
 				ClassNameDefault = "EmailService",
-				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Bll\\Services\\EmailService.txt",
+				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") +"\\Bll\\Services\\EmailService.txt",
 				OutputFilePath = outputFilePath,
 				CurrentProjectName = projectName
 			};
@@ -135,7 +137,7 @@ namespace ViFactory.Services.Bll
 			{
 				NamespaceNameDefault = projectName + ".Bll.Services.Common",
 				ClassNameDefault = "SmsNetGsmServices",
-				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Bll\\Services\\SmsNetGsmService.txt",
+				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") +"\\Bll\\Services\\SmsNetGsmService.txt",
 				OutputFilePath = outputFilePath,
 				CurrentProjectName = projectName
 			};
@@ -147,7 +149,7 @@ namespace ViFactory.Services.Bll
 			{
 				NamespaceNameDefault = projectName + ".Bll.Services.Common",
 				ClassNameDefault = "TokenService",
-				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Bll\\Services\\TokenService.txt",
+				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") +"\\Bll\\Services\\TokenService.txt",
 				OutputFilePath = outputFilePath,
 				CurrentProjectName = projectName
 			};
@@ -159,7 +161,7 @@ namespace ViFactory.Services.Bll
 			{
 				NamespaceNameDefault = projectName + ".Bll.Services.Common",
 				ClassNameDefault = "MemoryCache",
-				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Bll\\Services\\MemoryCache.txt",
+				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") +"\\Bll\\Services\\MemoryCache.txt",
 				OutputFilePath = outputFilePath,
 				CurrentProjectName = projectName
 			};
@@ -171,7 +173,7 @@ namespace ViFactory.Services.Bll
 			{
 				NamespaceNameDefault = projectName + ".Bll.Services.Common",
 				ClassNameDefault = "UploadLocalService",
-				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Bll\\Services\\UploadLocalService.txt",
+				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") +"\\Bll\\Services\\UploadLocalService.txt",
 				OutputFilePath = outputFilePath,
 				CurrentProjectName = projectName
 			};

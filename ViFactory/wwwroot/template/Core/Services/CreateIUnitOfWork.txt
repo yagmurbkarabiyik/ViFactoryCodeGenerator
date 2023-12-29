@@ -1,0 +1,12 @@
+using [CurrentProjectName].Models;
+
+namespace [NamespaceName]
+{
+    public interface [ClassName] : IDisposable
+    {
+        public UnitOfWorkResponse SaveChanges();
+        public Task<UnitOfWorkResponse> SaveChangesAsync();
+    }
+}
+
+

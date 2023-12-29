@@ -8,9 +8,94 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\template\Bll\CreateBllProject.txt" />
+    <Content Remove="wwwroot\template\Bll\Enums\ExceptionResponseType.txt" />
+    <Content Remove="wwwroot\template\Bll\Models\EmailSettings.txt" />
+    <Content Remove="wwwroot\template\Bll\Models\JwtSettings.txt" />
+    <Content Remove="wwwroot\template\Bll\Models\ResponseCommon.txt" />
+    <Content Remove="wwwroot\template\Bll\Models\ResponseException.txt" />
+    <Content Remove="wwwroot\template\Bll\Models\ResponseExceptionData.txt" />
+    <Content Remove="wwwroot\template\Bll\Models\SmsNetGsmSettings.txt" />
+    <Content Remove="wwwroot\template\Bll\Services\EmailService.txt" />
+    <Content Remove="wwwroot\template\Bll\Services\MemoryCache.txt" />
+    <Content Remove="wwwroot\template\Bll\Services\SmsNetGsmService.txt" />
+    <Content Remove="wwwroot\template\Bll\Services\TokenService.txt" />
+    <Content Remove="wwwroot\template\Bll\Services\UploadLocalService.txt" />
+    <Content Remove="wwwroot\template\ConsoleApp\CreateConsoleApp.txt" />
+    <Content Remove="wwwroot\template\ConsoleApp\ProgramCs.txt" />
+    <Content Remove="wwwroot\template\ConsoleApp\Templates\BaseMap.txt" />
+    <Content Remove="wwwroot\template\ConsoleApp\Templates\Context.txt" />
+    <Content Remove="wwwroot\template\ConsoleApp\Templates\CreateDto.txt" />
+    <Content Remove="wwwroot\template\ConsoleApp\Templates\DalRepository.txt" />
+    <Content Remove="wwwroot\template\ConsoleApp\Templates\FluentApiMap.txt" />
+    <Content Remove="wwwroot\template\ConsoleApp\Templates\IDalRepository.txt" />
+    <Content Remove="wwwroot\template\ConsoleApp\Templates\IService.txt" />
+    <Content Remove="wwwroot\template\ConsoleApp\Templates\Service.txt" />
+    <Content Remove="wwwroot\template\ConsoleApp\Templates\UnitOfWork.txt" />
+    <Content Remove="wwwroot\template\Core\CreateCoreProject.txt" />
+    <Content Remove="wwwroot\template\Core\Enums\DbEntityState.txt" />
+    <Content Remove="wwwroot\template\Core\Helpers\ExceptionHelper.txt" />
+    <Content Remove="wwwroot\template\Core\JsonHelpers\MultiLanguageFormFile.txt" />
+    <Content Remove="wwwroot\template\Core\JsonHelpers\MultiLanguageListString.txt" />
+    <Content Remove="wwwroot\template\Core\JsonHelpers\MultiLanguageString.txt" />
+    <Content Remove="wwwroot\template\Core\Model\ApiContext.txt" />
+    <Content Remove="wwwroot\template\Core\Model\CreateIBaseEntity.txt" />
+    <Content Remove="wwwroot\template\Core\Model\CreateUnitOfWorkResponse.txt" />
+    <Content Remove="wwwroot\template\Core\Model\EmailSendData.txt" />
+    <Content Remove="wwwroot\template\Core\Model\PaginationRequest.txt" />
+    <Content Remove="wwwroot\template\Core\Model\PaginationResponse.txt" />
+    <Content Remove="wwwroot\template\Core\Model\RepositoryModels\RepositoryCreateRequest.txt" />
+    <Content Remove="wwwroot\template\Core\Model\RepositoryModels\RepositoryDeleteRequest.txt" />
+    <Content Remove="wwwroot\template\Core\Model\RepositoryModels\RepositoryGetAsTResultRequest.txt" />
+    <Content Remove="wwwroot\template\Core\Model\RepositoryModels\RepositoryGetRequest.txt" />
+    <Content Remove="wwwroot\template\Core\Model\RepositoryModels\RepositoryIsExistRequest.txt" />
+    <Content Remove="wwwroot\template\Core\Model\RepositoryModels\RepositoryListAsTResultRequest.txt" />
+    <Content Remove="wwwroot\template\Core\Model\RepositoryModels\RepositoryListRequest.txt" />
+    <Content Remove="wwwroot\template\Core\Model\RepositoryModels\RepositoryPaginationAsTResultRequest.txt" />
+    <Content Remove="wwwroot\template\Core\Model\RepositoryModels\RepositoryPaginationRequest.txt" />
+    <Content Remove="wwwroot\template\Core\Model\RepositoryModels\RepositorySoftDeleteRequest.txt" />
+    <Content Remove="wwwroot\template\Core\Model\RepositoryModels\RepositoryUpdateRequest.txt" />
+    <Content Remove="wwwroot\template\Core\Model\SmsNetGsmSendData.txt" />
+    <Content Remove="wwwroot\template\Core\Model\TokenModels\GetClientTokenRequest.txt" />
+    <Content Remove="wwwroot\template\Core\Model\TokenModels\GetClientTokenResult.txt" />
+    <Content Remove="wwwroot\template\Core\Model\TokenModels\GetTokenRequest.txt" />
+    <Content Remove="wwwroot\template\Core\Model\TokenModels\GetTokenResponse.txt" />
+    <Content Remove="wwwroot\template\Core\Model\TokenModels\ValidateTokenRequest.txt" />
+    <Content Remove="wwwroot\template\Core\Services\CreateIRepository.txt" />
+    <Content Remove="wwwroot\template\Core\Services\CreateIUnitOfWork.txt" />
+    <Content Remove="wwwroot\template\Core\Services\IEmailService.txt" />
+    <Content Remove="wwwroot\template\Core\Services\IMemoryCache.txt" />
+    <Content Remove="wwwroot\template\Core\Services\ISmsNetGsmService.txt" />
+    <Content Remove="wwwroot\template\Core\Services\IUploadLocalService.txt" />
+    <Content Remove="wwwroot\template\Core\Services\TokenService.txt" />
+    <Content Remove="wwwroot\template\CreateProject.txt" />
+    <Content Remove="wwwroot\template\CreateSolution.txt" />
+    <Content Remove="wwwroot\template\Dal\CreateDalProject.txt" />
+    <Content Remove="wwwroot\template\Dal\Data\Common\AzureBlobStorageService.txt" />
+    <Content Remove="wwwroot\template\Dal\Data\Common\Repository.txt" />
+    <Content Remove="wwwroot\template\Dal\Data\Common\UnitOfWork.txt" />
+    <Content Remove="wwwroot\template\Dal\Data\Context\Context.txt" />
+    <Content Remove="wwwroot\template\Dal\Data\Context\ContextPartial.txt" />
+    <Content Remove="wwwroot\template\Dal\Data\DalRepos\DalRepos.txt" />
+    <Content Remove="wwwroot\template\Dal\Data\DalRepos\IDalRepos.txt" />
+    <Content Remove="wwwroot\template\Dal\FluentApi\BaseMap.txt" />
+    <Content Remove="wwwroot\template\Dal\ViFactoryDbContext.txt" />
+    <Content Remove="wwwroot\template\Domain\CreateDomainEntitiesProject.txt" />
+    <Content Remove="wwwroot\template\Domain\Enums\AppUserState.txt" />
+    <Content Remove="wwwroot\template\Domain\IdentityModels\AppRole.txt" />
+    <Content Remove="wwwroot\template\Domain\IdentityModels\AppUser.txt" />
+    <Content Remove="wwwroot\template\Dtos\CreateDtoProject.txt" />
+    <Content Remove="wwwroot\template\Dtos\CreateDtos.txt" />
+    <Content Remove="wwwroot\template\Models\CreateBaseEntity.txt" />
+    <Content Remove="wwwroot\template\Models\CreateEntity.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="7.0.14" />
     <PackageReference Include="Microsoft.CodeAnalysis.Common" Version="4.8.0" />
     <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.8.0" />
     <PackageReference Include="Microsoft.CodeAnalysis.Workspaces.Common" Version="4.8.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="7.0.11" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
 
@@ -31,6 +116,101 @@
 
   <ItemGroup>
     <Service Include="{508349b6-6b84-4df5-91f0-309beebad82d}" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\projects\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\template\Bll\CreateBllProject.txt" />
+    <None Include="wwwroot\template\Bll\Enums\ExceptionResponseType.txt" />
+    <None Include="wwwroot\template\Bll\Models\EmailSettings.txt" />
+    <None Include="wwwroot\template\Bll\Models\JwtSettings.txt" />
+    <None Include="wwwroot\template\Bll\Models\ResponseCommon.txt" />
+    <None Include="wwwroot\template\Bll\Models\ResponseException.txt" />
+    <None Include="wwwroot\template\Bll\Models\ResponseExceptionData.txt" />
+    <None Include="wwwroot\template\Bll\Models\SmsNetGsmSettings.txt" />
+    <None Include="wwwroot\template\Bll\Services\EmailService.txt" />
+    <None Include="wwwroot\template\Bll\Services\MemoryCache.txt" />
+    <None Include="wwwroot\template\Bll\Services\SmsNetGsmService.txt" />
+    <None Include="wwwroot\template\Bll\Services\TokenService.txt" />
+    <None Include="wwwroot\template\Bll\Services\UploadLocalService.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\template\ConsoleApp\CreateConsoleApp.txt" />
+    <None Include="wwwroot\template\ConsoleApp\ProgramCs.txt" />
+    <None Include="wwwroot\template\ConsoleApp\Templates\BaseMap.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\template\ConsoleApp\Templates\Context.txt" />
+    <None Include="wwwroot\template\ConsoleApp\Templates\CreateDto.txt" />
+    <None Include="wwwroot\template\ConsoleApp\Templates\DalRepository.txt" />
+    <None Include="wwwroot\template\ConsoleApp\Templates\FluentApiMap.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\template\ConsoleApp\Templates\IDalRepository.txt" />
+    <None Include="wwwroot\template\ConsoleApp\Templates\IService.txt" />
+    <None Include="wwwroot\template\ConsoleApp\Templates\Service.txt" />
+    <None Include="wwwroot\template\ConsoleApp\Templates\UnitOfWork.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\template\Core\CreateCoreProject.txt" />
+    <None Include="wwwroot\template\Core\Enums\DbEntityState.txt" />
+    <None Include="wwwroot\template\Core\Helpers\ExceptionHelper.txt" />
+    <None Include="wwwroot\template\Core\JsonHelpers\MultiLanguageFormFile.txt" />
+    <None Include="wwwroot\template\Core\JsonHelpers\MultiLanguageListString.txt" />
+    <None Include="wwwroot\template\Core\JsonHelpers\MultiLanguageString.txt" />
+    <None Include="wwwroot\template\Core\Model\ApiContext.txt" />
+    <None Include="wwwroot\template\Core\Model\CreateIBaseEntity.txt" />
+    <None Include="wwwroot\template\Core\Model\CreateUnitOfWorkResponse.txt" />
+    <None Include="wwwroot\template\Core\Model\EmailSendData.txt" />
+    <None Include="wwwroot\template\Core\Model\PaginationRequest.txt" />
+    <None Include="wwwroot\template\Core\Model\PaginationResponse.txt" />
+    <None Include="wwwroot\template\Core\Model\RepositoryModels\RepositoryCreateRequest.txt" />
+    <None Include="wwwroot\template\Core\Model\RepositoryModels\RepositoryDeleteRequest.txt" />
+    <None Include="wwwroot\template\Core\Model\RepositoryModels\RepositoryGetAsTResultRequest.txt" />
+    <None Include="wwwroot\template\Core\Model\RepositoryModels\RepositoryGetRequest.txt" />
+    <None Include="wwwroot\template\Core\Model\RepositoryModels\RepositoryIsExistRequest.txt" />
+    <None Include="wwwroot\template\Core\Model\RepositoryModels\RepositoryListAsTResultRequest.txt" />
+    <None Include="wwwroot\template\Core\Model\RepositoryModels\RepositoryListRequest.txt" />
+    <None Include="wwwroot\template\Core\Model\RepositoryModels\RepositoryPaginationAsTResultRequest.txt" />
+    <None Include="wwwroot\template\Core\Model\RepositoryModels\RepositoryPaginationRequest.txt" />
+    <None Include="wwwroot\template\Core\Model\RepositoryModels\RepositorySoftDeleteRequest.txt" />
+    <None Include="wwwroot\template\Core\Model\RepositoryModels\RepositoryUpdateRequest.txt" />
+    <None Include="wwwroot\template\Core\Model\SmsNetGsmSendData.txt" />
+    <None Include="wwwroot\template\Core\Model\TokenModels\GetClientTokenRequest.txt" />
+    <None Include="wwwroot\template\Core\Model\TokenModels\GetClientTokenResult.txt" />
+    <None Include="wwwroot\template\Core\Model\TokenModels\GetTokenRequest.txt" />
+    <None Include="wwwroot\template\Core\Model\TokenModels\GetTokenResponse.txt" />
+    <None Include="wwwroot\template\Core\Model\TokenModels\ValidateTokenRequest.txt" />
+    <None Include="wwwroot\template\Core\Services\CreateIRepository.txt" />
+    <None Include="wwwroot\template\Core\Services\CreateIUnitOfWork.txt" />
+    <None Include="wwwroot\template\Core\Services\IEmailService.txt" />
+    <None Include="wwwroot\template\Core\Services\IMemoryCache.txt" />
+    <None Include="wwwroot\template\Core\Services\ISmsNetGsmService.txt" />
+    <None Include="wwwroot\template\Core\Services\IUploadLocalService.txt" />
+    <None Include="wwwroot\template\Core\Services\TokenService.txt" />
+    <None Include="wwwroot\template\CreateProject.txt" />
+    <None Include="wwwroot\template\CreateSolution.txt" />
+    <None Include="wwwroot\template\Dal\CreateDalProject.txt" />
+    <None Include="wwwroot\template\Dal\Data\Common\AzureBlobStorageService.txt" />
+    <None Include="wwwroot\template\Dal\Data\Common\Repository.txt" />
+    <None Include="wwwroot\template\Dal\Data\Common\UnitOfWork.txt" />
+    <None Include="wwwroot\template\Dal\Data\Context\Context.txt" />
+    <None Include="wwwroot\template\Dal\Data\Context\ContextPartial.txt" />
+    <None Include="wwwroot\template\Dal\Data\DalRepos\DalRepos.txt" />
+    <None Include="wwwroot\template\Dal\Data\DalRepos\IDalRepos.txt" />
+    <None Include="wwwroot\template\Dal\FluentApi\BaseMap.txt" />
+    <None Include="wwwroot\template\Dal\ViFactoryDbContext.txt" />
+    <None Include="wwwroot\template\Domain\CreateDomainEntitiesProject.txt" />
+    <None Include="wwwroot\template\Domain\Enums\AppUserState.txt" />
+    <None Include="wwwroot\template\Domain\IdentityModels\AppRole.txt" />
+    <None Include="wwwroot\template\Domain\IdentityModels\AppUser.txt" />
+    <None Include="wwwroot\template\Dtos\CreateDtoProject.txt" />
+    <None Include="wwwroot\template\Dtos\CreateDtos.txt" />
+    <None Include="wwwroot\template\Models\CreateBaseEntity.txt" />
+    <None Include="wwwroot\template\Models\CreateEntity.txt" />
   </ItemGroup>
 
 </Project>

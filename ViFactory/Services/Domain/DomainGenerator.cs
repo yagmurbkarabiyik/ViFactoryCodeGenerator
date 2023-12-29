@@ -8,130 +8,89 @@ namespace ViFactory.Services.Domain
 	{
 		private readonly IGenerator _generator;
 		private readonly IProjectGenerator _projectGenerator;
-		public DomainGenerator(IGenerator generator, IProjectGenerator projectGenerator)
-		{
-			_generator = generator;
-			_projectGenerator = projectGenerator;
-		}
+        private readonly IWebHostEnvironment _webHostEnvironment;
+        public DomainGenerator(IGenerator generator, IProjectGenerator projectGenerator, IWebHostEnvironment webHostEnvironment)
+        {
+            _generator = generator;
+            _projectGenerator = projectGenerator;
+            _webHostEnvironment = webHostEnvironment;
+        }
 
-		public void GenerateDomainLayer()
+        public void GenerateDomainLayer(ProjectGeneratorModel projectGeneratorModel)
 		{
-			GenerateDomain();
-			GenerateModels();
-		}
+            _projectGenerator.GenerateProject(projectGeneratorModel);
 
-		//Create Domain Class Library
-		private void GenerateDomain()
-		{
-			ProjectGeneratorModel projectGeneratorModel = new ProjectGeneratorModel()
-			{
-				ProjectName = "Artfy.Domain",
-				ProjectFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Domain\\CreateDomainEntitiesProject.txt",
-			};
-			_projectGenerator.GenerateProject(projectGeneratorModel);	
-		}
-		//Generate more than one class 
-		private void GenerateModels()
-		{
-			List<GeneratorModel> generatorModes = new()
-			{
-				{
-					new GeneratorModel
-					{
-						NamespaceNameDefault = "ViFactoryNewSolution",
-						ClassNameDefault = "BaseEntity",
-						InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Models\\CreateBaseEntity.txt",
-						OutputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactoryNew\\ViFactoryNew.Domain\\Models\\"
-					}
-				},
-					new GeneratorModel
-					{
-						NamespaceNameDefault = "ViFactoryNewSolution",
-						ClassNameDefault = "Company",
-						InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Models\\CreateEntity.txt",
-						OutputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactoryNew\\ViFactoryNew.Domain\\Models\\",
-						Properties = new Dictionary<string, string>
-						{
-							{"DefaultTitle", "string" },
-							{"DefaultPosterImage", "int" },
-							{"Rank", "int" },
-							{"CascadeRank", "int" }
-						}
-					},
-					new GeneratorModel
-					{
-						NamespaceNameDefault = "ViFactoryNewSolution",
-						ClassNameDefault = "Department",
-						InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Models\\CreateEntity.txt",
-						OutputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactoryNew\\ViFactoryNew.Domain\\Models\\",
-						Properties = new Dictionary<string, string>
-						{
-							{"DefaultTitle", "string" },
-							{"DefaultPosterImage", "int" }
-						}
-					},
-					new GeneratorModel
-					{
-						NamespaceNameDefault = "ViFactoryNewSolution",
-						ClassNameDefault = "Announcement",
-						InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Models\\CreateEntity.txt",
-						OutputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactoryNew\\ViFactoryNew.Domain\\Models\\",
-						Properties = new Dictionary<string, string>
-						{
-							{"DefaultTitle", "string" },
-							{"CreatDefaultPosterImageedBy", "string" },
-							{"InAppRedirect", "string?" },
-							{"NonAppRedirect", "string?" },
-							{"Rank", "int" },
-							{"CreatedBy", "int" },
-							{"UpdatedBy", "int?" },
-							{"StartDate", "DateTime" },
-							{"Images", "List<string>?" }
-						}
-					},
-					new GeneratorModel
-					{
-						NamespaceNameDefault = "ViFactoryNewSolution",
-						ClassNameDefault = "AppUser",
-						InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Domain\\IdentityModels\\AppUser.txt",
-						OutputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactoryNew\\ViFactoryNew.Domain\\IdentityModels\\",
-						Properties = new Dictionary<string, string>
-						{
-							{"RefreshToken", "string?" },
-							{"PasswordResetCode", "string?" },
-							{"State", "DbEntityState" },
-							{"CreatedDate", "DateTime" },
-							{"UpdatedDate", "DateTime" },
-							{"CreatedBy", "int" },
-							{"UpdatedBy", "int?" },
-							{"Name", "string" },
-							{"Surname", "string" },
-							{"DefaultPosterImage", "string?" },
-							{"AppUserState", "AppUserState" },
-							{"Language", "string" }
-						}
-					},
-					new GeneratorModel
-					{
-						NamespaceNameDefault = "ViFactoryNewSolution",
-						ClassNameDefault = "AppRole",
-						InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Domain\\IdentityModels\\AppRole.txt",
-						OutputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactoryNew\\ViFactoryNew.Domain\\IdentityModels\\",
-					},
-					new GeneratorModel
-					{
-						NamespaceNameDefault = "ViFactoryNewSolution",
-						ClassNameDefault = "AppUserState",
-						InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Domain\\Enums\\AppUserState.txt",
-						OutputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactoryNew\\ViFactoryNew.Domain\\Enums\\",
-					}
-			};
+            GenerateBaseEntity(projectGeneratorModel.CurrentProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Models"));
+           GenerateAppUser(projectGeneratorModel.CurrentProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "IdentityModels"));
+           GenerateAppRole(projectGeneratorModel.CurrentProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "IdentityModels"));
+           GenerateAppUserState(projectGeneratorModel.CurrentProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "IdentityModels"));
+        }
 
-			foreach (var generatorMode in generatorModes)
-			{
-				_generator.GenerateClass(generatorMode);	
-			}
-		}
-	
-	} 
+        //Constant Classes
+        private void GenerateBaseEntity(string projectName, string outputFilePath)
+        {
+            GeneratorModel generateBaseEntity = new GeneratorModel()
+            {
+                NamespaceNameDefault = projectName + ".Domain.Models",
+                ClassNameDefault = "BaseEntity",
+                InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") + "\\Models\\CreateBaseEntity.txt",
+                OutputFilePath = outputFilePath,
+                CurrentProjectName = projectName
+            };
+
+            _generator.GenerateClass(generateBaseEntity);
+        }
+        private void GenerateAppUser(string projectName, string outputFilePath) 
+        {
+            GeneratorModel generateAppUser = new GeneratorModel()
+            {
+                NamespaceNameDefault = projectName + ".Domain.IdentityModels",
+                ClassNameDefault = "AppUser",
+                InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") + "\\Domain\\IdentityModels\\AppUser.txt",
+                OutputFilePath = outputFilePath,
+                CurrentProjectName = projectName,
+                Properties = new Dictionary<string, string>
+                        {
+                            {"RefreshToken", "string?" },
+                            {"PasswordResetCode", "string?" },
+                            {"State", "DbEntityState" },
+                            {"CreatedDate", "DateTime" },
+                            {"UpdatedDate", "DateTime" },
+                            {"CreatedBy", "int" },
+                            {"UpdatedBy", "int?" },
+                            {"Name", "string" },
+                            {"Surname", "string" },
+                            {"DefaultPosterImage", "string?" },
+                            {"AppUserState", "AppUserState" },
+                            {"Language", "string" }
+                        }
+            };
+            _generator.GenerateClass(generateAppUser);
+        }
+        private void GenerateAppRole(string projectName, string outputFilePath)
+        {
+            GeneratorModel generateAppRole = new GeneratorModel()
+            {
+                NamespaceNameDefault = projectName + ".Domain.IdentityModels",
+                ClassNameDefault = "AppRole",
+                InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") + "\\Domain\\IdentityModels\\AppRole.txt",
+                OutputFilePath = outputFilePath,
+                CurrentProjectName = projectName,
+
+            };
+            _generator.GenerateClass(generateAppRole);
+        }
+        private void GenerateAppUserState(string projectName, string outputFilePath)
+        {
+            GeneratorModel generatorModel = new GeneratorModel()
+            {
+                NamespaceNameDefault = projectName + ".Domain.IdentityModels",
+                ClassNameDefault = "AppUserState",
+                InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") + "\\Domain\\Enums\\AppUserState.txt",
+                OutputFilePath = outputFilePath,
+                CurrentProjectName = projectName,
+            };
+            _generator.GenerateClass(generatorModel);
+        }
+    } 
 }

@@ -1,0 +1,14 @@
+using System.Security.Claims;
+
+namespace [NamespaceName]
+{
+    public class [ClassName]
+    {
+        public string SecurityKey { get; set; } = null!;
+        public int AccessTokenExpirationMinutes { get; set; }
+        public string? Issuer { get; set; }
+        public string? Audience { get; set; }
+        public string SecurityAlgorithms { get; set; } = Microsoft.IdentityModel.Tokens.SecurityAlgorithms.HmacSha256Signature;
+        public List<Claim>? Claims { get; set; }
+    }
+}

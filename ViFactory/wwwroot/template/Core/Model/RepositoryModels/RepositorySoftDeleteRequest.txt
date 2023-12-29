@@ -1,0 +1,10 @@
+using Microsoft.EntityFrameworkCore.Query;
+using System.Linq.Expressions;
+
+namespace [NamespaceName]
+{
+    public class [ClassName]<T> where T : class, IBaseEntity
+    {
+       required public T Model { get; set; }
+    }
+}

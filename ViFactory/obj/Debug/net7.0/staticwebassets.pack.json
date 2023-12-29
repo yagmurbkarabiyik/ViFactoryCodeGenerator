@@ -245,6 +245,2062 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_08652b0c.zip",
+      "PackagePath": "staticwebassets\\projects\\Coffee_08652b0c.zip"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_08652b0c\\Coffee.Bll\\Enums\\ExceptionResponseType.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_08652b0c\\Coffee.Bll\\Enums\\ExceptionResponseType.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_08652b0c\\Coffee.Bll\\Models\\EmailSettings.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_08652b0c\\Coffee.Bll\\Models\\EmailSettings.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_08652b0c\\Coffee.Bll\\Models\\JwtSettings.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_08652b0c\\Coffee.Bll\\Models\\JwtSettings.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_08652b0c\\Coffee.Bll\\Models\\ResponseCommon.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_08652b0c\\Coffee.Bll\\Models\\ResponseCommon.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_08652b0c\\Coffee.Bll\\Models\\ResponseException.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_08652b0c\\Coffee.Bll\\Models\\ResponseException.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_08652b0c\\Coffee.Bll\\Models\\ResponseExceptionData.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_08652b0c\\Coffee.Bll\\Models\\ResponseExceptionData.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_08652b0c\\Coffee.Bll\\Models\\SmsNetGsmSettings.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_08652b0c\\Coffee.Bll\\Models\\SmsNetGsmSettings.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_08652b0c\\Coffee.Bll\\Services\\Common\\EmailService.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_08652b0c\\Coffee.Bll\\Services\\Common\\EmailService.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_08652b0c\\Coffee.Bll\\Services\\Common\\MemoryCache.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_08652b0c\\Coffee.Bll\\Services\\Common\\MemoryCache.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_08652b0c\\Coffee.Bll\\Services\\Common\\SmsNetGsmServices.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_08652b0c\\Coffee.Bll\\Services\\Common\\SmsNetGsmServices.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_08652b0c\\Coffee.Bll\\Services\\Common\\TokenService.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_08652b0c\\Coffee.Bll\\Services\\Common\\TokenService.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_08652b0c\\Coffee.Bll\\Services\\Common\\UploadLocalService.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_08652b0c\\Coffee.Bll\\Services\\Common\\UploadLocalService.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_08652b0c\\Coffee.Core\\Enums\\DbEntityState.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_08652b0c\\Coffee.Core\\Enums\\DbEntityState.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_08652b0c\\Coffee.Core\\Enums\\ExceptionHelper.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_08652b0c\\Coffee.Core\\Enums\\ExceptionHelper.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_08652b0c\\Coffee.Core\\JsonModels\\MultiLanguageFormFile.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_08652b0c\\Coffee.Core\\JsonModels\\MultiLanguageFormFile.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_08652b0c\\Coffee.Core\\JsonModels\\MultiLanguageListString.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_08652b0c\\Coffee.Core\\JsonModels\\MultiLanguageListString.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_08652b0c\\Coffee.Core\\JsonModels\\MultiLanguageString.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_08652b0c\\Coffee.Core\\JsonModels\\MultiLanguageString.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_08652b0c\\Coffee.Core\\Models\\ApiContext.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_08652b0c\\Coffee.Core\\Models\\ApiContext.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_08652b0c\\Coffee.Core\\Models\\EmailSendData.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_08652b0c\\Coffee.Core\\Models\\EmailSendData.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_08652b0c\\Coffee.Core\\Models\\IBaseEntity.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_08652b0c\\Coffee.Core\\Models\\IBaseEntity.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_08652b0c\\Coffee.Core\\Models\\PaginationRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_08652b0c\\Coffee.Core\\Models\\PaginationRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_08652b0c\\Coffee.Core\\Models\\PaginationResponse.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_08652b0c\\Coffee.Core\\Models\\PaginationResponse.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_08652b0c\\Coffee.Core\\Models\\SmsNetGsmSendData.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_08652b0c\\Coffee.Core\\Models\\SmsNetGsmSendData.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_08652b0c\\Coffee.Core\\Models\\UnitOfWorkResponse.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_08652b0c\\Coffee.Core\\Models\\UnitOfWorkResponse.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_08652b0c\\Coffee.Core\\RepositoryModels\\RepositoryCreateRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_08652b0c\\Coffee.Core\\RepositoryModels\\RepositoryCreateRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_08652b0c\\Coffee.Core\\RepositoryModels\\RepositoryDeleteRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_08652b0c\\Coffee.Core\\RepositoryModels\\RepositoryDeleteRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_08652b0c\\Coffee.Core\\RepositoryModels\\RepositoryGetAsTResultRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_08652b0c\\Coffee.Core\\RepositoryModels\\RepositoryGetAsTResultRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_08652b0c\\Coffee.Core\\RepositoryModels\\RepositoryGetRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_08652b0c\\Coffee.Core\\RepositoryModels\\RepositoryGetRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_08652b0c\\Coffee.Core\\RepositoryModels\\RepositoryIsExistRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_08652b0c\\Coffee.Core\\RepositoryModels\\RepositoryIsExistRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_08652b0c\\Coffee.Core\\RepositoryModels\\RepositoryListAsTResultRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_08652b0c\\Coffee.Core\\RepositoryModels\\RepositoryListAsTResultRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_08652b0c\\Coffee.Core\\RepositoryModels\\RepositoryListRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_08652b0c\\Coffee.Core\\RepositoryModels\\RepositoryListRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_08652b0c\\Coffee.Core\\RepositoryModels\\RepositoryPaginationAsTResultRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_08652b0c\\Coffee.Core\\RepositoryModels\\RepositoryPaginationAsTResultRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_08652b0c\\Coffee.Core\\RepositoryModels\\RepositoryPaginationRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_08652b0c\\Coffee.Core\\RepositoryModels\\RepositoryPaginationRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_08652b0c\\Coffee.Core\\RepositoryModels\\RepositorySoftDeleteRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_08652b0c\\Coffee.Core\\RepositoryModels\\RepositorySoftDeleteRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_08652b0c\\Coffee.Core\\RepositoryModels\\RepositoryUpdateRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_08652b0c\\Coffee.Core\\RepositoryModels\\RepositoryUpdateRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_08652b0c\\Coffee.Core\\Services\\IEmailService.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_08652b0c\\Coffee.Core\\Services\\IEmailService.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_08652b0c\\Coffee.Core\\Services\\IMemoryCacheService.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_08652b0c\\Coffee.Core\\Services\\IMemoryCacheService.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_08652b0c\\Coffee.Core\\Services\\IRepository.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_08652b0c\\Coffee.Core\\Services\\IRepository.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_08652b0c\\Coffee.Core\\Services\\ISmsNetGsmService.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_08652b0c\\Coffee.Core\\Services\\ISmsNetGsmService.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_08652b0c\\Coffee.Core\\Services\\ITokenService.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_08652b0c\\Coffee.Core\\Services\\ITokenService.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_08652b0c\\Coffee.Core\\Services\\IUnitOfWork.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_08652b0c\\Coffee.Core\\Services\\IUnitOfWork.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_08652b0c\\Coffee.Core\\Services\\IUploadLocalService.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_08652b0c\\Coffee.Core\\Services\\IUploadLocalService.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_08652b0c\\Coffee.Core\\TokenModels\\GetClientTokenRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_08652b0c\\Coffee.Core\\TokenModels\\GetClientTokenRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_08652b0c\\Coffee.Core\\TokenModels\\GetClientTokenResult.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_08652b0c\\Coffee.Core\\TokenModels\\GetClientTokenResult.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_08652b0c\\Coffee.Core\\TokenModels\\GetTokenRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_08652b0c\\Coffee.Core\\TokenModels\\GetTokenRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_08652b0c\\Coffee.Core\\TokenModels\\GetTokenResponse.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_08652b0c\\Coffee.Core\\TokenModels\\GetTokenResponse.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_08652b0c\\Coffee.Core\\TokenModels\\ValidateTokenRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_08652b0c\\Coffee.Core\\TokenModels\\ValidateTokenRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_08652b0c\\Coffee.Dal\\Context\\CoffeeContextPartial.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_08652b0c\\Coffee.Dal\\Context\\CoffeeContextPartial.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_08652b0c\\Coffee.Dal\\Context\\CoffeeDbContext.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_08652b0c\\Coffee.Dal\\Context\\CoffeeDbContext.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_08652b0c\\Coffee.Dal\\Data\\Common\\AzureBlobStorageService.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_08652b0c\\Coffee.Dal\\Data\\Common\\AzureBlobStorageService.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_08652b0c\\Coffee.Dal\\Data\\Common\\Repository.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_08652b0c\\Coffee.Dal\\Data\\Common\\Repository.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_08652b0c\\Coffee.Dal\\Data\\Common\\UnitOfWork.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_08652b0c\\Coffee.Dal\\Data\\Common\\UnitOfWork.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_08652b0c\\Coffee.Dal\\FluentApi\\BaseMap.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_08652b0c\\Coffee.Dal\\FluentApi\\BaseMap.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_08652b0c\\Coffee.Domain\\IdentityModels\\AppRole.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_08652b0c\\Coffee.Domain\\IdentityModels\\AppRole.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_08652b0c\\Coffee.Domain\\IdentityModels\\AppUser.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_08652b0c\\Coffee.Domain\\IdentityModels\\AppUser.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_08652b0c\\Coffee.Domain\\IdentityModels\\AppUserState.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_08652b0c\\Coffee.Domain\\IdentityModels\\AppUserState.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_08652b0c\\Coffee.Domain\\Models\\BaseEntity.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_08652b0c\\Coffee.Domain\\Models\\BaseEntity.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_08652b0c\\ViFactory\\Program.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_08652b0c\\ViFactory\\Program.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_08652b0c\\ViFactory\\Templates\\Context.txt",
+      "PackagePath": "staticwebassets\\projects\\Coffee_08652b0c\\ViFactory\\Templates\\Context.txt"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_08652b0c\\ViFactory\\Templates\\CreateDto.txt",
+      "PackagePath": "staticwebassets\\projects\\Coffee_08652b0c\\ViFactory\\Templates\\CreateDto.txt"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_08652b0c\\ViFactory\\Templates\\DalRepository.txt",
+      "PackagePath": "staticwebassets\\projects\\Coffee_08652b0c\\ViFactory\\Templates\\DalRepository.txt"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_08652b0c\\ViFactory\\Templates\\FluentApiMap.txt",
+      "PackagePath": "staticwebassets\\projects\\Coffee_08652b0c\\ViFactory\\Templates\\FluentApiMap.txt"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_08652b0c\\ViFactory\\Templates\\IDalRepository.txt",
+      "PackagePath": "staticwebassets\\projects\\Coffee_08652b0c\\ViFactory\\Templates\\IDalRepository.txt"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_08652b0c\\ViFactory\\Templates\\IService.txt",
+      "PackagePath": "staticwebassets\\projects\\Coffee_08652b0c\\ViFactory\\Templates\\IService.txt"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_08652b0c\\ViFactory\\Templates\\Service.txt",
+      "PackagePath": "staticwebassets\\projects\\Coffee_08652b0c\\ViFactory\\Templates\\Service.txt"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_08652b0c\\ViFactory\\Templates\\UnitOfWork.txt",
+      "PackagePath": "staticwebassets\\projects\\Coffee_08652b0c\\ViFactory\\Templates\\UnitOfWork.txt"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_11ae1d8c.zip",
+      "PackagePath": "staticwebassets\\projects\\Coffee_11ae1d8c.zip"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_11ae1d8c\\Coffee.Bll\\Enums\\ExceptionResponseType.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_11ae1d8c\\Coffee.Bll\\Enums\\ExceptionResponseType.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_11ae1d8c\\Coffee.Bll\\Models\\EmailSettings.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_11ae1d8c\\Coffee.Bll\\Models\\EmailSettings.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_11ae1d8c\\Coffee.Bll\\Models\\JwtSettings.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_11ae1d8c\\Coffee.Bll\\Models\\JwtSettings.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_11ae1d8c\\Coffee.Bll\\Models\\ResponseCommon.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_11ae1d8c\\Coffee.Bll\\Models\\ResponseCommon.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_11ae1d8c\\Coffee.Bll\\Models\\ResponseException.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_11ae1d8c\\Coffee.Bll\\Models\\ResponseException.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_11ae1d8c\\Coffee.Bll\\Models\\ResponseExceptionData.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_11ae1d8c\\Coffee.Bll\\Models\\ResponseExceptionData.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_11ae1d8c\\Coffee.Bll\\Models\\SmsNetGsmSettings.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_11ae1d8c\\Coffee.Bll\\Models\\SmsNetGsmSettings.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_11ae1d8c\\Coffee.Bll\\Services\\Common\\EmailService.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_11ae1d8c\\Coffee.Bll\\Services\\Common\\EmailService.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_11ae1d8c\\Coffee.Bll\\Services\\Common\\MemoryCache.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_11ae1d8c\\Coffee.Bll\\Services\\Common\\MemoryCache.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_11ae1d8c\\Coffee.Bll\\Services\\Common\\SmsNetGsmServices.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_11ae1d8c\\Coffee.Bll\\Services\\Common\\SmsNetGsmServices.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_11ae1d8c\\Coffee.Bll\\Services\\Common\\TokenService.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_11ae1d8c\\Coffee.Bll\\Services\\Common\\TokenService.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_11ae1d8c\\Coffee.Bll\\Services\\Common\\UploadLocalService.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_11ae1d8c\\Coffee.Bll\\Services\\Common\\UploadLocalService.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_11ae1d8c\\Coffee.Core\\Enums\\DbEntityState.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_11ae1d8c\\Coffee.Core\\Enums\\DbEntityState.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_11ae1d8c\\Coffee.Core\\Enums\\ExceptionHelper.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_11ae1d8c\\Coffee.Core\\Enums\\ExceptionHelper.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_11ae1d8c\\Coffee.Core\\JsonModels\\MultiLanguageFormFile.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_11ae1d8c\\Coffee.Core\\JsonModels\\MultiLanguageFormFile.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_11ae1d8c\\Coffee.Core\\JsonModels\\MultiLanguageListString.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_11ae1d8c\\Coffee.Core\\JsonModels\\MultiLanguageListString.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_11ae1d8c\\Coffee.Core\\JsonModels\\MultiLanguageString.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_11ae1d8c\\Coffee.Core\\JsonModels\\MultiLanguageString.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_11ae1d8c\\Coffee.Core\\Models\\ApiContext.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_11ae1d8c\\Coffee.Core\\Models\\ApiContext.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_11ae1d8c\\Coffee.Core\\Models\\EmailSendData.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_11ae1d8c\\Coffee.Core\\Models\\EmailSendData.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_11ae1d8c\\Coffee.Core\\Models\\IBaseEntity.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_11ae1d8c\\Coffee.Core\\Models\\IBaseEntity.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_11ae1d8c\\Coffee.Core\\Models\\PaginationRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_11ae1d8c\\Coffee.Core\\Models\\PaginationRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_11ae1d8c\\Coffee.Core\\Models\\PaginationResponse.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_11ae1d8c\\Coffee.Core\\Models\\PaginationResponse.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_11ae1d8c\\Coffee.Core\\Models\\SmsNetGsmSendData.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_11ae1d8c\\Coffee.Core\\Models\\SmsNetGsmSendData.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_11ae1d8c\\Coffee.Core\\Models\\UnitOfWorkResponse.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_11ae1d8c\\Coffee.Core\\Models\\UnitOfWorkResponse.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_11ae1d8c\\Coffee.Core\\RepositoryModels\\RepositoryCreateRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_11ae1d8c\\Coffee.Core\\RepositoryModels\\RepositoryCreateRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_11ae1d8c\\Coffee.Core\\RepositoryModels\\RepositoryDeleteRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_11ae1d8c\\Coffee.Core\\RepositoryModels\\RepositoryDeleteRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_11ae1d8c\\Coffee.Core\\RepositoryModels\\RepositoryGetAsTResultRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_11ae1d8c\\Coffee.Core\\RepositoryModels\\RepositoryGetAsTResultRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_11ae1d8c\\Coffee.Core\\RepositoryModels\\RepositoryGetRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_11ae1d8c\\Coffee.Core\\RepositoryModels\\RepositoryGetRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_11ae1d8c\\Coffee.Core\\RepositoryModels\\RepositoryIsExistRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_11ae1d8c\\Coffee.Core\\RepositoryModels\\RepositoryIsExistRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_11ae1d8c\\Coffee.Core\\RepositoryModels\\RepositoryListAsTResultRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_11ae1d8c\\Coffee.Core\\RepositoryModels\\RepositoryListAsTResultRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_11ae1d8c\\Coffee.Core\\RepositoryModels\\RepositoryListRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_11ae1d8c\\Coffee.Core\\RepositoryModels\\RepositoryListRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_11ae1d8c\\Coffee.Core\\RepositoryModels\\RepositoryPaginationAsTResultRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_11ae1d8c\\Coffee.Core\\RepositoryModels\\RepositoryPaginationAsTResultRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_11ae1d8c\\Coffee.Core\\RepositoryModels\\RepositoryPaginationRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_11ae1d8c\\Coffee.Core\\RepositoryModels\\RepositoryPaginationRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_11ae1d8c\\Coffee.Core\\RepositoryModels\\RepositorySoftDeleteRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_11ae1d8c\\Coffee.Core\\RepositoryModels\\RepositorySoftDeleteRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_11ae1d8c\\Coffee.Core\\RepositoryModels\\RepositoryUpdateRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_11ae1d8c\\Coffee.Core\\RepositoryModels\\RepositoryUpdateRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_11ae1d8c\\Coffee.Core\\Services\\IEmailService.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_11ae1d8c\\Coffee.Core\\Services\\IEmailService.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_11ae1d8c\\Coffee.Core\\Services\\IMemoryCacheService.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_11ae1d8c\\Coffee.Core\\Services\\IMemoryCacheService.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_11ae1d8c\\Coffee.Core\\Services\\IRepository.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_11ae1d8c\\Coffee.Core\\Services\\IRepository.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_11ae1d8c\\Coffee.Core\\Services\\ISmsNetGsmService.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_11ae1d8c\\Coffee.Core\\Services\\ISmsNetGsmService.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_11ae1d8c\\Coffee.Core\\Services\\ITokenService.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_11ae1d8c\\Coffee.Core\\Services\\ITokenService.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_11ae1d8c\\Coffee.Core\\Services\\IUnitOfWork.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_11ae1d8c\\Coffee.Core\\Services\\IUnitOfWork.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_11ae1d8c\\Coffee.Core\\Services\\IUploadLocalService.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_11ae1d8c\\Coffee.Core\\Services\\IUploadLocalService.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_11ae1d8c\\Coffee.Core\\TokenModels\\GetClientTokenRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_11ae1d8c\\Coffee.Core\\TokenModels\\GetClientTokenRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_11ae1d8c\\Coffee.Core\\TokenModels\\GetClientTokenResult.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_11ae1d8c\\Coffee.Core\\TokenModels\\GetClientTokenResult.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_11ae1d8c\\Coffee.Core\\TokenModels\\GetTokenRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_11ae1d8c\\Coffee.Core\\TokenModels\\GetTokenRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_11ae1d8c\\Coffee.Core\\TokenModels\\GetTokenResponse.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_11ae1d8c\\Coffee.Core\\TokenModels\\GetTokenResponse.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_11ae1d8c\\Coffee.Core\\TokenModels\\ValidateTokenRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_11ae1d8c\\Coffee.Core\\TokenModels\\ValidateTokenRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_11ae1d8c\\Coffee.Dal\\Context\\CoffeeContextPartial.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_11ae1d8c\\Coffee.Dal\\Context\\CoffeeContextPartial.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_11ae1d8c\\Coffee.Dal\\Context\\CoffeeDbContext.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_11ae1d8c\\Coffee.Dal\\Context\\CoffeeDbContext.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_11ae1d8c\\Coffee.Dal\\Data\\Common\\AzureBlobStorageService.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_11ae1d8c\\Coffee.Dal\\Data\\Common\\AzureBlobStorageService.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_11ae1d8c\\Coffee.Dal\\Data\\Common\\Repository.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_11ae1d8c\\Coffee.Dal\\Data\\Common\\Repository.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_11ae1d8c\\Coffee.Dal\\Data\\Common\\UnitOfWork.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_11ae1d8c\\Coffee.Dal\\Data\\Common\\UnitOfWork.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_11ae1d8c\\Coffee.Dal\\FluentApi\\BaseMap.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_11ae1d8c\\Coffee.Dal\\FluentApi\\BaseMap.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_11ae1d8c\\Coffee.Domain.Entities\\IdentityModels\\AppRole.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_11ae1d8c\\Coffee.Domain.Entities\\IdentityModels\\AppRole.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_11ae1d8c\\Coffee.Domain.Entities\\IdentityModels\\AppUser.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_11ae1d8c\\Coffee.Domain.Entities\\IdentityModels\\AppUser.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_11ae1d8c\\Coffee.Domain.Entities\\IdentityModels\\AppUserState.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_11ae1d8c\\Coffee.Domain.Entities\\IdentityModels\\AppUserState.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_11ae1d8c\\Coffee.Domain.Entities\\Models\\BaseEntity.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_11ae1d8c\\Coffee.Domain.Entities\\Models\\BaseEntity.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_11ae1d8c\\ViFactory\\Program.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_11ae1d8c\\ViFactory\\Program.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_11ae1d8c\\ViFactory\\Templates\\Context.txt",
+      "PackagePath": "staticwebassets\\projects\\Coffee_11ae1d8c\\ViFactory\\Templates\\Context.txt"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_11ae1d8c\\ViFactory\\Templates\\CreateDto.txt",
+      "PackagePath": "staticwebassets\\projects\\Coffee_11ae1d8c\\ViFactory\\Templates\\CreateDto.txt"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_11ae1d8c\\ViFactory\\Templates\\DalRepository.txt",
+      "PackagePath": "staticwebassets\\projects\\Coffee_11ae1d8c\\ViFactory\\Templates\\DalRepository.txt"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_11ae1d8c\\ViFactory\\Templates\\FluentApiMap.txt",
+      "PackagePath": "staticwebassets\\projects\\Coffee_11ae1d8c\\ViFactory\\Templates\\FluentApiMap.txt"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_11ae1d8c\\ViFactory\\Templates\\IDalRepository.txt",
+      "PackagePath": "staticwebassets\\projects\\Coffee_11ae1d8c\\ViFactory\\Templates\\IDalRepository.txt"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_11ae1d8c\\ViFactory\\Templates\\IService.txt",
+      "PackagePath": "staticwebassets\\projects\\Coffee_11ae1d8c\\ViFactory\\Templates\\IService.txt"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_11ae1d8c\\ViFactory\\Templates\\Service.txt",
+      "PackagePath": "staticwebassets\\projects\\Coffee_11ae1d8c\\ViFactory\\Templates\\Service.txt"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_11ae1d8c\\ViFactory\\Templates\\UnitOfWork.txt",
+      "PackagePath": "staticwebassets\\projects\\Coffee_11ae1d8c\\ViFactory\\Templates\\UnitOfWork.txt"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_22e389c4\\Coffee.Bll\\Enums\\ExceptionResponseType.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_22e389c4\\Coffee.Bll\\Enums\\ExceptionResponseType.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_22e389c4\\Coffee.Bll\\Models\\EmailSettings.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_22e389c4\\Coffee.Bll\\Models\\EmailSettings.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_22e389c4\\Coffee.Bll\\Models\\JwtSettings.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_22e389c4\\Coffee.Bll\\Models\\JwtSettings.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_22e389c4\\Coffee.Bll\\Models\\ResponseCommon.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_22e389c4\\Coffee.Bll\\Models\\ResponseCommon.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_22e389c4\\Coffee.Bll\\Models\\ResponseException.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_22e389c4\\Coffee.Bll\\Models\\ResponseException.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_22e389c4\\Coffee.Bll\\Models\\ResponseExceptionData.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_22e389c4\\Coffee.Bll\\Models\\ResponseExceptionData.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_22e389c4\\Coffee.Bll\\Models\\SmsNetGsmSettings.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_22e389c4\\Coffee.Bll\\Models\\SmsNetGsmSettings.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_22e389c4\\Coffee.Bll\\Services\\Common\\EmailService.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_22e389c4\\Coffee.Bll\\Services\\Common\\EmailService.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_22e389c4\\Coffee.Bll\\Services\\Common\\MemoryCache.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_22e389c4\\Coffee.Bll\\Services\\Common\\MemoryCache.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_22e389c4\\Coffee.Bll\\Services\\Common\\SmsNetGsmServices.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_22e389c4\\Coffee.Bll\\Services\\Common\\SmsNetGsmServices.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_22e389c4\\Coffee.Bll\\Services\\Common\\TokenService.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_22e389c4\\Coffee.Bll\\Services\\Common\\TokenService.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_22e389c4\\Coffee.Bll\\Services\\Common\\UploadLocalService.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_22e389c4\\Coffee.Bll\\Services\\Common\\UploadLocalService.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_22e389c4\\Coffee.Core\\Enums\\DbEntityState.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_22e389c4\\Coffee.Core\\Enums\\DbEntityState.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_22e389c4\\Coffee.Core\\Enums\\ExceptionHelper.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_22e389c4\\Coffee.Core\\Enums\\ExceptionHelper.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_22e389c4\\Coffee.Core\\JsonModels\\MultiLanguageFormFile.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_22e389c4\\Coffee.Core\\JsonModels\\MultiLanguageFormFile.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_22e389c4\\Coffee.Core\\JsonModels\\MultiLanguageListString.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_22e389c4\\Coffee.Core\\JsonModels\\MultiLanguageListString.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_22e389c4\\Coffee.Core\\JsonModels\\MultiLanguageString.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_22e389c4\\Coffee.Core\\JsonModels\\MultiLanguageString.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_22e389c4\\Coffee.Core\\Models\\ApiContext.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_22e389c4\\Coffee.Core\\Models\\ApiContext.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_22e389c4\\Coffee.Core\\Models\\EmailSendData.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_22e389c4\\Coffee.Core\\Models\\EmailSendData.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_22e389c4\\Coffee.Core\\Models\\IBaseEntity.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_22e389c4\\Coffee.Core\\Models\\IBaseEntity.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_22e389c4\\Coffee.Core\\Models\\PaginationRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_22e389c4\\Coffee.Core\\Models\\PaginationRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_22e389c4\\Coffee.Core\\Models\\PaginationResponse.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_22e389c4\\Coffee.Core\\Models\\PaginationResponse.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_22e389c4\\Coffee.Core\\Models\\SmsNetGsmSendData.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_22e389c4\\Coffee.Core\\Models\\SmsNetGsmSendData.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_22e389c4\\Coffee.Core\\Models\\UnitOfWorkResponse.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_22e389c4\\Coffee.Core\\Models\\UnitOfWorkResponse.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_22e389c4\\Coffee.Core\\RepositoryModels\\RepositoryCreateRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_22e389c4\\Coffee.Core\\RepositoryModels\\RepositoryCreateRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_22e389c4\\Coffee.Core\\RepositoryModels\\RepositoryDeleteRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_22e389c4\\Coffee.Core\\RepositoryModels\\RepositoryDeleteRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_22e389c4\\Coffee.Core\\RepositoryModels\\RepositoryGetAsTResultRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_22e389c4\\Coffee.Core\\RepositoryModels\\RepositoryGetAsTResultRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_22e389c4\\Coffee.Core\\RepositoryModels\\RepositoryGetRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_22e389c4\\Coffee.Core\\RepositoryModels\\RepositoryGetRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_22e389c4\\Coffee.Core\\RepositoryModels\\RepositoryIsExistRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_22e389c4\\Coffee.Core\\RepositoryModels\\RepositoryIsExistRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_22e389c4\\Coffee.Core\\RepositoryModels\\RepositoryListAsTResultRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_22e389c4\\Coffee.Core\\RepositoryModels\\RepositoryListAsTResultRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_22e389c4\\Coffee.Core\\RepositoryModels\\RepositoryListRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_22e389c4\\Coffee.Core\\RepositoryModels\\RepositoryListRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_22e389c4\\Coffee.Core\\RepositoryModels\\RepositoryPaginationAsTResultRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_22e389c4\\Coffee.Core\\RepositoryModels\\RepositoryPaginationAsTResultRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_22e389c4\\Coffee.Core\\RepositoryModels\\RepositoryPaginationRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_22e389c4\\Coffee.Core\\RepositoryModels\\RepositoryPaginationRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_22e389c4\\Coffee.Core\\RepositoryModels\\RepositorySoftDeleteRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_22e389c4\\Coffee.Core\\RepositoryModels\\RepositorySoftDeleteRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_22e389c4\\Coffee.Core\\RepositoryModels\\RepositoryUpdateRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_22e389c4\\Coffee.Core\\RepositoryModels\\RepositoryUpdateRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_22e389c4\\Coffee.Core\\Services\\IEmailService.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_22e389c4\\Coffee.Core\\Services\\IEmailService.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_22e389c4\\Coffee.Core\\Services\\IMemoryCacheService.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_22e389c4\\Coffee.Core\\Services\\IMemoryCacheService.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_22e389c4\\Coffee.Core\\Services\\IRepository.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_22e389c4\\Coffee.Core\\Services\\IRepository.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_22e389c4\\Coffee.Core\\Services\\ISmsNetGsmService.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_22e389c4\\Coffee.Core\\Services\\ISmsNetGsmService.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_22e389c4\\Coffee.Core\\Services\\ITokenService.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_22e389c4\\Coffee.Core\\Services\\ITokenService.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_22e389c4\\Coffee.Core\\Services\\IUnitOfWork.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_22e389c4\\Coffee.Core\\Services\\IUnitOfWork.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_22e389c4\\Coffee.Core\\Services\\IUploadLocalService.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_22e389c4\\Coffee.Core\\Services\\IUploadLocalService.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_22e389c4\\Coffee.Core\\TokenModels\\GetClientTokenRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_22e389c4\\Coffee.Core\\TokenModels\\GetClientTokenRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_22e389c4\\Coffee.Core\\TokenModels\\GetClientTokenResult.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_22e389c4\\Coffee.Core\\TokenModels\\GetClientTokenResult.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_22e389c4\\Coffee.Core\\TokenModels\\GetTokenRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_22e389c4\\Coffee.Core\\TokenModels\\GetTokenRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_22e389c4\\Coffee.Core\\TokenModels\\GetTokenResponse.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_22e389c4\\Coffee.Core\\TokenModels\\GetTokenResponse.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_22e389c4\\Coffee.Core\\TokenModels\\ValidateTokenRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_22e389c4\\Coffee.Core\\TokenModels\\ValidateTokenRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_22e389c4\\Coffee.Dal\\Context\\CoffeeContextPartial.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_22e389c4\\Coffee.Dal\\Context\\CoffeeContextPartial.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_22e389c4\\Coffee.Dal\\Context\\CoffeeDbContext.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_22e389c4\\Coffee.Dal\\Context\\CoffeeDbContext.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_22e389c4\\Coffee.Dal\\Data\\Common\\AzureBlobStorageService.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_22e389c4\\Coffee.Dal\\Data\\Common\\AzureBlobStorageService.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_22e389c4\\Coffee.Dal\\Data\\Common\\Repository.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_22e389c4\\Coffee.Dal\\Data\\Common\\Repository.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_22e389c4\\Coffee.Dal\\Data\\Common\\UnitOfWork.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_22e389c4\\Coffee.Dal\\Data\\Common\\UnitOfWork.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_22e389c4\\Coffee.Dal\\FluentApi\\BaseMap.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_22e389c4\\Coffee.Dal\\FluentApi\\BaseMap.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_22e389c4\\ViFactory\\Program.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_22e389c4\\ViFactory\\Program.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_22e389c4\\ViFactory\\Templates\\Context.txt",
+      "PackagePath": "staticwebassets\\projects\\Coffee_22e389c4\\ViFactory\\Templates\\Context.txt"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_22e389c4\\ViFactory\\Templates\\CreateDto.txt",
+      "PackagePath": "staticwebassets\\projects\\Coffee_22e389c4\\ViFactory\\Templates\\CreateDto.txt"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_22e389c4\\ViFactory\\Templates\\DalRepository.txt",
+      "PackagePath": "staticwebassets\\projects\\Coffee_22e389c4\\ViFactory\\Templates\\DalRepository.txt"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_22e389c4\\ViFactory\\Templates\\FluentApiMap.txt",
+      "PackagePath": "staticwebassets\\projects\\Coffee_22e389c4\\ViFactory\\Templates\\FluentApiMap.txt"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_22e389c4\\ViFactory\\Templates\\IDalRepository.txt",
+      "PackagePath": "staticwebassets\\projects\\Coffee_22e389c4\\ViFactory\\Templates\\IDalRepository.txt"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_22e389c4\\ViFactory\\Templates\\IService.txt",
+      "PackagePath": "staticwebassets\\projects\\Coffee_22e389c4\\ViFactory\\Templates\\IService.txt"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_22e389c4\\ViFactory\\Templates\\Service.txt",
+      "PackagePath": "staticwebassets\\projects\\Coffee_22e389c4\\ViFactory\\Templates\\Service.txt"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_22e389c4\\ViFactory\\Templates\\UnitOfWork.txt",
+      "PackagePath": "staticwebassets\\projects\\Coffee_22e389c4\\ViFactory\\Templates\\UnitOfWork.txt"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_27064b6a.zip",
+      "PackagePath": "staticwebassets\\projects\\Coffee_27064b6a.zip"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_27064b6a\\Coffee.Bll\\Enums\\ExceptionResponseType.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_27064b6a\\Coffee.Bll\\Enums\\ExceptionResponseType.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_27064b6a\\Coffee.Bll\\Models\\EmailSettings.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_27064b6a\\Coffee.Bll\\Models\\EmailSettings.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_27064b6a\\Coffee.Bll\\Models\\JwtSettings.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_27064b6a\\Coffee.Bll\\Models\\JwtSettings.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_27064b6a\\Coffee.Bll\\Models\\ResponseCommon.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_27064b6a\\Coffee.Bll\\Models\\ResponseCommon.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_27064b6a\\Coffee.Bll\\Models\\ResponseException.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_27064b6a\\Coffee.Bll\\Models\\ResponseException.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_27064b6a\\Coffee.Bll\\Models\\ResponseExceptionData.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_27064b6a\\Coffee.Bll\\Models\\ResponseExceptionData.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_27064b6a\\Coffee.Bll\\Models\\SmsNetGsmSettings.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_27064b6a\\Coffee.Bll\\Models\\SmsNetGsmSettings.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_27064b6a\\Coffee.Bll\\Services\\Common\\EmailService.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_27064b6a\\Coffee.Bll\\Services\\Common\\EmailService.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_27064b6a\\Coffee.Bll\\Services\\Common\\MemoryCache.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_27064b6a\\Coffee.Bll\\Services\\Common\\MemoryCache.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_27064b6a\\Coffee.Bll\\Services\\Common\\SmsNetGsmServices.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_27064b6a\\Coffee.Bll\\Services\\Common\\SmsNetGsmServices.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_27064b6a\\Coffee.Bll\\Services\\Common\\TokenService.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_27064b6a\\Coffee.Bll\\Services\\Common\\TokenService.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_27064b6a\\Coffee.Bll\\Services\\Common\\UploadLocalService.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_27064b6a\\Coffee.Bll\\Services\\Common\\UploadLocalService.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_27064b6a\\Coffee.Core\\Enums\\DbEntityState.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_27064b6a\\Coffee.Core\\Enums\\DbEntityState.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_27064b6a\\Coffee.Core\\Enums\\ExceptionHelper.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_27064b6a\\Coffee.Core\\Enums\\ExceptionHelper.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_27064b6a\\Coffee.Core\\JsonModels\\MultiLanguageFormFile.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_27064b6a\\Coffee.Core\\JsonModels\\MultiLanguageFormFile.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_27064b6a\\Coffee.Core\\JsonModels\\MultiLanguageListString.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_27064b6a\\Coffee.Core\\JsonModels\\MultiLanguageListString.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_27064b6a\\Coffee.Core\\JsonModels\\MultiLanguageString.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_27064b6a\\Coffee.Core\\JsonModels\\MultiLanguageString.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_27064b6a\\Coffee.Core\\Models\\ApiContext.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_27064b6a\\Coffee.Core\\Models\\ApiContext.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_27064b6a\\Coffee.Core\\Models\\EmailSendData.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_27064b6a\\Coffee.Core\\Models\\EmailSendData.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_27064b6a\\Coffee.Core\\Models\\IBaseEntity.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_27064b6a\\Coffee.Core\\Models\\IBaseEntity.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_27064b6a\\Coffee.Core\\Models\\PaginationRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_27064b6a\\Coffee.Core\\Models\\PaginationRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_27064b6a\\Coffee.Core\\Models\\PaginationResponse.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_27064b6a\\Coffee.Core\\Models\\PaginationResponse.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_27064b6a\\Coffee.Core\\Models\\SmsNetGsmSendData.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_27064b6a\\Coffee.Core\\Models\\SmsNetGsmSendData.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_27064b6a\\Coffee.Core\\Models\\UnitOfWorkResponse.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_27064b6a\\Coffee.Core\\Models\\UnitOfWorkResponse.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_27064b6a\\Coffee.Core\\RepositoryModels\\RepositoryCreateRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_27064b6a\\Coffee.Core\\RepositoryModels\\RepositoryCreateRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_27064b6a\\Coffee.Core\\RepositoryModels\\RepositoryDeleteRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_27064b6a\\Coffee.Core\\RepositoryModels\\RepositoryDeleteRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_27064b6a\\Coffee.Core\\RepositoryModels\\RepositoryGetAsTResultRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_27064b6a\\Coffee.Core\\RepositoryModels\\RepositoryGetAsTResultRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_27064b6a\\Coffee.Core\\RepositoryModels\\RepositoryGetRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_27064b6a\\Coffee.Core\\RepositoryModels\\RepositoryGetRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_27064b6a\\Coffee.Core\\RepositoryModels\\RepositoryIsExistRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_27064b6a\\Coffee.Core\\RepositoryModels\\RepositoryIsExistRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_27064b6a\\Coffee.Core\\RepositoryModels\\RepositoryListAsTResultRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_27064b6a\\Coffee.Core\\RepositoryModels\\RepositoryListAsTResultRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_27064b6a\\Coffee.Core\\RepositoryModels\\RepositoryListRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_27064b6a\\Coffee.Core\\RepositoryModels\\RepositoryListRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_27064b6a\\Coffee.Core\\RepositoryModels\\RepositoryPaginationAsTResultRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_27064b6a\\Coffee.Core\\RepositoryModels\\RepositoryPaginationAsTResultRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_27064b6a\\Coffee.Core\\RepositoryModels\\RepositoryPaginationRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_27064b6a\\Coffee.Core\\RepositoryModels\\RepositoryPaginationRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_27064b6a\\Coffee.Core\\RepositoryModels\\RepositorySoftDeleteRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_27064b6a\\Coffee.Core\\RepositoryModels\\RepositorySoftDeleteRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_27064b6a\\Coffee.Core\\RepositoryModels\\RepositoryUpdateRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_27064b6a\\Coffee.Core\\RepositoryModels\\RepositoryUpdateRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_27064b6a\\Coffee.Core\\Services\\IEmailService.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_27064b6a\\Coffee.Core\\Services\\IEmailService.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_27064b6a\\Coffee.Core\\Services\\IMemoryCacheService.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_27064b6a\\Coffee.Core\\Services\\IMemoryCacheService.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_27064b6a\\Coffee.Core\\Services\\IRepository.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_27064b6a\\Coffee.Core\\Services\\IRepository.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_27064b6a\\Coffee.Core\\Services\\ISmsNetGsmService.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_27064b6a\\Coffee.Core\\Services\\ISmsNetGsmService.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_27064b6a\\Coffee.Core\\Services\\ITokenService.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_27064b6a\\Coffee.Core\\Services\\ITokenService.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_27064b6a\\Coffee.Core\\Services\\IUnitOfWork.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_27064b6a\\Coffee.Core\\Services\\IUnitOfWork.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_27064b6a\\Coffee.Core\\Services\\IUploadLocalService.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_27064b6a\\Coffee.Core\\Services\\IUploadLocalService.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_27064b6a\\Coffee.Core\\TokenModels\\GetClientTokenRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_27064b6a\\Coffee.Core\\TokenModels\\GetClientTokenRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_27064b6a\\Coffee.Core\\TokenModels\\GetClientTokenResult.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_27064b6a\\Coffee.Core\\TokenModels\\GetClientTokenResult.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_27064b6a\\Coffee.Core\\TokenModels\\GetTokenRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_27064b6a\\Coffee.Core\\TokenModels\\GetTokenRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_27064b6a\\Coffee.Core\\TokenModels\\GetTokenResponse.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_27064b6a\\Coffee.Core\\TokenModels\\GetTokenResponse.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_27064b6a\\Coffee.Core\\TokenModels\\ValidateTokenRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_27064b6a\\Coffee.Core\\TokenModels\\ValidateTokenRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_27064b6a\\Coffee.Dal\\Context\\CoffeeContextPartial.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_27064b6a\\Coffee.Dal\\Context\\CoffeeContextPartial.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_27064b6a\\Coffee.Dal\\Context\\CoffeeDbContext.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_27064b6a\\Coffee.Dal\\Context\\CoffeeDbContext.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_27064b6a\\Coffee.Dal\\Data\\Common\\AzureBlobStorageService.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_27064b6a\\Coffee.Dal\\Data\\Common\\AzureBlobStorageService.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_27064b6a\\Coffee.Dal\\Data\\Common\\Repository.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_27064b6a\\Coffee.Dal\\Data\\Common\\Repository.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_27064b6a\\Coffee.Dal\\Data\\Common\\UnitOfWork.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_27064b6a\\Coffee.Dal\\Data\\Common\\UnitOfWork.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_27064b6a\\Coffee.Dal\\FluentApi\\BaseMap.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_27064b6a\\Coffee.Dal\\FluentApi\\BaseMap.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_27064b6a\\Coffee.Domain\\IdentityModels\\AppRole.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_27064b6a\\Coffee.Domain\\IdentityModels\\AppRole.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_27064b6a\\Coffee.Domain\\IdentityModels\\AppUser.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_27064b6a\\Coffee.Domain\\IdentityModels\\AppUser.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_27064b6a\\Coffee.Domain\\IdentityModels\\AppUserState.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_27064b6a\\Coffee.Domain\\IdentityModels\\AppUserState.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_27064b6a\\Coffee.Domain\\Models\\BaseEntity.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_27064b6a\\Coffee.Domain\\Models\\BaseEntity.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_27064b6a\\ViFactory\\Program.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_27064b6a\\ViFactory\\Program.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_27064b6a\\ViFactory\\Templates\\Context.txt",
+      "PackagePath": "staticwebassets\\projects\\Coffee_27064b6a\\ViFactory\\Templates\\Context.txt"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_27064b6a\\ViFactory\\Templates\\CreateDto.txt",
+      "PackagePath": "staticwebassets\\projects\\Coffee_27064b6a\\ViFactory\\Templates\\CreateDto.txt"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_27064b6a\\ViFactory\\Templates\\DalRepository.txt",
+      "PackagePath": "staticwebassets\\projects\\Coffee_27064b6a\\ViFactory\\Templates\\DalRepository.txt"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_27064b6a\\ViFactory\\Templates\\FluentApiMap.txt",
+      "PackagePath": "staticwebassets\\projects\\Coffee_27064b6a\\ViFactory\\Templates\\FluentApiMap.txt"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_27064b6a\\ViFactory\\Templates\\IDalRepository.txt",
+      "PackagePath": "staticwebassets\\projects\\Coffee_27064b6a\\ViFactory\\Templates\\IDalRepository.txt"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_27064b6a\\ViFactory\\Templates\\IService.txt",
+      "PackagePath": "staticwebassets\\projects\\Coffee_27064b6a\\ViFactory\\Templates\\IService.txt"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_27064b6a\\ViFactory\\Templates\\Service.txt",
+      "PackagePath": "staticwebassets\\projects\\Coffee_27064b6a\\ViFactory\\Templates\\Service.txt"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_27064b6a\\ViFactory\\Templates\\UnitOfWork.txt",
+      "PackagePath": "staticwebassets\\projects\\Coffee_27064b6a\\ViFactory\\Templates\\UnitOfWork.txt"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676.zip",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676.zip"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Bll.Dtos\\obj\\Coffee.Bll.Dtos.csproj.nuget.dgspec.json",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Bll.Dtos\\obj\\Coffee.Bll.Dtos.csproj.nuget.dgspec.json"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Bll.Dtos\\obj\\Coffee.Bll.Dtos.csproj.nuget.g.props",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Bll.Dtos\\obj\\Coffee.Bll.Dtos.csproj.nuget.g.props"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Bll.Dtos\\obj\\Coffee.Bll.Dtos.csproj.nuget.g.targets",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Bll.Dtos\\obj\\Coffee.Bll.Dtos.csproj.nuget.g.targets"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Bll.Dtos\\obj\\Debug\\net7.0\\.NETCoreApp,Version=v7.0.AssemblyAttributes.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Bll.Dtos\\obj\\Debug\\net7.0\\.NETCoreApp,Version=v7.0.AssemblyAttributes.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Bll.Dtos\\obj\\Debug\\net7.0\\Coffee.Bll.Dtos.AssemblyInfo.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Bll.Dtos\\obj\\Debug\\net7.0\\Coffee.Bll.Dtos.AssemblyInfo.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Bll.Dtos\\obj\\Debug\\net7.0\\Coffee.Bll.Dtos.AssemblyInfoInputs.cache",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Bll.Dtos\\obj\\Debug\\net7.0\\Coffee.Bll.Dtos.AssemblyInfoInputs.cache"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Bll.Dtos\\obj\\Debug\\net7.0\\Coffee.Bll.Dtos.GeneratedMSBuildEditorConfig.editorconfig",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Bll.Dtos\\obj\\Debug\\net7.0\\Coffee.Bll.Dtos.GeneratedMSBuildEditorConfig.editorconfig"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Bll.Dtos\\obj\\Debug\\net7.0\\Coffee.Bll.Dtos.GlobalUsings.g.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Bll.Dtos\\obj\\Debug\\net7.0\\Coffee.Bll.Dtos.GlobalUsings.g.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Bll.Dtos\\obj\\Debug\\net7.0\\Coffee.Bll.Dtos.csproj.AssemblyReference.cache",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Bll.Dtos\\obj\\Debug\\net7.0\\Coffee.Bll.Dtos.csproj.AssemblyReference.cache"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Bll.Dtos\\obj\\project.assets.json",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Bll.Dtos\\obj\\project.assets.json"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Bll.Dtos\\obj\\project.nuget.cache",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Bll.Dtos\\obj\\project.nuget.cache"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Bll\\Enums\\ExceptionResponseType.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Bll\\Enums\\ExceptionResponseType.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Bll\\Models\\EmailSettings.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Bll\\Models\\EmailSettings.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Bll\\Models\\JwtSettings.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Bll\\Models\\JwtSettings.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Bll\\Models\\ResponseCommon.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Bll\\Models\\ResponseCommon.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Bll\\Models\\ResponseException.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Bll\\Models\\ResponseException.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Bll\\Models\\ResponseExceptionData.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Bll\\Models\\ResponseExceptionData.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Bll\\Models\\SmsNetGsmSettings.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Bll\\Models\\SmsNetGsmSettings.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Bll\\Services\\Common\\EmailService.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Bll\\Services\\Common\\EmailService.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Bll\\Services\\Common\\MemoryCache.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Bll\\Services\\Common\\MemoryCache.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Bll\\Services\\Common\\SmsNetGsmServices.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Bll\\Services\\Common\\SmsNetGsmServices.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Bll\\Services\\Common\\TokenService.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Bll\\Services\\Common\\TokenService.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Bll\\Services\\Common\\UploadLocalService.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Bll\\Services\\Common\\UploadLocalService.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Bll\\obj\\Coffee.Bll.csproj.nuget.dgspec.json",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Bll\\obj\\Coffee.Bll.csproj.nuget.dgspec.json"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Bll\\obj\\Coffee.Bll.csproj.nuget.g.props",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Bll\\obj\\Coffee.Bll.csproj.nuget.g.props"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Bll\\obj\\Coffee.Bll.csproj.nuget.g.targets",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Bll\\obj\\Coffee.Bll.csproj.nuget.g.targets"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Bll\\obj\\Debug\\net7.0\\.NETCoreApp,Version=v7.0.AssemblyAttributes.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Bll\\obj\\Debug\\net7.0\\.NETCoreApp,Version=v7.0.AssemblyAttributes.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Bll\\obj\\Debug\\net7.0\\Coffee.Bll.AssemblyInfo.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Bll\\obj\\Debug\\net7.0\\Coffee.Bll.AssemblyInfo.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Bll\\obj\\Debug\\net7.0\\Coffee.Bll.AssemblyInfoInputs.cache",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Bll\\obj\\Debug\\net7.0\\Coffee.Bll.AssemblyInfoInputs.cache"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Bll\\obj\\Debug\\net7.0\\Coffee.Bll.GeneratedMSBuildEditorConfig.editorconfig",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Bll\\obj\\Debug\\net7.0\\Coffee.Bll.GeneratedMSBuildEditorConfig.editorconfig"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Bll\\obj\\Debug\\net7.0\\Coffee.Bll.GlobalUsings.g.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Bll\\obj\\Debug\\net7.0\\Coffee.Bll.GlobalUsings.g.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Bll\\obj\\Debug\\net7.0\\Coffee.Bll.csproj.AssemblyReference.cache",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Bll\\obj\\Debug\\net7.0\\Coffee.Bll.csproj.AssemblyReference.cache"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Bll\\obj\\project.assets.json",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Bll\\obj\\project.assets.json"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Bll\\obj\\project.nuget.cache",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Bll\\obj\\project.nuget.cache"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Core\\Enums\\DbEntityState.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Core\\Enums\\DbEntityState.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Core\\Enums\\ExceptionHelper.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Core\\Enums\\ExceptionHelper.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Core\\JsonModels\\MultiLanguageFormFile.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Core\\JsonModels\\MultiLanguageFormFile.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Core\\JsonModels\\MultiLanguageListString.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Core\\JsonModels\\MultiLanguageListString.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Core\\JsonModels\\MultiLanguageString.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Core\\JsonModels\\MultiLanguageString.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Core\\Models\\ApiContext.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Core\\Models\\ApiContext.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Core\\Models\\EmailSendData.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Core\\Models\\EmailSendData.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Core\\Models\\IBaseEntity.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Core\\Models\\IBaseEntity.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Core\\Models\\PaginationRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Core\\Models\\PaginationRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Core\\Models\\PaginationResponse.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Core\\Models\\PaginationResponse.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Core\\Models\\SmsNetGsmSendData.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Core\\Models\\SmsNetGsmSendData.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Core\\Models\\UnitOfWorkResponse.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Core\\Models\\UnitOfWorkResponse.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Core\\RepositoryModels\\RepositoryCreateRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Core\\RepositoryModels\\RepositoryCreateRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Core\\RepositoryModels\\RepositoryDeleteRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Core\\RepositoryModels\\RepositoryDeleteRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Core\\RepositoryModels\\RepositoryGetAsTResultRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Core\\RepositoryModels\\RepositoryGetAsTResultRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Core\\RepositoryModels\\RepositoryGetRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Core\\RepositoryModels\\RepositoryGetRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Core\\RepositoryModels\\RepositoryIsExistRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Core\\RepositoryModels\\RepositoryIsExistRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Core\\RepositoryModels\\RepositoryListAsTResultRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Core\\RepositoryModels\\RepositoryListAsTResultRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Core\\RepositoryModels\\RepositoryListRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Core\\RepositoryModels\\RepositoryListRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Core\\RepositoryModels\\RepositoryPaginationAsTResultRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Core\\RepositoryModels\\RepositoryPaginationAsTResultRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Core\\RepositoryModels\\RepositoryPaginationRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Core\\RepositoryModels\\RepositoryPaginationRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Core\\RepositoryModels\\RepositorySoftDeleteRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Core\\RepositoryModels\\RepositorySoftDeleteRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Core\\RepositoryModels\\RepositoryUpdateRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Core\\RepositoryModels\\RepositoryUpdateRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Core\\Services\\IEmailService.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Core\\Services\\IEmailService.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Core\\Services\\IMemoryCacheService.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Core\\Services\\IMemoryCacheService.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Core\\Services\\IRepository.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Core\\Services\\IRepository.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Core\\Services\\ISmsNetGsmService.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Core\\Services\\ISmsNetGsmService.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Core\\Services\\ITokenService.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Core\\Services\\ITokenService.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Core\\Services\\IUnitOfWork.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Core\\Services\\IUnitOfWork.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Core\\Services\\IUploadLocalService.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Core\\Services\\IUploadLocalService.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Core\\TokenModels\\GetClientTokenRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Core\\TokenModels\\GetClientTokenRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Core\\TokenModels\\GetClientTokenResult.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Core\\TokenModels\\GetClientTokenResult.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Core\\TokenModels\\GetTokenRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Core\\TokenModels\\GetTokenRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Core\\TokenModels\\GetTokenResponse.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Core\\TokenModels\\GetTokenResponse.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Core\\TokenModels\\ValidateTokenRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Core\\TokenModels\\ValidateTokenRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Core\\obj\\Coffee.Core.csproj.nuget.dgspec.json",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Core\\obj\\Coffee.Core.csproj.nuget.dgspec.json"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Core\\obj\\Coffee.Core.csproj.nuget.g.props",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Core\\obj\\Coffee.Core.csproj.nuget.g.props"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Core\\obj\\Coffee.Core.csproj.nuget.g.targets",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Core\\obj\\Coffee.Core.csproj.nuget.g.targets"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Core\\obj\\Debug\\net7.0\\.NETCoreApp,Version=v7.0.AssemblyAttributes.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Core\\obj\\Debug\\net7.0\\.NETCoreApp,Version=v7.0.AssemblyAttributes.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Core\\obj\\Debug\\net7.0\\Coffee.Core.AssemblyInfo.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Core\\obj\\Debug\\net7.0\\Coffee.Core.AssemblyInfo.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Core\\obj\\Debug\\net7.0\\Coffee.Core.AssemblyInfoInputs.cache",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Core\\obj\\Debug\\net7.0\\Coffee.Core.AssemblyInfoInputs.cache"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Core\\obj\\Debug\\net7.0\\Coffee.Core.GeneratedMSBuildEditorConfig.editorconfig",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Core\\obj\\Debug\\net7.0\\Coffee.Core.GeneratedMSBuildEditorConfig.editorconfig"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Core\\obj\\Debug\\net7.0\\Coffee.Core.GlobalUsings.g.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Core\\obj\\Debug\\net7.0\\Coffee.Core.GlobalUsings.g.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Core\\obj\\Debug\\net7.0\\Coffee.Core.csproj.AssemblyReference.cache",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Core\\obj\\Debug\\net7.0\\Coffee.Core.csproj.AssemblyReference.cache"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Core\\obj\\project.assets.json",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Core\\obj\\project.assets.json"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Core\\obj\\project.nuget.cache",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Core\\obj\\project.nuget.cache"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Dal\\Context\\CoffeeContextPartial.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Dal\\Context\\CoffeeContextPartial.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Dal\\Context\\CoffeeDbContext.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Dal\\Context\\CoffeeDbContext.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Dal\\Data\\Common\\AzureBlobStorageService.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Dal\\Data\\Common\\AzureBlobStorageService.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Dal\\Data\\Common\\Repository.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Dal\\Data\\Common\\Repository.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Dal\\Data\\Common\\UnitOfWork.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Dal\\Data\\Common\\UnitOfWork.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Dal\\FluentApi\\BaseMap.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Dal\\FluentApi\\BaseMap.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Dal\\obj\\Coffee.Dal.csproj.nuget.dgspec.json",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Dal\\obj\\Coffee.Dal.csproj.nuget.dgspec.json"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Dal\\obj\\Coffee.Dal.csproj.nuget.g.props",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Dal\\obj\\Coffee.Dal.csproj.nuget.g.props"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Dal\\obj\\Coffee.Dal.csproj.nuget.g.targets",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Dal\\obj\\Coffee.Dal.csproj.nuget.g.targets"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Dal\\obj\\Debug\\net7.0\\.NETCoreApp,Version=v7.0.AssemblyAttributes.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Dal\\obj\\Debug\\net7.0\\.NETCoreApp,Version=v7.0.AssemblyAttributes.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Dal\\obj\\Debug\\net7.0\\Coffee.Dal.AssemblyInfo.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Dal\\obj\\Debug\\net7.0\\Coffee.Dal.AssemblyInfo.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Dal\\obj\\Debug\\net7.0\\Coffee.Dal.AssemblyInfoInputs.cache",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Dal\\obj\\Debug\\net7.0\\Coffee.Dal.AssemblyInfoInputs.cache"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Dal\\obj\\Debug\\net7.0\\Coffee.Dal.GeneratedMSBuildEditorConfig.editorconfig",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Dal\\obj\\Debug\\net7.0\\Coffee.Dal.GeneratedMSBuildEditorConfig.editorconfig"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Dal\\obj\\Debug\\net7.0\\Coffee.Dal.GlobalUsings.g.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Dal\\obj\\Debug\\net7.0\\Coffee.Dal.GlobalUsings.g.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Dal\\obj\\Debug\\net7.0\\Coffee.Dal.csproj.AssemblyReference.cache",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Dal\\obj\\Debug\\net7.0\\Coffee.Dal.csproj.AssemblyReference.cache"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Dal\\obj\\project.assets.json",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Dal\\obj\\project.assets.json"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Dal\\obj\\project.nuget.cache",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Dal\\obj\\project.nuget.cache"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Domain\\IdentityModels\\AppRole.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Domain\\IdentityModels\\AppRole.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Domain\\IdentityModels\\AppUser.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Domain\\IdentityModels\\AppUser.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Domain\\IdentityModels\\AppUserState.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Domain\\IdentityModels\\AppUserState.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\Coffee.Domain\\Models\\BaseEntity.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\Coffee.Domain\\Models\\BaseEntity.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\ViFactory\\Program.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\ViFactory\\Program.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\ViFactory\\Templates\\Context.txt",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\ViFactory\\Templates\\Context.txt"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\ViFactory\\Templates\\CreateDto.txt",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\ViFactory\\Templates\\CreateDto.txt"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\ViFactory\\Templates\\DalRepository.txt",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\ViFactory\\Templates\\DalRepository.txt"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\ViFactory\\Templates\\FluentApiMap.txt",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\ViFactory\\Templates\\FluentApiMap.txt"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\ViFactory\\Templates\\IDalRepository.txt",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\ViFactory\\Templates\\IDalRepository.txt"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\ViFactory\\Templates\\IService.txt",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\ViFactory\\Templates\\IService.txt"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\ViFactory\\Templates\\Service.txt",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\ViFactory\\Templates\\Service.txt"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\ViFactory\\Templates\\UnitOfWork.txt",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\ViFactory\\Templates\\UnitOfWork.txt"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\ViFactory\\obj\\Debug\\net7.0\\.NETCoreApp,Version=v7.0.AssemblyAttributes.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\ViFactory\\obj\\Debug\\net7.0\\.NETCoreApp,Version=v7.0.AssemblyAttributes.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\ViFactory\\obj\\Debug\\net7.0\\ViFactory.AssemblyInfo.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\ViFactory\\obj\\Debug\\net7.0\\ViFactory.AssemblyInfo.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\ViFactory\\obj\\Debug\\net7.0\\ViFactory.AssemblyInfoInputs.cache",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\ViFactory\\obj\\Debug\\net7.0\\ViFactory.AssemblyInfoInputs.cache"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\ViFactory\\obj\\Debug\\net7.0\\ViFactory.GeneratedMSBuildEditorConfig.editorconfig",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\ViFactory\\obj\\Debug\\net7.0\\ViFactory.GeneratedMSBuildEditorConfig.editorconfig"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\ViFactory\\obj\\Debug\\net7.0\\ViFactory.GlobalUsings.g.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\ViFactory\\obj\\Debug\\net7.0\\ViFactory.GlobalUsings.g.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\ViFactory\\obj\\Debug\\net7.0\\ViFactory.csproj.AssemblyReference.cache",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\ViFactory\\obj\\Debug\\net7.0\\ViFactory.csproj.AssemblyReference.cache"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\ViFactory\\obj\\ViFactory.csproj.nuget.dgspec.json",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\ViFactory\\obj\\ViFactory.csproj.nuget.dgspec.json"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\ViFactory\\obj\\ViFactory.csproj.nuget.g.props",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\ViFactory\\obj\\ViFactory.csproj.nuget.g.props"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\ViFactory\\obj\\ViFactory.csproj.nuget.g.targets",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\ViFactory\\obj\\ViFactory.csproj.nuget.g.targets"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\ViFactory\\obj\\project.assets.json",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\ViFactory\\obj\\project.assets.json"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_2dba2676\\ViFactory\\obj\\project.nuget.cache",
+      "PackagePath": "staticwebassets\\projects\\Coffee_2dba2676\\ViFactory\\obj\\project.nuget.cache"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_60772177.zip",
+      "PackagePath": "staticwebassets\\projects\\Coffee_60772177.zip"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_60772177\\Coffee.Bll\\Enums\\ExceptionResponseType.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_60772177\\Coffee.Bll\\Enums\\ExceptionResponseType.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_60772177\\Coffee.Bll\\Models\\EmailSettings.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_60772177\\Coffee.Bll\\Models\\EmailSettings.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_60772177\\Coffee.Bll\\Models\\JwtSettings.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_60772177\\Coffee.Bll\\Models\\JwtSettings.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_60772177\\Coffee.Bll\\Models\\ResponseCommon.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_60772177\\Coffee.Bll\\Models\\ResponseCommon.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_60772177\\Coffee.Bll\\Models\\ResponseException.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_60772177\\Coffee.Bll\\Models\\ResponseException.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_60772177\\Coffee.Bll\\Models\\ResponseExceptionData.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_60772177\\Coffee.Bll\\Models\\ResponseExceptionData.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_60772177\\Coffee.Bll\\Models\\SmsNetGsmSettings.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_60772177\\Coffee.Bll\\Models\\SmsNetGsmSettings.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_60772177\\Coffee.Bll\\Services\\Common\\EmailService.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_60772177\\Coffee.Bll\\Services\\Common\\EmailService.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_60772177\\Coffee.Bll\\Services\\Common\\MemoryCache.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_60772177\\Coffee.Bll\\Services\\Common\\MemoryCache.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_60772177\\Coffee.Bll\\Services\\Common\\SmsNetGsmServices.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_60772177\\Coffee.Bll\\Services\\Common\\SmsNetGsmServices.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_60772177\\Coffee.Bll\\Services\\Common\\TokenService.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_60772177\\Coffee.Bll\\Services\\Common\\TokenService.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_60772177\\Coffee.Bll\\Services\\Common\\UploadLocalService.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_60772177\\Coffee.Bll\\Services\\Common\\UploadLocalService.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_60772177\\Coffee.Core\\Enums\\DbEntityState.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_60772177\\Coffee.Core\\Enums\\DbEntityState.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_60772177\\Coffee.Core\\Enums\\ExceptionHelper.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_60772177\\Coffee.Core\\Enums\\ExceptionHelper.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_60772177\\Coffee.Core\\JsonModels\\MultiLanguageFormFile.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_60772177\\Coffee.Core\\JsonModels\\MultiLanguageFormFile.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_60772177\\Coffee.Core\\JsonModels\\MultiLanguageListString.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_60772177\\Coffee.Core\\JsonModels\\MultiLanguageListString.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_60772177\\Coffee.Core\\JsonModels\\MultiLanguageString.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_60772177\\Coffee.Core\\JsonModels\\MultiLanguageString.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_60772177\\Coffee.Core\\Models\\ApiContext.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_60772177\\Coffee.Core\\Models\\ApiContext.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_60772177\\Coffee.Core\\Models\\EmailSendData.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_60772177\\Coffee.Core\\Models\\EmailSendData.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_60772177\\Coffee.Core\\Models\\IBaseEntity.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_60772177\\Coffee.Core\\Models\\IBaseEntity.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_60772177\\Coffee.Core\\Models\\PaginationRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_60772177\\Coffee.Core\\Models\\PaginationRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_60772177\\Coffee.Core\\Models\\PaginationResponse.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_60772177\\Coffee.Core\\Models\\PaginationResponse.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_60772177\\Coffee.Core\\Models\\SmsNetGsmSendData.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_60772177\\Coffee.Core\\Models\\SmsNetGsmSendData.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_60772177\\Coffee.Core\\Models\\UnitOfWorkResponse.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_60772177\\Coffee.Core\\Models\\UnitOfWorkResponse.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_60772177\\Coffee.Core\\RepositoryModels\\RepositoryCreateRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_60772177\\Coffee.Core\\RepositoryModels\\RepositoryCreateRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_60772177\\Coffee.Core\\RepositoryModels\\RepositoryDeleteRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_60772177\\Coffee.Core\\RepositoryModels\\RepositoryDeleteRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_60772177\\Coffee.Core\\RepositoryModels\\RepositoryGetAsTResultRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_60772177\\Coffee.Core\\RepositoryModels\\RepositoryGetAsTResultRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_60772177\\Coffee.Core\\RepositoryModels\\RepositoryGetRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_60772177\\Coffee.Core\\RepositoryModels\\RepositoryGetRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_60772177\\Coffee.Core\\RepositoryModels\\RepositoryIsExistRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_60772177\\Coffee.Core\\RepositoryModels\\RepositoryIsExistRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_60772177\\Coffee.Core\\RepositoryModels\\RepositoryListAsTResultRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_60772177\\Coffee.Core\\RepositoryModels\\RepositoryListAsTResultRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_60772177\\Coffee.Core\\RepositoryModels\\RepositoryListRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_60772177\\Coffee.Core\\RepositoryModels\\RepositoryListRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_60772177\\Coffee.Core\\RepositoryModels\\RepositoryPaginationAsTResultRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_60772177\\Coffee.Core\\RepositoryModels\\RepositoryPaginationAsTResultRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_60772177\\Coffee.Core\\RepositoryModels\\RepositoryPaginationRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_60772177\\Coffee.Core\\RepositoryModels\\RepositoryPaginationRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_60772177\\Coffee.Core\\RepositoryModels\\RepositorySoftDeleteRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_60772177\\Coffee.Core\\RepositoryModels\\RepositorySoftDeleteRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_60772177\\Coffee.Core\\RepositoryModels\\RepositoryUpdateRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_60772177\\Coffee.Core\\RepositoryModels\\RepositoryUpdateRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_60772177\\Coffee.Core\\Services\\IEmailService.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_60772177\\Coffee.Core\\Services\\IEmailService.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_60772177\\Coffee.Core\\Services\\IMemoryCacheService.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_60772177\\Coffee.Core\\Services\\IMemoryCacheService.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_60772177\\Coffee.Core\\Services\\IRepository.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_60772177\\Coffee.Core\\Services\\IRepository.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_60772177\\Coffee.Core\\Services\\ISmsNetGsmService.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_60772177\\Coffee.Core\\Services\\ISmsNetGsmService.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_60772177\\Coffee.Core\\Services\\ITokenService.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_60772177\\Coffee.Core\\Services\\ITokenService.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_60772177\\Coffee.Core\\Services\\IUnitOfWork.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_60772177\\Coffee.Core\\Services\\IUnitOfWork.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_60772177\\Coffee.Core\\Services\\IUploadLocalService.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_60772177\\Coffee.Core\\Services\\IUploadLocalService.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_60772177\\Coffee.Core\\TokenModels\\GetClientTokenRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_60772177\\Coffee.Core\\TokenModels\\GetClientTokenRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_60772177\\Coffee.Core\\TokenModels\\GetClientTokenResult.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_60772177\\Coffee.Core\\TokenModels\\GetClientTokenResult.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_60772177\\Coffee.Core\\TokenModels\\GetTokenRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_60772177\\Coffee.Core\\TokenModels\\GetTokenRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_60772177\\Coffee.Core\\TokenModels\\GetTokenResponse.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_60772177\\Coffee.Core\\TokenModels\\GetTokenResponse.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_60772177\\Coffee.Core\\TokenModels\\ValidateTokenRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_60772177\\Coffee.Core\\TokenModels\\ValidateTokenRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_60772177\\Coffee.Dal\\Context\\CoffeeContextPartial.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_60772177\\Coffee.Dal\\Context\\CoffeeContextPartial.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_60772177\\Coffee.Dal\\Context\\CoffeeDbContext.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_60772177\\Coffee.Dal\\Context\\CoffeeDbContext.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_60772177\\Coffee.Dal\\Data\\Common\\AzureBlobStorageService.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_60772177\\Coffee.Dal\\Data\\Common\\AzureBlobStorageService.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_60772177\\Coffee.Dal\\Data\\Common\\Repository.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_60772177\\Coffee.Dal\\Data\\Common\\Repository.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_60772177\\Coffee.Dal\\Data\\Common\\UnitOfWork.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_60772177\\Coffee.Dal\\Data\\Common\\UnitOfWork.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_60772177\\Coffee.Dal\\FluentApi\\BaseMap.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_60772177\\Coffee.Dal\\FluentApi\\BaseMap.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_60772177\\Coffee.Domain.Entities\\IdentityModels\\AppRole.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_60772177\\Coffee.Domain.Entities\\IdentityModels\\AppRole.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_60772177\\Coffee.Domain.Entities\\IdentityModels\\AppUser.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_60772177\\Coffee.Domain.Entities\\IdentityModels\\AppUser.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_60772177\\Coffee.Domain.Entities\\IdentityModels\\AppUserState.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_60772177\\Coffee.Domain.Entities\\IdentityModels\\AppUserState.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_60772177\\Coffee.Domain.Entities\\Models\\BaseEntity.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_60772177\\Coffee.Domain.Entities\\Models\\BaseEntity.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_60772177\\ViFactory\\Program.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_60772177\\ViFactory\\Program.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_60772177\\ViFactory\\Templates\\Context.txt",
+      "PackagePath": "staticwebassets\\projects\\Coffee_60772177\\ViFactory\\Templates\\Context.txt"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_60772177\\ViFactory\\Templates\\CreateDto.txt",
+      "PackagePath": "staticwebassets\\projects\\Coffee_60772177\\ViFactory\\Templates\\CreateDto.txt"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_60772177\\ViFactory\\Templates\\DalRepository.txt",
+      "PackagePath": "staticwebassets\\projects\\Coffee_60772177\\ViFactory\\Templates\\DalRepository.txt"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_60772177\\ViFactory\\Templates\\FluentApiMap.txt",
+      "PackagePath": "staticwebassets\\projects\\Coffee_60772177\\ViFactory\\Templates\\FluentApiMap.txt"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_60772177\\ViFactory\\Templates\\IDalRepository.txt",
+      "PackagePath": "staticwebassets\\projects\\Coffee_60772177\\ViFactory\\Templates\\IDalRepository.txt"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_60772177\\ViFactory\\Templates\\IService.txt",
+      "PackagePath": "staticwebassets\\projects\\Coffee_60772177\\ViFactory\\Templates\\IService.txt"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_60772177\\ViFactory\\Templates\\Service.txt",
+      "PackagePath": "staticwebassets\\projects\\Coffee_60772177\\ViFactory\\Templates\\Service.txt"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_60772177\\ViFactory\\Templates\\UnitOfWork.txt",
+      "PackagePath": "staticwebassets\\projects\\Coffee_60772177\\ViFactory\\Templates\\UnitOfWork.txt"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_d23a62fc\\Coffee.Bll\\Enums\\ExceptionResponseType.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_d23a62fc\\Coffee.Bll\\Enums\\ExceptionResponseType.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_d23a62fc\\Coffee.Bll\\Models\\EmailSettings.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_d23a62fc\\Coffee.Bll\\Models\\EmailSettings.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_d23a62fc\\Coffee.Bll\\Models\\JwtSettings.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_d23a62fc\\Coffee.Bll\\Models\\JwtSettings.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_d23a62fc\\Coffee.Bll\\Models\\ResponseCommon.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_d23a62fc\\Coffee.Bll\\Models\\ResponseCommon.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_d23a62fc\\Coffee.Bll\\Models\\ResponseException.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_d23a62fc\\Coffee.Bll\\Models\\ResponseException.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_d23a62fc\\Coffee.Bll\\Models\\ResponseExceptionData.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_d23a62fc\\Coffee.Bll\\Models\\ResponseExceptionData.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_d23a62fc\\Coffee.Bll\\Models\\SmsNetGsmSettings.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_d23a62fc\\Coffee.Bll\\Models\\SmsNetGsmSettings.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_d23a62fc\\Coffee.Bll\\Services\\Common\\EmailService.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_d23a62fc\\Coffee.Bll\\Services\\Common\\EmailService.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_d23a62fc\\Coffee.Bll\\Services\\Common\\MemoryCache.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_d23a62fc\\Coffee.Bll\\Services\\Common\\MemoryCache.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_d23a62fc\\Coffee.Bll\\Services\\Common\\SmsNetGsmServices.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_d23a62fc\\Coffee.Bll\\Services\\Common\\SmsNetGsmServices.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_d23a62fc\\Coffee.Bll\\Services\\Common\\TokenService.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_d23a62fc\\Coffee.Bll\\Services\\Common\\TokenService.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_d23a62fc\\Coffee.Bll\\Services\\Common\\UploadLocalService.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_d23a62fc\\Coffee.Bll\\Services\\Common\\UploadLocalService.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_d23a62fc\\Coffee.Core\\Enums\\DbEntityState.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_d23a62fc\\Coffee.Core\\Enums\\DbEntityState.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_d23a62fc\\Coffee.Core\\Enums\\ExceptionHelper.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_d23a62fc\\Coffee.Core\\Enums\\ExceptionHelper.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_d23a62fc\\Coffee.Core\\JsonModels\\MultiLanguageFormFile.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_d23a62fc\\Coffee.Core\\JsonModels\\MultiLanguageFormFile.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_d23a62fc\\Coffee.Core\\JsonModels\\MultiLanguageListString.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_d23a62fc\\Coffee.Core\\JsonModels\\MultiLanguageListString.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_d23a62fc\\Coffee.Core\\JsonModels\\MultiLanguageString.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_d23a62fc\\Coffee.Core\\JsonModels\\MultiLanguageString.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_d23a62fc\\Coffee.Core\\Models\\ApiContext.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_d23a62fc\\Coffee.Core\\Models\\ApiContext.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_d23a62fc\\Coffee.Core\\Models\\EmailSendData.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_d23a62fc\\Coffee.Core\\Models\\EmailSendData.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_d23a62fc\\Coffee.Core\\Models\\IBaseEntity.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_d23a62fc\\Coffee.Core\\Models\\IBaseEntity.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_d23a62fc\\Coffee.Core\\Models\\PaginationRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_d23a62fc\\Coffee.Core\\Models\\PaginationRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_d23a62fc\\Coffee.Core\\Models\\PaginationResponse.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_d23a62fc\\Coffee.Core\\Models\\PaginationResponse.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_d23a62fc\\Coffee.Core\\Models\\SmsNetGsmSendData.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_d23a62fc\\Coffee.Core\\Models\\SmsNetGsmSendData.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_d23a62fc\\Coffee.Core\\Models\\UnitOfWorkResponse.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_d23a62fc\\Coffee.Core\\Models\\UnitOfWorkResponse.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_d23a62fc\\Coffee.Core\\RepositoryModels\\RepositoryCreateRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_d23a62fc\\Coffee.Core\\RepositoryModels\\RepositoryCreateRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_d23a62fc\\Coffee.Core\\RepositoryModels\\RepositoryDeleteRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_d23a62fc\\Coffee.Core\\RepositoryModels\\RepositoryDeleteRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_d23a62fc\\Coffee.Core\\RepositoryModels\\RepositoryGetAsTResultRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_d23a62fc\\Coffee.Core\\RepositoryModels\\RepositoryGetAsTResultRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_d23a62fc\\Coffee.Core\\RepositoryModels\\RepositoryGetRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_d23a62fc\\Coffee.Core\\RepositoryModels\\RepositoryGetRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_d23a62fc\\Coffee.Core\\RepositoryModels\\RepositoryIsExistRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_d23a62fc\\Coffee.Core\\RepositoryModels\\RepositoryIsExistRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_d23a62fc\\Coffee.Core\\RepositoryModels\\RepositoryListAsTResultRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_d23a62fc\\Coffee.Core\\RepositoryModels\\RepositoryListAsTResultRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_d23a62fc\\Coffee.Core\\RepositoryModels\\RepositoryListRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_d23a62fc\\Coffee.Core\\RepositoryModels\\RepositoryListRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_d23a62fc\\Coffee.Core\\RepositoryModels\\RepositoryPaginationAsTResultRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_d23a62fc\\Coffee.Core\\RepositoryModels\\RepositoryPaginationAsTResultRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_d23a62fc\\Coffee.Core\\RepositoryModels\\RepositoryPaginationRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_d23a62fc\\Coffee.Core\\RepositoryModels\\RepositoryPaginationRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_d23a62fc\\Coffee.Core\\RepositoryModels\\RepositorySoftDeleteRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_d23a62fc\\Coffee.Core\\RepositoryModels\\RepositorySoftDeleteRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_d23a62fc\\Coffee.Core\\RepositoryModels\\RepositoryUpdateRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_d23a62fc\\Coffee.Core\\RepositoryModels\\RepositoryUpdateRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_d23a62fc\\Coffee.Core\\Services\\IEmailService.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_d23a62fc\\Coffee.Core\\Services\\IEmailService.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_d23a62fc\\Coffee.Core\\Services\\IMemoryCacheService.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_d23a62fc\\Coffee.Core\\Services\\IMemoryCacheService.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_d23a62fc\\Coffee.Core\\Services\\IRepository.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_d23a62fc\\Coffee.Core\\Services\\IRepository.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_d23a62fc\\Coffee.Core\\Services\\ISmsNetGsmService.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_d23a62fc\\Coffee.Core\\Services\\ISmsNetGsmService.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_d23a62fc\\Coffee.Core\\Services\\ITokenService.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_d23a62fc\\Coffee.Core\\Services\\ITokenService.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_d23a62fc\\Coffee.Core\\Services\\IUnitOfWork.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_d23a62fc\\Coffee.Core\\Services\\IUnitOfWork.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_d23a62fc\\Coffee.Core\\Services\\IUploadLocalService.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_d23a62fc\\Coffee.Core\\Services\\IUploadLocalService.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_d23a62fc\\Coffee.Core\\TokenModels\\GetClientTokenRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_d23a62fc\\Coffee.Core\\TokenModels\\GetClientTokenRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_d23a62fc\\Coffee.Core\\TokenModels\\GetClientTokenResult.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_d23a62fc\\Coffee.Core\\TokenModels\\GetClientTokenResult.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_d23a62fc\\Coffee.Core\\TokenModels\\GetTokenRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_d23a62fc\\Coffee.Core\\TokenModels\\GetTokenRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_d23a62fc\\Coffee.Core\\TokenModels\\GetTokenResponse.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_d23a62fc\\Coffee.Core\\TokenModels\\GetTokenResponse.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_d23a62fc\\Coffee.Core\\TokenModels\\ValidateTokenRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_d23a62fc\\Coffee.Core\\TokenModels\\ValidateTokenRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_d23a62fc\\Coffee.Dal\\Context\\CoffeeContextPartial.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_d23a62fc\\Coffee.Dal\\Context\\CoffeeContextPartial.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_d23a62fc\\Coffee.Dal\\Context\\CoffeeDbContext.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_d23a62fc\\Coffee.Dal\\Context\\CoffeeDbContext.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_d23a62fc\\Coffee.Dal\\Data\\Common\\AzureBlobStorageService.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_d23a62fc\\Coffee.Dal\\Data\\Common\\AzureBlobStorageService.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_d23a62fc\\Coffee.Dal\\Data\\Common\\Repository.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_d23a62fc\\Coffee.Dal\\Data\\Common\\Repository.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_d23a62fc\\Coffee.Dal\\Data\\Common\\UnitOfWork.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_d23a62fc\\Coffee.Dal\\Data\\Common\\UnitOfWork.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_d23a62fc\\Coffee.Dal\\FluentApi\\BaseMap.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_d23a62fc\\Coffee.Dal\\FluentApi\\BaseMap.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_d23a62fc\\ViFactory\\Program.cs",
+      "PackagePath": "staticwebassets\\projects\\Coffee_d23a62fc\\ViFactory\\Program.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_d23a62fc\\ViFactory\\Templates\\Context.txt",
+      "PackagePath": "staticwebassets\\projects\\Coffee_d23a62fc\\ViFactory\\Templates\\Context.txt"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_d23a62fc\\ViFactory\\Templates\\CreateDto.txt",
+      "PackagePath": "staticwebassets\\projects\\Coffee_d23a62fc\\ViFactory\\Templates\\CreateDto.txt"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_d23a62fc\\ViFactory\\Templates\\DalRepository.txt",
+      "PackagePath": "staticwebassets\\projects\\Coffee_d23a62fc\\ViFactory\\Templates\\DalRepository.txt"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_d23a62fc\\ViFactory\\Templates\\FluentApiMap.txt",
+      "PackagePath": "staticwebassets\\projects\\Coffee_d23a62fc\\ViFactory\\Templates\\FluentApiMap.txt"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_d23a62fc\\ViFactory\\Templates\\IDalRepository.txt",
+      "PackagePath": "staticwebassets\\projects\\Coffee_d23a62fc\\ViFactory\\Templates\\IDalRepository.txt"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_d23a62fc\\ViFactory\\Templates\\IService.txt",
+      "PackagePath": "staticwebassets\\projects\\Coffee_d23a62fc\\ViFactory\\Templates\\IService.txt"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_d23a62fc\\ViFactory\\Templates\\Service.txt",
+      "PackagePath": "staticwebassets\\projects\\Coffee_d23a62fc\\ViFactory\\Templates\\Service.txt"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Coffee_d23a62fc\\ViFactory\\Templates\\UnitOfWork.txt",
+      "PackagePath": "staticwebassets\\projects\\Coffee_d23a62fc\\ViFactory\\Templates\\UnitOfWork.txt"
+    },
+    {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.ViFactory.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },

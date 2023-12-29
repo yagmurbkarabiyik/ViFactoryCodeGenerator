@@ -8,12 +8,14 @@ namespace ViFactory.Services.Core
 	{
 		private readonly IGenerator _generator;
 		private readonly IProjectGenerator _projectGenerator;
-		public CoreGenerator(IGenerator generator, IProjectGenerator projectGenerator)
-		{
-			_generator = generator;
-			_projectGenerator = projectGenerator;
-		}
-		public void GenerateCoreLayer(ProjectGeneratorModel projectGeneratorModel)
+        private readonly IWebHostEnvironment _webHostEnvironment;
+        public CoreGenerator(IGenerator generator, IProjectGenerator projectGenerator, IWebHostEnvironment webHostEnvironment)
+        {
+            _generator = generator;
+            _projectGenerator = projectGenerator;
+            _webHostEnvironment = webHostEnvironment;
+        }
+        public void GenerateCoreLayer(ProjectGeneratorModel projectGeneratorModel)
 		{
 			_projectGenerator.GenerateProject(projectGeneratorModel);
 
@@ -61,7 +63,7 @@ namespace ViFactory.Services.Core
 			{
 				NamespaceNameDefault = projectName+".Services",
 				ClassNameDefault = "IRepository",
-				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\Services\\CreateIRepository.txt",
+				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") +"\\Core\\Services\\CreateIRepository.txt",
 				OutputFilePath = outputFilePath,
 				CurrentProjectName = projectName,
 				Methods = new Dictionary<string, string>
@@ -81,7 +83,7 @@ namespace ViFactory.Services.Core
 			{
 				NamespaceNameDefault = projectName + ".Models",
 				ClassNameDefault = "IBaseEntity",
-				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\Model\\CreateIBaseEntity.txt",
+				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") +"\\Core\\Model\\CreateIBaseEntity.txt",
 				OutputFilePath = outputFilePath,
 				CurrentProjectName= projectName
 			};
@@ -94,7 +96,7 @@ namespace ViFactory.Services.Core
 			{
 				NamespaceNameDefault = projectName + ".Services",
 				ClassNameDefault = "IUnitOfWork",
-				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\Services\\CreateIUnitOfWork.txt",
+				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") +"\\Core\\Services\\CreateIUnitOfWork.txt",
 				OutputFilePath = outputFilePath,
 				CurrentProjectName = projectName
 			};
@@ -107,7 +109,7 @@ namespace ViFactory.Services.Core
 			{
 				NamespaceNameDefault = projectName + ".Models",
 				ClassNameDefault = "UnitOfWorkResponse",
-				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\Model\\CreateUnitOfWorkResponse.txt",
+				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") +"\\Core\\Model\\CreateUnitOfWorkResponse.txt",
 				OutputFilePath = outputFilePath,
 				CurrentProjectName = projectName
 			};
@@ -120,7 +122,7 @@ namespace ViFactory.Services.Core
 			{
 				NamespaceNameDefault = projectName + ".Models",
 				ClassNameDefault = "PaginationRequest",
-				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\Model\\PaginationRequest.txt",
+				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") +"\\Core\\Model\\PaginationRequest.txt",
 				OutputFilePath = outputFilePath,
 				CurrentProjectName = projectName
 			};
@@ -133,7 +135,7 @@ namespace ViFactory.Services.Core
 			{
 				NamespaceNameDefault = projectName + ".Models",
 				ClassNameDefault = "PaginationResponse",
-				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\Model\\PaginationResponse.txt",
+				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") +"\\Core\\Model\\PaginationResponse.txt",
 				OutputFilePath = outputFilePath,
 				CurrentProjectName = projectName
 			};
@@ -146,7 +148,7 @@ namespace ViFactory.Services.Core
 			{
 				NamespaceNameDefault = projectName + ".Services",
 				ClassNameDefault = "ISmsNetGsmService",
-				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\Services\\ISmsNetGsmService.txt",
+				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") +"\\Core\\Services\\ISmsNetGsmService.txt",
 				OutputFilePath = outputFilePath,
 				CurrentProjectName = projectName
 			};
@@ -159,7 +161,7 @@ namespace ViFactory.Services.Core
 			{
 				NamespaceNameDefault = projectName + ".Models",
 				ClassNameDefault = "SmsNetGsmSendData",
-				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\Model\\SmsNetGsmSendData.txt",
+				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") +"\\Core\\Model\\SmsNetGsmSendData.txt",
 				OutputFilePath = outputFilePath,
 				CurrentProjectName = projectName
 			};
@@ -172,7 +174,7 @@ namespace ViFactory.Services.Core
 			{
 				NamespaceNameDefault = projectName + ".Services",
 				ClassNameDefault = "IEmailService",
-				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\Services\\IEmailService.txt",
+				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") +"\\Core\\Services\\IEmailService.txt",
 				OutputFilePath = outputFilePath,
 				CurrentProjectName = projectName
 			};
@@ -185,7 +187,7 @@ namespace ViFactory.Services.Core
 			{
 				NamespaceNameDefault = projectName + ".Models",
 				ClassNameDefault = "EmailSendData",
-				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\Model\\EmailSendData.txt",
+				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") +"\\Core\\Model\\EmailSendData.txt",
 				OutputFilePath = outputFilePath,
 				CurrentProjectName = projectName
 			};
@@ -197,7 +199,7 @@ namespace ViFactory.Services.Core
 			{
 				NamespaceNameDefault = projectName + ".Services",
 				ClassNameDefault = "IMemoryCacheService",
-				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\Services\\IMemoryCache.txt",
+				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") +"\\Core\\Services\\IMemoryCache.txt",
 				OutputFilePath = outputFilePath,
 				CurrentProjectName = projectName
 			};
@@ -210,7 +212,7 @@ namespace ViFactory.Services.Core
 			{
 				NamespaceNameDefault = projectName + ".Enums",
 				ClassNameDefault = "DbEntityState",
-				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\Enums\\DbEntityState.txt",
+				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") +"\\Core\\Enums\\DbEntityState.txt",
 				OutputFilePath = outputFilePath,
 				CurrentProjectName = projectName
 			};
@@ -223,7 +225,7 @@ namespace ViFactory.Services.Core
 			{
 				NamespaceNameDefault = projectName + ".Models",
 				ClassNameDefault = "ApiContext",
-				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\Model\\ApiContext.txt",
+				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") +"\\Core\\Model\\ApiContext.txt",
 				OutputFilePath = outputFilePath,
 				CurrentProjectName = projectName
 			};
@@ -236,7 +238,7 @@ namespace ViFactory.Services.Core
 			{
 				NamespaceNameDefault = projectName + ".Services.TokenService",
 				ClassNameDefault = "ITokenService",
-				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\Services\\TokenService.txt",
+				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") +"\\Core\\Services\\TokenService.txt",
 				OutputFilePath = outputFilePath,
 				CurrentProjectName = projectName
 			};
@@ -249,7 +251,7 @@ namespace ViFactory.Services.Core
 			{
 				NamespaceNameDefault = projectName + ".Models",
 				ClassNameDefault = "RepositoryCreateRequest",
-				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\Model\\RepositoryModels\\RepositoryCreateRequest.txt",
+				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") +"\\Core\\Model\\RepositoryModels\\RepositoryCreateRequest.txt",
 				OutputFilePath = outputFilePath,
 				CurrentProjectName = projectName
 			};
@@ -262,7 +264,7 @@ namespace ViFactory.Services.Core
 			{
 				NamespaceNameDefault = projectName + ".RepositoryModels",
 				ClassNameDefault = "RepositoryDeleteRequest",
-				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\Model\\RepositoryModels\\RepositoryDeleteRequest.txt",
+				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") +"\\Core\\Model\\RepositoryModels\\RepositoryDeleteRequest.txt",
 				OutputFilePath = outputFilePath,
 				CurrentProjectName = projectName
 			};
@@ -275,7 +277,7 @@ namespace ViFactory.Services.Core
 			{
 				NamespaceNameDefault =  projectName+ ".RepositoryModels",
 				ClassNameDefault = "RepositoryGetAsTResultRequest",
-				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\Model\\RepositoryModels\\RepositoryGetAsTResultRequest.txt",
+				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") +"\\Core\\Model\\RepositoryModels\\RepositoryGetAsTResultRequest.txt",
 				OutputFilePath = outputFilePath,
 				CurrentProjectName = projectName
 			};
@@ -288,7 +290,7 @@ namespace ViFactory.Services.Core
 			{
 				NamespaceNameDefault = projectName + ".Models.RepositoryModels",
 				ClassNameDefault = "RepositoryGetRequest",
-				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\Model\\RepositoryModels\\RepositoryGetRequest.txt",
+				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") +"\\Core\\Model\\RepositoryModels\\RepositoryGetRequest.txt",
 				OutputFilePath = outputFilePath,
 				CurrentProjectName = projectName
 			};
@@ -301,7 +303,7 @@ namespace ViFactory.Services.Core
 			{
 				NamespaceNameDefault = projectName + ".Models.RepositoryModels",
 				ClassNameDefault = "RepositoryIsExistRequest",
-				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\Model\\RepositoryModels\\RepositoryIsExistRequest.txt",
+				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") +"\\Core\\Model\\RepositoryModels\\RepositoryIsExistRequest.txt",
 				OutputFilePath = outputFilePath,
 				CurrentProjectName = projectName
 			};
@@ -314,7 +316,7 @@ namespace ViFactory.Services.Core
 			{
 				NamespaceNameDefault = projectName + ".Models.RepositoryModels",
 				ClassNameDefault = "RepositoryListAsTResultRequest",
-				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\Model\\RepositoryModels\\RepositoryListAsTResultRequest.txt",
+				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") +"\\Core\\Model\\RepositoryModels\\RepositoryListAsTResultRequest.txt",
 				OutputFilePath = outputFilePath,
 				CurrentProjectName = projectName
 			};
@@ -327,7 +329,7 @@ namespace ViFactory.Services.Core
 			{
 				NamespaceNameDefault = projectName + ".Models.RepositoryModels",
 				ClassNameDefault = "RepositoryListRequest",
-				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\Model\\RepositoryModels\\RepositoryListRequest.txt",
+				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") +"\\Core\\Model\\RepositoryModels\\RepositoryListRequest.txt",
 				OutputFilePath = outputFilePath,
 				CurrentProjectName = projectName
 			};
@@ -340,7 +342,7 @@ namespace ViFactory.Services.Core
 			{
 				NamespaceNameDefault = projectName + ".Models.RepositoryModels",
 				ClassNameDefault = "RepositoryPaginationAsTResultRequest",
-				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\Model\\RepositoryModels\\RepositoryPaginationAsTResultRequest.txt",
+				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") +"\\Core\\Model\\RepositoryModels\\RepositoryPaginationAsTResultRequest.txt",
 				OutputFilePath = outputFilePath,
 				CurrentProjectName = projectName
 			};
@@ -353,7 +355,7 @@ namespace ViFactory.Services.Core
 			{
 				NamespaceNameDefault = projectName + ".Models.RepositoryModels",
 				ClassNameDefault = "RepositoryPaginationRequest",
-				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\Model\\RepositoryModels\\RepositoryPaginationRequest.txt",
+				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") +"\\Core\\Model\\RepositoryModels\\RepositoryPaginationRequest.txt",
 				OutputFilePath = outputFilePath,
 				CurrentProjectName = projectName
 			};
@@ -366,7 +368,7 @@ namespace ViFactory.Services.Core
 			{
 				NamespaceNameDefault = projectName + ".Models.RepositoryModels",
 				ClassNameDefault = "RepositorySoftDeleteRequest",
-				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\Model\\RepositoryModels\\RepositorySoftDeleteRequest.txt",
+				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") +"\\Core\\Model\\RepositoryModels\\RepositorySoftDeleteRequest.txt",
 				OutputFilePath = outputFilePath,
 				CurrentProjectName = projectName
 			};
@@ -379,7 +381,7 @@ namespace ViFactory.Services.Core
 			{
 				NamespaceNameDefault = projectName + ".Models.RepositoryModels",
 				ClassNameDefault = "RepositoryUpdateRequest",
-				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\Model\\RepositoryModels\\RepositoryUpdateRequest.txt",
+				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") +"\\Core\\Model\\RepositoryModels\\RepositoryUpdateRequest.txt",
 				OutputFilePath = outputFilePath,
 				CurrentProjectName = projectName
 			};
@@ -392,7 +394,7 @@ namespace ViFactory.Services.Core
 			{
 				NamespaceNameDefault = projectName + ".Models.TokenModels",
 				ClassNameDefault = "GetClientTokenRequest",
-				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\Model\\TokenModels\\GetClientTokenRequest.txt",
+				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") +"\\Core\\Model\\TokenModels\\GetClientTokenRequest.txt",
 				OutputFilePath = outputFilePath,
 				CurrentProjectName = projectName
 			};
@@ -405,7 +407,7 @@ namespace ViFactory.Services.Core
 			{
 				NamespaceNameDefault = projectName + ".Models.TokenModels",
 				ClassNameDefault = "GetClientTokenResult",
-				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\Model\\TokenModels\\GetClientTokenResult.txt",
+				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") +"\\Core\\Model\\TokenModels\\GetClientTokenResult.txt",
 				OutputFilePath = outputFilePath,
 				CurrentProjectName = projectName
 			};
@@ -418,7 +420,7 @@ namespace ViFactory.Services.Core
 			{
 				NamespaceNameDefault = projectName + ".Models.TokenModels",
 				ClassNameDefault = "GetTokenRequest",
-				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\Model\\TokenModels\\GetTokenRequest.txt",
+				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") +"\\Core\\Model\\TokenModels\\GetTokenRequest.txt",
 				OutputFilePath = outputFilePath,
 				CurrentProjectName = projectName
 			};
@@ -431,7 +433,7 @@ namespace ViFactory.Services.Core
 			{
 				NamespaceNameDefault = projectName + ".Models.TokenModels",
 				ClassNameDefault = "GetTokenResponse",
-				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\Model\\TokenModels\\GetTokenResponse.txt",
+				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") +"\\Core\\Model\\TokenModels\\GetTokenResponse.txt",
 				OutputFilePath = outputFilePath,
 				CurrentProjectName = projectName
 			};
@@ -444,7 +446,7 @@ namespace ViFactory.Services.Core
 			{
 				NamespaceNameDefault = projectName + ".Models.TokenModels",
 				ClassNameDefault = "ValidateTokenRequest",
-				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\Model\\TokenModels\\ValidateTokenRequest.txt",
+				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") +"\\Core\\Model\\TokenModels\\ValidateTokenRequest.txt",
 				OutputFilePath = outputFilePath,
 				CurrentProjectName = projectName
 			};
@@ -457,7 +459,7 @@ namespace ViFactory.Services.Core
 			{
 				NamespaceNameDefault = projectName + ".Helpers",
 				ClassNameDefault = "ExceptionHelper",
-				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\Helpers\\ExceptionHelper.txt",
+				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") +"\\Core\\Helpers\\ExceptionHelper.txt",
 				OutputFilePath = outputFilePath,
 				CurrentProjectName = projectName
 			};
@@ -470,7 +472,7 @@ namespace ViFactory.Services.Core
 			{
 				NamespaceNameDefault = projectName + ".Core.JsonModels",
 				ClassNameDefault = "MultiLanguageFormFile",
-				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\JsonHelpers\\MultiLanguageFormFile.txt",
+				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") +"\\Core\\JsonHelpers\\MultiLanguageFormFile.txt",
 				OutputFilePath = outputFilePath,
 				CurrentProjectName = projectName
 			};
@@ -482,7 +484,7 @@ namespace ViFactory.Services.Core
 			{
 				NamespaceNameDefault = projectName + ".Core.JsonModels",
 				ClassNameDefault = "MultiLanguageListString",
-				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\JsonHelpers\\MultiLanguageListString.txt",
+				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") +"\\Core\\JsonHelpers\\MultiLanguageListString.txt",
 				OutputFilePath = outputFilePath,
 				CurrentProjectName = projectName
 			};
@@ -494,7 +496,7 @@ namespace ViFactory.Services.Core
 			{
 				NamespaceNameDefault = projectName + ".Core.JsonModels",
 				ClassNameDefault = "MultiLanguageString",
-				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\JsonHelpers\\MultiLanguageString.txt",
+				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") +"\\Core\\JsonHelpers\\MultiLanguageString.txt",
 				OutputFilePath = outputFilePath,
 				CurrentProjectName = projectName
 			};
@@ -507,7 +509,7 @@ namespace ViFactory.Services.Core
 			{
 				NamespaceNameDefault = projectName + ".Core.Services",
 				ClassNameDefault = "IUploadLocalService",
-				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Core\\Services\\IUploadLocalService.txt",
+				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") +"\\Core\\Services\\IUploadLocalService.txt",
 				OutputFilePath = outputFilePath,
 				CurrentProjectName = projectName
 			};

@@ -8,13 +8,15 @@ namespace ViFactory.Services.Dal
 	{
 		private readonly IGenerator _generator;
 		private readonly IProjectGenerator _projectGenerator;
-		public DalGenerator(IGenerator generator, IProjectGenerator projectGenerator)
-		{
-			_generator = generator;
-			_projectGenerator = projectGenerator;
-		}
+		private readonly IWebHostEnvironment _webHostEnvironment;
+        public DalGenerator(IGenerator generator, IProjectGenerator projectGenerator, IWebHostEnvironment webHostEnvironment)
+        {
+            _generator = generator;
+            _projectGenerator = projectGenerator;
+            _webHostEnvironment = webHostEnvironment;
+        }
 
-		public void GenerateDalLayer(ProjectGeneratorModel projectGeneratorModel)
+        public void GenerateDalLayer(ProjectGeneratorModel projectGeneratorModel)
 		{
 			_projectGenerator.GenerateProject(projectGeneratorModel);
 
@@ -27,13 +29,13 @@ namespace ViFactory.Services.Dal
 		}
 
 		//Constant classes
-		private  void GenerateRepository(string projectName, string outputFilePath)
+		private void GenerateRepository(string projectName, string outputFilePath)
 		{
 			GeneratorModel generateRepository = new GeneratorModel()
 			{
 				NamespaceNameDefault = projectName + ".Dal.Data.Common",
 				ClassNameDefault = "Repository",
-				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Dal\\Data\\Common\\Repository.txt",
+				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") +"\\Dal\\Data\\Common\\Repository.txt",
 				OutputFilePath = outputFilePath,
 				CurrentProjectName = projectName
 			};
@@ -45,7 +47,7 @@ namespace ViFactory.Services.Dal
 			{
 				NamespaceNameDefault = projectName + ".Dal.Data.Common",
 				ClassNameDefault = "AzureBlobStorageService",
-				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Dal\\Data\\Common\\AzureBlobStorageService.txt",
+				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") +"\\Dal\\Data\\Common\\AzureBlobStorageService.txt",
 				OutputFilePath = outputFilePath,
 				CurrentProjectName = projectName
 			};
@@ -57,7 +59,7 @@ namespace ViFactory.Services.Dal
 			{
 				NamespaceNameDefault = projectName + ".Dal.FluentApi",
 				ClassNameDefault = "BaseMap",
-				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Dal\\FluentApi\\BaseMap.txt",
+				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") +"\\Dal\\FluentApi\\BaseMap.txt",
 				OutputFilePath = outputFilePath,
 				CurrentProjectName = projectName,
 				DbContext = projectName +"DbContext"
@@ -70,7 +72,7 @@ namespace ViFactory.Services.Dal
 			{
 				NamespaceNameDefault = projectName + ".Dal.Data.Common",
 				ClassNameDefault = "UnitOfWork",
-				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Dal\\Data\\Common\\UnitOfWork.txt",
+				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") +"\\Dal\\Data\\Common\\UnitOfWork.txt",
 				OutputFilePath = outputFilePath,
 				CurrentProjectName = projectName,
 				DbContext = projectName+"DbContext"
@@ -83,7 +85,7 @@ namespace ViFactory.Services.Dal
 			{
 				NamespaceNameDefault = projectName + ".Dal.Context",
 				ClassNameDefault = projectName + "DbContext",
-				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Dal\\Data\\Context\\Context.txt",
+				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") +"\\Dal\\Data\\Context\\Context.txt",
 				OutputFilePath = outputFilePath,
 				CurrentProjectName = projectName
 			};
@@ -95,7 +97,7 @@ namespace ViFactory.Services.Dal
 			{
 				NamespaceNameDefault = projectName + ".Dal.Context",
 				ClassNameDefault = projectName + "ContextPartial",
-				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\Dal\\Data\\Context\\ContextPartial.txt",
+				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") +"\\Dal\\Data\\Context\\ContextPartial.txt",
 				OutputFilePath = outputFilePath,
 				CurrentProjectName = projectName
 			};

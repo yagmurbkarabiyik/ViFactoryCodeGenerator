@@ -1,0 +1,8 @@
+﻿using [CurrentProjectName]Solution;
+
+namespace [NamespaceName]
+{
+    public interface [ClassName] : IRepository<[EntityName]>
+    {
+    }
+}

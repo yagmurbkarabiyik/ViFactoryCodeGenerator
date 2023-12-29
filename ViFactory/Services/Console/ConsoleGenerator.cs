@@ -8,13 +8,15 @@ namespace ViFactory.Services.Console
 	{
 		private readonly IProjectGenerator _projectGenerator;
 		private readonly IGenerator _generator;
-		public ConsoleGenerator(IProjectGenerator projectGenerator, IGenerator generator)
-		{
-			_projectGenerator = projectGenerator;
-			_generator = generator;
-		}
+        private readonly IWebHostEnvironment _webHostEnvironment;
+        public ConsoleGenerator(IProjectGenerator projectGenerator, IGenerator generator, IWebHostEnvironment webHostEnvironment)
+        {
+            _projectGenerator = projectGenerator;
+            _generator = generator;
+            _webHostEnvironment = webHostEnvironment;
+        }
 
-		public void GenerateConsoleProject(ProjectGeneratorModel projectGeneratorModel)
+        public void GenerateConsoleProject(ProjectGeneratorModel projectGeneratorModel)
 		{
 			_projectGenerator.GenerateProject(projectGeneratorModel);
 			GenerateTemplates(projectGeneratorModel.OutputFolderPath);
@@ -25,7 +27,7 @@ namespace ViFactory.Services.Console
 			GeneratorModel generateProgramCs = new GeneratorModel()
 			{
 				ClassNameDefault = "Program",
-				InputFilePath = "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\ConsoleApp\\ProgramCs.txt",
+				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") +"\\ConsoleApp\\ProgramCs.txt",
 				OutputFilePath = outputFilePath
 			};
 			//_generator.GenerateClass(generateProgramCs);
@@ -50,35 +52,35 @@ namespace ViFactory.Services.Console
 			var path = Path.Combine(outputFolderPath, "ViFactory", "Templates");
 			Directory.CreateDirectory(path);
 
-			string context = File.ReadAllText("C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\ConsoleApp\\Templates\\Context.txt");
+			string context = File.ReadAllText(Path.Combine(_webHostEnvironment.WebRootPath, "template") +"\\ConsoleApp\\Templates\\Context.txt");
 			string filePath = Path.Combine(path, "Context.txt");
 			File.WriteAllText(filePath, context);
 
-			string createDto = File.ReadAllText("C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\ConsoleApp\\Templates\\CreateDto.txt");
+			string createDto = File.ReadAllText(Path.Combine(_webHostEnvironment.WebRootPath, "template") +"\\ConsoleApp\\Templates\\CreateDto.txt");
 			string dtoPath = Path.Combine(path, "CreateDto.txt");
 			File.WriteAllText(dtoPath, createDto);
 
-			string dalRepository = File.ReadAllText("C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\ConsoleApp\\Templates\\DalRepository.txt");
+			string dalRepository = File.ReadAllText(Path.Combine(_webHostEnvironment.WebRootPath, "template") +"\\ConsoleApp\\Templates\\DalRepository.txt");
 			string dalRepoPath = Path.Combine(path, "DalRepository.txt");
 			File.WriteAllText(dalRepoPath, dalRepository);
 
-			string iDalRepository = File.ReadAllText("C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\ConsoleApp\\Templates\\IDalRepository.txt");
+			string iDalRepository = File.ReadAllText(Path.Combine(_webHostEnvironment.WebRootPath, "template") +"\\ConsoleApp\\Templates\\IDalRepository.txt");
 			string iDalPath = Path.Combine(path, "IDalRepository.txt");
 			File.WriteAllText(iDalPath, iDalRepository);
 
-			string iService = File.ReadAllText("C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\ConsoleApp\\Templates\\IService.txt");
+			string iService = File.ReadAllText(Path.Combine(_webHostEnvironment.WebRootPath, "template") +"\\ConsoleApp\\Templates\\IService.txt");
 			string iServicePath = Path.Combine(path, "IService.txt");
 			File.WriteAllText(iServicePath, iService);
 
-			string service = File.ReadAllText("C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\ConsoleApp\\Templates\\Service.txt");
+			string service = File.ReadAllText(Path.Combine(_webHostEnvironment.WebRootPath, "template") +"\\ConsoleApp\\Templates\\Service.txt");
 			string servicePath = Path.Combine(path, "Service.txt");
 			File.WriteAllText(servicePath, service);
 
-			string fluentApi = File.ReadAllText("C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\ConsoleApp\\Templates\\FluentApiMap.txt");
+			string fluentApi = File.ReadAllText(Path.Combine(_webHostEnvironment.WebRootPath, "template") +"\\ConsoleApp\\Templates\\FluentApiMap.txt");
 			string fluentApiPath = Path.Combine(path, "FluentApiMap.txt");
 			File.WriteAllText(fluentApiPath, fluentApi);
 
-			string unitOfWork = File.ReadAllText("C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\ConsoleApp\\Templates\\UnitOfWork.txt");
+			string unitOfWork = File.ReadAllText(Path.Combine(_webHostEnvironment.WebRootPath, "template") +"\\ConsoleApp\\Templates\\UnitOfWork.txt");
 			string unitOfWorkPath = Path.Combine(path, "UnitOfWork.txt");
 			File.WriteAllText(unitOfWorkPath, unitOfWork);
 		}

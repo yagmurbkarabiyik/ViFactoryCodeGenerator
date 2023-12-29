@@ -1,0 +1,6 @@
+namespace [CurrentProjectName].Bll.Dtos
+{
+    public class [EntityName] 
+    {
+    }
+}
