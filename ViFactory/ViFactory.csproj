@@ -24,6 +24,9 @@
     <None Update="Texts\ConsoleApp\Templates\FluentApiMap.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="Texts\ConsoleApp\Templates\UnitOfWork.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>

@@ -1,14 +1,15 @@
 ﻿using System.Reflection;
 using System.Xml.Linq;
+
 class Program
 {
 	 static void Main()
 	 {
-		string projectName = "Yagmur";
+		string projectName = "Ybbk";
 		string outputFolderPath = "C:\\Users\\ygmr4\\Desktop\\" + projectName;
 
 		// Find class name from domain.entities layer | used as general
-		var entities = GetTypesFromAssembly("Yagmur.Domain.Entities", "Yagmur.Domain.Entities");
+		var entities = GetTypesFromAssembly("Ybbk.Domain.Entities", "Ybbk.Domain.Entities");
 		string dtoFolderPath = Path.Combine(outputFolderPath, projectName + ".Bll.Dtos"); ;
 		string csprojDtoFilePath = Path.Combine(outputFolderPath,dtoFolderPath, projectName + ".Bll.Dtos.csproj");
 
@@ -177,6 +178,7 @@ class Program
 			string repositoryClass = Path.Combine(commonFolderPath, "Repository.cs");
 			string fluentApiClass = Path.Combine(fluentApiFolderPath, $"{entity.Name}Map.cs");
 			string baseMapClass = Path.Combine(fluentApiFolderPath, "BaseMap.cs");
+			string unitOfWorkClass = Path.Combine(commonFolderPath, "UnitOfWork.cs");
 
 			if (entity.Name != "BaseEntity")
 			{
@@ -193,6 +195,10 @@ class Program
 					 .Replace("[TableName]", GetTableName(entity.Name))
 					 .Replace("[CurrentProjectName]", currentProjectName)
 					 .Replace("[EntityName]", entity.Name));
+
+				EnsureFileExists(unitOfWorkClass, File.ReadAllText("./Templates/UnitOfWork.txt")
+					 .Replace("[CurrentProjectName]", currentProjectName)
+					 .Replace("[DbContext]", $"{currentProjectName}DbContext"));
 			}
 		}
 		

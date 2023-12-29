@@ -5,7 +5,7 @@ using [CurrentProjectName].Bll.Enums;
 
 namespace [NamespaceName]
 {
-    public class ResponseException
+    public class ResponseException : Exception
 	{
 		public HttpStatusCode HttpStatusCode { get; set; }
 		public ExceptionResponseType Type { get; set; }

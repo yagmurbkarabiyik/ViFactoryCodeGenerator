@@ -77,6 +77,10 @@ namespace ViFactory.Services.Console
 			string fluentApi = File.ReadAllText("C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\ConsoleApp\\Templates\\FluentApiMap.txt");
 			string fluentApiPath = Path.Combine(path, "FluentApiMap.txt");
 			File.WriteAllText(fluentApiPath, fluentApi);
+
+			string unitOfWork = File.ReadAllText("C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\Texts\\ConsoleApp\\Templates\\UnitOfWork.txt");
+			string unitOfWorkPath = Path.Combine(path, "UnitOfWork.txt");
+			File.WriteAllText(unitOfWorkPath, unitOfWork);
 		}
 	}
 }
