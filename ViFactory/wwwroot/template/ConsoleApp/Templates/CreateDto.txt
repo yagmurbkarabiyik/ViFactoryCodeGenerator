@@ -1,4 +1,4 @@
-﻿namespace [CurrentProjectName].Bll.Dtos
+﻿namespace [CurrentProjectName].Bll
 {
     public class [EntityName] 
     {

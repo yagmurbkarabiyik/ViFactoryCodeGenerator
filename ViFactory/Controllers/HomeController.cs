@@ -85,7 +85,6 @@ namespace ViFactory.Controllers
 				OutputFolderPath = outputFolderPath,
 				CurrentProjectName = projectName
 			};
-
 			_coreGenerator.GenerateCoreLayer(coreGenerator);
 			#endregion
 
@@ -97,7 +96,6 @@ namespace ViFactory.Controllers
 				SolutionFilePath = Path.Combine(outputFolderPath, projectName + ".sln"),
 				OutputFolderPath = outputFolderPath,
 				CurrentProjectName = projectName
-
 			};
 			_consoleGenerator.GenerateConsoleProject(consoleProjectGenerator);
 			#endregion
@@ -114,32 +112,17 @@ namespace ViFactory.Controllers
 			_dalGenerator.GenerateDalLayer(dalProjectGenerator);
 			#endregion
 
-			#region Create Dto Layer
-			ProjectGeneratorModel dtoProjectGenerator = new ProjectGeneratorModel()
-			{
-				ProjectName = $"{solutionGeneratorModel.SolutionName}.Bll.Dtos",
-				ProjectFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template", "Dtos", "CreateDtoProject.txt"),
-                SolutionFilePath = Path.Combine(outputFolderPath, projectName + ".sln"),
-				OutputFolderPath = outputFolderPath,
-				CurrentProjectName = projectName
-
-			};
-
-			_dtoGenerator.GenerateDtoLayer(dtoProjectGenerator);
-
-			#endregion
-
 			#region Create Bll Layer
 			ProjectGeneratorModel bllGenerator = new ProjectGeneratorModel()
 			{
 				ProjectName = $"{solutionGeneratorModel.SolutionName}.Bll",
 				ProjectFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template", "Bll", "CreateBllProject.txt"),
-                SolutionFilePath = Path.Combine(outputFolderPath, projectName + ".sln"),
+				SolutionFilePath = Path.Combine(outputFolderPath, projectName + ".sln"),
 				OutputFolderPath = outputFolderPath,
 				CurrentProjectName = projectName
 			};
-
-			_bllGenerator.GenerateBllLayer(bllGenerator);
+         
+            _bllGenerator.GenerateBllLayer(bllGenerator);
             #endregion
 
             #region Create Domain Layer

@@ -19,6 +19,7 @@ namespace ViFactory.Services.Bll
         public void GenerateBllLayer(ProjectGeneratorModel projectGeneratorModel)
 		{
 			_projectGenerator.GenerateProject(projectGeneratorModel);
+			
 
 			GenerateExceptionResponse(projectGeneratorModel.CurrentProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Enums"));
 			GenerateEmailSettings(projectGeneratorModel.CurrentProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Models"));
@@ -179,5 +180,8 @@ namespace ViFactory.Services.Bll
 			};
 			_generator.GenerateClass(generateUploadLocalService);
 		}
-	}
+
+     
+    }
+    
 }

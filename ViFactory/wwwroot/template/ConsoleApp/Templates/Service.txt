@@ -1,13 +1,12 @@
 ﻿using Mapster;
 using System.Net;
-using [CurrentProjectName].Bll.Dtos;
 using [CurrentProjectName].Bll.Models;
 using [CurrentProjectName].Bll.Services.Abstract;
 using [CurrentProjectName].Bll.Enums;
 using [CurrentProjectName].Core.Models;
 using [CurrentProjectName].Core.Services;
 using [CurrentProjectName].Dal.Data.IDalRepos;
-using [CurrentProjectName].Domain.Entities;
+using [CurrentProjectName].Domain.Entities.Models;
 using [CurrentProjectName].Core.Models.RepositoryModels;
 using [CurrentProjectName].Core.RepositoryModels;
 

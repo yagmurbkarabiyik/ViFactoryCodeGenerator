@@ -21,6 +21,7 @@ namespace ViFactory.Services.Console
 			_projectGenerator.GenerateProject(projectGeneratorModel);
 			GenerateTemplates(projectGeneratorModel.OutputFolderPath);
 			GenerateProgramCs(Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName));
+            GenerateFileUtils(Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName));
 		}
 		public void GenerateProgramCs(string outputFilePath)
 		{
@@ -47,6 +48,17 @@ namespace ViFactory.Services.Console
 
 			File.WriteAllText(classFilePath, codeTemplate);
 		}
+		public void GenerateFileUtils(string outputFilePath)
+		{
+			GeneratorModel generateFileUtils = new GeneratorModel
+			{
+				ClassNameDefault = "FileUtils",
+				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") + "\\ConsoleApp\\Templates\\FileUtils.txt",
+				OutputFilePath = outputFilePath
+			};
+			_generator.GenerateClass(generateFileUtils);
+		}
+	
 		public void GenerateTemplates(string outputFolderPath)
 		{
 			var path = Path.Combine(outputFolderPath, "ViFactory", "Templates");
@@ -83,6 +95,6 @@ namespace ViFactory.Services.Console
 			string unitOfWork = File.ReadAllText(Path.Combine(_webHostEnvironment.WebRootPath, "template") +"\\ConsoleApp\\Templates\\UnitOfWork.txt");
 			string unitOfWorkPath = Path.Combine(path, "UnitOfWork.txt");
 			File.WriteAllText(unitOfWorkPath, unitOfWork);
-		}
+        }
 	}
 }

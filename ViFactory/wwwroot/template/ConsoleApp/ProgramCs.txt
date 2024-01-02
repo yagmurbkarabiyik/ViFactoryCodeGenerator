@@ -1,17 +1,16 @@
 ﻿using System.Reflection;
 using System.Xml.Linq;
+using ViFactory;
 
 class Program
 {
 	 static void Main()
 	 {
-		string projectName = "Yagmur";
-		string outputFolderPath = "C:\\Users\\ygmr4\\Desktop\\" + projectName;
+		string projectName = FileUtils.GetSolutionFileName().Substring(0, FileUtils.GetSolutionFileName().Length-4);
+		string outputFolderPath = FileUtils.GetSolutionDir();
 
 		// Find class name from domain.entities layer | used as general
-		var entities = GetTypesFromAssembly("Yagmur.Domain.Entities", "Yagmur.Domain.Entities");
-		string dtoFolderPath = Path.Combine(outputFolderPath, projectName + ".Bll.Dtos"); ;
-		string csprojDtoFilePath = Path.Combine(outputFolderPath,dtoFolderPath, projectName + ".Bll.Dtos.csproj");
+		var entities = GetTypesFromAssembly($"{projectName}.Domain.Entities", $"{projectName}.Domain.Entities.Models");
 
 		string dalFolderPath = Path.Combine(outputFolderPath, projectName + ".Dal");
 		string csprojDalFilePath = Path.Combine(outputFolderPath, dalFolderPath, projectName + ".Dal.csproj");
@@ -19,7 +18,6 @@ class Program
 		string bllFolderPath = Path.Combine(outputFolderPath, projectName + ".Bll");
 		string csprojBllFilePath = Path.Combine(outputFolderPath, bllFolderPath, projectName + ".Bll.csproj"); 
 
-		GenerateDtos(csprojDtoFilePath, dtoFolderPath, entities, projectName);
 		GenerateDal(csprojDalFilePath, dalFolderPath, entities, projectName);
 		GenerateBll(csprojBllFilePath, bllFolderPath, entities, projectName);
 	 }
@@ -31,57 +29,6 @@ class Program
 			.GetTypes()
 			.Where(x => x.FullName.StartsWith(typeNameStart))
 			.ToList();
-	}
-	#endregion
-
-	#region Generate Bll.Dto
-	static void GenerateDtos(string csprojFilePath, string rootFolderPath, IEnumerable<Type> entities, string currentProjectName)
-	{
-		XDocument csprojDoc = XDocument.Load(csprojFilePath);
-
-		XElement itemGroup = csprojDoc.Root.Elements("ItemGroup").FirstOrDefault();
-		if (itemGroup == null)
-		{
-			itemGroup = new XElement("ItemGroup");
-			csprojDoc.Root.Add(itemGroup);
-		}
-
-		foreach (var entity in entities)
-		{
-			string folderPath = Path.Combine(rootFolderPath, entity.Name + "Dtos");
-
-			EnsureDirectoryExists(folderPath);
-
-			string createDtoClass = Path.Combine(folderPath, $"{entity.Name}CreateDto.cs");
-			string readDtoClass = Path.Combine(folderPath, $"{entity.Name}ReadDto.cs");
-			string updateDtoClass = Path.Combine(folderPath, $"{entity.Name}UpdateDto.cs");
-			string getDtoClass = Path.Combine(folderPath, $"{entity.Name}GetDto.cs");
-			string getListDtoClass = Path.Combine(folderPath, $"{entity.Name}GetListDto.cs");
-
-			if (entity.Name != "BaseEntity")
-			{
-				EnsureFileExists(createDtoClass, File.ReadAllText("./Templates/CreateDto.txt")
-					.Replace("[CurrentProjectName]", currentProjectName)
-					.Replace("[EntityName]", entity.Name + "CreateDto"));
-
-				EnsureFileExists(readDtoClass, File.ReadAllText("./Templates/CreateDto.txt")
-					.Replace("[CurrentProjectName]", currentProjectName)
-					.Replace("[EntityName]", entity.Name + "ReadDto"));
-
-				EnsureFileExists(updateDtoClass, File.ReadAllText("./Templates/CreateDto.txt")
-					.Replace("[CurrentProjectName]", currentProjectName)
-					.Replace("[EntityName]", entity.Name + "UpdateDto"));
-
-				EnsureFileExists(getDtoClass, File.ReadAllText("./Templates/CreateDto.txt")
-					.Replace("[CurrentProjectName]", currentProjectName)
-					.Replace("[EntityName]", entity.Name + "GetDto"));
-
-				EnsureFileExists(getListDtoClass, File.ReadAllText("./Templates/CreateDto.txt")
-					.Replace("[CurrentProjectName]", currentProjectName)
-					.Replace("[EntityName]", entity.Name + "GetListDto"));
-			}
-		}
-		csprojDoc.Save(csprojFilePath);
 	}
 	#endregion
 
@@ -141,12 +88,64 @@ class Program
 			}
 		}
 		csprojDoc.Save(csprojFilePath);
-	}
 
-	#endregion
+		GenerateDtos(csprojFilePath, Path.Combine(rootFolderPath, "Dtos"), entities, currentProjectName);
+    }
 
-	#region Generate Dal
-	static void GenerateDal(string csprojFilePath, string rootFolderPath, IEnumerable<Type> entities, string currentProjectName)
+    static void GenerateDtos(string csprojFilePath, string rootFolderPath, IEnumerable<Type> entities, string currentProjectName)
+    {
+		if (!Directory.Exists(rootFolderPath)) Directory.CreateDirectory(rootFolderPath);
+
+        XDocument csprojDoc = XDocument.Load(csprojFilePath);
+
+        XElement itemGroup = csprojDoc.Root.Elements("ItemGroup").FirstOrDefault();
+        if (itemGroup == null)
+        {
+            itemGroup = new XElement("ItemGroup");
+            csprojDoc.Root.Add(itemGroup);
+        }
+
+        foreach (var entity in entities)
+        {
+            string folderPath = Path.Combine(rootFolderPath, entity.Name + "Dtos");
+
+            EnsureDirectoryExists(folderPath);
+
+            string createDtoClass = Path.Combine(folderPath, $"{entity.Name}CreateDto.cs");
+            string readDtoClass = Path.Combine(folderPath, $"{entity.Name}ReadDto.cs");
+            string updateDtoClass = Path.Combine(folderPath, $"{entity.Name}UpdateDto.cs");
+            string getDtoClass = Path.Combine(folderPath, $"{entity.Name}GetDto.cs");
+            string getListDtoClass = Path.Combine(folderPath, $"{entity.Name}GetListDto.cs");
+
+            if (entity.Name != "BaseEntity")
+            {
+                EnsureFileExists(createDtoClass, File.ReadAllText("./Templates/CreateDto.txt")
+                    .Replace("[CurrentProjectName]", currentProjectName)
+                    .Replace("[EntityName]", entity.Name + "CreateDto"));
+
+                EnsureFileExists(readDtoClass, File.ReadAllText("./Templates/CreateDto.txt")
+                    .Replace("[CurrentProjectName]", currentProjectName)
+                    .Replace("[EntityName]", entity.Name + "ReadDto"));
+
+                EnsureFileExists(updateDtoClass, File.ReadAllText("./Templates/CreateDto.txt")
+                    .Replace("[CurrentProjectName]", currentProjectName)
+                    .Replace("[EntityName]", entity.Name + "UpdateDto"));
+
+                EnsureFileExists(getDtoClass, File.ReadAllText("./Templates/CreateDto.txt")
+                    .Replace("[CurrentProjectName]", currentProjectName)
+                    .Replace("[EntityName]", entity.Name + "GetDto"));
+
+                EnsureFileExists(getListDtoClass, File.ReadAllText("./Templates/CreateDto.txt")
+                    .Replace("[CurrentProjectName]", currentProjectName)
+                    .Replace("[EntityName]", entity.Name + "GetListDto"));
+            }
+        }
+        csprojDoc.Save(csprojFilePath);
+    }
+    #endregion
+
+    #region Generate Dal
+    static void GenerateDal(string csprojFilePath, string rootFolderPath, IEnumerable<Type> entities, string currentProjectName)
 	{
 		string connectionString = "User ID=postgres;Password=12345;Host=localhost;Port=5432;Database=visdb;";
 

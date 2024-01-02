@@ -123,94 +123,252 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="wwwroot\template\Bll\CreateBllProject.txt" />
-    <None Include="wwwroot\template\Bll\Enums\ExceptionResponseType.txt" />
-    <None Include="wwwroot\template\Bll\Models\EmailSettings.txt" />
-    <None Include="wwwroot\template\Bll\Models\JwtSettings.txt" />
-    <None Include="wwwroot\template\Bll\Models\ResponseCommon.txt" />
-    <None Include="wwwroot\template\Bll\Models\ResponseException.txt" />
-    <None Include="wwwroot\template\Bll\Models\ResponseExceptionData.txt" />
-    <None Include="wwwroot\template\Bll\Models\SmsNetGsmSettings.txt" />
-    <None Include="wwwroot\template\Bll\Services\EmailService.txt" />
-    <None Include="wwwroot\template\Bll\Services\MemoryCache.txt" />
-    <None Include="wwwroot\template\Bll\Services\SmsNetGsmService.txt" />
-    <None Include="wwwroot\template\Bll\Services\TokenService.txt" />
+    <None Include="wwwroot\template\Bll\CreateBllProject.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\template\Bll\Enums\ExceptionResponseType.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\template\Bll\Models\EmailSettings.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\template\Bll\Models\JwtSettings.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\template\Bll\Models\ResponseCommon.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\template\Bll\Models\ResponseException.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\template\Bll\Models\ResponseExceptionData.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\template\Bll\Models\SmsNetGsmSettings.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\template\Bll\Services\EmailService.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\template\Bll\Services\MemoryCache.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\template\Bll\Services\SmsNetGsmService.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\template\Bll\Services\TokenService.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="wwwroot\template\Bll\Services\UploadLocalService.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="wwwroot\template\ConsoleApp\CreateConsoleApp.txt" />
-    <None Include="wwwroot\template\ConsoleApp\ProgramCs.txt" />
+    <None Include="wwwroot\template\ConsoleApp\CreateConsoleApp.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\template\ConsoleApp\ProgramCs.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="wwwroot\template\ConsoleApp\Templates\BaseMap.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="wwwroot\template\ConsoleApp\Templates\Context.txt" />
-    <None Include="wwwroot\template\ConsoleApp\Templates\CreateDto.txt" />
-    <None Include="wwwroot\template\ConsoleApp\Templates\DalRepository.txt" />
+    <None Include="wwwroot\template\ConsoleApp\Templates\Context.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\template\ConsoleApp\Templates\CreateDto.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\template\ConsoleApp\Templates\DalRepository.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="wwwroot\template\ConsoleApp\Templates\FluentApiMap.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="wwwroot\template\ConsoleApp\Templates\IDalRepository.txt" />
-    <None Include="wwwroot\template\ConsoleApp\Templates\IService.txt" />
-    <None Include="wwwroot\template\ConsoleApp\Templates\Service.txt" />
+    <None Include="wwwroot\template\ConsoleApp\Templates\IDalRepository.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\template\ConsoleApp\Templates\IService.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\template\ConsoleApp\Templates\Service.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="wwwroot\template\ConsoleApp\Templates\UnitOfWork.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="wwwroot\template\Core\CreateCoreProject.txt" />
-    <None Include="wwwroot\template\Core\Enums\DbEntityState.txt" />
-    <None Include="wwwroot\template\Core\Helpers\ExceptionHelper.txt" />
-    <None Include="wwwroot\template\Core\JsonHelpers\MultiLanguageFormFile.txt" />
-    <None Include="wwwroot\template\Core\JsonHelpers\MultiLanguageListString.txt" />
-    <None Include="wwwroot\template\Core\JsonHelpers\MultiLanguageString.txt" />
-    <None Include="wwwroot\template\Core\Model\ApiContext.txt" />
-    <None Include="wwwroot\template\Core\Model\CreateIBaseEntity.txt" />
-    <None Include="wwwroot\template\Core\Model\CreateUnitOfWorkResponse.txt" />
-    <None Include="wwwroot\template\Core\Model\EmailSendData.txt" />
-    <None Include="wwwroot\template\Core\Model\PaginationRequest.txt" />
-    <None Include="wwwroot\template\Core\Model\PaginationResponse.txt" />
-    <None Include="wwwroot\template\Core\Model\RepositoryModels\RepositoryCreateRequest.txt" />
-    <None Include="wwwroot\template\Core\Model\RepositoryModels\RepositoryDeleteRequest.txt" />
-    <None Include="wwwroot\template\Core\Model\RepositoryModels\RepositoryGetAsTResultRequest.txt" />
-    <None Include="wwwroot\template\Core\Model\RepositoryModels\RepositoryGetRequest.txt" />
-    <None Include="wwwroot\template\Core\Model\RepositoryModels\RepositoryIsExistRequest.txt" />
-    <None Include="wwwroot\template\Core\Model\RepositoryModels\RepositoryListAsTResultRequest.txt" />
-    <None Include="wwwroot\template\Core\Model\RepositoryModels\RepositoryListRequest.txt" />
-    <None Include="wwwroot\template\Core\Model\RepositoryModels\RepositoryPaginationAsTResultRequest.txt" />
-    <None Include="wwwroot\template\Core\Model\RepositoryModels\RepositoryPaginationRequest.txt" />
-    <None Include="wwwroot\template\Core\Model\RepositoryModels\RepositorySoftDeleteRequest.txt" />
-    <None Include="wwwroot\template\Core\Model\RepositoryModels\RepositoryUpdateRequest.txt" />
-    <None Include="wwwroot\template\Core\Model\SmsNetGsmSendData.txt" />
-    <None Include="wwwroot\template\Core\Model\TokenModels\GetClientTokenRequest.txt" />
-    <None Include="wwwroot\template\Core\Model\TokenModels\GetClientTokenResult.txt" />
-    <None Include="wwwroot\template\Core\Model\TokenModels\GetTokenRequest.txt" />
-    <None Include="wwwroot\template\Core\Model\TokenModels\GetTokenResponse.txt" />
-    <None Include="wwwroot\template\Core\Model\TokenModels\ValidateTokenRequest.txt" />
-    <None Include="wwwroot\template\Core\Services\CreateIRepository.txt" />
-    <None Include="wwwroot\template\Core\Services\CreateIUnitOfWork.txt" />
-    <None Include="wwwroot\template\Core\Services\IEmailService.txt" />
-    <None Include="wwwroot\template\Core\Services\IMemoryCache.txt" />
-    <None Include="wwwroot\template\Core\Services\ISmsNetGsmService.txt" />
-    <None Include="wwwroot\template\Core\Services\IUploadLocalService.txt" />
-    <None Include="wwwroot\template\Core\Services\TokenService.txt" />
-    <None Include="wwwroot\template\CreateProject.txt" />
-    <None Include="wwwroot\template\CreateSolution.txt" />
-    <None Include="wwwroot\template\Dal\CreateDalProject.txt" />
-    <None Include="wwwroot\template\Dal\Data\Common\AzureBlobStorageService.txt" />
-    <None Include="wwwroot\template\Dal\Data\Common\Repository.txt" />
-    <None Include="wwwroot\template\Dal\Data\Common\UnitOfWork.txt" />
-    <None Include="wwwroot\template\Dal\Data\Context\Context.txt" />
-    <None Include="wwwroot\template\Dal\Data\Context\ContextPartial.txt" />
-    <None Include="wwwroot\template\Dal\Data\DalRepos\DalRepos.txt" />
-    <None Include="wwwroot\template\Dal\Data\DalRepos\IDalRepos.txt" />
-    <None Include="wwwroot\template\Dal\FluentApi\BaseMap.txt" />
-    <None Include="wwwroot\template\Dal\ViFactoryDbContext.txt" />
-    <None Include="wwwroot\template\Domain\CreateDomainEntitiesProject.txt" />
-    <None Include="wwwroot\template\Domain\Enums\AppUserState.txt" />
-    <None Include="wwwroot\template\Domain\IdentityModels\AppRole.txt" />
-    <None Include="wwwroot\template\Domain\IdentityModels\AppUser.txt" />
-    <None Include="wwwroot\template\Dtos\CreateDtoProject.txt" />
-    <None Include="wwwroot\template\Dtos\CreateDtos.txt" />
-    <None Include="wwwroot\template\Models\CreateBaseEntity.txt" />
-    <None Include="wwwroot\template\Models\CreateEntity.txt" />
+    <None Include="wwwroot\template\Core\CreateCoreProject.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\template\Core\Enums\DbEntityState.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\template\Core\Helpers\ExceptionHelper.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\template\Core\JsonHelpers\MultiLanguageFormFile.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\template\Core\JsonHelpers\MultiLanguageListString.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\template\Core\JsonHelpers\MultiLanguageString.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\template\Core\Model\ApiContext.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\template\Core\Model\CreateIBaseEntity.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\template\Core\Model\CreateUnitOfWorkResponse.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\template\Core\Model\EmailSendData.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\template\Core\Model\PaginationRequest.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\template\Core\Model\PaginationResponse.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\template\Core\Model\RepositoryModels\RepositoryCreateRequest.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\template\Core\Model\RepositoryModels\RepositoryDeleteRequest.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\template\Core\Model\RepositoryModels\RepositoryGetAsTResultRequest.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\template\Core\Model\RepositoryModels\RepositoryGetRequest.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\template\Core\Model\RepositoryModels\RepositoryIsExistRequest.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\template\Core\Model\RepositoryModels\RepositoryListAsTResultRequest.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\template\Core\Model\RepositoryModels\RepositoryListRequest.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\template\Core\Model\RepositoryModels\RepositoryPaginationAsTResultRequest.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\template\Core\Model\RepositoryModels\RepositoryPaginationRequest.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\template\Core\Model\RepositoryModels\RepositorySoftDeleteRequest.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\template\Core\Model\RepositoryModels\RepositoryUpdateRequest.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\template\Core\Model\SmsNetGsmSendData.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\template\Core\Model\TokenModels\GetClientTokenRequest.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\template\Core\Model\TokenModels\GetClientTokenResult.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\template\Core\Model\TokenModels\GetTokenRequest.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\template\Core\Model\TokenModels\GetTokenResponse.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\template\Core\Model\TokenModels\ValidateTokenRequest.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\template\Core\Services\CreateIRepository.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\template\Core\Services\CreateIUnitOfWork.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\template\Core\Services\IEmailService.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\template\Core\Services\IMemoryCache.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\template\Core\Services\ISmsNetGsmService.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\template\Core\Services\IUploadLocalService.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\template\Core\Services\TokenService.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\template\CreateProject.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\template\CreateSolution.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\template\Dal\CreateDalProject.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\template\Dal\Data\Common\AzureBlobStorageService.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\template\Dal\Data\Common\Repository.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\template\Dal\Data\Common\UnitOfWork.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\template\Dal\Data\Context\Context.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\template\Dal\Data\Context\ContextPartial.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\template\Dal\Data\DalRepos\DalRepos.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\template\Dal\Data\DalRepos\IDalRepos.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\template\Dal\FluentApi\BaseMap.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\template\Dal\ViFactoryDbContext.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\template\Domain\CreateDomainEntitiesProject.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\template\Domain\Enums\AppUserState.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\template\Domain\IdentityModels\AppRole.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\template\Domain\IdentityModels\AppUser.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\template\Dtos\CreateDtoProject.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\template\Dtos\CreateDtos.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\template\Models\CreateBaseEntity.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\template\Models\CreateEntity.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="wwwroot\template\ConsoleApp\Templates\FileUtils.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
 </Project>

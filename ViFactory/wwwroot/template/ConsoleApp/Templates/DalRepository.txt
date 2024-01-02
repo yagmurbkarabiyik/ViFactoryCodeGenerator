@@ -1,7 +1,7 @@
 ﻿using [CurrentProjectName].Dal.Data.IDalRepos;
 using [CurrentProjectName].Dal.Data.Common;
 using [CurrentProjectName].Dal.Context;
-using [CurrentProjectName].Domain.Entities;
+using [CurrentProjectName].Domain.Entities.Models;
 
 namespace [CurrentProjectName].Dal.Data.DalRepos
 {

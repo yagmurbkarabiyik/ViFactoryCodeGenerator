@@ -31,5 +31,6 @@
     <None Update="Templates\UnitOfWork.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <ProjectReference Include="..\[CurrentProjectName].Domain.Entities\[CurrentProjectName].Domain.Entities.csproj" />
   </ItemGroup>
  </Project>

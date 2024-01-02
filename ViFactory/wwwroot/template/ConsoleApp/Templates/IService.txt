@@ -1,7 +1,6 @@
-﻿using [CurrentProjectName].Bll.Dtos;
-using [CurrentProjectName].Bll.Models;
+﻿using [CurrentProjectName].Bll.Models;
 using [CurrentProjectName].Core.Models.RepositoryModels;
-using [CurrentProjectName].Domain.Entities;
+using [CurrentProjectName].Domain.Entities.Models;
 
 namespace [CurrentProjectName].Bll.Services.Abstract
 {

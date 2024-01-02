@@ -1,4 +1,4 @@
-﻿using [CurrentProjectName].Domain.Entities;
+﻿using [CurrentProjectName].Domain.Entities.Models;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Microsoft.EntityFrameworkCore;
 
