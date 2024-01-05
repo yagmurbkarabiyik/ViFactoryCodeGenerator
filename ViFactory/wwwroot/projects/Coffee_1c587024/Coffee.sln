@@ -1,0 +1,53 @@
+ Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0D5732C0-8283-4A2D-AB3F-6CFA32675D8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D5732C0-8283-4A2D-AB3F-6CFA32675D8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D5732C0-8283-4A2D-AB3F-6CFA32675D8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D5732C0-8283-4A2D-AB3F-6CFA32675D8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E43842FC-4B3D-4EF1-BD56-C7B1BBF1D44E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E43842FC-4B3D-4EF1-BD56-C7B1BBF1D44E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E43842FC-4B3D-4EF1-BD56-C7B1BBF1D44E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E43842FC-4B3D-4EF1-BD56-C7B1BBF1D44E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1698C566-0D87-49D4-9AEB-4688F8457C0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1698C566-0D87-49D4-9AEB-4688F8457C0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1698C566-0D87-49D4-9AEB-4688F8457C0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1698C566-0D87-49D4-9AEB-4688F8457C0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5E41540-05DD-4E89-A6A5-CF2987B9C70B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5E41540-05DD-4E89-A6A5-CF2987B9C70B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5E41540-05DD-4E89-A6A5-CF2987B9C70B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5E41540-05DD-4E89-A6A5-CF2987B9C70B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21541020-D4B0-4998-A719-807F2FF11E8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21541020-D4B0-4998-A719-807F2FF11E8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21541020-D4B0-4998-A719-807F2FF11E8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21541020-D4B0-4998-A719-807F2FF11E8D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {83496444-C1AA-495B-A7E7-0C5B6B5448D9}
+	EndGlobalSection
+EndGlobal
+ 
+
+Project("97284123-9f14-4b74-97da-645f1823d530") = "Coffee.Core", "Coffee.Core\Coffee.Core.csproj", "f3efec36-0fc6-4d85-aacd-4dc9fc3ef3b2"
+EndProject
+Project("916ead82-357d-4013-9e9e-dc719c901841") = "ViFactory", "ViFactory\ViFactory.csproj", "916c4cf0-1211-409f-9fd1-546e3ed7e0d1"
+EndProject
+Project("bfd3e446-2746-4598-87fb-c2b46de23e68") = "Coffee.Dal", "Coffee.Dal\Coffee.Dal.csproj", "a2e58e85-ffb5-49de-8139-0b51e2d5a295"
+EndProject
+Project("d285e2de-25d5-447f-8bb5-e6c872bd274e") = "Coffee.Bll", "Coffee.Bll\Coffee.Bll.csproj", "c6485b1c-6ee3-43e0-bdab-063c02629c65"
+EndProject
+Project("8fb2d293-b703-417c-bfce-e57e24be2f76") = "ViFactory.Api", "ViFactory.Api\ViFactory.Api.csproj", "ffa26b1f-5db1-4f9d-9e1a-e0430ce6453d"
+EndProject
+Project("43873a44-c0bc-4ec1-8d4e-42c4bdff67d3") = "Coffee.Domain.Entities", "Coffee.Domain.Entities\Coffee.Domain.Entities.csproj", "750a42b9-732a-4d5e-9aa6-4360bde6b95f"
+EndProject

@@ -1,3 +1,4 @@
+using ViFactory.Services.Api;
 using ViFactory.Services.Bll;
 using ViFactory.Services.Console;
 using ViFactory.Services.Core;
@@ -22,6 +23,8 @@ builder.Services.AddScoped<IBllGenerator, BllGenerator>();
 builder.Services.AddScoped<ISolutionGenerator, SolutionGenertor>();	
 builder.Services.AddScoped<IProjectGenerator, ProjectGenerator>();
 builder.Services.AddScoped<IConsoleGenerator, ConsoleGenerator>();	
+builder.Services.AddScoped<IApiGenerator, ApiGenerator>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

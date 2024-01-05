@@ -1,7 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using NuGet.Packaging;
+using Microsoft.Build.Construction;
 using System.IO.Compression;
+using System.Xml.Linq;
+using System.Xml.Serialization;
 using ViFactory.Models;
+using ViFactory.Services.Api;
 using ViFactory.Services.Bll;
 using ViFactory.Services.Console;
 using ViFactory.Services.Core;
@@ -22,8 +25,8 @@ namespace ViFactory.Controllers
 		private readonly ISolutionGenerator _solutionGenerator;
 		private readonly IConsoleGenerator _consoleGenerator;
 		private readonly IWebHostEnvironment _webHostEnvironment;
-
-        public HomeController(IBllGenerator bllGenerator, IDtoGenerator dtoGenerator, IDalGenerator dalGenerator, ICoreGenerator coreGenerator, ISolutionGenerator solutionGenerator, IConsoleGenerator consoleGenerator, IWebHostEnvironment webHostEnvironment, IDomainGenerator domainGenerator)
+		private readonly IApiGenerator _apiGenerator;
+        public HomeController(IBllGenerator bllGenerator, IDtoGenerator dtoGenerator, IDalGenerator dalGenerator, ICoreGenerator coreGenerator, ISolutionGenerator solutionGenerator, IConsoleGenerator consoleGenerator, IWebHostEnvironment webHostEnvironment, IDomainGenerator domainGenerator, IApiGenerator apiGenerator)
         {
             _bllGenerator = bllGenerator;
             _dtoGenerator = dtoGenerator;
@@ -33,6 +36,7 @@ namespace ViFactory.Controllers
             _consoleGenerator = consoleGenerator;
             _webHostEnvironment = webHostEnvironment;
             _domainGenerator = domainGenerator;
+            _apiGenerator = apiGenerator;
         }
 
         [HttpGet]
@@ -125,6 +129,19 @@ namespace ViFactory.Controllers
             _bllGenerator.GenerateBllLayer(bllGenerator);
             #endregion
 
+            #region Generate Api Project
+			ProjectGeneratorModel generateApiProject = new ProjectGeneratorModel()
+			{
+				ProjectName = "ViFactory.Api",
+				ProjectFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template", "Api", "CreateApiProject.txt"),
+				SolutionFilePath = Path.Combine(outputFolderPath, projectName + ".sln"),
+				OutputFolderPath = outputFolderPath,
+				CurrentProjectName = projectName
+			};
+			_apiGenerator.GenerateApiProject(generateApiProject);
+
+            #endregion
+
             #region Create Domain Layer
             ProjectGeneratorModel domainGenerator = new ProjectGeneratorModel()
             {
@@ -136,6 +153,7 @@ namespace ViFactory.Controllers
             };
             _domainGenerator.GenerateDomainLayer(domainGenerator);
             #endregion
+
             return outputFolderPath;
 		}
     }

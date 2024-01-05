@@ -606,3 +606,12 @@ C:\Users\ygmr4\Desktop\ViFactory\ViFactory\bin\Debug\net7.0\wwwroot\template\Dto
 C:\Users\ygmr4\Desktop\ViFactory\ViFactory\bin\Debug\net7.0\wwwroot\template\Dtos\CreateDtos.txt
 C:\Users\ygmr4\Desktop\ViFactory\ViFactory\bin\Debug\net7.0\wwwroot\template\Models\CreateBaseEntity.txt
 C:\Users\ygmr4\Desktop\ViFactory\ViFactory\bin\Debug\net7.0\wwwroot\template\Models\CreateEntity.txt
+C:\Users\ygmr4\Desktop\ViFactory\ViFactory\bin\Debug\net7.0\wwwroot\template\Api\CreateApiProject.txt
+C:\Users\ygmr4\Desktop\ViFactory\ViFactory\bin\Debug\net7.0\wwwroot\template\Api\Extensions\DiDbContext.txt
+C:\Users\ygmr4\Desktop\ViFactory\ViFactory\bin\Debug\net7.0\wwwroot\template\Api\Extensions\DiFluentValidator.txt
+C:\Users\ygmr4\Desktop\ViFactory\ViFactory\bin\Debug\net7.0\wwwroot\template\Api\Extensions\DiServices.txt
+C:\Users\ygmr4\Desktop\ViFactory\ViFactory\bin\Debug\net7.0\wwwroot\template\Api\Middlewares\CustomExceptionMiddleware.txt
+C:\Users\ygmr4\Desktop\ViFactory\ViFactory\bin\Debug\net7.0\wwwroot\template\Api\Config\ApiBehaviourConfig.txt
+C:\Users\ygmr4\Desktop\ViFactory\ViFactory\bin\Debug\net7.0\wwwroot\template\Bll\AppUserRequestDto.txt
+C:\Users\ygmr4\Desktop\ViFactory\ViFactory\bin\Debug\net7.0\wwwroot\template\Dal\Data\DalRepos\AppUserRepository.txt
+C:\Users\ygmr4\Desktop\ViFactory\ViFactory\bin\Debug\net7.0\wwwroot\template\Dal\Data\DalRepos\IAppUserRepository.txt

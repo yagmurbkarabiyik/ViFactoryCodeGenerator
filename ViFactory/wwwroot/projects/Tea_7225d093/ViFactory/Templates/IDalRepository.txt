@@ -1,0 +1,9 @@
+using [CurrentProjectName].Core.Services;
+using [CurrentProjectName].Domain.Entities.Models;
+
+namespace [CurrentProjectName].Dal.Data.IDalRepos
+{
+    public interface I[EntityName]Repository : IRepository<[EntityName]>
+    {
+    }
+}

@@ -2,7 +2,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace [NamespaceName]
 {
-    public interface [ClassName]
+    public class [ClassName]
     {
         /// <summary>
         /// Mesajin gonderileceği gsm numarasidir. Eğer yurtdisi telefon numarasina mesaj gondermek istiyorsaniz numaranin basina 00 ekleyerek gonderim islemini yapabilirsiniz. Briden fazla numaraya gonderim sağlamak icin virgulle numaralari ayirabilirsiniz.

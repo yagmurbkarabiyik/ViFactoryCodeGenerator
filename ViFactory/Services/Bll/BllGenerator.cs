@@ -33,6 +33,10 @@ namespace ViFactory.Services.Bll
 			GenerateTokenService(projectGeneratorModel.CurrentProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Services", "Common"));
 			GenerateMemoryCache(projectGeneratorModel.CurrentProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Services", "Common"));
 			GenerateUploadLocalService(projectGeneratorModel.CurrentProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Services", "Common"));
+            GenerateAppUserService(projectGeneratorModel.CurrentProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Services", "Concrete"));
+            GenerateIAppUserService(projectGeneratorModel.CurrentProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Services", "Abstract"));
+            GenerateAppUserRequestDto(projectGeneratorModel.CurrentProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Dtos"));
+            GenerateAppUserResponseDto(projectGeneratorModel.CurrentProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Dtos", "AppUserDtos"));
 		}
 		//Constant Classes
 		private void GenerateExceptionResponse(string projectName, string outputFilePath)
@@ -180,8 +184,56 @@ namespace ViFactory.Services.Bll
 			};
 			_generator.GenerateClass(generateUploadLocalService);
 		}
+        private void GenerateAppUserService(string projectName, string outputFilePath)
+        {
+            GeneratorModel generateAppUserService = new()
+            {
+				NamespaceNameDefault = projectName + ".Bll.Services.Concrete",
+                ClassNameDefault = "AppUserService",
+                InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") + "\\Bll\\Services\\AppUserService.txt",
+                OutputFilePath = outputFilePath,
+                CurrentProjectName = projectName
+            };
+            _generator.GenerateClass(generateAppUserService);
 
-     
+        }
+		private void GenerateIAppUserService(string projectName, string outputFilePath)
+		{
+			GeneratorModel generateIAppUserService = new()
+			{
+				NamespaceNameDefault = projectName + ".Bll.Services.Abstract",
+				ClassNameDefault  = "IAppUserService",
+				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") + "\\Bll\\Services\\IAppUserService.txt",
+				OutputFilePath = outputFilePath,
+				CurrentProjectName = projectName
+			};
+			_generator.GenerateClass(generateIAppUserService);
+        }
+		private void GenerateAppUserRequestDto(string projectName, string outputFilePath)
+		{
+			GeneratorModel generateAppUserDto = new()
+			{
+				NamespaceNameDefault = projectName + ".Bll.Dtos",
+				ClassNameDefault = "AppUserRequestDtos",
+				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") + "\\Bll\\AppUserRequestDto.txt",
+				OutputFilePath = outputFilePath,
+				CurrentProjectName = projectName
+			};
+			_generator.GenerateClass(generateAppUserDto);	
+		}
+		private void GenerateAppUserResponseDto(string projectName, string outputFilePath)
+		{
+			GeneratorModel generateAppUserResponseDto = new()
+			{
+				NamespaceNameDefault = projectName + ".Bll.Dtos",
+				ClassNameDefault = "AppUserResponseDto",
+				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") + "\\Bll\\AppUserResponseDto.txt",
+				OutputFilePath = outputFilePath,
+				CurrentProjectName = projectName
+			};
+			_generator.GenerateClass(generateAppUserResponseDto);
+
+        }
     }
     
 }

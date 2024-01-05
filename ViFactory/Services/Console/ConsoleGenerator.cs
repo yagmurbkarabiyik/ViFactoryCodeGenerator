@@ -31,7 +31,6 @@ namespace ViFactory.Services.Console
 				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") +"\\ConsoleApp\\ProgramCs.txt",
 				OutputFilePath = outputFilePath
 			};
-			//_generator.GenerateClass(generateProgramCs);
 
 			string textFilePath = generateProgramCs.InputFilePath;
 			string codeTemplate = File.ReadAllText(textFilePath);
@@ -58,7 +57,6 @@ namespace ViFactory.Services.Console
 			};
 			_generator.GenerateClass(generateFileUtils);
 		}
-	
 		public void GenerateTemplates(string outputFolderPath)
 		{
 			var path = Path.Combine(outputFolderPath, "ViFactory", "Templates");

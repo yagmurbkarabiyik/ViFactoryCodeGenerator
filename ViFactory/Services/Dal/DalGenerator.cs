@@ -26,6 +26,8 @@ namespace ViFactory.Services.Dal
 			GenerateUnitOfWork(projectGeneratorModel.CurrentProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Data", "Common"));
 			GenerateContext(projectGeneratorModel.CurrentProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Context"));
 			GenerateContextPartial(projectGeneratorModel.CurrentProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Context"));
+            GenerateAppUserRepo(projectGeneratorModel.CurrentProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Data", "DalRepos"));
+            GenerateIAppUserRepo(projectGeneratorModel.CurrentProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Data", "IDalRepos"));
 		}
 
 		//Constant classes
@@ -102,6 +104,33 @@ namespace ViFactory.Services.Dal
 				CurrentProjectName = projectName
 			};
 			_generator.GenerateClass(generatorContextPartial);
+		}
+		private void GenerateAppUserRepo(string projectName, string outputFilePath) 
+		{
+			GeneratorModel generateAppUserRepo = new GeneratorModel()
+			{
+				NamespaceNameDefault = projectName + ".Dal.Data.DalRepos",
+				ClassNameDefault = "AppUserRepository",
+				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") + "\\Dal\\Data\\DalRepos\\AppUserRepository.txt",
+				OutputFilePath = outputFilePath,
+				CurrentProjectName = projectName,
+				DbContext = $"{projectName}DbContext"
+			};
+			_generator.GenerateClass(generateAppUserRepo);
+		}
+
+		private void GenerateIAppUserRepo(string projectName, string outputFilePath)
+		{
+			GeneratorModel generateIAppUserRepo = new GeneratorModel()
+			{
+				NamespaceNameDefault = projectName + ".Dal.Data.IDalRepos",
+				ClassNameDefault = "IAppUserRepository",
+				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") + "\\Dal\\Data\\DalRepos\\IAppUserRepository.txt",
+				OutputFilePath = outputFilePath,
+				CurrentProjectName = projectName,
+				DbContext = $"{projectName}DbContext"
+			};
+			_generator.GenerateClass(generateIAppUserRepo);
 		}
 	}
 }

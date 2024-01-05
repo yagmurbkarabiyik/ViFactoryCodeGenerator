@@ -57,5 +57,32 @@ namespace ViFactory.Services.Generators
 
 			File.WriteAllText(classFilePath, generatedCode);
 		}
+
+		//Create a json class
+		public void GenerateJson(GeneratorModel generateModel)
+		{
+            string textFilePath = generateModel.InputFilePath;
+            string codeTemplate = File.ReadAllText(textFilePath);
+
+            string namespaceName = generateModel.NamespaceNameDefault;
+            string className = generateModel.ClassNameDefault;
+
+            string generatedCode = GenerateCSharpCode(codeTemplate, namespaceName, className, generateModel.Properties, generateModel.Methods, generateModel.ConnectionString, generateModel.EntityName, generateModel.InterfaceName, generateModel.CurrentProjectName, generateModel.DbContext);
+
+            SyntaxTree syntaxTree = CSharpSyntaxTree.ParseText(generatedCode);
+
+            string modelsFolderPath = Path.Combine(generateModel.OutputFilePath);
+
+            // Create the Models folder if it doesn't exist
+            if (!Directory.Exists(modelsFolderPath))
+            {
+                Directory.CreateDirectory(modelsFolderPath);
+            }
+
+            // Create the path for the new class file inside the Models folder
+            string classFilePath = Path.Combine(modelsFolderPath, $"{className}.json");
+
+            File.WriteAllText(classFilePath, generatedCode);
+        }
 	}
 }

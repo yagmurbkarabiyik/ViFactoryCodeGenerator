@@ -1,0 +1,6 @@
+namespace [CurrentProjectName].Bll
+{
+    public class [EntityName] 
+    {
+    }
+}

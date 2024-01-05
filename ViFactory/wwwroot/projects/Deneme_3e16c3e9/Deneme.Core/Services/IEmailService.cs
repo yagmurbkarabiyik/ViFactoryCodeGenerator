@@ -1,0 +1,11 @@
+using Deneme.Core.Models;
+
+namespace Deneme.Core.Services
+{
+    public interface IEmailService
+    {
+        Task<(bool IsSuccess, Exception? Exception)> SendAsync(EmailSendData emailData, CancellationToken? ct = default);
+    }
+}
+
+
