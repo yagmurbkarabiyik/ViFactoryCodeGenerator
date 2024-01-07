@@ -7,6 +7,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 <ItemGroup>
+    <None Update="Templates\ApiController.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="Templates\Context.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

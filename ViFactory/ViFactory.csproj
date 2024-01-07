@@ -369,6 +369,9 @@
     <Content Update="wwwroot\template\Api\Config\ApiBehaviourConfig.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Update="wwwroot\template\Api\Controller\ApiController.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Update="wwwroot\template\Api\CreateApiProject.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

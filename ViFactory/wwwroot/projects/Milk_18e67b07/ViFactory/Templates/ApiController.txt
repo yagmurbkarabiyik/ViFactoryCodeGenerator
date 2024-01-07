@@ -1,0 +1,59 @@
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using [CurrentProjectName].Bll;
+using [CurrentProjectName].Bll.Models;
+using [CurrentProjectName].Bll.Services.Abstract;
+
+namespace ViFactory.Api.Controllers
+{
+
+    [Area("AdminServices")]
+    [Route("api/[controller]")]
+    [ApiController]
+    public class Api[EntityName]Controller : ControllerBase
+    {
+        private readonly I[EntityName]Service _[EntityName]Service;
+
+        public Api[EntityName]Controller(I[EntityName]Service _[EntityName]Service)
+        {
+            _[EntityName]Service = [EntityName]Service;
+        }
+
+        [HttpPost]
+        [ProducesResponseType(201, Type = typeof(ResponseCommon<StudentCreateDto>))]
+        [ProducesResponseType(400, Type = typeof(ResponseCommon<ResponseExceptionData>))]
+        public async Task<IActionResult> Create([FromForm] StudentCreateDto dto)
+        {
+            var response = await _[EntityName]Service.Create(dto);
+
+            return new ObjectResult(response)
+            {
+                StatusCode = (int)response.StatusCode
+            };
+        }
+
+        [HttpGet("{id}")]
+        [ProducesResponseType(200, Type = typeof(ResponseCommon<StudentGetDto>))]
+        [ProducesResponseType(404, Type = typeof(ResponseCommon<ResponseExceptionData>))]
+        public async Task<IActionResult> Get(int id)
+        {
+            return new ObjectResult(await _[EntityName]Service.Get(id));
+        }
+
+        [HttpPut("{id}")]
+        [ProducesResponseType(200, Type = typeof(ResponseCommon<StudentUpdateDto>))]
+        [ProducesResponseType(400, Type = typeof(ResponseCommon<ResponseExceptionData>))]
+        public async Task<IActionResult> Update(int id, [FromForm] StudentUpdateDto dto)
+        {
+            return new ObjectResult(await _[EntityName]Service.Update(id, dto));
+        }
+
+        [HttpDelete("{id}")]
+        [ProducesResponseType(200, Type = typeof(ResponseCommon))]
+        [ProducesResponseType(400, Type = typeof(ResponseCommon<ResponseExceptionData>))]
+        public async Task<IActionResult> Delete(int id)
+        {
+            return new ObjectResult(await _[EntityName]Service.SoftDelete(id));
+        }
+    }
+}

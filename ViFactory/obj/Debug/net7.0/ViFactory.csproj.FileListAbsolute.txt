@@ -615,3 +615,4 @@ C:\Users\ygmr4\Desktop\ViFactory\ViFactory\bin\Debug\net7.0\wwwroot\template\Api
 C:\Users\ygmr4\Desktop\ViFactory\ViFactory\bin\Debug\net7.0\wwwroot\template\Bll\AppUserRequestDto.txt
 C:\Users\ygmr4\Desktop\ViFactory\ViFactory\bin\Debug\net7.0\wwwroot\template\Dal\Data\DalRepos\AppUserRepository.txt
 C:\Users\ygmr4\Desktop\ViFactory\ViFactory\bin\Debug\net7.0\wwwroot\template\Dal\Data\DalRepos\IAppUserRepository.txt
+C:\Users\ygmr4\Desktop\ViFactory\ViFactory\bin\Debug\net7.0\wwwroot\template\Api\Controller\ApiController.txt

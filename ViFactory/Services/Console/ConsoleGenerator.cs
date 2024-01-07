@@ -93,6 +93,10 @@ namespace ViFactory.Services.Console
 			string unitOfWork = File.ReadAllText(Path.Combine(_webHostEnvironment.WebRootPath, "template") +"\\ConsoleApp\\Templates\\UnitOfWork.txt");
 			string unitOfWorkPath = Path.Combine(path, "UnitOfWork.txt");
 			File.WriteAllText(unitOfWorkPath, unitOfWork);
+
+            string apiController = File.ReadAllText(Path.Combine(_webHostEnvironment.WebRootPath, "template") + "\\Api\\Controller\\ApiController.txt");
+            string apiControllerPath = Path.Combine(path, "ApiController.txt");
+            File.WriteAllText(apiControllerPath, apiController);
         }
 	}
 }

@@ -7,10 +7,10 @@ namespace ViFactory.Api.Extensions
     {
         public static void AddCustomFluentValidator(this IServiceCollection services)
         {
-             //services.AddFluentValidation(fv =>
-             //{
-            //   fv.RegisterValidatorsFromAssemblyContaining(typeof(Domain.Dtos.CompanyDtos.CompanyCreateRequestValidator));
-           // });
+            services.AddFluentValidation(fv =>
+             {
+               fv.RegisterValidatorsFromAssemblyContaining(typeof([CurrentProjectName].Bll.Dtos.AppUserDtos.AppUserCreateRequestValidator));
+             });
 
             ValidatorOptions.Global.DefaultRuleLevelCascadeMode = CascadeMode.Stop;
         }

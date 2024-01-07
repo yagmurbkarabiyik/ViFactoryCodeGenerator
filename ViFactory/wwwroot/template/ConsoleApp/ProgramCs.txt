@@ -16,11 +16,17 @@ class Program
 		string csprojDalFilePath = Path.Combine(outputFolderPath, dalFolderPath, projectName + ".Dal.csproj");
 
 		string bllFolderPath = Path.Combine(outputFolderPath, projectName + ".Bll");
-		string csprojBllFilePath = Path.Combine(outputFolderPath, bllFolderPath, projectName + ".Bll.csproj"); 
+		string csprojBllFilePath = Path.Combine(outputFolderPath, bllFolderPath, projectName + ".Bll.csproj");
 
-		GenerateDal(csprojDalFilePath, dalFolderPath, entities, projectName);
+        string apiControllerFolderPath = Path.Combine(outputFolderPath, "ViFactory.Api");
+        string csprojApiFilePath = Path.Combine(outputFolderPath, bllFolderPath, projectName + "ViFactory.API.csproj");
+
+        GenerateDal(csprojDalFilePath, dalFolderPath, entities, projectName);
 		GenerateBll(csprojBllFilePath, bllFolderPath, entities, projectName);
-	 }
+
+		GenerateApiController(csprojApiFilePath, apiControllerFolderPath, entities, projectName);
+
+     }
 
 	#region Assembly Load
 	static List<Type> GetTypesFromAssembly(string assemblyName, string typeNameStart)
@@ -62,19 +68,6 @@ class Program
 		{
 			string serviceClass = Path.Combine(serviceFolderPath, $"{entity.Name}Service.cs");
 			string iServiceClass = Path.Combine(iServiceFolderPath, $"I{entity.Name}Service.cs");
-			string jwtSettingsClass = Path.Combine(modelsFolderPath, "JwtSettings.cs");
-			string emailSettingsClass = Path.Combine(modelsFolderPath, "EmailSettings.cs");
-			string responseCommonClass = Path.Combine(modelsFolderPath, "ResponseCommon.cs");
-			string responseExceptionClass = Path.Combine(modelsFolderPath, "ResponseException.cs");
-			string responseTypeClass = Path.Combine(enumsFolderPath, "ExceptionResponseType.cs");
-			string exceptionDataClass = Path.Combine(modelsFolderPath, "ResponseExceptionData.cs");
-			string smsNetGsmClass = Path.Combine(modelsFolderPath, "SmsNetGsmSettings.cs");
-			string emailServiceClass = Path.Combine(commonServiceFolderPath, "EmailService.cs");
-			string memoryCacheClass = Path.Combine(commonServiceFolderPath, "MemoryCacheService.cs");
-			string smsNetGsmServiceClass = Path.Combine(commonServiceFolderPath, "SmsNetGsmService.cs");
-			string tokenServiceClass = Path.Combine(commonServiceFolderPath, "TokenService.cs");
-			string iUploadLocalServiceClass = Path.Combine(commonServiceFolderPath, "IUploadLocalService.cs");
-			string uploadLocalServiceClass = Path.Combine(uploadLocalServicePath, "UploadLocalService.cs");
 
 			if (entity.Name != "BaseEntity")
 			{
@@ -216,10 +209,34 @@ class Program
 
 		csprojDoc.Save(csprojFilePath);
 	}
-	#endregion
+    #endregion
 
-	#region Helper Methods
-	static void EnsureFileExists(string filePath, string content)
+    #region Create Controller
+	static void GenerateApiController(string csprojFilePath, string rootFolderPath, IEnumerable<Type> entities, string currentProjectName)
+	{
+        string apiControllerFolderPath = Path.Combine(rootFolderPath, "Controllers");
+        EnsureDirectoryExists(apiControllerFolderPath);
+
+        foreach (var entity in entities)
+        {
+            string controllerClass = Path.Combine(apiControllerFolderPath, $"{entity.Name}Controller.cs");
+
+            if (entity.Name != "BaseEntity")
+            {
+                EnsureFileExists(controllerClass, File.ReadAllText("./Templates/ApiController.txt")
+                    .Replace("[CurrentProjectName]", currentProjectName)
+                    .Replace("[InterfaceName]", entity.Name)
+                    .Replace("[EntityName]", $"{char.ToLower(entity.Name[0])}{entity.Name.Substring(1)}Service")
+);
+            }
+        }
+    }
+
+    #endregion
+
+
+    #region Helper Methods
+    static void EnsureFileExists(string filePath, string content)
 	{
 		if (!File.Exists(filePath))
 		{
@@ -252,6 +269,3 @@ class Program
 	}
 	#endregion
 }
-
-
-	
