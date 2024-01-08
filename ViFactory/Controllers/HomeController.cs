@@ -132,7 +132,7 @@ namespace ViFactory.Controllers
             #region Generate Api Project
 			ProjectGeneratorModel generateApiProject = new ProjectGeneratorModel()
 			{
-				ProjectName = "ViFactory.Api",
+				ProjectName = $"{projectName}.Api",
 				ProjectFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template", "Api", "CreateApiProject.txt"),
 				SolutionFilePath = Path.Combine(outputFolderPath, projectName + ".sln"),
 				OutputFolderPath = outputFolderPath,

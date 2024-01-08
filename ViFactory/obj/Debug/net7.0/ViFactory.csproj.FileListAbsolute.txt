@@ -553,9 +553,6 @@ C:\Users\ygmr4\Desktop\ViFactory\ViFactory\bin\Debug\net7.0\wwwroot\template\Con
 C:\Users\ygmr4\Desktop\ViFactory\ViFactory\bin\Debug\net7.0\wwwroot\template\Core\CreateCoreProject.txt
 C:\Users\ygmr4\Desktop\ViFactory\ViFactory\bin\Debug\net7.0\wwwroot\template\Core\Enums\DbEntityState.txt
 C:\Users\ygmr4\Desktop\ViFactory\ViFactory\bin\Debug\net7.0\wwwroot\template\Core\Helpers\ExceptionHelper.txt
-C:\Users\ygmr4\Desktop\ViFactory\ViFactory\bin\Debug\net7.0\wwwroot\template\Core\JsonHelpers\MultiLanguageFormFile.txt
-C:\Users\ygmr4\Desktop\ViFactory\ViFactory\bin\Debug\net7.0\wwwroot\template\Core\JsonHelpers\MultiLanguageListString.txt
-C:\Users\ygmr4\Desktop\ViFactory\ViFactory\bin\Debug\net7.0\wwwroot\template\Core\JsonHelpers\MultiLanguageString.txt
 C:\Users\ygmr4\Desktop\ViFactory\ViFactory\bin\Debug\net7.0\wwwroot\template\Core\Model\ApiContext.txt
 C:\Users\ygmr4\Desktop\ViFactory\ViFactory\bin\Debug\net7.0\wwwroot\template\Core\Model\CreateIBaseEntity.txt
 C:\Users\ygmr4\Desktop\ViFactory\ViFactory\bin\Debug\net7.0\wwwroot\template\Core\Model\CreateUnitOfWorkResponse.txt

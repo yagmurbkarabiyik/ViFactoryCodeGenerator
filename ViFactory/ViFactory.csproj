@@ -35,9 +35,6 @@
     <Content Remove="wwwroot\template\Core\CreateCoreProject.txt" />
     <Content Remove="wwwroot\template\Core\Enums\DbEntityState.txt" />
     <Content Remove="wwwroot\template\Core\Helpers\ExceptionHelper.txt" />
-    <Content Remove="wwwroot\template\Core\JsonHelpers\MultiLanguageFormFile.txt" />
-    <Content Remove="wwwroot\template\Core\JsonHelpers\MultiLanguageListString.txt" />
-    <Content Remove="wwwroot\template\Core\JsonHelpers\MultiLanguageString.txt" />
     <Content Remove="wwwroot\template\Core\Model\ApiContext.txt" />
     <Content Remove="wwwroot\template\Core\Model\CreateIBaseEntity.txt" />
     <Content Remove="wwwroot\template\Core\Model\CreateUnitOfWorkResponse.txt" />
@@ -202,15 +199,6 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="wwwroot\template\Core\Helpers\ExceptionHelper.txt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\template\Core\JsonHelpers\MultiLanguageFormFile.txt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\template\Core\JsonHelpers\MultiLanguageListString.txt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\template\Core\JsonHelpers\MultiLanguageString.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="wwwroot\template\Core\Model\ApiContext.txt">

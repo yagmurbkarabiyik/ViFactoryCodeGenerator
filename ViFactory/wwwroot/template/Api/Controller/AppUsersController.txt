@@ -26,7 +26,10 @@ namespace ViFactory.Api.Controllers
         {
             var response = await _appUserService.SignIn(dto);
 
-            return new ObjectResult(response);
+            return new ObjectResult(response)
+            {
+                StatusCode = (int)response.StatusCode
+            };
         }
 
         [HttpGet("signinrefresh")]
@@ -38,7 +41,10 @@ namespace ViFactory.Api.Controllers
         {
             var response = await _appUserService.SignInRefresh(dto);
 
-            return new ObjectResult(response);
+            return new ObjectResult(response)
+            {
+                StatusCode = (int)response.StatusCode
+            };
         }
 
         [HttpGet("sendemailpasswordresetcode")]
@@ -50,7 +56,10 @@ namespace ViFactory.Api.Controllers
         {
             var response = await _appUserService.SendEmailPasswordResetCode(dto);
 
-            return new ObjectResult(response);
+            return new ObjectResult(response)
+            {
+                StatusCode = (int)response.StatusCode
+            };
         }
 
         [HttpGet("getpasswordresettoken")]
@@ -62,7 +71,10 @@ namespace ViFactory.Api.Controllers
         {
             var response = await _appUserService.GetPasswordResetToken(dto);
 
-            return new ObjectResult(response);
+            return new ObjectResult(response)
+            {
+                StatusCode = (int)response.StatusCode
+            };
         }
 
         [HttpPost("passwordreset")]
@@ -74,7 +86,10 @@ namespace ViFactory.Api.Controllers
         {
             var response = await _appUserService.PasswordReset(dto);
 
-            return new ObjectResult(response);
+            return new ObjectResult(response)
+            {
+                StatusCode = (int)response.StatusCode
+            };
         }
 
         [HttpPost("changepassword")]
@@ -86,7 +101,10 @@ namespace ViFactory.Api.Controllers
         {
             var response = await _appUserService.ChangePassword(dto);
 
-            return new ObjectResult(response);
+            return new ObjectResult(response)
+            {
+                StatusCode = (int)response.StatusCode
+            };
         }
     }
 }

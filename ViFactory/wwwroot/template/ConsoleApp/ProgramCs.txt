@@ -18,7 +18,7 @@ class Program
 		string bllFolderPath = Path.Combine(outputFolderPath, projectName + ".Bll");
 		string csprojBllFilePath = Path.Combine(outputFolderPath, bllFolderPath, projectName + ".Bll.csproj");
 
-        string apiControllerFolderPath = Path.Combine(outputFolderPath, "ViFactory.Api");
+        string apiControllerFolderPath = Path.Combine(outputFolderPath, $"{projectName}.Api");
         string csprojApiFilePath = Path.Combine(outputFolderPath, bllFolderPath, projectName + "ViFactory.API.csproj");
 
         GenerateDal(csprojDalFilePath, dalFolderPath, entities, projectName);

@@ -4,7 +4,7 @@ using [CurrentProjectName].Bll;
 using [CurrentProjectName].Bll.Models;
 using [CurrentProjectName].Bll.Services.Abstract;
 
-namespace ViFactory.Api.Controllers
+namespace [CurrentProjectName].Api.Controllers
 {
     [Area("AdminServices")]
     [Route("api/[controller]")]
@@ -62,7 +62,12 @@ namespace ViFactory.Api.Controllers
         [ProducesResponseType(400, Type = typeof(ResponseCommon<ResponseExceptionData>))]
         public async Task<IActionResult> Delete(int id)
         {
-            return new ObjectResult(await _[EntityName]Service.SoftDelete(id));
+            var response = await _countryServiceService.SoftDelete(id);
+
+            return new ObjectResult(response)
+            {
+                StatusCode = (int)response.StatusCode
+            };
         }
     }
 }

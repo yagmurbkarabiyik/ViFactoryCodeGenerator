@@ -51,9 +51,7 @@ namespace ViFactory.Services.Core
 			GenereateGetTokenResponse(projectGeneratorModel.ProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "TokenModels"));
 			GenerateValidateTokenRequest(projectGeneratorModel.ProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "TokenModels"));
 			GenerateExceptionHelper(projectGeneratorModel.ProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Enums"));
-			GenerateMultiLanguageFormFile(projectGeneratorModel.ProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "JsonModels"));
-			GenerateMultiLanguageListString(projectGeneratorModel.ProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "JsonModels"));
-			GenerateMultiLanguageString(projectGeneratorModel.ProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "JsonModels"));
+			
 		}
 
 		private void GenerateIRepository(string projectName, string outputFilePath)
@@ -466,54 +464,17 @@ namespace ViFactory.Services.Core
 
 			_generator.GenerateClass(exceptionHelper);
 		}
-		private void GenerateMultiLanguageFormFile(string projectName, string outputFilePath)
-		{
-			GeneratorModel generateFormFile = new()
-			{
-				NamespaceNameDefault = projectName + ".Core.JsonModels",
-				ClassNameDefault = "MultiLanguageFormFile",
-				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") +"\\Core\\JsonHelpers\\MultiLanguageFormFile.txt",
-				OutputFilePath = outputFilePath,
-				CurrentProjectName = projectName
-			};
-			_generator.GenerateClass(generateFormFile);
-		}
-		private void GenerateMultiLanguageListString(string projectName, string outputFilePath) 
-		{
-			GeneratorModel generateListString = new()
-			{
-				NamespaceNameDefault = projectName + ".Core.JsonModels",
-				ClassNameDefault = "MultiLanguageListString",
-				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") +"\\Core\\JsonHelpers\\MultiLanguageListString.txt",
-				OutputFilePath = outputFilePath,
-				CurrentProjectName = projectName
-			};
-			_generator.GenerateClass(generateListString);
-		}
-		private void GenerateMultiLanguageString(string projectName, string outputFilePath)
-		{
-			GeneratorModel generateString = new()
-			{
-				NamespaceNameDefault = projectName + ".Core.JsonModels",
-				ClassNameDefault = "MultiLanguageString",
-				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") +"\\Core\\JsonHelpers\\MultiLanguageString.txt",
-				OutputFilePath = outputFilePath,
-				CurrentProjectName = projectName
-			};
-			_generator.GenerateClass(generateString);
-				
-		}
-		private void GenerateIUploadLocalService(string projectName, string outputFilePath)
-		{
-			GeneratorModel generateService = new()
-			{
-				NamespaceNameDefault = projectName + ".Core.Services",
-				ClassNameDefault = "IUploadLocalService",
-				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") +"\\Core\\Services\\IUploadLocalService.txt",
-				OutputFilePath = outputFilePath,
-				CurrentProjectName = projectName
-			};
-			_generator.GenerateClass(generateService);
-		}
-	}
+        private void GenerateIUploadLocalService(string projectName, string outputFilePath)
+        {
+            GeneratorModel generateService = new()
+            {
+                NamespaceNameDefault = projectName + ".Core.Services",
+                ClassNameDefault = "IUploadLocalService",
+                InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") + "\\Core\\Services\\IUploadLocalService.txt",
+                OutputFilePath = outputFilePath,
+                CurrentProjectName = projectName
+            };
+            _generator.GenerateClass(generateService);
+        }
+    }
 }
