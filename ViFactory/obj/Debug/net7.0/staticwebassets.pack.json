@@ -1193,6 +1193,314 @@
       "PackagePath": "staticwebassets\\projects\\IceTea_a897b329\\ViFactory\\Templates\\UnitOfWork.txt"
     },
     {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Mst_80d654f2.zip",
+      "PackagePath": "staticwebassets\\projects\\Mst_80d654f2.zip"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Mst_80d654f2\\Mst.Api\\Config\\ApiBehaviourConfig.cs",
+      "PackagePath": "staticwebassets\\projects\\Mst_80d654f2\\Mst.Api\\Config\\ApiBehaviourConfig.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Mst_80d654f2\\Mst.Api\\Controllers\\AppUsersController.cs",
+      "PackagePath": "staticwebassets\\projects\\Mst_80d654f2\\Mst.Api\\Controllers\\AppUsersController.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Mst_80d654f2\\Mst.Api\\Extensions\\DiDbContext.cs",
+      "PackagePath": "staticwebassets\\projects\\Mst_80d654f2\\Mst.Api\\Extensions\\DiDbContext.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Mst_80d654f2\\Mst.Api\\Extensions\\DiFluentValidator.cs",
+      "PackagePath": "staticwebassets\\projects\\Mst_80d654f2\\Mst.Api\\Extensions\\DiFluentValidator.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Mst_80d654f2\\Mst.Api\\Extensions\\DiService.cs",
+      "PackagePath": "staticwebassets\\projects\\Mst_80d654f2\\Mst.Api\\Extensions\\DiService.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Mst_80d654f2\\Mst.Api\\Middlewares\\CustomExceptionMiddleware.cs",
+      "PackagePath": "staticwebassets\\projects\\Mst_80d654f2\\Mst.Api\\Middlewares\\CustomExceptionMiddleware.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Mst_80d654f2\\Mst.Api\\Program.cs",
+      "PackagePath": "staticwebassets\\projects\\Mst_80d654f2\\Mst.Api\\Program.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Mst_80d654f2\\Mst.Api\\appsettings.json",
+      "PackagePath": "staticwebassets\\projects\\Mst_80d654f2\\Mst.Api\\appsettings.json"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Mst_80d654f2\\Mst.Bll\\Dtos\\AppUserDtos\\AppUserRequestDtos.cs",
+      "PackagePath": "staticwebassets\\projects\\Mst_80d654f2\\Mst.Bll\\Dtos\\AppUserDtos\\AppUserRequestDtos.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Mst_80d654f2\\Mst.Bll\\Dtos\\AppUserDtos\\AppUserResponseDto.cs",
+      "PackagePath": "staticwebassets\\projects\\Mst_80d654f2\\Mst.Bll\\Dtos\\AppUserDtos\\AppUserResponseDto.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Mst_80d654f2\\Mst.Bll\\Enums\\ExceptionResponseType.cs",
+      "PackagePath": "staticwebassets\\projects\\Mst_80d654f2\\Mst.Bll\\Enums\\ExceptionResponseType.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Mst_80d654f2\\Mst.Bll\\Models\\JwtSettings.cs",
+      "PackagePath": "staticwebassets\\projects\\Mst_80d654f2\\Mst.Bll\\Models\\JwtSettings.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Mst_80d654f2\\Mst.Bll\\Models\\ResponseCommon.cs",
+      "PackagePath": "staticwebassets\\projects\\Mst_80d654f2\\Mst.Bll\\Models\\ResponseCommon.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Mst_80d654f2\\Mst.Bll\\Models\\ResponseException.cs",
+      "PackagePath": "staticwebassets\\projects\\Mst_80d654f2\\Mst.Bll\\Models\\ResponseException.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Mst_80d654f2\\Mst.Bll\\Models\\ResponseExceptionData.cs",
+      "PackagePath": "staticwebassets\\projects\\Mst_80d654f2\\Mst.Bll\\Models\\ResponseExceptionData.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Mst_80d654f2\\Mst.Bll\\Models\\SmsNetGsmSettings.cs",
+      "PackagePath": "staticwebassets\\projects\\Mst_80d654f2\\Mst.Bll\\Models\\SmsNetGsmSettings.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Mst_80d654f2\\Mst.Bll\\Models\\SmtpSettings.cs",
+      "PackagePath": "staticwebassets\\projects\\Mst_80d654f2\\Mst.Bll\\Models\\SmtpSettings.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Mst_80d654f2\\Mst.Bll\\Services\\Abstract\\IAppUserService.cs",
+      "PackagePath": "staticwebassets\\projects\\Mst_80d654f2\\Mst.Bll\\Services\\Abstract\\IAppUserService.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Mst_80d654f2\\Mst.Bll\\Services\\Common\\SmsNetGsmService.cs",
+      "PackagePath": "staticwebassets\\projects\\Mst_80d654f2\\Mst.Bll\\Services\\Common\\SmsNetGsmService.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Mst_80d654f2\\Mst.Bll\\Services\\Common\\SmtpServices.cs",
+      "PackagePath": "staticwebassets\\projects\\Mst_80d654f2\\Mst.Bll\\Services\\Common\\SmtpServices.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Mst_80d654f2\\Mst.Bll\\Services\\Common\\TokenService.cs",
+      "PackagePath": "staticwebassets\\projects\\Mst_80d654f2\\Mst.Bll\\Services\\Common\\TokenService.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Mst_80d654f2\\Mst.Bll\\Services\\Common\\UploadLocalService.cs",
+      "PackagePath": "staticwebassets\\projects\\Mst_80d654f2\\Mst.Bll\\Services\\Common\\UploadLocalService.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Mst_80d654f2\\Mst.Bll\\Services\\Concrete\\AppUserService.cs",
+      "PackagePath": "staticwebassets\\projects\\Mst_80d654f2\\Mst.Bll\\Services\\Concrete\\AppUserService.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Mst_80d654f2\\Mst.Core\\Enums\\DbEntityState.cs",
+      "PackagePath": "staticwebassets\\projects\\Mst_80d654f2\\Mst.Core\\Enums\\DbEntityState.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Mst_80d654f2\\Mst.Core\\Extensions\\ExceptionExtensions.cs",
+      "PackagePath": "staticwebassets\\projects\\Mst_80d654f2\\Mst.Core\\Extensions\\ExceptionExtensions.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Mst_80d654f2\\Mst.Core\\Models\\ApiContext.cs",
+      "PackagePath": "staticwebassets\\projects\\Mst_80d654f2\\Mst.Core\\Models\\ApiContext.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Mst_80d654f2\\Mst.Core\\Models\\EmailSendData.cs",
+      "PackagePath": "staticwebassets\\projects\\Mst_80d654f2\\Mst.Core\\Models\\EmailSendData.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Mst_80d654f2\\Mst.Core\\Models\\IBaseEntity.cs",
+      "PackagePath": "staticwebassets\\projects\\Mst_80d654f2\\Mst.Core\\Models\\IBaseEntity.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Mst_80d654f2\\Mst.Core\\Models\\PaginationRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Mst_80d654f2\\Mst.Core\\Models\\PaginationRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Mst_80d654f2\\Mst.Core\\Models\\PaginationResponse.cs",
+      "PackagePath": "staticwebassets\\projects\\Mst_80d654f2\\Mst.Core\\Models\\PaginationResponse.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Mst_80d654f2\\Mst.Core\\Models\\SmsNetGsmSendData.cs",
+      "PackagePath": "staticwebassets\\projects\\Mst_80d654f2\\Mst.Core\\Models\\SmsNetGsmSendData.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Mst_80d654f2\\Mst.Core\\Models\\SmtpSendData.cs",
+      "PackagePath": "staticwebassets\\projects\\Mst_80d654f2\\Mst.Core\\Models\\SmtpSendData.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Mst_80d654f2\\Mst.Core\\Models\\UnitOfWorkResponse.cs",
+      "PackagePath": "staticwebassets\\projects\\Mst_80d654f2\\Mst.Core\\Models\\UnitOfWorkResponse.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Mst_80d654f2\\Mst.Core\\RepositoryModels\\RepositoryAnyRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Mst_80d654f2\\Mst.Core\\RepositoryModels\\RepositoryAnyRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Mst_80d654f2\\Mst.Core\\RepositoryModels\\RepositoryCreateBulkRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Mst_80d654f2\\Mst.Core\\RepositoryModels\\RepositoryCreateBulkRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Mst_80d654f2\\Mst.Core\\RepositoryModels\\RepositoryCreateRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Mst_80d654f2\\Mst.Core\\RepositoryModels\\RepositoryCreateRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Mst_80d654f2\\Mst.Core\\RepositoryModels\\RepositoryDeleteRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Mst_80d654f2\\Mst.Core\\RepositoryModels\\RepositoryDeleteRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Mst_80d654f2\\Mst.Core\\RepositoryModels\\RepositoryFindRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Mst_80d654f2\\Mst.Core\\RepositoryModels\\RepositoryFindRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Mst_80d654f2\\Mst.Core\\RepositoryModels\\RepositoryGetAsTResultRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Mst_80d654f2\\Mst.Core\\RepositoryModels\\RepositoryGetAsTResultRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Mst_80d654f2\\Mst.Core\\RepositoryModels\\RepositoryGetRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Mst_80d654f2\\Mst.Core\\RepositoryModels\\RepositoryGetRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Mst_80d654f2\\Mst.Core\\RepositoryModels\\RepositoryListAsTResultRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Mst_80d654f2\\Mst.Core\\RepositoryModels\\RepositoryListAsTResultRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Mst_80d654f2\\Mst.Core\\RepositoryModels\\RepositoryListRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Mst_80d654f2\\Mst.Core\\RepositoryModels\\RepositoryListRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Mst_80d654f2\\Mst.Core\\RepositoryModels\\RepositoryPaginationAsTResultRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Mst_80d654f2\\Mst.Core\\RepositoryModels\\RepositoryPaginationAsTResultRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Mst_80d654f2\\Mst.Core\\RepositoryModels\\RepositoryPaginationRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Mst_80d654f2\\Mst.Core\\RepositoryModels\\RepositoryPaginationRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Mst_80d654f2\\Mst.Core\\RepositoryModels\\RepositoryUpdateBulkRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Mst_80d654f2\\Mst.Core\\RepositoryModels\\RepositoryUpdateBulkRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Mst_80d654f2\\Mst.Core\\RepositoryModels\\RepositoryUpdateRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Mst_80d654f2\\Mst.Core\\RepositoryModels\\RepositoryUpdateRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Mst_80d654f2\\Mst.Core\\Services\\IRepository.cs",
+      "PackagePath": "staticwebassets\\projects\\Mst_80d654f2\\Mst.Core\\Services\\IRepository.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Mst_80d654f2\\Mst.Core\\Services\\ISmsNetGsmService.cs",
+      "PackagePath": "staticwebassets\\projects\\Mst_80d654f2\\Mst.Core\\Services\\ISmsNetGsmService.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Mst_80d654f2\\Mst.Core\\Services\\ISmtpService.cs",
+      "PackagePath": "staticwebassets\\projects\\Mst_80d654f2\\Mst.Core\\Services\\ISmtpService.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Mst_80d654f2\\Mst.Core\\Services\\ITokenService.cs",
+      "PackagePath": "staticwebassets\\projects\\Mst_80d654f2\\Mst.Core\\Services\\ITokenService.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Mst_80d654f2\\Mst.Core\\Services\\IUnitOfWork.cs",
+      "PackagePath": "staticwebassets\\projects\\Mst_80d654f2\\Mst.Core\\Services\\IUnitOfWork.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Mst_80d654f2\\Mst.Core\\Services\\IUploadLocalService.cs",
+      "PackagePath": "staticwebassets\\projects\\Mst_80d654f2\\Mst.Core\\Services\\IUploadLocalService.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Mst_80d654f2\\Mst.Core\\TokenModels\\GetTokenRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Mst_80d654f2\\Mst.Core\\TokenModels\\GetTokenRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Mst_80d654f2\\Mst.Core\\TokenModels\\GetTokenResponse.cs",
+      "PackagePath": "staticwebassets\\projects\\Mst_80d654f2\\Mst.Core\\TokenModels\\GetTokenResponse.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Mst_80d654f2\\Mst.Core\\TokenModels\\ValidateTokenRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Mst_80d654f2\\Mst.Core\\TokenModels\\ValidateTokenRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Mst_80d654f2\\Mst.Dal\\Context\\MstDbContext.cs",
+      "PackagePath": "staticwebassets\\projects\\Mst_80d654f2\\Mst.Dal\\Context\\MstDbContext.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Mst_80d654f2\\Mst.Dal\\Data\\Common\\Repository.cs",
+      "PackagePath": "staticwebassets\\projects\\Mst_80d654f2\\Mst.Dal\\Data\\Common\\Repository.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Mst_80d654f2\\Mst.Dal\\Data\\Common\\UnitOfWork.cs",
+      "PackagePath": "staticwebassets\\projects\\Mst_80d654f2\\Mst.Dal\\Data\\Common\\UnitOfWork.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Mst_80d654f2\\Mst.Dal\\Data\\DalRepos\\AppUserRepository.cs",
+      "PackagePath": "staticwebassets\\projects\\Mst_80d654f2\\Mst.Dal\\Data\\DalRepos\\AppUserRepository.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Mst_80d654f2\\Mst.Dal\\Data\\IDalRepos\\IAppUserRepository.cs",
+      "PackagePath": "staticwebassets\\projects\\Mst_80d654f2\\Mst.Dal\\Data\\IDalRepos\\IAppUserRepository.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Mst_80d654f2\\Mst.Dal\\FluentApi\\BaseMap.cs",
+      "PackagePath": "staticwebassets\\projects\\Mst_80d654f2\\Mst.Dal\\FluentApi\\BaseMap.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Mst_80d654f2\\Mst.Domain.Entities\\IdentityModels\\AppRole.cs",
+      "PackagePath": "staticwebassets\\projects\\Mst_80d654f2\\Mst.Domain.Entities\\IdentityModels\\AppRole.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Mst_80d654f2\\Mst.Domain.Entities\\IdentityModels\\AppUser.cs",
+      "PackagePath": "staticwebassets\\projects\\Mst_80d654f2\\Mst.Domain.Entities\\IdentityModels\\AppUser.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Mst_80d654f2\\Mst.Domain.Entities\\IdentityModels\\AppUserState.cs",
+      "PackagePath": "staticwebassets\\projects\\Mst_80d654f2\\Mst.Domain.Entities\\IdentityModels\\AppUserState.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Mst_80d654f2\\Mst.Domain.Entities\\Models\\BaseEntity.cs",
+      "PackagePath": "staticwebassets\\projects\\Mst_80d654f2\\Mst.Domain.Entities\\Models\\BaseEntity.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Mst_80d654f2\\ViFactory\\FileUtils.cs",
+      "PackagePath": "staticwebassets\\projects\\Mst_80d654f2\\ViFactory\\FileUtils.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Mst_80d654f2\\ViFactory\\Program.cs",
+      "PackagePath": "staticwebassets\\projects\\Mst_80d654f2\\ViFactory\\Program.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Mst_80d654f2\\ViFactory\\Templates\\ApiController.txt",
+      "PackagePath": "staticwebassets\\projects\\Mst_80d654f2\\ViFactory\\Templates\\ApiController.txt"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Mst_80d654f2\\ViFactory\\Templates\\Context.txt",
+      "PackagePath": "staticwebassets\\projects\\Mst_80d654f2\\ViFactory\\Templates\\Context.txt"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Mst_80d654f2\\ViFactory\\Templates\\CreateDto.txt",
+      "PackagePath": "staticwebassets\\projects\\Mst_80d654f2\\ViFactory\\Templates\\CreateDto.txt"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Mst_80d654f2\\ViFactory\\Templates\\DalRepository.txt",
+      "PackagePath": "staticwebassets\\projects\\Mst_80d654f2\\ViFactory\\Templates\\DalRepository.txt"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Mst_80d654f2\\ViFactory\\Templates\\FluentApiMap.txt",
+      "PackagePath": "staticwebassets\\projects\\Mst_80d654f2\\ViFactory\\Templates\\FluentApiMap.txt"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Mst_80d654f2\\ViFactory\\Templates\\IDalRepository.txt",
+      "PackagePath": "staticwebassets\\projects\\Mst_80d654f2\\ViFactory\\Templates\\IDalRepository.txt"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Mst_80d654f2\\ViFactory\\Templates\\IService.txt",
+      "PackagePath": "staticwebassets\\projects\\Mst_80d654f2\\ViFactory\\Templates\\IService.txt"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Mst_80d654f2\\ViFactory\\Templates\\Service.txt",
+      "PackagePath": "staticwebassets\\projects\\Mst_80d654f2\\ViFactory\\Templates\\Service.txt"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Mst_80d654f2\\ViFactory\\Templates\\UnitOfWork.txt",
+      "PackagePath": "staticwebassets\\projects\\Mst_80d654f2\\ViFactory\\Templates\\UnitOfWork.txt"
+    },
+    {
       "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Neew_a25d6421.zip",
       "PackagePath": "staticwebassets\\projects\\Neew_a25d6421.zip"
     },
