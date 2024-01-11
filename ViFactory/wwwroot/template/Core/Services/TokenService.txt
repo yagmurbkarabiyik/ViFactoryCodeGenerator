@@ -3,9 +3,8 @@ using [CurrentProjectName].Models.TokenModels;
 
 namespace [NamespaceName]
 {
-    public interface [ClassName]
+   public interface [ClassName]
     {
-        GetClientTokenResult GetClientToken(GetClientTokenRequest request);
         GetTokenResponse GetToken(GetTokenRequest request);
         ClaimsPrincipal ValidateAccessToken(ValidateTokenRequest request);
         bool ValidateRefreshTokenExpire(string refreshToken);

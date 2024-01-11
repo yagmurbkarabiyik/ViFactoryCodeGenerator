@@ -4,6 +4,11 @@ using ViFactory.Services.Project;
 
 namespace ViFactory.Services.Core
 {
+    /// <summary>
+    /// Constant Classes Created
+    /// </summary>
+    /// <param name="projectName"></param>
+    /// <param name="outputFilePath"></param>
     public class CoreGenerator : ICoreGenerator
 	{
 		private readonly IGenerator _generator;
@@ -27,9 +32,7 @@ namespace ViFactory.Services.Core
 			GeneratePaginationResponse(projectGeneratorModel.ProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Models"));
 			GenerateISmsNetGsmService(projectGeneratorModel.ProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Services"));
 			GenerateSmsNetGsmSendData(projectGeneratorModel.ProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Models"));
-			GenerateIEmailService(projectGeneratorModel.ProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Services"));
 			GenerateEmailSendData(projectGeneratorModel.ProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Models"));
-			GenerateIMemoryCache(projectGeneratorModel.ProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Services"));
 			GenerateDbEntityState(projectGeneratorModel.ProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Enums"));
 			GenerateApiContext(projectGeneratorModel.ProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Models"));
 			GenerateITokenService(projectGeneratorModel.ProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Services"));
@@ -38,22 +41,23 @@ namespace ViFactory.Services.Core
 			GenerateRepositoryDeleteRequest(projectGeneratorModel.ProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "RepositoryModels"));
 			GenerateRepositoryGetAsTResultRequest(projectGeneratorModel.ProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "RepositoryModels"));
 			GenerateRepositoryGetRequest(projectGeneratorModel.ProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "RepositoryModels"));
-			GenerateRepositoryIsExistRequest(projectGeneratorModel.ProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "RepositoryModels"));
 			GenerateRepositoryListAsTResultRequest(projectGeneratorModel.ProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "RepositoryModels"));
 			GenerateRepositoryListRequest(projectGeneratorModel.ProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "RepositoryModels"));
 			GenerateRepositoryPaginationAsTResultRequest(projectGeneratorModel.ProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "RepositoryModels"));
 			GenerateRepositoryPaginationRequest(projectGeneratorModel.ProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "RepositoryModels"));
-			GenerateRepositorySoftDeleteRequest(projectGeneratorModel.ProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "RepositoryModels"));
 			GenerateRepositoryUpdateRequest(projectGeneratorModel.ProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "RepositoryModels"));
-			GenerateGetClientTokenRequest(projectGeneratorModel.ProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "TokenModels"));
-			GenerateGetClientTokenResult(projectGeneratorModel.ProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "TokenModels"));
+            GenerateRepositoryAnyRequest(projectGeneratorModel.ProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "RepositoryModels"));
+            GenerateRepositoryCreateBulkRequest(projectGeneratorModel.ProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "RepositoryModels"));
+            GenerateRepositoryFindRequest(projectGeneratorModel.ProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "RepositoryModels"));
+            GenerateRepositoryUpdateBulkRequest(projectGeneratorModel.ProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "RepositoryModels"));
 			GenerateGetTokenRequest(projectGeneratorModel.ProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "TokenModels"));
 			GenereateGetTokenResponse(projectGeneratorModel.ProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "TokenModels"));
 			GenerateValidateTokenRequest(projectGeneratorModel.ProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "TokenModels"));
-			GenerateExceptionHelper(projectGeneratorModel.ProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Enums"));
+            GenerateExceptionExtension(projectGeneratorModel.ProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Extensions"));
+            GenerateISmtpService(projectGeneratorModel.ProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Services"));
+            GenerateSmtpSendData(projectGeneratorModel.ProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Models"));
 			
 		}
-
 		private void GenerateIRepository(string projectName, string outputFilePath)
 		{
 
@@ -75,19 +79,6 @@ namespace ViFactory.Services.Core
 
 			_generator.GenerateClass(generateIRepositoryModel);
 		}
-		private void GenerateIBaseEntity(string projectName, string outputFilePath)
-		{
-			GeneratorModel generateIBaseEntity = new GeneratorModel()
-			{
-				NamespaceNameDefault = projectName + ".Models",
-				ClassNameDefault = "IBaseEntity",
-				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") +"\\Core\\Model\\CreateIBaseEntity.txt",
-				OutputFilePath = outputFilePath,
-				CurrentProjectName= projectName
-			};
-
-			_generator.GenerateClass(generateIBaseEntity);
-		}
 		private void GenerateIUnitOfWork(string projectName, string outputFilePath)
 		{
 			GeneratorModel generateIUnitOfWork = new()
@@ -100,6 +91,82 @@ namespace ViFactory.Services.Core
 			};
 
 			_generator.GenerateClass(generateIUnitOfWork);
+		}
+		private void GenerateISmtpService(string projectName, string outputFilePath) 
+		{
+			GeneratorModel generateISmtpService = new()
+			{
+				NamespaceNameDefault = projectName + ".Services",
+				ClassNameDefault = "ISmtpService",
+                InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") + "\\Core\\Services\\ISmtpService.txt",
+                OutputFilePath = outputFilePath,
+                CurrentProjectName = projectName
+            };
+			_generator.GenerateClass(generateISmtpService);
+		}
+		private void GenerateITokenService(string projectName, string outputFilePath)
+		{
+			GeneratorModel generateITokenService = new()
+			{
+				NamespaceNameDefault = projectName + ".Services.TokenService",
+				ClassNameDefault = "ITokenService",
+				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") +"\\Core\\Services\\TokenService.txt",
+				OutputFilePath = outputFilePath,
+				CurrentProjectName = projectName
+			};
+
+			_generator.GenerateClass(generateITokenService);
+		}
+        private void GenerateIUploadLocalService(string projectName, string outputFilePath)
+        {
+            GeneratorModel generateService = new()
+            {
+                NamespaceNameDefault = projectName + ".Services",
+                ClassNameDefault = "IUploadLocalService",
+                InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") + "\\Core\\Services\\IUploadLocalService.txt",
+                OutputFilePath = outputFilePath,
+                CurrentProjectName = projectName
+            };
+            _generator.GenerateClass(generateService);
+        }
+		private void GenerateISmsNetGsmService(string projectName, string outputFilePath)
+		{
+			GeneratorModel generateISmsNewGsmService = new()
+			{
+				NamespaceNameDefault = projectName + ".Services",
+				ClassNameDefault = "ISmsNetGsmService",
+				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") +"\\Core\\Services\\ISmsNetGsmService.txt",
+				OutputFilePath = outputFilePath,
+				CurrentProjectName = projectName
+			};
+
+			_generator.GenerateClass(generateISmsNewGsmService);
+		}
+		private void GenerateDbEntityState(string projectName, string outputFilePath)
+		{
+			GeneratorModel generatedbEntityState = new()
+			{
+				NamespaceNameDefault = projectName + ".Enums",
+				ClassNameDefault = "DbEntityState",
+				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") +"\\Core\\Enums\\DbEntityState.txt",
+				OutputFilePath = outputFilePath,
+				CurrentProjectName = projectName
+			};
+
+			_generator.GenerateClass(generatedbEntityState);
+		}
+		private void GenerateIBaseEntity(string projectName, string outputFilePath)
+		{
+			GeneratorModel generateIBaseEntity = new GeneratorModel()
+			{
+				NamespaceNameDefault = projectName + ".Models",
+				ClassNameDefault = "IBaseEntity",
+				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") +"\\Core\\Model\\CreateIBaseEntity.txt",
+				OutputFilePath = outputFilePath,
+				CurrentProjectName= projectName
+			};
+
+			_generator.GenerateClass(generateIBaseEntity);
 		}
 		private void GenerateUnitOfWorkResponse(string projectName, string outputFilePath)
 		{
@@ -140,19 +207,6 @@ namespace ViFactory.Services.Core
 
 			_generator.GenerateClass(generatePaginationResponse);
 		}
-		private void GenerateISmsNetGsmService(string projectName, string outputFilePath)
-		{
-			GeneratorModel generateISmsNewGsmService = new()
-			{
-				NamespaceNameDefault = projectName + ".Services",
-				ClassNameDefault = "ISmsNetGsmService",
-				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") +"\\Core\\Services\\ISmsNetGsmService.txt",
-				OutputFilePath = outputFilePath,
-				CurrentProjectName = projectName
-			};
-
-			_generator.GenerateClass(generateISmsNewGsmService);
-		}
 		private void GenerateSmsNetGsmSendData(string projectName, string outputFilePath)
 		{
 			GeneratorModel generateSmsNetGsmSendData = new()
@@ -166,19 +220,6 @@ namespace ViFactory.Services.Core
 
 			_generator.GenerateClass(generateSmsNetGsmSendData);
 		}
-		private void GenerateIEmailService(string projectName, string outputFilePath)
-		{
-			GeneratorModel generateIEmailService = new()
-			{
-				NamespaceNameDefault = projectName + ".Services",
-				ClassNameDefault = "IEmailService",
-				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") +"\\Core\\Services\\IEmailService.txt",
-				OutputFilePath = outputFilePath,
-				CurrentProjectName = projectName
-			};
-
-			_generator.GenerateClass(generateIEmailService);
-		}
 		private void GenerateEmailSendData(string projectName, string outputFilePath)
 		{
 			GeneratorModel generateEmailSendData = new()
@@ -190,32 +231,6 @@ namespace ViFactory.Services.Core
 				CurrentProjectName = projectName
 			};
 			_generator.GenerateClass(generateEmailSendData);
-		}
-		private void GenerateIMemoryCache(string projectName, string outputFilePath)
-		{
-			GeneratorModel generateIMemoryCache = new()
-			{
-				NamespaceNameDefault = projectName + ".Services",
-				ClassNameDefault = "IMemoryCacheService",
-				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") +"\\Core\\Services\\IMemoryCache.txt",
-				OutputFilePath = outputFilePath,
-				CurrentProjectName = projectName
-			};
-
-			_generator.GenerateClass(generateIMemoryCache);
-		}
-		private void GenerateDbEntityState(string projectName, string outputFilePath)
-		{
-			GeneratorModel generatedbEntityState = new()
-			{
-				NamespaceNameDefault = projectName + ".Enums",
-				ClassNameDefault = "DbEntityState",
-				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") +"\\Core\\Enums\\DbEntityState.txt",
-				OutputFilePath = outputFilePath,
-				CurrentProjectName = projectName
-			};
-
-			_generator.GenerateClass(generatedbEntityState);
 		}
 		private void GenerateApiContext(string projectName, string outputFilePath)
 		{
@@ -230,19 +245,19 @@ namespace ViFactory.Services.Core
 
 			_generator.GenerateClass(generateApiContext);
 		}
-		private void GenerateITokenService(string projectName, string outputFilePath)
+		private void GenerateSmtpSendData(string projectName, string outputFilePath)
 		{
-			GeneratorModel generateITokenService = new()
+			GeneratorModel generateSmtpSendData = new()
 			{
-				NamespaceNameDefault = projectName + ".Services.TokenService",
-				ClassNameDefault = "ITokenService",
-				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") +"\\Core\\Services\\TokenService.txt",
+				NamespaceNameDefault = projectName + ".Models.RepositoryModels",
+				ClassNameDefault = "SmtpSendData",
+				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") + "\\Core\\Model\\SmtpSendData.txt",
 				OutputFilePath = outputFilePath,
 				CurrentProjectName = projectName
 			};
+			_generator.GenerateClass(generateSmtpSendData);
 
-			_generator.GenerateClass(generateITokenService);
-		}
+        }
 		private void GenerateRepositoryCreateRequest(string projectName, string outputFilePath)
 		{
 			GeneratorModel generateRequest = new()
@@ -294,19 +309,6 @@ namespace ViFactory.Services.Core
 			};
 
 			_generator.GenerateClass(generateRepositoryGetRequest);
-		}
-		private void GenerateRepositoryIsExistRequest(string projectName, string outputFilePath)
-		{
-			GeneratorModel generateRepositoryIsExistRequest = new()
-			{
-				NamespaceNameDefault = projectName + ".Models.RepositoryModels",
-				ClassNameDefault = "RepositoryIsExistRequest",
-				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") +"\\Core\\Model\\RepositoryModels\\RepositoryIsExistRequest.txt",
-				OutputFilePath = outputFilePath,
-				CurrentProjectName = projectName
-			};
-
-			_generator.GenerateClass(generateRepositoryIsExistRequest);
 		}
 		private void GenerateRepositoryListAsTResultRequest(string projectName, string outputFilePath)
 		{
@@ -360,19 +362,6 @@ namespace ViFactory.Services.Core
 
 			_generator.GenerateClass(generateRepositoryPaginationsRequest);
 		}
-		private void GenerateRepositorySoftDeleteRequest(string projectName, string outputFilePath)
-		{
-			GeneratorModel generateRepositorySoftDeleteRequest = new()
-			{
-				NamespaceNameDefault = projectName + ".Models.RepositoryModels",
-				ClassNameDefault = "RepositorySoftDeleteRequest",
-				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") +"\\Core\\Model\\RepositoryModels\\RepositorySoftDeleteRequest.txt",
-				OutputFilePath = outputFilePath,
-				CurrentProjectName = projectName
-			};
-
-			_generator.GenerateClass(generateRepositorySoftDeleteRequest);
-		}
 		private void GenerateRepositoryUpdateRequest(string projectName, string outputFilePath)
 		{
 			GeneratorModel generateRepositoryUpdateRequest = new()
@@ -386,32 +375,54 @@ namespace ViFactory.Services.Core
 
 			_generator.GenerateClass(generateRepositoryUpdateRequest);
 		}
-		private void GenerateGetClientTokenRequest(string projectName, string outputFilePath)
+		private void GenerateRepositoryFindRequest(string projectName, string outputFilePath)
 		{
-			GeneratorModel generateGetClientTokenRequest = new()
+			GeneratorModel generateRepositoryFindRequest = new()
 			{
-				NamespaceNameDefault = projectName + ".Models.TokenModels",
-				ClassNameDefault = "GetClientTokenRequest",
-				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") +"\\Core\\Model\\TokenModels\\GetClientTokenRequest.txt",
+				NamespaceNameDefault = projectName + ".Models.RepositoryModels",
+				ClassNameDefault = "RepositoryFindRequest",
+				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") + "\\Core\\Model\\RepositoryModels\\RepositoryFindRequest.txt",
 				OutputFilePath = outputFilePath,
 				CurrentProjectName = projectName
 			};
-
-			_generator.GenerateClass(generateGetClientTokenRequest);
-		}
-		private void GenerateGetClientTokenResult(string projectName, string outputFilePath)
+			_generator.GenerateClass(generateRepositoryFindRequest);
+        }
+		private void GenerateRepositoryUpdateBulkRequest(string projectName, string outputFilePath)
 		{
-			GeneratorModel generateGetClientTokenResult = new()
+			GeneratorModel generateUpdateBulkRequest = new()
 			{
-				NamespaceNameDefault = projectName + ".Models.TokenModels",
-				ClassNameDefault = "GetClientTokenResult",
-				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") +"\\Core\\Model\\TokenModels\\GetClientTokenResult.txt",
+				NamespaceNameDefault = projectName + ".Models.RepositoryModels",
+				ClassNameDefault = "RepositoryUpdateBulkRequest",
+				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") + "\\Core\\Model\\RepositoryModels\\RepositoryUpdateBulkRequest.txt",
 				OutputFilePath = outputFilePath,
 				CurrentProjectName = projectName
 			};
-
-			_generator.GenerateClass(generateGetClientTokenResult);
-		}
+			_generator.GenerateClass(generateUpdateBulkRequest);	
+        }
+		private void GenerateRepositoryAnyRequest(string projectName, string outputFilePath)
+		{
+			GeneratorModel generateRepositoryAnyRequest = new()
+			{
+				NamespaceNameDefault = projectName + ".Models.RepositoryModels",
+				ClassNameDefault = "RepositoryAnyRequest",
+				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") + "\\Core\\Model\\RepositoryModels\\RepositoryAnyRequest.txt",
+				OutputFilePath = outputFilePath,
+				CurrentProjectName = projectName
+			};
+			_generator.GenerateClass(generateRepositoryAnyRequest);
+        }
+		private void GenerateRepositoryCreateBulkRequest(string projectName, string outputFilePath)
+		{
+			GeneratorModel generateCreateBulkRequest = new()
+			{
+				NamespaceNameDefault = projectName + ".Models.RepositoryModels",
+				ClassNameDefault = "RepositoryCreateBulkRequest",
+				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") + "\\Core\\Model\\RepositoryModels\\RepositoryCreateBulkRequest.txt",
+				OutputFilePath = outputFilePath,
+				CurrentProjectName = projectName
+			};
+			_generator.GenerateClass(generateCreateBulkRequest);
+        }
 		private void GenerateGetTokenRequest(string projectName, string outputFilePath)
 		{
 			GeneratorModel generateaGetTokenRequest = new()
@@ -451,12 +462,12 @@ namespace ViFactory.Services.Core
 
 			_generator.GenerateClass(validateTokenRequest);
 		}
-		private void GenerateExceptionHelper(string projectName, string outputFilePath) 
+		private void GenerateExceptionExtension(string projectName, string outputFilePath) 
 		{
 			GeneratorModel exceptionHelper = new()
 			{
-				NamespaceNameDefault = projectName + ".Helpers",
-				ClassNameDefault = "ExceptionHelper",
+				NamespaceNameDefault = projectName + ".Extensions",
+				ClassNameDefault = "ExceptionExtensions",
 				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") +"\\Core\\Helpers\\ExceptionHelper.txt",
 				OutputFilePath = outputFilePath,
 				CurrentProjectName = projectName
@@ -464,17 +475,5 @@ namespace ViFactory.Services.Core
 
 			_generator.GenerateClass(exceptionHelper);
 		}
-        private void GenerateIUploadLocalService(string projectName, string outputFilePath)
-        {
-            GeneratorModel generateService = new()
-            {
-                NamespaceNameDefault = projectName + ".Core.Services",
-                ClassNameDefault = "IUploadLocalService",
-                InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") + "\\Core\\Services\\IUploadLocalService.txt",
-                OutputFilePath = outputFilePath,
-                CurrentProjectName = projectName
-            };
-            _generator.GenerateClass(generateService);
-        }
     }
 }

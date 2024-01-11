@@ -5,9 +5,9 @@ using [CurrentProjectName].Dal.Context;
 using [CurrentProjectName].Dal.Data.IDalRepos;
 using [CurrentProjectName].Domain.IdentityModels;
 
-namespace [CurrentProjectName].Dal.Data.DalRepos
+namespace [NamespaceName]
 {
-    public class AppUserRepository : IAppUserRepository
+     public class AppUserRepository : IAppUserRepository
     {
         protected readonly [DbContext] _dbContext;
         private readonly DbSet<AppUser> _dbSet;
@@ -16,13 +16,6 @@ namespace [CurrentProjectName].Dal.Data.DalRepos
         {
             _dbContext = dbContext;
             _dbSet = dbContext.Set<AppUser>();
-        }
-
-        public void Update(AppUser model)
-        {
-            model.UpdatedDate = DateTime.UtcNow;
-
-            _dbSet.Update(model);
         }
 
         public async Task<AppUser?> GetAsync(Expression<Func<AppUser, bool>> filter, bool asNoTracking, params string[] tables)

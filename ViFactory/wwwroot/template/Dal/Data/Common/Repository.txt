@@ -1,17 +1,19 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using [CurrentProjectName].Core.Models;
+using [CurrentProjectName].Core.Models.RepositoryModels;
+using [CurrentProjectName].Core.RepositoryModels;
 using [CurrentProjectName].Core.Enums;
 using [CurrentProjectName].Core.Models;
 using [CurrentProjectName].Core.Models.RepositoryModels;
 using [CurrentProjectName].Core.RepositoryModels;
 using [CurrentProjectName].Core.Services;
 
-
 namespace [NamespaceName]
 {
-    public class [ClassName]<T, TDbContext> : IRepository<T>
+       public class Repository<T, TDbContext> : IRepository<T>
         where T : class, IBaseEntity
         where TDbContext : DbContext
-    {
+        {
         protected readonly TDbContext _dbContext;
         private readonly DbSet<T> _dbSet;
 
@@ -20,28 +22,31 @@ namespace [NamespaceName]
             _dbContext = dbContext;
             _dbSet = dbContext.Set<T>();
         }
+
         public void Create(RepositoryCreateRequest<T> request)
         {
             request.Model.CreatedDate = DateTime.UtcNow;
 
             _dbSet.Add(request.Model);
         }
+
         public void Update(RepositoryUpdateRequest<T> request)
         {
             request.Model.UpdatedDate = DateTime.UtcNow;
 
             _dbSet.Update(request.Model);
         }
-        public void SoftDelete(RepositorySoftDeleteRequest<T> request)
-        {
-            request.Model.Status = DbEntityState.Deleted;
 
-            Update(new RepositoryUpdateRequest<T> { Model = request.Model });
-        }
         public void Delete(RepositoryDeleteRequest<T> request)
         {
             _dbSet.Remove(request.Model);
         }
+
+        public async Task<T?> FindAsync<TKey>(RepositoryFindRequest<TKey> request)
+        {
+            return await _dbSet.FindAsync(request.Key);
+        }
+
         public async Task<T?> GetAsync(RepositoryGetRequest<T> request)
         {
             var db = _dbSet.AsQueryable<T>();
@@ -49,15 +54,24 @@ namespace [NamespaceName]
             if (request.Include != null)
                 db = request.Include(db);
 
-            return request.AsNoTracking
-                ? await db.Where(request.Filter).AsNoTracking().FirstOrDefaultAsync()
-                : await db.FirstOrDefaultAsync(request.Filter);
+            if (request.AsNoTracking)
+                db = db.AsNoTracking();
+
+            if (request.IsLast)
+                return await db.OrderByDescending(x => x.Id).FirstOrDefaultAsync(request.Filter);
+
+            return await db.FirstOrDefaultAsync(request.Filter);
         }
+
         public async Task<TResult?> GetAsync<TResult>(RepositoryGetAsTResultRequest<T, TResult> request) where TResult : class
         {
-            return await _dbSet.Where(request.Filter).AsNoTracking().Select(request.Projection).FirstOrDefaultAsync();
+            if (request.IsLast)
+                return await _dbSet.Where(request.Filter).OrderByDescending(x => x.Id).Select(request.Projection).FirstOrDefaultAsync();
+
+            return await _dbSet.Where(request.Filter).Select(request.Projection).FirstOrDefaultAsync();
         }
-        public IQueryable<T> ListAsync(RepositoryListRequest<T> request)
+
+        public IQueryable<T> List(RepositoryListRequest<T> request)
         {
             var db = _dbSet.AsQueryable<T>();
 
@@ -75,9 +89,13 @@ namespace [NamespaceName]
             if (request.Take > 0)
                 db = db.Take(request.Take);
 
-            return request.AsNoTracking ? db.AsNoTracking() : db;
+            if (request.AsNoTracking)
+                db = db.AsNoTracking();
+
+            return db;
         }
-        public IQueryable<TResult> ListAsync<TResult>(RepositoryListAsTResultRequest<T, TResult> request) where TResult : class
+
+        public IQueryable<TResult> List<TResult>(RepositoryListAsTResultRequest<T, TResult> request) where TResult : class
         {
             var db = _dbSet.AsQueryable<T>();
 
@@ -92,11 +110,12 @@ namespace [NamespaceName]
             if (request.Take > 0)
                 db = db.Take(request.Take);
 
-            return db.AsNoTracking().Select(request.Projection);
+            return db.Select(request.Projection);
         }
-        public async Task<PaginationResponse<T>> GetPaginationAsync(RepositoryPaginationRequest<T> request)
+
+        public async Task<PaginationResponse<T>> PaginationAsync(RepositoryPaginationRequest<T> request)
         {
-            var db = ListAsync(new RepositoryListRequest<T>
+            var db = List(new RepositoryListRequest<T>
             {
                 Filter = request.Filter,
                 Include = request.Include,
@@ -114,13 +133,13 @@ namespace [NamespaceName]
                 Total = await db.LongCountAsync(),
             };
         }
+
         public async Task<PaginationResponse<TResult>> PaginationAsync<TResult>(RepositoryPaginationAsTResultRequest<T, TResult> request) where TResult : class
         {
-            var db = ListAsync(new RepositoryListAsTResultRequest<T, TResult>
+            var db = List(new RepositoryListAsTResultRequest<T, TResult>
             {
                 Projection = request.Projection,
                 Filter = request.Filter,
-                AsNoTracking = true,
                 OrderBy = request.OrderBy,
                 Skip = (request.Page - 1) * request.Size,
                 Take = request.Size,
@@ -134,9 +153,20 @@ namespace [NamespaceName]
                 Total = await db.LongCountAsync(),
             };
         }
-        public async Task<bool> IsExist(RepositoryIsExistRequest<T> request)
+
+        public async Task<bool> AnyAsync(RepositoryAnyRequest<T> request)
         {
-            return await _dbSet.Where(request.Filter).CountAsync() > 0;
+            return await _dbSet.AnyAsync(request.Filter);
+        }
+
+        public void CreateBulk(RepositoryCreateBulkRequest<T> request)
+        {
+            _dbSet.AddRange(request.Model);
+        }
+
+        public void UpdateBulk(RepositoryUpdateBulkRequest<T> request)
+        {
+            _dbSet.UpdateRange(request.Model);
         }
     }
 }

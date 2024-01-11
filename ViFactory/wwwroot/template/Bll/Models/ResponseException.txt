@@ -1,20 +1,19 @@
 ﻿using System.Net;
-using [CurrentProjectName].Core.Helpers;
 using [CurrentProjectName].Bll.Enums;
+using [CurrentProjectName].Core.Extensions;
 
-
-namespace [NamespaceName]
+namespace [CurrentProjectName].Bll.Models
 {
     public class ResponseException : Exception
 	{
-		public HttpStatusCode HttpStatusCode { get; set; }
+		public HttpStatusCode StatusCode { get; set; }
 		public ExceptionResponseType Type { get; set; }
 		public List<string> Errors { get; set; }
 		public Exception? Exception { get; set; }
 
-		public ResponseException(HttpStatusCode httpStatusCode, ExceptionResponseType type, Exception? exception = null, List<string>? errors = null)
+		public ResponseException(HttpStatusCode statusCode, ExceptionResponseType type, Exception? exception = null, List<string>? errors = null)
 		{
-			HttpStatusCode = httpStatusCode;
+			StatusCode = statusCode;
 			Type = type;
 			Exception = exception ?? new Exception("Unexpected error");
 			Errors = new List<string>();

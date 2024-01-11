@@ -1,7 +1,4 @@
 ﻿using System.Linq.Expressions;
-using [CurrentProjectName].Models;
-using [CurrentProjectName].Models.RepositoryModels;
-using [CurrentProjectName].RepositoryModels;
 using Microsoft.AspNetCore.Http;
 
 namespace [NamespaceName]
@@ -18,9 +15,10 @@ namespace [NamespaceName]
     /// <returns></returns>
     public interface IUploadLocalService
     {
-        Task<List<string>> MultiUpload(List<IFormFile> files, string folderPath, int? width = null, int? height = null, int? quality = 100, bool isPrivate = false);
-        Task<string> Upload(IFormFile file, string folderPath, int? width = null, int? height = null, int? quality = 100, bool isPrivate = false);
-        Task<string> Upload(string file, string folderPath, int? width = null, int? height = null, int? quality = 100, bool isPrivate = false);
+        Task<List<string>> MultiUploadAsync(IEnumerable<IFormFile> files, string folderPath, int? width = null, int? height = null, int? quality = 100, bool isPrivate = false);
+        Task<List<string>> MultiUploadAsync(IEnumerable<string> base64Files, string folderPath, int? width = null, int? height = null, int? quality = 100, bool isPrivate = false);
+        Task<string> UploadAsnyc(IFormFile file, string folderPath, int? width = null, int? height = null, int? quality = 100, bool isPrivate = false);
+        Task<string> UploadAsync(string base64File, string folderPath, int? width = null, int? height = null, int? quality = 100, bool isPrivate = false);
         void Remove(string filePath);
     }
 }

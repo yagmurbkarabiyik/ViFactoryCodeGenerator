@@ -1,0 +1,16 @@
+using [CurrentProjectName].Bll.Models;
+using [CurrentProjectName].Core.Models.RepositoryModels;
+using [CurrentProjectName].Domain.Entities.Models;
+
+namespace [CurrentProjectName].Bll.Services.Abstract
+{
+    public interface I[EntityName]Service
+    {
+        Task<ResponseCommon<StudentCreateDto>> CreateAsync(StudentCreateDto model);
+        Task<ResponseCommon<StudentUpdateDto>> UpdateAsync(int id,StudentUpdateDto model);
+        Task<ResponseCommon> FindAsync(int id);
+        Task<ResponseCommon<List<StudentGetListDto>>> ListTableAsync(RepositoryListAsTResultRequest<Student, StudentGetListDto> model);
+        Task<ResponseCommon> HardDeleteAsync(int id);
+        Task<ResponseCommon> SoftDeleteAsync(int id);       
+    }
+}

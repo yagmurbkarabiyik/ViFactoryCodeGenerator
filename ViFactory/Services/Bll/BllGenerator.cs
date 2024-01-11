@@ -4,6 +4,9 @@ using ViFactory.Services.Project;
 
 namespace ViFactory.Services.Bll
 {
+	/// <summary>
+	/// Constant Classes Created for Bll Layer
+	/// </summary>
 	public class BllGenerator : IBllGenerator
 	{
 		private readonly IGenerator _generator;
@@ -20,25 +23,22 @@ namespace ViFactory.Services.Bll
 		{
 			_projectGenerator.GenerateProject(projectGeneratorModel);
 			
-
 			GenerateExceptionResponse(projectGeneratorModel.CurrentProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Enums"));
-			GenerateEmailSettings(projectGeneratorModel.CurrentProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Models"));
 			GenerateJwtSettings(projectGeneratorModel.CurrentProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Models"));
 			GenerateResponseCommon(projectGeneratorModel.CurrentProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Models"));
 			GenerateResponseException(projectGeneratorModel.CurrentProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Models"));
 			GenerateExceptionData(projectGeneratorModel.CurrentProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Models"));
 			GenerateSmsNetGsmSettings(projectGeneratorModel.CurrentProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Models"));
-			GenerateEmailService(projectGeneratorModel.CurrentProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Services", "Common"));
-			GenerateSmsNetGsmServices(projectGeneratorModel.CurrentProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Services", "Common"));
 			GenerateTokenService(projectGeneratorModel.CurrentProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Services", "Common"));
-			GenerateMemoryCache(projectGeneratorModel.CurrentProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Services", "Common"));
 			GenerateUploadLocalService(projectGeneratorModel.CurrentProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Services", "Common"));
             GenerateAppUserService(projectGeneratorModel.CurrentProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Services", "Concrete"));
             GenerateIAppUserService(projectGeneratorModel.CurrentProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Services", "Abstract"));
             GenerateAppUserRequestDto(projectGeneratorModel.CurrentProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Dtos", "AppUserDtos"));
             GenerateAppUserResponseDto(projectGeneratorModel.CurrentProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Dtos", "AppUserDtos"));
+            GenerateSmtpSettings(projectGeneratorModel.CurrentProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Models"));
+            GenerateSmtpService(projectGeneratorModel.CurrentProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Services", "Common"));
+            GenerateSmsNetGsmService(projectGeneratorModel.CurrentProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Services", "Common"));
 		}
-		//Constant Classes
 		private void GenerateExceptionResponse(string projectName, string outputFilePath)
 		{
 			GeneratorModel generateExceptionResponse = new GeneratorModel()
@@ -51,18 +51,6 @@ namespace ViFactory.Services.Bll
 			};
 			
 			_generator.GenerateClass(generateExceptionResponse);
-		}
-		private void GenerateEmailSettings(string projectName, string outputFilePath)
-		{
-			GeneratorModel generateEmailSettings = new GeneratorModel()
-			{
-				NamespaceNameDefault = projectName + ".Bll.Models",
-				ClassNameDefault = "EmailSettings",
-				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") +"\\Bll\\Models\\EmailSettings.txt",
-				OutputFilePath = outputFilePath,
-				CurrentProjectName = projectName
-			};
-			_generator.GenerateClass(generateEmailSettings);
 		}
 		private void GenerateJwtSettings(string projectName, string outputFilePath)
 		{
@@ -124,29 +112,17 @@ namespace ViFactory.Services.Bll
 			};
 			_generator.GenerateClass(generateSmsNetGsmSettings);
 		}
-		private void GenerateEmailService(string projectName, string outputFilePath)
+		private void GenerateSmtpSettings(string projectName, string outputFilePath)
 		{
-			GeneratorModel generateEmailService = new GeneratorModel()
+			GeneratorModel generateSmtpSettings = new GeneratorModel()
 			{
-				NamespaceNameDefault = projectName + ".Bll.Services.Common",
-				ClassNameDefault = "EmailService",
-				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") +"\\Bll\\Services\\EmailService.txt",
+				NamespaceNameDefault = projectName + ".Models",
+				ClassNameDefault = "SmtpSettings",
+				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") + "\\Bll\\Models\\SmtpSettings.txt",
 				OutputFilePath = outputFilePath,
 				CurrentProjectName = projectName
 			};
-			_generator.GenerateClass(generateEmailService);
-		}
-		private void GenerateSmsNetGsmServices(string projectName, string outputFilePath)
-		{
-			GeneratorModel generateSmsNetGsmService = new GeneratorModel()
-			{
-				NamespaceNameDefault = projectName + ".Bll.Services.Common",
-				ClassNameDefault = "SmsNetGsmServices",
-				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") +"\\Bll\\Services\\SmsNetGsmService.txt",
-				OutputFilePath = outputFilePath,
-				CurrentProjectName = projectName
-			};
-			_generator.GenerateClass(generateSmsNetGsmService);
+			_generator.GenerateClass(generateSmtpSettings);
 		}
 		private void GenerateTokenService(string projectName, string outputFilePath) 
 		{
@@ -160,18 +136,6 @@ namespace ViFactory.Services.Bll
 			};
 			_generator.GenerateClass(generateTokenService);
 		}
-		private void GenerateMemoryCache(string projectName, string outputFilePath)
-		{
-			GeneratorModel generateMemoryCache = new GeneratorModel()
-			{
-				NamespaceNameDefault = projectName + ".Bll.Services.Common",
-				ClassNameDefault = "MemoryCache",
-				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") +"\\Bll\\Services\\MemoryCache.txt",
-				OutputFilePath = outputFilePath,
-				CurrentProjectName = projectName
-			};
-			_generator.GenerateClass(generateMemoryCache);
-		}
 		private void GenerateUploadLocalService(string projectName, string outputFilePath)
 		{
 			GeneratorModel generateUploadLocalService = new()
@@ -184,31 +148,30 @@ namespace ViFactory.Services.Bll
 			};
 			_generator.GenerateClass(generateUploadLocalService);
 		}
-        private void GenerateAppUserService(string projectName, string outputFilePath)
-        {
-            GeneratorModel generateAppUserService = new()
-            {
-				NamespaceNameDefault = projectName + ".Bll.Services.Concrete",
-                ClassNameDefault = "AppUserService",
-                InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") + "\\Bll\\Services\\AppUserService.txt",
-                OutputFilePath = outputFilePath,
-                CurrentProjectName = projectName
-            };
-            _generator.GenerateClass(generateAppUserService);
-
-        }
-		private void GenerateIAppUserService(string projectName, string outputFilePath)
+		private void GenerateSmtpService(string projectName, string outputFilePath)
 		{
-			GeneratorModel generateIAppUserService = new()
+			GeneratorModel generateSmtpService = new GeneratorModel()
 			{
-				NamespaceNameDefault = projectName + ".Bll.Services.Abstract",
-				ClassNameDefault  = "IAppUserService",
-				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") + "\\Bll\\Services\\IAppUserService.txt",
+				NamespaceNameDefault = projectName + ".Services.Common",
+				ClassNameDefault = "SmtpServices",
+				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") + "\\Bll\\Services\\SmtpService.txt",
 				OutputFilePath = outputFilePath,
 				CurrentProjectName = projectName
 			};
-			_generator.GenerateClass(generateIAppUserService);
-        }
+			_generator.GenerateClass(generateSmtpService);
+		}
+		private void GenerateSmsNetGsmService(string projectName, string outputFilePath)
+		{
+			GeneratorModel generateSmsNetGsmSettings = new GeneratorModel()
+			{
+				NamespaceNameDefault = projectName + ".Services.Common",
+				ClassNameDefault = "SmsNetGsmService",
+				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") + "\\Bll\\Services\\SmsNetGsmService.txt",
+				OutputFilePath = outputFilePath,
+				CurrentProjectName = projectName
+			};
+			_generator.GenerateClass(generateSmsNetGsmSettings);
+		}
 		private void GenerateAppUserRequestDto(string projectName, string outputFilePath)
 		{
 			GeneratorModel generateAppUserDto = new()
@@ -233,6 +196,31 @@ namespace ViFactory.Services.Bll
 			};
 			_generator.GenerateClass(generateAppUserResponseDto);
 
+        }
+        private void GenerateAppUserService(string projectName, string outputFilePath)
+        {
+            GeneratorModel generateAppUserService = new()
+            {
+				NamespaceNameDefault = projectName + ".Bll.Services.Concrete",
+                ClassNameDefault = "AppUserService",
+                InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") + "\\Bll\\Services\\AppUserService.txt",
+                OutputFilePath = outputFilePath,
+                CurrentProjectName = projectName
+            };
+            _generator.GenerateClass(generateAppUserService);
+
+        }
+		private void GenerateIAppUserService(string projectName, string outputFilePath)
+		{
+			GeneratorModel generateIAppUserService = new()
+			{
+				NamespaceNameDefault = projectName + ".Bll.Services.Abstract",
+				ClassNameDefault  = "IAppUserService",
+				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") + "\\Bll\\Services\\IAppUserService.txt",
+				OutputFilePath = outputFilePath,
+				CurrentProjectName = projectName
+			};
+			_generator.GenerateClass(generateIAppUserService);
         }
     }
     

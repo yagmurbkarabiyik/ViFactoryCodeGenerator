@@ -3,7 +3,7 @@ using [CurrentProjectName].Bll.Models;
 using [CurrentProjectName].Core.Models;
 using [CurrentProjectName].Core.Services;
 
-namespace [NamespaceName]
+namespace [CurrentProjectName].Bll.Services.Common
 {
     public class SmsNetGsmService : ISmsNetGsmService
     {

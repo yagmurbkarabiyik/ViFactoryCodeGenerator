@@ -7,9 +7,9 @@ using System.Text;
 using [CurrentProjectName].Core.Models.TokenModels;
 using [CurrentProjectName].Core.Services.TokenService;
 
-namespace [NamespaceName]
+namespace [CurrentProjectName].Bll.Services.Common
 {
-    public class [ClassName]  : ITokenService
+    public class TokenService  : ITokenService
     {
         private readonly IDataProtector _dataProtector;
 
@@ -32,18 +32,6 @@ namespace [NamespaceName]
                 RefreshToken = GetRefreshToken(refreshTokenExpire),
                 RefreshTokenUnixExpire = refreshTokenExpire.ToUnixTimeSeconds(),
                 RefreshTokenExpire = refreshTokenExpire
-            };
-        }
-
-        public GetClientTokenResult GetClientToken(GetClientTokenRequest request)
-        {
-            var jwtSecurityToken = GetJwtSecurityClientToken(request);
-
-            return new GetClientTokenResult
-            {
-                AccessToken = GetAccessToken(jwtSecurityToken),
-                AccessTokenUnixExpire = new DateTimeOffset(jwtSecurityToken.ValidTo, TimeSpan.Zero).ToUnixTimeSeconds(),
-                AccessTokenExpire = jwtSecurityToken.ValidTo,
             };
         }
 
@@ -86,29 +74,6 @@ namespace [NamespaceName]
             request.Claims.Add(new Claim(JwtRegisteredClaimNames.Iat, now.ToString()));
             request.Claims.Add(new Claim(JwtRegisteredClaimNames.AuthTime, now.ToString()));
             request.Claims.Add(new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()));
-
-            return new JwtSecurityToken(
-                issuer: request.Issuer,
-                expires: accessTokenExpire.DateTime,
-                notBefore: now.DateTime,
-                claims: request.Claims,
-                signingCredentials: GetSigningCredentials(request.SecurityKey, request.SecurityAlgorithms),
-                audience: request.Audience
-            );
-        }
-
-        private JwtSecurityToken GetJwtSecurityClientToken(GetClientTokenRequest request)
-        {
-            var accessTokenExpire = DateTimeOffset.Now.AddMinutes(request.AccessTokenExpirationMinutes);
-            var now = DateTimeOffset.Now;
-
-            request.Claims = request.Claims ?? new List<Claim>();
-
-            request.Claims.Add(new Claim(JwtRegisteredClaimNames.Nbf, now.ToString()));
-            request.Claims.Add(new Claim(JwtRegisteredClaimNames.Exp, accessTokenExpire.ToString()));
-            request.Claims.Add(new Claim(JwtRegisteredClaimNames.Iat, now.ToString()));
-            request.Claims.Add(new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()));
-            request.Claims.Add(new Claim(JwtRegisteredClaimNames.AuthTime, now.ToString()));
 
             return new JwtSecurityToken(
                 issuer: request.Issuer,

@@ -6,11 +6,11 @@ namespace [CurrentProjectName].Bll.Services.Abstract
 {
     public interface I[EntityName]Service
     {
-        Task<ResponseCommon<[EntityName]CreateDto>> Create([EntityName]CreateDto model);
-        Task<ResponseCommon<[EntityName]UpdateDto>> Update(int id,[EntityName]UpdateDto model);
-        Task<ResponseCommon> Get(int id);
-        Task<ResponseCommon<List<[EntityName]GetListDto>>> ListTable(RepositoryListAsTResultRequest<[EntityName], [EntityName]GetListDto> model);
-        Task<ResponseCommon> HardDelete(int id);
-        Task<ResponseCommon> SoftDelete(int id);        
+        Task<ResponseCommon<[EntityName]CreateDto>> CreateAsync([EntityName]CreateDto model);
+        Task<ResponseCommon<[EntityName]UpdateDto>> UpdateAsync(int id,[EntityName]UpdateDto model);
+        Task<ResponseCommon> FindAsync(int id);
+        Task<ResponseCommon<List<[EntityName]GetListDto>>> ListTableAsync(RepositoryListAsTResultRequest<[EntityName], [EntityName]GetListDto> model);
+        Task<ResponseCommon> HardDeleteAsync(int id);
+        Task<ResponseCommon> SoftDeleteAsync(int id);       
     }
 }

@@ -1,8 +1,0 @@
-﻿using Microsoft.EntityFrameworkCore;
-
-namespace [CurrentProjectName].Dal.Context
-{
-    public class [CurrentProjectName]ContextPartial : DbContext
-    {
-    }
-}

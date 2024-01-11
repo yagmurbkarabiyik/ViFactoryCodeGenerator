@@ -43,26 +43,12 @@ namespace ViFactory.Api.Extentions
                 actions.SignIn.RequireConfirmedEmail = true;
             }).AddDefaultTokenProviders().AddEntityFrameworkStores<[DbContext]>();
 
-            const string AuthSchemaName = "CustomAuthSchema";
-            const string CookieName = "vis_token";
-
             services.AddAuthentication(options =>
             {
-                options.DefaultAuthenticateScheme = AuthSchemaName;
-                options.DefaultSignInScheme = AuthSchemaName;
-                options.DefaultChallengeScheme = AuthSchemaName;
-            }).AddCookie(CookieAuthenticationDefaults.AuthenticationScheme, options =>
-            {
-                options.Cookie.Name = CookieName;
-                options.Cookie.MaxAge = TimeSpan.FromHours(24);
-                options.Cookie.HttpOnly = true;
-                options.Cookie.SecurePolicy = CookieSecurePolicy.SameAsRequest;
-                options.Cookie.SameSite = Microsoft.AspNetCore.Http.SameSiteMode.Lax;
-                options.ExpireTimeSpan = TimeSpan.FromMinutes(30);
-                options.SlidingExpiration = true;
-                options.AccessDeniedPath = "/auth/signup";
-                options.LoginPath = "/auth/signin";
-            }).AddJwtBearer(JwtBearerDefaults.AuthenticationScheme, options =>
+                options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                options.DefaultSignInScheme = JwtBearerDefaults.AuthenticationScheme;
+                options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            }).AddJwtBearer(options =>
             {
                 options.TokenValidationParameters = new TokenValidationParameters
                 {
@@ -70,20 +56,9 @@ namespace ViFactory.Api.Extentions
                     ValidateAudience = true,
                     ValidateLifetime = true,
                     ValidateIssuerSigningKey = true,
-                    ValidIssuer = "your_issuer",
-                    ValidAudience = "your_audience",
-                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("your_secret_key"))
-                };
-            }).AddPolicyScheme(AuthSchemaName, AuthSchemaName, options =>
-            {
-                options.ForwardDefaultSelector = context =>
-                {
-                    string? authorization = context.Request.Headers != null ? context.Request.Headers[HeaderNames.Authorization] : default;
-
-                    if (!string.IsNullOrEmpty(authorization) && authorization.StartsWith("Bearer "))
-                        return JwtBearerDefaults.AuthenticationScheme;
-
-                    return CookieAuthenticationDefaults.AuthenticationScheme;
+                    ValidIssuer = configuration["JwtSettings:Issuer"],
+                    ValidAudience = configuration["JwtSettings:Audience"],
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(configuration["JwtSettings:SecurityKey"]!))
                 };
             });
         }

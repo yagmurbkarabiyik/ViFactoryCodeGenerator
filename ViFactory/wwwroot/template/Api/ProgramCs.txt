@@ -1,9 +1,8 @@
-﻿using Microsoft.CodeAnalysis.Options;
-using Microsoft.OpenApi.Models;
-using [CurrentProjectName].Middlewares;
+﻿using Microsoft.OpenApi.Models;
 using ViFactory.Api.Config;
 using ViFactory.Api.Extensions;
 using ViFactory.Api.Extentions;
+using ViFactory.Api.Middlewares;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,6 +18,7 @@ builder.Services
     });
 
 builder.Services.AddEndpointsApiExplorer();
+
 builder.Services.AddSwaggerGen(config =>
 {
     config.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
@@ -48,7 +48,6 @@ builder.Services.AddSwaggerGen(config =>
 });
 
 builder.Services.AddResponseCompression();
-builder.Services.AddMemoryCache();
 builder.Services.AddDataProtection();
 
 builder.Services.AddCustomDbContext(builder.Configuration);
@@ -63,7 +62,6 @@ if (!app.Environment.IsDevelopment())
     app.UseExceptionHandler("/Error");
     app.UseHsts();
 }
-
 
 app.UseSwagger();
 app.UseSwaggerUI();

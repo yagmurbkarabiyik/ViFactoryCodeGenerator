@@ -1,5 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using [CurrentProjectName].Dal.FluentApi;
+using [CurrentProjectName].Domain.Entities.Models;
+#region CustomUsing
+#endregion CustomUsing
 
 namespace [CurrentProjectName].Dal.Context
 {
@@ -7,15 +10,19 @@ namespace [CurrentProjectName].Dal.Context
     {
         public [CurrentProjectName]DbContext(DbContextOptions<[CurrentProjectName]DbContext> ctx) : base(ctx)
         {
-
+            #region CustomConstructor
+            #endregion CustomConstructor
         }
         
-         protected override void OnModelCreating(ModelBuilder builder)
+        protected override void OnModelCreating(ModelBuilder builder)
         {
-           base.OnModelCreating(builder);
+           #region CustomOnModelCreating
+           #endregion CustomOnModelCreating
 
-          
+           base.OnModelCreating(builder);
         }
-           
+           #region CustomCode
+           #endregion CustomCode
+
     }
 }

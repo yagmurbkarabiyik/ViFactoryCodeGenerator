@@ -10,15 +10,11 @@
   <ItemGroup>
     <Content Remove="wwwroot\template\Bll\CreateBllProject.txt" />
     <Content Remove="wwwroot\template\Bll\Enums\ExceptionResponseType.txt" />
-    <Content Remove="wwwroot\template\Bll\Models\EmailSettings.txt" />
     <Content Remove="wwwroot\template\Bll\Models\JwtSettings.txt" />
     <Content Remove="wwwroot\template\Bll\Models\ResponseCommon.txt" />
     <Content Remove="wwwroot\template\Bll\Models\ResponseException.txt" />
     <Content Remove="wwwroot\template\Bll\Models\ResponseExceptionData.txt" />
     <Content Remove="wwwroot\template\Bll\Models\SmsNetGsmSettings.txt" />
-    <Content Remove="wwwroot\template\Bll\Services\EmailService.txt" />
-    <Content Remove="wwwroot\template\Bll\Services\MemoryCache.txt" />
-    <Content Remove="wwwroot\template\Bll\Services\SmsNetGsmService.txt" />
     <Content Remove="wwwroot\template\Bll\Services\TokenService.txt" />
     <Content Remove="wwwroot\template\Bll\Services\UploadLocalService.txt" />
     <Content Remove="wwwroot\template\ConsoleApp\CreateConsoleApp.txt" />
@@ -45,34 +41,26 @@
     <Content Remove="wwwroot\template\Core\Model\RepositoryModels\RepositoryDeleteRequest.txt" />
     <Content Remove="wwwroot\template\Core\Model\RepositoryModels\RepositoryGetAsTResultRequest.txt" />
     <Content Remove="wwwroot\template\Core\Model\RepositoryModels\RepositoryGetRequest.txt" />
-    <Content Remove="wwwroot\template\Core\Model\RepositoryModels\RepositoryIsExistRequest.txt" />
     <Content Remove="wwwroot\template\Core\Model\RepositoryModels\RepositoryListAsTResultRequest.txt" />
     <Content Remove="wwwroot\template\Core\Model\RepositoryModels\RepositoryListRequest.txt" />
     <Content Remove="wwwroot\template\Core\Model\RepositoryModels\RepositoryPaginationAsTResultRequest.txt" />
     <Content Remove="wwwroot\template\Core\Model\RepositoryModels\RepositoryPaginationRequest.txt" />
-    <Content Remove="wwwroot\template\Core\Model\RepositoryModels\RepositorySoftDeleteRequest.txt" />
     <Content Remove="wwwroot\template\Core\Model\RepositoryModels\RepositoryUpdateRequest.txt" />
     <Content Remove="wwwroot\template\Core\Model\SmsNetGsmSendData.txt" />
-    <Content Remove="wwwroot\template\Core\Model\TokenModels\GetClientTokenRequest.txt" />
-    <Content Remove="wwwroot\template\Core\Model\TokenModels\GetClientTokenResult.txt" />
     <Content Remove="wwwroot\template\Core\Model\TokenModels\GetTokenRequest.txt" />
     <Content Remove="wwwroot\template\Core\Model\TokenModels\GetTokenResponse.txt" />
     <Content Remove="wwwroot\template\Core\Model\TokenModels\ValidateTokenRequest.txt" />
     <Content Remove="wwwroot\template\Core\Services\CreateIRepository.txt" />
     <Content Remove="wwwroot\template\Core\Services\CreateIUnitOfWork.txt" />
-    <Content Remove="wwwroot\template\Core\Services\IEmailService.txt" />
-    <Content Remove="wwwroot\template\Core\Services\IMemoryCache.txt" />
     <Content Remove="wwwroot\template\Core\Services\ISmsNetGsmService.txt" />
     <Content Remove="wwwroot\template\Core\Services\IUploadLocalService.txt" />
     <Content Remove="wwwroot\template\Core\Services\TokenService.txt" />
     <Content Remove="wwwroot\template\CreateProject.txt" />
     <Content Remove="wwwroot\template\CreateSolution.txt" />
     <Content Remove="wwwroot\template\Dal\CreateDalProject.txt" />
-    <Content Remove="wwwroot\template\Dal\Data\Common\AzureBlobStorageService.txt" />
     <Content Remove="wwwroot\template\Dal\Data\Common\Repository.txt" />
     <Content Remove="wwwroot\template\Dal\Data\Common\UnitOfWork.txt" />
     <Content Remove="wwwroot\template\Dal\Data\Context\Context.txt" />
-    <Content Remove="wwwroot\template\Dal\Data\Context\ContextPartial.txt" />
     <Content Remove="wwwroot\template\Dal\Data\DalRepos\DalRepos.txt" />
     <Content Remove="wwwroot\template\Dal\Data\DalRepos\IDalRepos.txt" />
     <Content Remove="wwwroot\template\Dal\FluentApi\BaseMap.txt" />
@@ -89,9 +77,6 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="7.0.14" />
-    <PackageReference Include="Microsoft.CodeAnalysis.Common" Version="4.8.0" />
-    <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.8.0" />
-    <PackageReference Include="Microsoft.CodeAnalysis.Workspaces.Common" Version="4.8.0" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="7.0.11" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
@@ -126,9 +111,6 @@
     <None Include="wwwroot\template\Bll\Enums\ExceptionResponseType.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="wwwroot\template\Bll\Models\EmailSettings.txt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
     <None Include="wwwroot\template\Bll\Models\JwtSettings.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -142,15 +124,6 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="wwwroot\template\Bll\Models\SmsNetGsmSettings.txt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\template\Bll\Services\EmailService.txt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\template\Bll\Services\MemoryCache.txt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\template\Bll\Services\SmsNetGsmService.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="wwwroot\template\Bll\Services\TokenService.txt">
@@ -231,9 +204,6 @@
     <None Include="wwwroot\template\Core\Model\RepositoryModels\RepositoryGetRequest.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="wwwroot\template\Core\Model\RepositoryModels\RepositoryIsExistRequest.txt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
     <None Include="wwwroot\template\Core\Model\RepositoryModels\RepositoryListAsTResultRequest.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -246,19 +216,10 @@
     <None Include="wwwroot\template\Core\Model\RepositoryModels\RepositoryPaginationRequest.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="wwwroot\template\Core\Model\RepositoryModels\RepositorySoftDeleteRequest.txt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
     <None Include="wwwroot\template\Core\Model\RepositoryModels\RepositoryUpdateRequest.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="wwwroot\template\Core\Model\SmsNetGsmSendData.txt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\template\Core\Model\TokenModels\GetClientTokenRequest.txt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\template\Core\Model\TokenModels\GetClientTokenResult.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="wwwroot\template\Core\Model\TokenModels\GetTokenRequest.txt">
@@ -274,12 +235,6 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="wwwroot\template\Core\Services\CreateIUnitOfWork.txt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\template\Core\Services\IEmailService.txt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\template\Core\Services\IMemoryCache.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="wwwroot\template\Core\Services\ISmsNetGsmService.txt">
@@ -300,9 +255,6 @@
     <None Include="wwwroot\template\Dal\CreateDalProject.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="wwwroot\template\Dal\Data\Common\AzureBlobStorageService.txt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
     <None Include="wwwroot\template\Dal\Data\Common\Repository.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -310,9 +262,6 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="wwwroot\template\Dal\Data\Context\Context.txt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\template\Dal\Data\Context\ContextPartial.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="wwwroot\template\Dal\Data\DalRepos\DalRepos.txt">
@@ -378,7 +327,34 @@
     <Content Update="wwwroot\template\Bll\AppUserRequestDto.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Update="wwwroot\template\Bll\Models\SmtpSettings.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\template\Bll\Services\SmsNetGsmService.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\template\Bll\Services\SmtpService.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Update="wwwroot\template\ConsoleApp\Templates\FileUtils.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\template\Core\Model\RepositoryModels\RepositoryAnyRequest.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\template\Core\Model\RepositoryModels\RepositoryCreateBulkRequest.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\template\Core\Model\RepositoryModels\RepositoryFindRequest.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\template\Core\Model\RepositoryModels\RepositoryUpdateBulkRequest.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\template\Core\Model\SmtpSendData.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\template\Core\Services\ISmtpService.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Update="wwwroot\template\Dal\Data\DalRepos\AppUserRepository.txt">

@@ -6,7 +6,6 @@ using [CurrentProjectName].Bll.Services.Abstract;
 
 namespace [CurrentProjectName].Api.Controllers
 {
-    [Area("AdminServices")]
     [Route("api/[controller]")]
     [ApiController]
     public class [InterfaceName]ServiceController : ControllerBase
@@ -23,7 +22,7 @@ namespace [CurrentProjectName].Api.Controllers
         [ProducesResponseType(400, Type = typeof(ResponseCommon<ResponseExceptionData>))]
         public async Task<IActionResult> Create([FromForm] [InterfaceName]CreateDto dto)
         {
-            var response = await _[EntityName]Service.Create(dto);
+            var response = await _[EntityName]Service.CreateAsync(dto);
 
             return new ObjectResult(response)
             {
@@ -36,7 +35,7 @@ namespace [CurrentProjectName].Api.Controllers
         [ProducesResponseType(404, Type = typeof(ResponseCommon<ResponseExceptionData>))]
         public async Task<IActionResult> Get(int id)
         {
-            var response = await _[EntityName]Service.Get(id);
+            var response = await _[EntityName]Service.FindAsync(id);
 
             return new ObjectResult(response)
             {
@@ -49,7 +48,7 @@ namespace [CurrentProjectName].Api.Controllers
         [ProducesResponseType(400, Type = typeof(ResponseCommon<ResponseExceptionData>))]
         public async Task<IActionResult> Update(int id, [FromForm] [InterfaceName]UpdateDto dto)
         {
-            var response = await _[EntityName]Service.Update(id, dto);
+            var response = await _[EntityName]Service.UpdateAsync(id, dto);
 
             return new ObjectResult(response)
             {
@@ -62,7 +61,7 @@ namespace [CurrentProjectName].Api.Controllers
         [ProducesResponseType(400, Type = typeof(ResponseCommon<ResponseExceptionData>))]
         public async Task<IActionResult> Delete(int id)
         {
-            var response = await _countryServiceService.SoftDelete(id);
+            var response = await _[EntityName]Service.SoftDeleteAsync(id);
 
             return new ObjectResult(response)
             {

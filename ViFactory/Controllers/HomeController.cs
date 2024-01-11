@@ -1,8 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.Build.Construction;
 using System.IO.Compression;
-using System.Xml.Linq;
-using System.Xml.Serialization;
 using ViFactory.Models;
 using ViFactory.Services.Api;
 using ViFactory.Services.Bll;

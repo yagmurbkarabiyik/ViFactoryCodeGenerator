@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using [CurrentProjectName].Domain.Entities.Models;
 using [CurrentProjectName].Dal.FluentApi;
+using [CurrentProjectName].Domain.Entities.Models;
+[CustomUsing]
 
 namespace [CurrentProjectName].Dal.Context
 {
@@ -8,15 +9,20 @@ namespace [CurrentProjectName].Dal.Context
     {
         public [CurrentProjectName]DbContext(DbContextOptions<[CurrentProjectName]DbContext> ctx) : base(ctx)
         {
-
+            [CustomConstructor]
         }
         
-         protected override void OnModelCreating(ModelBuilder builder)
+        protected override void OnModelCreating(ModelBuilder builder)
         {
-           base.OnModelCreating(builder);
+           [CustomOnModelCreating]
 
            [FluentMapApi]
+
+           base.OnModelCreating(builder);
         }
-            [Properties]
+           
+           [CustomCode]
+
+           [Properties]
     }
 }

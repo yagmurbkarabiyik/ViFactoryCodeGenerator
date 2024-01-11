@@ -21,11 +21,9 @@ namespace ViFactory.Services.Dal
 			_projectGenerator.GenerateProject(projectGeneratorModel);
 
 			GenerateRepository(projectGeneratorModel.CurrentProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Data", "Common"));
-			GenerateAzurBlobStorage(projectGeneratorModel.CurrentProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Data", "Common"));
 			GenerateBaseMap(projectGeneratorModel.CurrentProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "FluentApi"));
 			GenerateUnitOfWork(projectGeneratorModel.CurrentProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Data", "Common"));
 			GenerateContext(projectGeneratorModel.CurrentProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Context"));
-			GenerateContextPartial(projectGeneratorModel.CurrentProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Context"));
             GenerateAppUserRepo(projectGeneratorModel.CurrentProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Data", "DalRepos"));
             GenerateIAppUserRepo(projectGeneratorModel.CurrentProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Data", "IDalRepos"));
 		}
@@ -42,18 +40,6 @@ namespace ViFactory.Services.Dal
 				CurrentProjectName = projectName
 			};
 			_generator.GenerateClass(generateRepository);
-		}
-		private void GenerateAzurBlobStorage(string projectName, string outputFilePath)
-		{
-			GeneratorModel azurBlobStorage = new()
-			{
-				NamespaceNameDefault = projectName + ".Dal.Data.Common",
-				ClassNameDefault = "AzureBlobStorageService",
-				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") +"\\Dal\\Data\\Common\\AzureBlobStorageService.txt",
-				OutputFilePath = outputFilePath,
-				CurrentProjectName = projectName
-			};
-			_generator.GenerateClass(azurBlobStorage);
 		}
 		private void GenerateBaseMap(string projectName, string outputFilePath)
 		{
@@ -92,18 +78,6 @@ namespace ViFactory.Services.Dal
 				CurrentProjectName = projectName
 			};
 			_generator.GenerateClass(generatorContext);
-		}
-		private void GenerateContextPartial(string projectName, string outputFilePath)
-		{
-			GeneratorModel generatorContextPartial = new()
-			{
-				NamespaceNameDefault = projectName + ".Dal.Context",
-				ClassNameDefault = projectName + "ContextPartial",
-				InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") +"\\Dal\\Data\\Context\\ContextPartial.txt",
-				OutputFilePath = outputFilePath,
-				CurrentProjectName = projectName
-			};
-			_generator.GenerateClass(generatorContextPartial);
 		}
 		private void GenerateAppUserRepo(string projectName, string outputFilePath) 
 		{

@@ -44,18 +44,6 @@
               "target": "Package",
               "version": "[7.0.14, )"
             },
-            "Microsoft.CodeAnalysis.CSharp": {
-              "target": "Package",
-              "version": "[4.8.0, )"
-            },
-            "Microsoft.CodeAnalysis.Common": {
-              "target": "Package",
-              "version": "[4.8.0, )"
-            },
-            "Microsoft.CodeAnalysis.Workspaces.Common": {
-              "target": "Package",
-              "version": "[4.8.0, )"
-            },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[7.0.11, )"

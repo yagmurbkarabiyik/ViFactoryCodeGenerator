@@ -134,8 +134,6 @@ namespace ViFactory.Services.Api
         }
 
         #endregion
-
-
     }
 }
 ;

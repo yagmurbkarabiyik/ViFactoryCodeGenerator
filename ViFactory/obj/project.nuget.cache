@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "LLGzTEDSn/3HQrPSOkLm1CN34GGgLpK7pEdHnk5TkCom1/9iQTwECtYV411igXH+OkTU+ZKRSs6CPCUXNIChxQ==",
+  "dgSpecHash": "TRGzuT34c9o9yRIUk6tbvqHL+d7iQcrpmHZKonoioWCB9LH6tg5LyiSE/G9wwV298ZDwoS0FlKuWQj7E1PEn6w==",
   "success": true,
   "projectFilePath": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\ViFactory.csproj",
   "expectedPackageFiles": [
@@ -57,20 +57,20 @@
     "C:\\Users\\ygmr4\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.extensions\\6.0.0\\microsoft.aspnetcore.mvc.razor.extensions.6.0.0.nupkg.sha512",
     "C:\\Users\\ygmr4\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.runtimecompilation\\7.0.14\\microsoft.aspnetcore.mvc.razor.runtimecompilation.7.0.14.nupkg.sha512",
     "C:\\Users\\ygmr4\\.nuget\\packages\\microsoft.aspnetcore.razor.language\\6.0.11\\microsoft.aspnetcore.razor.language.6.0.11.nupkg.sha512",
-    "C:\\Users\\ygmr4\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\7.0.0\\microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",
+    "C:\\Users\\ygmr4\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
     "C:\\Users\\ygmr4\\.nuget\\packages\\microsoft.build\\17.3.2\\microsoft.build.17.3.2.nupkg.sha512",
     "C:\\Users\\ygmr4\\.nuget\\packages\\microsoft.build.framework\\17.3.2\\microsoft.build.framework.17.3.2.nupkg.sha512",
-    "C:\\Users\\ygmr4\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\3.3.4\\microsoft.codeanalysis.analyzers.3.3.4.nupkg.sha512",
+    "C:\\Users\\ygmr4\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\3.3.3\\microsoft.codeanalysis.analyzers.3.3.3.nupkg.sha512",
     "C:\\Users\\ygmr4\\.nuget\\packages\\microsoft.codeanalysis.analyzerutilities\\3.3.0\\microsoft.codeanalysis.analyzerutilities.3.3.0.nupkg.sha512",
-    "C:\\Users\\ygmr4\\.nuget\\packages\\microsoft.codeanalysis.common\\4.8.0\\microsoft.codeanalysis.common.4.8.0.nupkg.sha512",
-    "C:\\Users\\ygmr4\\.nuget\\packages\\microsoft.codeanalysis.csharp\\4.8.0\\microsoft.codeanalysis.csharp.4.8.0.nupkg.sha512",
+    "C:\\Users\\ygmr4\\.nuget\\packages\\microsoft.codeanalysis.common\\4.4.0\\microsoft.codeanalysis.common.4.4.0.nupkg.sha512",
+    "C:\\Users\\ygmr4\\.nuget\\packages\\microsoft.codeanalysis.csharp\\4.4.0\\microsoft.codeanalysis.csharp.4.4.0.nupkg.sha512",
     "C:\\Users\\ygmr4\\.nuget\\packages\\microsoft.codeanalysis.csharp.features\\4.4.0\\microsoft.codeanalysis.csharp.features.4.4.0.nupkg.sha512",
     "C:\\Users\\ygmr4\\.nuget\\packages\\microsoft.codeanalysis.csharp.workspaces\\4.4.0\\microsoft.codeanalysis.csharp.workspaces.4.4.0.nupkg.sha512",
     "C:\\Users\\ygmr4\\.nuget\\packages\\microsoft.codeanalysis.elfie\\1.0.0\\microsoft.codeanalysis.elfie.1.0.0.nupkg.sha512",
     "C:\\Users\\ygmr4\\.nuget\\packages\\microsoft.codeanalysis.features\\4.4.0\\microsoft.codeanalysis.features.4.4.0.nupkg.sha512",
     "C:\\Users\\ygmr4\\.nuget\\packages\\microsoft.codeanalysis.razor\\6.0.11\\microsoft.codeanalysis.razor.6.0.11.nupkg.sha512",
     "C:\\Users\\ygmr4\\.nuget\\packages\\microsoft.codeanalysis.scripting.common\\4.4.0\\microsoft.codeanalysis.scripting.common.4.4.0.nupkg.sha512",
-    "C:\\Users\\ygmr4\\.nuget\\packages\\microsoft.codeanalysis.workspaces.common\\4.8.0\\microsoft.codeanalysis.workspaces.common.4.8.0.nupkg.sha512",
+    "C:\\Users\\ygmr4\\.nuget\\packages\\microsoft.codeanalysis.workspaces.common\\4.4.0\\microsoft.codeanalysis.workspaces.common.4.4.0.nupkg.sha512",
     "C:\\Users\\ygmr4\\.nuget\\packages\\microsoft.diasymreader\\1.4.0\\microsoft.diasymreader.1.4.0.nupkg.sha512",
     "C:\\Users\\ygmr4\\.nuget\\packages\\microsoft.dotnet.scaffolding.shared\\7.0.11\\microsoft.dotnet.scaffolding.shared.7.0.11.nupkg.sha512",
     "C:\\Users\\ygmr4\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\7.0.0\\microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
@@ -119,13 +119,13 @@
     "C:\\Users\\ygmr4\\.nuget\\packages\\system.buffers\\4.3.0\\system.buffers.4.3.0.nupkg.sha512",
     "C:\\Users\\ygmr4\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
     "C:\\Users\\ygmr4\\.nuget\\packages\\system.collections.concurrent\\4.3.0\\system.collections.concurrent.4.3.0.nupkg.sha512",
-    "C:\\Users\\ygmr4\\.nuget\\packages\\system.collections.immutable\\7.0.0\\system.collections.immutable.7.0.0.nupkg.sha512",
-    "C:\\Users\\ygmr4\\.nuget\\packages\\system.composition\\7.0.0\\system.composition.7.0.0.nupkg.sha512",
-    "C:\\Users\\ygmr4\\.nuget\\packages\\system.composition.attributedmodel\\7.0.0\\system.composition.attributedmodel.7.0.0.nupkg.sha512",
-    "C:\\Users\\ygmr4\\.nuget\\packages\\system.composition.convention\\7.0.0\\system.composition.convention.7.0.0.nupkg.sha512",
-    "C:\\Users\\ygmr4\\.nuget\\packages\\system.composition.hosting\\7.0.0\\system.composition.hosting.7.0.0.nupkg.sha512",
-    "C:\\Users\\ygmr4\\.nuget\\packages\\system.composition.runtime\\7.0.0\\system.composition.runtime.7.0.0.nupkg.sha512",
-    "C:\\Users\\ygmr4\\.nuget\\packages\\system.composition.typedparts\\7.0.0\\system.composition.typedparts.7.0.0.nupkg.sha512",
+    "C:\\Users\\ygmr4\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",
+    "C:\\Users\\ygmr4\\.nuget\\packages\\system.composition\\6.0.0\\system.composition.6.0.0.nupkg.sha512",
+    "C:\\Users\\ygmr4\\.nuget\\packages\\system.composition.attributedmodel\\6.0.0\\system.composition.attributedmodel.6.0.0.nupkg.sha512",
+    "C:\\Users\\ygmr4\\.nuget\\packages\\system.composition.convention\\6.0.0\\system.composition.convention.6.0.0.nupkg.sha512",
+    "C:\\Users\\ygmr4\\.nuget\\packages\\system.composition.hosting\\6.0.0\\system.composition.hosting.6.0.0.nupkg.sha512",
+    "C:\\Users\\ygmr4\\.nuget\\packages\\system.composition.runtime\\6.0.0\\system.composition.runtime.6.0.0.nupkg.sha512",
+    "C:\\Users\\ygmr4\\.nuget\\packages\\system.composition.typedparts\\6.0.0\\system.composition.typedparts.6.0.0.nupkg.sha512",
     "C:\\Users\\ygmr4\\.nuget\\packages\\system.configuration.configurationmanager\\6.0.0\\system.configuration.configurationmanager.6.0.0.nupkg.sha512",
     "C:\\Users\\ygmr4\\.nuget\\packages\\system.console\\4.3.0\\system.console.4.3.0.nupkg.sha512",
     "C:\\Users\\ygmr4\\.nuget\\packages\\system.data.datasetextensions\\4.5.0\\system.data.datasetextensions.4.5.0.nupkg.sha512",
@@ -143,7 +143,7 @@
     "C:\\Users\\ygmr4\\.nuget\\packages\\system.io.compression.zipfile\\4.3.0\\system.io.compression.zipfile.4.3.0.nupkg.sha512",
     "C:\\Users\\ygmr4\\.nuget\\packages\\system.io.filesystem\\4.3.0\\system.io.filesystem.4.3.0.nupkg.sha512",
     "C:\\Users\\ygmr4\\.nuget\\packages\\system.io.filesystem.primitives\\4.3.0\\system.io.filesystem.primitives.4.3.0.nupkg.sha512",
-    "C:\\Users\\ygmr4\\.nuget\\packages\\system.io.pipelines\\7.0.0\\system.io.pipelines.7.0.0.nupkg.sha512",
+    "C:\\Users\\ygmr4\\.nuget\\packages\\system.io.pipelines\\6.0.3\\system.io.pipelines.6.0.3.nupkg.sha512",
     "C:\\Users\\ygmr4\\.nuget\\packages\\system.linq\\4.3.0\\system.linq.4.3.0.nupkg.sha512",
     "C:\\Users\\ygmr4\\.nuget\\packages\\system.linq.expressions\\4.3.0\\system.linq.expressions.4.3.0.nupkg.sha512",
     "C:\\Users\\ygmr4\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
@@ -156,7 +156,7 @@
     "C:\\Users\\ygmr4\\.nuget\\packages\\system.reflection.emit.ilgeneration\\4.3.0\\system.reflection.emit.ilgeneration.4.3.0.nupkg.sha512",
     "C:\\Users\\ygmr4\\.nuget\\packages\\system.reflection.emit.lightweight\\4.3.0\\system.reflection.emit.lightweight.4.3.0.nupkg.sha512",
     "C:\\Users\\ygmr4\\.nuget\\packages\\system.reflection.extensions\\4.3.0\\system.reflection.extensions.4.3.0.nupkg.sha512",
-    "C:\\Users\\ygmr4\\.nuget\\packages\\system.reflection.metadata\\7.0.0\\system.reflection.metadata.7.0.0.nupkg.sha512",
+    "C:\\Users\\ygmr4\\.nuget\\packages\\system.reflection.metadata\\6.0.0\\system.reflection.metadata.6.0.0.nupkg.sha512",
     "C:\\Users\\ygmr4\\.nuget\\packages\\system.reflection.metadataloadcontext\\6.0.0\\system.reflection.metadataloadcontext.6.0.0.nupkg.sha512",
     "C:\\Users\\ygmr4\\.nuget\\packages\\system.reflection.primitives\\4.3.0\\system.reflection.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\ygmr4\\.nuget\\packages\\system.reflection.typeextensions\\4.3.0\\system.reflection.typeextensions.4.3.0.nupkg.sha512",
@@ -187,7 +187,6 @@
     "C:\\Users\\ygmr4\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512",
     "C:\\Users\\ygmr4\\.nuget\\packages\\system.text.regularexpressions\\4.3.0\\system.text.regularexpressions.4.3.0.nupkg.sha512",
     "C:\\Users\\ygmr4\\.nuget\\packages\\system.threading\\4.3.0\\system.threading.4.3.0.nupkg.sha512",
-    "C:\\Users\\ygmr4\\.nuget\\packages\\system.threading.channels\\7.0.0\\system.threading.channels.7.0.0.nupkg.sha512",
     "C:\\Users\\ygmr4\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512",
     "C:\\Users\\ygmr4\\.nuget\\packages\\system.threading.tasks.dataflow\\6.0.0\\system.threading.tasks.dataflow.6.0.0.nupkg.sha512",
     "C:\\Users\\ygmr4\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
@@ -196,96 +195,5 @@
     "C:\\Users\\ygmr4\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\ygmr4\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1608",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Detected package version outside of dependency constraint: Microsoft.CodeAnalysis.CSharp.Features 4.4.0 requires Microsoft.CodeAnalysis.Common (= 4.4.0) but version Microsoft.CodeAnalysis.Common 4.8.0 was resolved.",
-      "libraryId": "Microsoft.CodeAnalysis.Common",
-      "targetGraphs": [
-        "net7.0"
-      ]
-    },
-    {
-      "code": "NU1608",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Detected package version outside of dependency constraint: Microsoft.CodeAnalysis.CSharp.Features 4.4.0 requires Microsoft.CodeAnalysis.CSharp (= 4.4.0) but version Microsoft.CodeAnalysis.CSharp 4.8.0 was resolved.",
-      "libraryId": "Microsoft.CodeAnalysis.CSharp",
-      "targetGraphs": [
-        "net7.0"
-      ]
-    },
-    {
-      "code": "NU1608",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Detected package version outside of dependency constraint: Microsoft.CodeAnalysis.CSharp.Features 4.4.0 requires Microsoft.CodeAnalysis.Workspaces.Common (= 4.4.0) but version Microsoft.CodeAnalysis.Workspaces.Common 4.8.0 was resolved.",
-      "libraryId": "Microsoft.CodeAnalysis.Workspaces.Common",
-      "targetGraphs": [
-        "net7.0"
-      ]
-    },
-    {
-      "code": "NU1608",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Detected package version outside of dependency constraint: Microsoft.CodeAnalysis.Features 4.4.0 requires Microsoft.CodeAnalysis.Common (= 4.4.0) but version Microsoft.CodeAnalysis.Common 4.8.0 was resolved.",
-      "libraryId": "Microsoft.CodeAnalysis.Common",
-      "targetGraphs": [
-        "net7.0"
-      ]
-    },
-    {
-      "code": "NU1608",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Detected package version outside of dependency constraint: Microsoft.CodeAnalysis.Features 4.4.0 requires Microsoft.CodeAnalysis.Workspaces.Common (= 4.4.0) but version Microsoft.CodeAnalysis.Workspaces.Common 4.8.0 was resolved.",
-      "libraryId": "Microsoft.CodeAnalysis.Workspaces.Common",
-      "targetGraphs": [
-        "net7.0"
-      ]
-    },
-    {
-      "code": "NU1608",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Detected package version outside of dependency constraint: Microsoft.CodeAnalysis.CSharp.Workspaces 4.4.0 requires Microsoft.CodeAnalysis.Common (= 4.4.0) but version Microsoft.CodeAnalysis.Common 4.8.0 was resolved.",
-      "libraryId": "Microsoft.CodeAnalysis.Common",
-      "targetGraphs": [
-        "net7.0"
-      ]
-    },
-    {
-      "code": "NU1608",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Detected package version outside of dependency constraint: Microsoft.CodeAnalysis.CSharp.Workspaces 4.4.0 requires Microsoft.CodeAnalysis.CSharp (= 4.4.0) but version Microsoft.CodeAnalysis.CSharp 4.8.0 was resolved.",
-      "libraryId": "Microsoft.CodeAnalysis.CSharp",
-      "targetGraphs": [
-        "net7.0"
-      ]
-    },
-    {
-      "code": "NU1608",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Detected package version outside of dependency constraint: Microsoft.CodeAnalysis.CSharp.Workspaces 4.4.0 requires Microsoft.CodeAnalysis.Workspaces.Common (= 4.4.0) but version Microsoft.CodeAnalysis.Workspaces.Common 4.8.0 was resolved.",
-      "libraryId": "Microsoft.CodeAnalysis.Workspaces.Common",
-      "targetGraphs": [
-        "net7.0"
-      ]
-    },
-    {
-      "code": "NU1608",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Detected package version outside of dependency constraint: Microsoft.CodeAnalysis.Scripting.Common 4.4.0 requires Microsoft.CodeAnalysis.Common (= 4.4.0) but version Microsoft.CodeAnalysis.Common 4.8.0 was resolved.",
-      "libraryId": "Microsoft.CodeAnalysis.Common",
-      "targetGraphs": [
-        "net7.0"
-      ]
-    }
-  ]
+  "logs": []
 }

@@ -1,0 +1,26 @@
+using Microsoft.EntityFrameworkCore;
+using [CurrentProjectName].Dal.FluentApi;
+
+namespace [CurrentProjectName].Dal.Context
+{
+    public class [CurrentProjectName]DbContext : DbContext
+    {
+        public [CurrentProjectName]DbContext(DbContextOptions<[CurrentProjectName]DbContext> ctx) : base(ctx)
+        {
+            [CustomConstructor]
+        }
+        
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+           [CustomOnModelCreating]
+
+           [FluentMapApi]
+
+           base.OnModelCreating(builder);
+        }
+           
+           [CustomCode]
+
+           [Properties]
+    }
+}

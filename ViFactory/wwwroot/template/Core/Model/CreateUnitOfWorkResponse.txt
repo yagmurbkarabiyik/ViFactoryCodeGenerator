@@ -2,12 +2,14 @@ namespace [NamespaceName]
 {
     public class [ClassName]
     {
-         public int? Result { get; set; }
-         public Exception? Exception { get; set; }
-         public UnitOfWorkResponse(int result)
-         {
+        public int? Result { get; set; }
+        public Exception? Exception { get; set; }
+        public bool IsSuccess => Result > 0 && Exception == null;
+
+        public UnitOfWorkResponse(int result)
+        {
             Result = result;
-         }
+        }
 
         public UnitOfWorkResponse(Exception exception)
         {

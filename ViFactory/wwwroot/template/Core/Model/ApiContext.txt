@@ -9,5 +9,6 @@ namespace [NamespaceName]
     {
         public int AppUserId { get; set; } = 0;
         public string Language { get; set; } = "tr";
+        public string? AppUserEmail { get; set; }
     }
 }

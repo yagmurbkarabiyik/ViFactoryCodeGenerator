@@ -15,14 +15,10 @@ namespace [CurrentProjectName].Bll.Dtos.AppUserDtos
         public string Surname { get; set; } = null!;
         [DisplayName("Email *")]
         public string Email { get; set; } = null!;
-        [DisplayName("Departman *")]
-        public int? DepartmanId { get; set; }
-        [DisplayName("Dil *")]
-        public string Language { get; set; } = null!;
-        [DisplayName("Yemek Listesi")]
-        public int? FoodListProfileId { get; set; }
-        [DisplayName("Profil Resmi")]
-        public IFormFile? DefaultPosterImage { get; set; }
+        [DisplayName("Şifre *")]
+        public string Password { get; set; } = null!;
+        [DisplayName("Şifre Tekrar *")]
+        public string PasswordConfirm { get; set; } = null!;
     }
 
     public class AppUserCreateRequestValidator : AbstractValidator<AppUserCreateRequestDto>
@@ -48,14 +44,8 @@ namespace [CurrentProjectName].Bll.Dtos.AppUserDtos
                 .Must(x => _userManager.FindByEmailAsync(x).Result == null)
                 .WithMessage("Bu e-posta adresi kullanılmıştır")
                 .WithName("E-posta adresi");
-            RuleFor(x => x.DepartmanId)
-                .NotNull().WithMessage("Bu alan gereklidir")
-                .NotEmpty().WithMessage("Bu alan gereklidir")
-                .WithName("Departman");
-            RuleFor(x => x.Language)
-                .NotNull().WithMessage("Bu alan gereklidir")
-                .NotEmpty().WithMessage("Bu alan gereklidir")
-                .WithName("Dil");
+            RuleFor(x => x.Password).Matches("@\"^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*\\W).{8,16}$\"");
+            RuleFor(x => x.PasswordConfirm).Must((dto, passwordConfirm) => dto.Password == passwordConfirm);
         }
     }
 
@@ -68,18 +58,10 @@ namespace [CurrentProjectName].Bll.Dtos.AppUserDtos
         public string Surname { get; set; } = null!;
         [DisplayName("Email *")]
         public string Email { get; set; } = null!;
-        [DisplayName("Departman *")]
-        public int? DepartmanId { get; set; }
         [DisplayName("Durum *")]
         public DbEntityState State { get; set; }
         [DisplayName("Profil Resmi")]
         public IFormFile? DefaultPosterImage { get; set; }
-        [DisplayName("Profil Resmi")]
-        public string? DefaultPosterImageUrl { get; set; }
-        [DisplayName("Dil *")]
-        public string Language { get; set; } = null!;
-        [DisplayName("Yemek Listesi")]
-        public int? FoodListProfileId { get; set; }
     }
 
     public class AppUserUpdateRequestValidator : AbstractValidator<AppUserUpdateRequestDto>
@@ -109,27 +91,14 @@ namespace [CurrentProjectName].Bll.Dtos.AppUserDtos
                 })
                 .WithMessage("Bu e-posta adresi kullanılmıştır")
                 .WithName("E-posta adresi");
-            RuleFor(x => x.DepartmanId)
-                .NotNull().WithMessage("Bu alan gereklidir")
-                .NotEmpty().WithMessage("Bu alan gereklidir")
-                .WithName("Departman");
             RuleFor(x => x.State)
                 .NotEmpty().WithMessage("Bu alan gereklidir")
                 .WithName("Durum");
-            RuleFor(x => x.Language)
-                .NotNull().WithMessage("Bu alan gereklidir")
-                .NotEmpty().WithMessage("Bu alan gereklidir")
-                .WithName("Dil");
         }
 
     }
 
-    public record AppUserProfilePropertyUpdateRequestDto()
-    {
-        public int Id { get; set; }
-    }
-
-    public record AppUserSignInRequestDto(string Email, string Password);
+    public record AppUserSignInRequestDto(string Email, string Password, bool? IsPersistent);
 
     public class AppUserSignInRequestValidator : AbstractValidator<AppUserSignInRequestDto>
     {

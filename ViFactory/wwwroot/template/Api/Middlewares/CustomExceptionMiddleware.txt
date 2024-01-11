@@ -3,7 +3,7 @@ using System.Net;
 using [CurrentProjectName].Bll.Enums;
 using [CurrentProjectName].Bll.Models;
 
-namespace [CurrentProjectName].Middlewares
+namespace ViFactory.Api.Middlewares
 {
     public class CustomExceptionMiddleware
     {
@@ -40,7 +40,7 @@ namespace [CurrentProjectName].Middlewares
         {
             var response = new ResponseCommon<ResponseExceptionData>
             {
-                StatusCode = ex.HttpStatusCode,
+                StatusCode = ex.StatusCode,
                 IsSuccess = false,
                 Data = new ResponseExceptionData()
                 {
@@ -50,7 +50,7 @@ namespace [CurrentProjectName].Middlewares
             };
             
             context.Response.ContentType = "application/json";
-            context.Response.StatusCode = (int)ex.HttpStatusCode;
+            context.Response.StatusCode = (int)ex.StatusCode;
             await context.Response.WriteAsync(JsonConvert.SerializeObject(response, _settings));  
         }
 

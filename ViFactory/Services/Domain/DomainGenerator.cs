@@ -31,7 +31,7 @@ namespace ViFactory.Services.Domain
         {
             GeneratorModel generateBaseEntity = new GeneratorModel()
             {
-                NamespaceNameDefault = projectName + ".Domain.Models",
+                NamespaceNameDefault = projectName + ".Domain.Entities.Models",
                 ClassNameDefault = "BaseEntity",
                 InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template") + "\\Models\\CreateBaseEntity.txt",
                 OutputFilePath = outputFilePath,
