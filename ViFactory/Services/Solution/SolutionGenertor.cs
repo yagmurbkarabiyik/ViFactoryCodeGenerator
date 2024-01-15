@@ -3,6 +3,9 @@ using ViFactory.Services.Generators;
 
 namespace ViFactory.Services.Solution
 {
+	/// <summary>
+	/// Create new solution and save .sln file for the project
+	/// </summary>
 	public class SolutionGenertor : ISolutionGenerator
 	{
 		private readonly IGenerator _generator;

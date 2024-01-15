@@ -14,6 +14,10 @@ namespace ViFactory.Services.Dtos
 			_projectGenerator = projectGenerator;
 		}
 
+		/// <summary>
+		/// Create a Dto Layer
+		/// </summary>
+		/// <param name="projectGeneratorModel"></param>
 		public void GenerateDtoLayer(ProjectGeneratorModel projectGeneratorModel)
 		{
 			_projectGenerator.GenerateProject(projectGeneratorModel);

@@ -12,6 +12,9 @@ using ViFactory.Services.Solution;
 
 namespace ViFactory.Controllers
 {
+	/// <summary>
+	/// Create all layers that we need to for the wholw project 
+	/// </summary>
 	public class HomeController : Controller
 	{
 		private readonly ICoreGenerator _coreGenerator;

@@ -15,7 +15,10 @@ namespace ViFactory.Services.Api
             _generator = generator;
             _webHostEnvironment = webHostEnvironment;
         }
-
+        /// <summary>
+        /// Create Api Project and constant classes
+        /// </summary>
+        /// <param name="projectGeneratorModel"></param>
         public void GenerateApiProject(ProjectGeneratorModel projectGeneratorModel)
         {
             _projectGenerator.GenerateProject(projectGeneratorModel);
@@ -27,8 +30,12 @@ namespace ViFactory.Services.Api
             GenerateAppSettings(projectGeneratorModel.CurrentProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName));
             GenerateApiBehaviour(projectGeneratorModel.CurrentProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Config"));
             GenerateAppUsersController(projectGeneratorModel.CurrentProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Controllers"));
-
         }
+        /// <summary>
+        /// Create a Program.cs for Api Project
+        /// </summary>
+        /// <param name="projectName"></param>
+        /// <param name="outputFilePath"></param>
         public void GenerateProgramCs(string projectName, string outputFilePath)
         {
             GeneratorModel generateProgramCs = new GeneratorModel
@@ -40,6 +47,11 @@ namespace ViFactory.Services.Api
             };
             _generator.GenerateClass(generateProgramCs);
         }
+        /// <summary>
+        /// Create a AppSettings for Api Project
+        /// </summary>
+        /// <param name="projectName"></param>
+        /// <param name="outputFilePath"></param>
         public void GenerateAppSettings(string projectName, string outputFilePath)
         {
             GeneratorModel generateAppSettings = new GeneratorModel
@@ -51,11 +63,15 @@ namespace ViFactory.Services.Api
             };
             _generator.GenerateJson(generateAppSettings);
         }
-
-        #region Extensions Folder
+        /// <summary>
+        /// Api/ExtensionsFolder Constant Classes Created
+        /// </summary>
+        /// <param name="projectName"></param>
+        /// <param name="outputFilePath"></param>
+        /// 
+        #region Create Extensions Folder DiDbContext, FluentValidation, and DiService
         public void GenerateDbcontext(string projectName, string outputFilePath)
         {
-
             GeneratorModel generateDbContext = new GeneratorModel()
             {
                 ClassNameDefault = "DiDbContext",
@@ -92,7 +108,7 @@ namespace ViFactory.Services.Api
         }
         #endregion
 
-        #region Middlewares
+        #region Create Middlewares
         public void GenerateCustomException(string projectName, string outputFilePath)
         {
             GeneratorModel generateCustomException = new GeneratorModel()
@@ -106,7 +122,7 @@ namespace ViFactory.Services.Api
         }
         #endregion
 
-        #region Config
+        #region Create ApiBehaviour Config 
         public void GenerateApiBehaviour(string projectName, string outputFilePath)
         {
             GeneratorModel generateApiBehaviour = new GeneratorModel()
@@ -120,7 +136,7 @@ namespace ViFactory.Services.Api
         }
         #endregion
 
-        #region Controllers 
+        #region Create AppUsersControllers 
         public void GenerateAppUsersController(string projectName, string outputFilePath)
         {
             GeneratorModel generateAppUsersController = new GeneratorModel()
@@ -132,8 +148,6 @@ namespace ViFactory.Services.Api
             };
             _generator.GenerateClass(generateAppUsersController);
         }
-
         #endregion
     }
-}
-;
+};

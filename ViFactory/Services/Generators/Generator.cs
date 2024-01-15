@@ -6,6 +6,20 @@ namespace ViFactory.Services.Generators
 {
 	public class Generator : IGenerator
 	{
+		/// <summary>
+		/// This method convert codes which stay in txt files to C# code and replace some words 
+		/// </summary>
+		/// <param name="codeTemplate"></param>
+		/// <param name="namespaceName"></param>
+		/// <param name="classNameDf"></param>
+		/// <param name="properties"></param>
+		/// <param name="methods"></param>
+		/// <param name="connectionString"></param>
+		/// <param name="entityName"></param>
+		/// <param name="interfaceName"></param>
+		/// <param name="currentProjectName"></param>
+		/// <param name="dbContext"></param>
+		/// <returns></returns>
 		public string GenerateCSharpCode(string codeTemplate, string namespaceName, string classNameDf, Dictionary<string, string>? properties, Dictionary<string, string>? methods, string? connectionString, string? entityName, string? interfaceName, string? currentProjectName, string? dbContext)
 		{
 			var propertiesText = string.Empty;
@@ -31,7 +45,10 @@ namespace ViFactory.Services.Generators
 			return generatedCode;
 		}
 
-		//Create a class
+		/// <summary>
+		/// This method convert .txt files to .cs files
+		/// </summary>
+		/// <param name="generateModel"></param>
 		public void GenerateClass(GeneratorModel generateModel)
 		{
 			string textFilePath = generateModel.InputFilePath;
@@ -58,7 +75,10 @@ namespace ViFactory.Services.Generators
 			File.WriteAllText(classFilePath, generatedCode);
 		}
 
-		//Create a json class
+		/// <summary>
+		/// This method convert txt files to .json file
+		/// </summary>
+		/// <param name="generateModel"></param>
 		public void GenerateJson(GeneratorModel generateModel)
 		{
             string textFilePath = generateModel.InputFilePath;

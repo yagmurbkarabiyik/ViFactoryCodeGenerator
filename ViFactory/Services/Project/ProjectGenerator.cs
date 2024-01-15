@@ -2,6 +2,9 @@
 
 namespace ViFactory.Services.Project
 {
+	/// <summary>
+	/// Thanks to this class new unique project can be create
+	/// </summary>
 	public class ProjectGenerator : IProjectGenerator
 	{
 		public void GenerateProject(ProjectGeneratorModel projectGeneratorModel)

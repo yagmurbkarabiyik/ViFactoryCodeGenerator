@@ -16,17 +16,25 @@ namespace ViFactory.Services.Domain
             _webHostEnvironment = webHostEnvironment;
         }
 
+        /// <summary>
+        /// Create a Domain Layer and constant classes
+        /// </summary>
+        /// <param name="projectGeneratorModel"></param>
         public void GenerateDomainLayer(ProjectGeneratorModel projectGeneratorModel)
 		{
             _projectGenerator.GenerateProject(projectGeneratorModel);
 
-            GenerateBaseEntity(projectGeneratorModel.CurrentProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Models"));
+           GenerateBaseEntity(projectGeneratorModel.CurrentProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Models"));
            GenerateAppUser(projectGeneratorModel.CurrentProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "IdentityModels"));
            GenerateAppRole(projectGeneratorModel.CurrentProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "IdentityModels"));
            GenerateAppUserState(projectGeneratorModel.CurrentProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "IdentityModels"));
         }
 
-        //Constant Classes
+        /// <summary>
+        /// This method create a BaseEntity class in the Models folder
+        /// </summary>
+        /// <param name="projectName"></param>
+        /// <param name="outputFilePath"></param>
         private void GenerateBaseEntity(string projectName, string outputFilePath)
         {
             GeneratorModel generateBaseEntity = new GeneratorModel()
@@ -40,6 +48,11 @@ namespace ViFactory.Services.Domain
 
             _generator.GenerateClass(generateBaseEntity);
         }
+        /// <summary>
+        /// This method create a constant AppUser class in the IdentityModels folder
+        /// </summary>
+        /// <param name="projectName"></param>
+        /// <param name="outputFilePath"></param>
         private void GenerateAppUser(string projectName, string outputFilePath) 
         {
             GeneratorModel generateAppUser = new GeneratorModel()
@@ -67,6 +80,11 @@ namespace ViFactory.Services.Domain
             };
             _generator.GenerateClass(generateAppUser);
         }
+        /// <summary>
+        /// This method create a AppRole class in the IdentityModels folder
+        /// </summary>
+        /// <param name="projectName"></param>
+        /// <param name="outputFilePath"></param>
         private void GenerateAppRole(string projectName, string outputFilePath)
         {
             GeneratorModel generateAppRole = new GeneratorModel()
@@ -80,6 +98,11 @@ namespace ViFactory.Services.Domain
             };
             _generator.GenerateClass(generateAppRole);
         }
+        /// <summary>
+        /// This method create a AppUserState class in the IdentityModels folder
+        /// </summary>
+        /// <param name="projectName"></param>
+        /// <param name="outputFilePath"></param>
         private void GenerateAppUserState(string projectName, string outputFilePath)
         {
             GeneratorModel generatorModel = new GeneratorModel()

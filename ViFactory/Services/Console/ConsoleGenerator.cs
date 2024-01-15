@@ -15,7 +15,10 @@ namespace ViFactory.Services.Console
             _generator = generator;
             _webHostEnvironment = webHostEnvironment;
         }
-
+		/// <summary>
+		/// Create a console application project and constant classes
+		/// </summary>
+		/// <param name="projectGeneratorModel"></param>
         public void GenerateConsoleProject(ProjectGeneratorModel projectGeneratorModel)
 		{
 			_projectGenerator.GenerateProject(projectGeneratorModel);
@@ -23,6 +26,10 @@ namespace ViFactory.Services.Console
 			GenerateProgramCs(Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName));
             GenerateFileUtils(Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName));
 		}
+		/// <summary>
+		/// Creatae a console application's program.cs 
+		/// </summary>
+		/// <param name="outputFilePath"></param>
 		public void GenerateProgramCs(string outputFilePath)
 		{
 			GeneratorModel generateProgramCs = new GeneratorModel()
@@ -41,12 +48,15 @@ namespace ViFactory.Services.Console
 			{
 				Directory.CreateDirectory(modelsFolderPath);
 			}
-
 			// Create the path for the new class file inside the Models folder
 			string classFilePath = Path.Combine(modelsFolderPath, $"{generateProgramCs.ClassNameDefault}.cs");
 
 			File.WriteAllText(classFilePath, codeTemplate);
 		}
+		/// <summary>
+		/// Create a FileUtils class for solution file path 
+		/// </summary>
+		/// <param name="outputFilePath"></param>
 		public void GenerateFileUtils(string outputFilePath)
 		{
 			GeneratorModel generateFileUtils = new GeneratorModel
@@ -57,6 +67,10 @@ namespace ViFactory.Services.Console
 			};
 			_generator.GenerateClass(generateFileUtils);
 		}
+		/// <summary>
+		/// Read the txt files and write them into ViFactory Console Application Project's folder
+		/// </summary>
+		/// <param name="outputFolderPath"></param>
 		public void GenerateTemplates(string outputFolderPath)
 		{
 			var path = Path.Combine(outputFolderPath, "ViFactory", "Templates");
