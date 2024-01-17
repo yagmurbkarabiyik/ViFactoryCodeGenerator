@@ -13,7 +13,7 @@ using ViFactory.Services.Solution;
 namespace ViFactory.Controllers
 {
 	/// <summary>
-	/// Create all layers that we need to for the wholw project 
+	/// Create all layers that we need to for the whole project 
 	/// </summary>
 	public class HomeController : Controller
 	{

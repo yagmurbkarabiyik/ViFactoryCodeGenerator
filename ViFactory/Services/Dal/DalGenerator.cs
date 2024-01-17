@@ -15,7 +15,6 @@ namespace ViFactory.Services.Dal
             _projectGenerator = projectGenerator;
             _webHostEnvironment = webHostEnvironment;
         }
-
 		/// <summary>
 		/// Create Dal Layer and constant classes
 		/// </summary>
@@ -31,7 +30,6 @@ namespace ViFactory.Services.Dal
 			GenerateBaseMap(projectGeneratorModel.CurrentProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "FluentApi"));
 			GenerateContext(projectGeneratorModel.CurrentProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Context"));
 		}
-
 		/// <summary>
 		/// Create a general Repository class in the Data//Common folder
 		/// </summary>
@@ -140,5 +138,3 @@ namespace ViFactory.Services.Dal
 		}
 	}
 }
-
-

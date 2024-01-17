@@ -33,7 +33,7 @@ namespace [CurrentProjectName].Bll.Services.Concrete
 
 			var query = await _unitOfWork.SaveChangesAsync();
 
-			if (query.IsSuccess)
+			if (!query.IsSuccess)
 				throw new ResponseException(HttpStatusCode.BadRequest, ExceptionResponseType.DbInsert, query.Exception);
 
 			return new ResponseCommon<[EntityName]CreateDto>

@@ -3341,6 +3341,314 @@
       "PackagePath": "staticwebassets\\projects\\New_701e09f8.zip"
     },
     {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Tea_0e76c86e.zip",
+      "PackagePath": "staticwebassets\\projects\\Tea_0e76c86e.zip"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Tea_0e76c86e\\Tea.Api\\Config\\ApiBehaviourConfig.cs",
+      "PackagePath": "staticwebassets\\projects\\Tea_0e76c86e\\Tea.Api\\Config\\ApiBehaviourConfig.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Tea_0e76c86e\\Tea.Api\\Controllers\\AppUsersController.cs",
+      "PackagePath": "staticwebassets\\projects\\Tea_0e76c86e\\Tea.Api\\Controllers\\AppUsersController.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Tea_0e76c86e\\Tea.Api\\Extensions\\DiDbContext.cs",
+      "PackagePath": "staticwebassets\\projects\\Tea_0e76c86e\\Tea.Api\\Extensions\\DiDbContext.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Tea_0e76c86e\\Tea.Api\\Extensions\\DiFluentValidator.cs",
+      "PackagePath": "staticwebassets\\projects\\Tea_0e76c86e\\Tea.Api\\Extensions\\DiFluentValidator.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Tea_0e76c86e\\Tea.Api\\Extensions\\DiService.cs",
+      "PackagePath": "staticwebassets\\projects\\Tea_0e76c86e\\Tea.Api\\Extensions\\DiService.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Tea_0e76c86e\\Tea.Api\\Middlewares\\CustomExceptionMiddleware.cs",
+      "PackagePath": "staticwebassets\\projects\\Tea_0e76c86e\\Tea.Api\\Middlewares\\CustomExceptionMiddleware.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Tea_0e76c86e\\Tea.Api\\Program.cs",
+      "PackagePath": "staticwebassets\\projects\\Tea_0e76c86e\\Tea.Api\\Program.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Tea_0e76c86e\\Tea.Api\\appsettings.json",
+      "PackagePath": "staticwebassets\\projects\\Tea_0e76c86e\\Tea.Api\\appsettings.json"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Tea_0e76c86e\\Tea.Bll\\Dtos\\AppUserDtos\\AppUserRequestDtos.cs",
+      "PackagePath": "staticwebassets\\projects\\Tea_0e76c86e\\Tea.Bll\\Dtos\\AppUserDtos\\AppUserRequestDtos.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Tea_0e76c86e\\Tea.Bll\\Dtos\\AppUserDtos\\AppUserResponseDto.cs",
+      "PackagePath": "staticwebassets\\projects\\Tea_0e76c86e\\Tea.Bll\\Dtos\\AppUserDtos\\AppUserResponseDto.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Tea_0e76c86e\\Tea.Bll\\Enums\\ExceptionResponseType.cs",
+      "PackagePath": "staticwebassets\\projects\\Tea_0e76c86e\\Tea.Bll\\Enums\\ExceptionResponseType.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Tea_0e76c86e\\Tea.Bll\\Models\\JwtSettings.cs",
+      "PackagePath": "staticwebassets\\projects\\Tea_0e76c86e\\Tea.Bll\\Models\\JwtSettings.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Tea_0e76c86e\\Tea.Bll\\Models\\ResponseCommon.cs",
+      "PackagePath": "staticwebassets\\projects\\Tea_0e76c86e\\Tea.Bll\\Models\\ResponseCommon.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Tea_0e76c86e\\Tea.Bll\\Models\\ResponseException.cs",
+      "PackagePath": "staticwebassets\\projects\\Tea_0e76c86e\\Tea.Bll\\Models\\ResponseException.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Tea_0e76c86e\\Tea.Bll\\Models\\ResponseExceptionData.cs",
+      "PackagePath": "staticwebassets\\projects\\Tea_0e76c86e\\Tea.Bll\\Models\\ResponseExceptionData.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Tea_0e76c86e\\Tea.Bll\\Models\\SmsNetGsmSettings.cs",
+      "PackagePath": "staticwebassets\\projects\\Tea_0e76c86e\\Tea.Bll\\Models\\SmsNetGsmSettings.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Tea_0e76c86e\\Tea.Bll\\Models\\SmtpSettings.cs",
+      "PackagePath": "staticwebassets\\projects\\Tea_0e76c86e\\Tea.Bll\\Models\\SmtpSettings.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Tea_0e76c86e\\Tea.Bll\\Services\\Abstract\\IAppUserService.cs",
+      "PackagePath": "staticwebassets\\projects\\Tea_0e76c86e\\Tea.Bll\\Services\\Abstract\\IAppUserService.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Tea_0e76c86e\\Tea.Bll\\Services\\Common\\SmsNetGsmService.cs",
+      "PackagePath": "staticwebassets\\projects\\Tea_0e76c86e\\Tea.Bll\\Services\\Common\\SmsNetGsmService.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Tea_0e76c86e\\Tea.Bll\\Services\\Common\\SmtpServices.cs",
+      "PackagePath": "staticwebassets\\projects\\Tea_0e76c86e\\Tea.Bll\\Services\\Common\\SmtpServices.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Tea_0e76c86e\\Tea.Bll\\Services\\Common\\TokenService.cs",
+      "PackagePath": "staticwebassets\\projects\\Tea_0e76c86e\\Tea.Bll\\Services\\Common\\TokenService.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Tea_0e76c86e\\Tea.Bll\\Services\\Common\\UploadLocalService.cs",
+      "PackagePath": "staticwebassets\\projects\\Tea_0e76c86e\\Tea.Bll\\Services\\Common\\UploadLocalService.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Tea_0e76c86e\\Tea.Bll\\Services\\Concrete\\AppUserService.cs",
+      "PackagePath": "staticwebassets\\projects\\Tea_0e76c86e\\Tea.Bll\\Services\\Concrete\\AppUserService.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Tea_0e76c86e\\Tea.Core\\Enums\\DbEntityState.cs",
+      "PackagePath": "staticwebassets\\projects\\Tea_0e76c86e\\Tea.Core\\Enums\\DbEntityState.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Tea_0e76c86e\\Tea.Core\\Extensions\\ExceptionExtensions.cs",
+      "PackagePath": "staticwebassets\\projects\\Tea_0e76c86e\\Tea.Core\\Extensions\\ExceptionExtensions.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Tea_0e76c86e\\Tea.Core\\Models\\ApiContext.cs",
+      "PackagePath": "staticwebassets\\projects\\Tea_0e76c86e\\Tea.Core\\Models\\ApiContext.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Tea_0e76c86e\\Tea.Core\\Models\\EmailSendData.cs",
+      "PackagePath": "staticwebassets\\projects\\Tea_0e76c86e\\Tea.Core\\Models\\EmailSendData.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Tea_0e76c86e\\Tea.Core\\Models\\IBaseEntity.cs",
+      "PackagePath": "staticwebassets\\projects\\Tea_0e76c86e\\Tea.Core\\Models\\IBaseEntity.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Tea_0e76c86e\\Tea.Core\\Models\\PaginationRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Tea_0e76c86e\\Tea.Core\\Models\\PaginationRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Tea_0e76c86e\\Tea.Core\\Models\\PaginationResponse.cs",
+      "PackagePath": "staticwebassets\\projects\\Tea_0e76c86e\\Tea.Core\\Models\\PaginationResponse.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Tea_0e76c86e\\Tea.Core\\Models\\SmsNetGsmSendData.cs",
+      "PackagePath": "staticwebassets\\projects\\Tea_0e76c86e\\Tea.Core\\Models\\SmsNetGsmSendData.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Tea_0e76c86e\\Tea.Core\\Models\\SmtpSendData.cs",
+      "PackagePath": "staticwebassets\\projects\\Tea_0e76c86e\\Tea.Core\\Models\\SmtpSendData.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Tea_0e76c86e\\Tea.Core\\Models\\UnitOfWorkResponse.cs",
+      "PackagePath": "staticwebassets\\projects\\Tea_0e76c86e\\Tea.Core\\Models\\UnitOfWorkResponse.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Tea_0e76c86e\\Tea.Core\\RepositoryModels\\RepositoryAnyRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Tea_0e76c86e\\Tea.Core\\RepositoryModels\\RepositoryAnyRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Tea_0e76c86e\\Tea.Core\\RepositoryModels\\RepositoryCreateBulkRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Tea_0e76c86e\\Tea.Core\\RepositoryModels\\RepositoryCreateBulkRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Tea_0e76c86e\\Tea.Core\\RepositoryModels\\RepositoryCreateRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Tea_0e76c86e\\Tea.Core\\RepositoryModels\\RepositoryCreateRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Tea_0e76c86e\\Tea.Core\\RepositoryModels\\RepositoryDeleteRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Tea_0e76c86e\\Tea.Core\\RepositoryModels\\RepositoryDeleteRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Tea_0e76c86e\\Tea.Core\\RepositoryModels\\RepositoryFindRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Tea_0e76c86e\\Tea.Core\\RepositoryModels\\RepositoryFindRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Tea_0e76c86e\\Tea.Core\\RepositoryModels\\RepositoryGetAsTResultRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Tea_0e76c86e\\Tea.Core\\RepositoryModels\\RepositoryGetAsTResultRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Tea_0e76c86e\\Tea.Core\\RepositoryModels\\RepositoryGetRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Tea_0e76c86e\\Tea.Core\\RepositoryModels\\RepositoryGetRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Tea_0e76c86e\\Tea.Core\\RepositoryModels\\RepositoryListAsTResultRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Tea_0e76c86e\\Tea.Core\\RepositoryModels\\RepositoryListAsTResultRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Tea_0e76c86e\\Tea.Core\\RepositoryModels\\RepositoryListRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Tea_0e76c86e\\Tea.Core\\RepositoryModels\\RepositoryListRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Tea_0e76c86e\\Tea.Core\\RepositoryModels\\RepositoryPaginationAsTResultRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Tea_0e76c86e\\Tea.Core\\RepositoryModels\\RepositoryPaginationAsTResultRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Tea_0e76c86e\\Tea.Core\\RepositoryModels\\RepositoryPaginationRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Tea_0e76c86e\\Tea.Core\\RepositoryModels\\RepositoryPaginationRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Tea_0e76c86e\\Tea.Core\\RepositoryModels\\RepositoryUpdateBulkRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Tea_0e76c86e\\Tea.Core\\RepositoryModels\\RepositoryUpdateBulkRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Tea_0e76c86e\\Tea.Core\\RepositoryModels\\RepositoryUpdateRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Tea_0e76c86e\\Tea.Core\\RepositoryModels\\RepositoryUpdateRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Tea_0e76c86e\\Tea.Core\\Services\\IRepository.cs",
+      "PackagePath": "staticwebassets\\projects\\Tea_0e76c86e\\Tea.Core\\Services\\IRepository.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Tea_0e76c86e\\Tea.Core\\Services\\ISmsNetGsmService.cs",
+      "PackagePath": "staticwebassets\\projects\\Tea_0e76c86e\\Tea.Core\\Services\\ISmsNetGsmService.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Tea_0e76c86e\\Tea.Core\\Services\\ISmtpService.cs",
+      "PackagePath": "staticwebassets\\projects\\Tea_0e76c86e\\Tea.Core\\Services\\ISmtpService.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Tea_0e76c86e\\Tea.Core\\Services\\ITokenService.cs",
+      "PackagePath": "staticwebassets\\projects\\Tea_0e76c86e\\Tea.Core\\Services\\ITokenService.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Tea_0e76c86e\\Tea.Core\\Services\\IUnitOfWork.cs",
+      "PackagePath": "staticwebassets\\projects\\Tea_0e76c86e\\Tea.Core\\Services\\IUnitOfWork.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Tea_0e76c86e\\Tea.Core\\Services\\IUploadLocalService.cs",
+      "PackagePath": "staticwebassets\\projects\\Tea_0e76c86e\\Tea.Core\\Services\\IUploadLocalService.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Tea_0e76c86e\\Tea.Core\\TokenModels\\GetTokenRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Tea_0e76c86e\\Tea.Core\\TokenModels\\GetTokenRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Tea_0e76c86e\\Tea.Core\\TokenModels\\GetTokenResponse.cs",
+      "PackagePath": "staticwebassets\\projects\\Tea_0e76c86e\\Tea.Core\\TokenModels\\GetTokenResponse.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Tea_0e76c86e\\Tea.Core\\TokenModels\\ValidateTokenRequest.cs",
+      "PackagePath": "staticwebassets\\projects\\Tea_0e76c86e\\Tea.Core\\TokenModels\\ValidateTokenRequest.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Tea_0e76c86e\\Tea.Dal\\Context\\TeaDbContext.cs",
+      "PackagePath": "staticwebassets\\projects\\Tea_0e76c86e\\Tea.Dal\\Context\\TeaDbContext.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Tea_0e76c86e\\Tea.Dal\\Data\\Common\\Repository.cs",
+      "PackagePath": "staticwebassets\\projects\\Tea_0e76c86e\\Tea.Dal\\Data\\Common\\Repository.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Tea_0e76c86e\\Tea.Dal\\Data\\Common\\UnitOfWork.cs",
+      "PackagePath": "staticwebassets\\projects\\Tea_0e76c86e\\Tea.Dal\\Data\\Common\\UnitOfWork.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Tea_0e76c86e\\Tea.Dal\\Data\\DalRepos\\AppUserRepository.cs",
+      "PackagePath": "staticwebassets\\projects\\Tea_0e76c86e\\Tea.Dal\\Data\\DalRepos\\AppUserRepository.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Tea_0e76c86e\\Tea.Dal\\Data\\IDalRepos\\IAppUserRepository.cs",
+      "PackagePath": "staticwebassets\\projects\\Tea_0e76c86e\\Tea.Dal\\Data\\IDalRepos\\IAppUserRepository.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Tea_0e76c86e\\Tea.Dal\\FluentApi\\BaseMap.cs",
+      "PackagePath": "staticwebassets\\projects\\Tea_0e76c86e\\Tea.Dal\\FluentApi\\BaseMap.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Tea_0e76c86e\\Tea.Domain.Entities\\IdentityModels\\AppRole.cs",
+      "PackagePath": "staticwebassets\\projects\\Tea_0e76c86e\\Tea.Domain.Entities\\IdentityModels\\AppRole.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Tea_0e76c86e\\Tea.Domain.Entities\\IdentityModels\\AppUser.cs",
+      "PackagePath": "staticwebassets\\projects\\Tea_0e76c86e\\Tea.Domain.Entities\\IdentityModels\\AppUser.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Tea_0e76c86e\\Tea.Domain.Entities\\IdentityModels\\AppUserState.cs",
+      "PackagePath": "staticwebassets\\projects\\Tea_0e76c86e\\Tea.Domain.Entities\\IdentityModels\\AppUserState.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Tea_0e76c86e\\Tea.Domain.Entities\\Models\\BaseEntity.cs",
+      "PackagePath": "staticwebassets\\projects\\Tea_0e76c86e\\Tea.Domain.Entities\\Models\\BaseEntity.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Tea_0e76c86e\\ViFactory\\FileUtils.cs",
+      "PackagePath": "staticwebassets\\projects\\Tea_0e76c86e\\ViFactory\\FileUtils.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Tea_0e76c86e\\ViFactory\\Program.cs",
+      "PackagePath": "staticwebassets\\projects\\Tea_0e76c86e\\ViFactory\\Program.cs"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Tea_0e76c86e\\ViFactory\\Templates\\ApiController.txt",
+      "PackagePath": "staticwebassets\\projects\\Tea_0e76c86e\\ViFactory\\Templates\\ApiController.txt"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Tea_0e76c86e\\ViFactory\\Templates\\Context.txt",
+      "PackagePath": "staticwebassets\\projects\\Tea_0e76c86e\\ViFactory\\Templates\\Context.txt"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Tea_0e76c86e\\ViFactory\\Templates\\CreateDto.txt",
+      "PackagePath": "staticwebassets\\projects\\Tea_0e76c86e\\ViFactory\\Templates\\CreateDto.txt"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Tea_0e76c86e\\ViFactory\\Templates\\DalRepository.txt",
+      "PackagePath": "staticwebassets\\projects\\Tea_0e76c86e\\ViFactory\\Templates\\DalRepository.txt"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Tea_0e76c86e\\ViFactory\\Templates\\FluentApiMap.txt",
+      "PackagePath": "staticwebassets\\projects\\Tea_0e76c86e\\ViFactory\\Templates\\FluentApiMap.txt"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Tea_0e76c86e\\ViFactory\\Templates\\IDalRepository.txt",
+      "PackagePath": "staticwebassets\\projects\\Tea_0e76c86e\\ViFactory\\Templates\\IDalRepository.txt"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Tea_0e76c86e\\ViFactory\\Templates\\IService.txt",
+      "PackagePath": "staticwebassets\\projects\\Tea_0e76c86e\\ViFactory\\Templates\\IService.txt"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Tea_0e76c86e\\ViFactory\\Templates\\Service.txt",
+      "PackagePath": "staticwebassets\\projects\\Tea_0e76c86e\\ViFactory\\Templates\\Service.txt"
+    },
+    {
+      "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Tea_0e76c86e\\ViFactory\\Templates\\UnitOfWork.txt",
+      "PackagePath": "staticwebassets\\projects\\Tea_0e76c86e\\ViFactory\\Templates\\UnitOfWork.txt"
+    },
+    {
       "Id": "C:\\Users\\ygmr4\\Desktop\\ViFactory\\ViFactory\\wwwroot\\projects\\Tea_1259cde5.zip",
       "PackagePath": "staticwebassets\\projects\\Tea_1259cde5.zip"
     },

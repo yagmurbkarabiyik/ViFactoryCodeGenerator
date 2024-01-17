@@ -109,7 +109,6 @@ namespace ViFactory.Controllers
 				OutputFolderPath = outputFolderPath,
 				CurrentProjectName = projectName
 			};
-
 			_bllGenerator.GenerateBllLayer(bllGenerator);
             #endregion
 
@@ -124,10 +123,9 @@ namespace ViFactory.Controllers
             };
 			_domainGenerator.GenerateDomainLayer(domainGenerator);
             #endregion
+
             return Ok();
 		}
-
-		
     }
 }
 
