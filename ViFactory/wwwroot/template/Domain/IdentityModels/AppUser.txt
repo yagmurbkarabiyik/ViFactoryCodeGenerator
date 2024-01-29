@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using [CurrentProjectName].Core.Enums;
 
-
 namespace [NamespaceName]
 {
     public class [ClassName] : IdentityUser<int>

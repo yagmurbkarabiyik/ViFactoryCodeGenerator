@@ -18,7 +18,7 @@ namespace ViFactory.Api.Extentions
             {
                 x.UseNpgsql(configuration.GetConnectionString("PostreSql"), config =>
                 {
-                    config.MigrationsAssembly("[DbContext].Dal");
+                    config.MigrationsAssembly("[CurrentProjectName].Dal");
                 });
             });
 

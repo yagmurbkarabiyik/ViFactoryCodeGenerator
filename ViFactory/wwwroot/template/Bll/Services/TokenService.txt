@@ -73,8 +73,7 @@ namespace [CurrentProjectName].Bll.Services.Common
             request.Claims.Add(new Claim(JwtRegisteredClaimNames.Exp, accessTokenExpire.ToString()));
             request.Claims.Add(new Claim(JwtRegisteredClaimNames.Iat, now.ToString()));
             request.Claims.Add(new Claim(JwtRegisteredClaimNames.AuthTime, now.ToString()));
-            request.Claims.Add(new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()));
-
+ 
             return new JwtSecurityToken(
                 issuer: request.Issuer,
                 expires: accessTokenExpire.DateTime,

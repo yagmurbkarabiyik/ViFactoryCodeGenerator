@@ -3,6 +3,7 @@ using ViFactory.Api.Config;
 using ViFactory.Api.Extensions;
 using ViFactory.Api.Extentions;
 using ViFactory.Api.Middlewares;
+using [CurrentProjectName].Api.Middlewares;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -74,6 +75,8 @@ app.UseRouting();
 
 app.UseAuthentication();
 app.UseAuthorization();
+
+app.UseMiddleware<ApiContextMiddleware>();
 
 app.MapDefaultControllerRoute();
 

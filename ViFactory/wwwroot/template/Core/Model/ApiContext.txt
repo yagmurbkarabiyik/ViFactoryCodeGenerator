@@ -7,8 +7,13 @@ namespace [NamespaceName]
     /// </summary>
     public class [ClassName]
     {
-        public int AppUserId { get; set; } = 0;
-        public string Language { get; set; } = "tr";
-        public string? AppUserEmail { get; set; }
+        public int? AppUserId { get; set; }
+        public string? AppUserFullName { get; set; }
+        public string? AppUserName { get; set; }
+        public string? Email { get; set; }
+        public string? ClientType { get; set; }
+        public string? Language { get; set; }
+        public string? SignInRemoteIp { get; set; }
+        public string? CurrentRemoteIp { get; set; }
     }
 }

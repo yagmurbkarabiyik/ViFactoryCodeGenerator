@@ -22,6 +22,7 @@ namespace ViFactory.Services.Api
         public void GenerateApiProject(ProjectGeneratorModel projectGeneratorModel)
         {
             _projectGenerator.GenerateProject(projectGeneratorModel);
+
             GenerateProgramCs(projectGeneratorModel.CurrentProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName));
             GenerateDbcontext(projectGeneratorModel.CurrentProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Extensions"));
             GenerateFluentValidator(projectGeneratorModel.CurrentProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Extensions"));
@@ -30,6 +31,9 @@ namespace ViFactory.Services.Api
             GenerateAppSettings(projectGeneratorModel.CurrentProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName));
             GenerateApiBehaviour(projectGeneratorModel.CurrentProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Config"));
             GenerateAppUsersController(projectGeneratorModel.CurrentProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Controllers"));
+            GenerateApiContextMiddleware(projectGeneratorModel.CurrentProjectName, Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "Middlewares"));
+            CreateEmptyFolder(Path.Combine(projectGeneratorModel.OutputFolderPath, projectGeneratorModel.ProjectName, "wwwroot"));
+
         }
         /// <summary>
         /// Create a Program.cs for Api Project
@@ -120,6 +124,18 @@ namespace ViFactory.Services.Api
             };
             _generator.GenerateClass(generateCustomException);
         }
+
+        public void GenerateApiContextMiddleware(string projectName, string outputFilePath)
+        {
+            GeneratorModel generateApiContextMiddleware = new GeneratorModel()
+            {
+                ClassNameDefault = "ApiContextMiddleware",
+                InputFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "template", "Api" + "\\Middlewares\\ApiContextMiddleware.txt"),
+                OutputFilePath = outputFilePath,
+                CurrentProjectName = projectName
+            };
+            _generator.GenerateClass(generateApiContextMiddleware);
+        }
         #endregion
 
         #region Create ApiBehaviour Config 
@@ -146,8 +162,18 @@ namespace ViFactory.Services.Api
                 OutputFilePath = outputFilePath,
                 CurrentProjectName = projectName
             };
+
             _generator.GenerateClass(generateAppUsersController);
         }
         #endregion
+        public void CreateEmptyFolder( string outputFilePath)
+        {
+            GeneratorModel generateEmptyFolder = new GeneratorModel()
+            {
+                InputFilePath = "",
+                OutputFilePath = outputFilePath,
+            };
+            _generator.GenerateEmptyFolder(generateEmptyFolder);
+        }
     }
-};
+}

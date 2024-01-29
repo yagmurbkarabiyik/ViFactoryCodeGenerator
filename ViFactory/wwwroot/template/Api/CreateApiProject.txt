@@ -24,5 +24,8 @@
     <ProjectReference Include="..\[CurrentProjectName].Bll\[CurrentProjectName].Bll.csproj" />
     <ProjectReference Include="..\[CurrentProjectName].Dal\[CurrentProjectName].Dal.csproj" />
   </ItemGroup>
-
+  
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
 </Project>

@@ -7,13 +7,13 @@ namespace [CurrentProjectName].Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class [InterfaceName]ServiceController : ControllerBase
+    public class [ControllerClassName]Controller : ControllerBase
     {
-        private readonly I[InterfaceName]Service _[EntityName]Service;
+        private readonly I[InterfaceName]Service _[LowerCaseServiceName]Service;
 
-        public [InterfaceName]ServiceController(I[InterfaceName]Service [EntityName]Service)
+        public [ControllerClassName]Controller(I[InterfaceName]Service [LowerCaseServiceName]Service)
         {
-            _[EntityName]Service = [EntityName]Service;
+            _[LowerCaseServiceName]Service = [LowerCaseServiceName]Service;
         }
 
         [HttpPost]
@@ -21,7 +21,7 @@ namespace [CurrentProjectName].Api.Controllers
         [ProducesResponseType(400, Type = typeof(ResponseCommon<ResponseExceptionData>))]
         public async Task<IActionResult> Create([FromForm] [InterfaceName]CreateDto dto)
         {
-            var response = await _[EntityName]Service.CreateAsync(dto);
+            var response = await _[LowerCaseServiceName]Service.CreateAsync(dto);
 
             return new ObjectResult(response)
             {
@@ -34,7 +34,7 @@ namespace [CurrentProjectName].Api.Controllers
         [ProducesResponseType(404, Type = typeof(ResponseCommon<ResponseExceptionData>))]
         public async Task<IActionResult> Get(int id)
         {
-            var response = await _[EntityName]Service.FindAsync(id);
+            var response = await _[LowerCaseServiceName]Service.FindAsync(id);
 
             return new ObjectResult(response)
             {
@@ -47,7 +47,7 @@ namespace [CurrentProjectName].Api.Controllers
         [ProducesResponseType(400, Type = typeof(ResponseCommon<ResponseExceptionData>))]
         public async Task<IActionResult> Update(int id, [FromForm] [InterfaceName]UpdateDto dto)
         {
-            var response = await _[EntityName]Service.UpdateAsync(id, dto);
+            var response = await _[LowerCaseServiceName]Service.UpdateAsync(id, dto);
 
             return new ObjectResult(response)
             {
@@ -60,7 +60,7 @@ namespace [CurrentProjectName].Api.Controllers
         [ProducesResponseType(400, Type = typeof(ResponseCommon<ResponseExceptionData>))]
         public async Task<IActionResult> Delete(int id)
         {
-            var response = await _[EntityName]Service.SoftDeleteAsync(id);
+            var response = await _[LowerCaseServiceName]Service.SoftDeleteAsync(id);
 
             return new ObjectResult(response)
             {

@@ -74,8 +74,7 @@ namespace ViFactory.Services.Domain
                             {"Name", "string" },
                             {"Surname", "string" },
                             {"DefaultPosterImage", "string?" },
-                            {"AppUserState", "AppUserState" },
-                            {"Language", "string" }
+                            {"AppUserState", "AppUserState" }
                         }
             };
             _generator.GenerateClass(generateAppUser);

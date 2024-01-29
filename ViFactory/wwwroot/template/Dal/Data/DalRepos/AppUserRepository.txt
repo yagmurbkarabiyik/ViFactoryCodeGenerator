@@ -8,7 +8,7 @@ using [CurrentProjectName].Domain.IdentityModels;
 namespace [NamespaceName]
 {
      public class AppUserRepository : IAppUserRepository
-    {
+     {
         protected readonly [DbContext] _dbContext;
         private readonly DbSet<AppUser> _dbSet;
 

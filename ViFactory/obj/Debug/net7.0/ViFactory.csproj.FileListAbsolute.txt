@@ -610,3 +610,4 @@ C:\Users\ygmr4\Desktop\ViFactory\ViFactory\bin\Debug\net7.0\wwwroot\template\Cor
 C:\Users\ygmr4\Desktop\ViFactory\ViFactory\bin\Debug\net7.0\wwwroot\template\Core\Model\RepositoryModels\RepositoryUpdateBulkRequest.txt
 C:\Users\ygmr4\Desktop\ViFactory\ViFactory\bin\Debug\net7.0\wwwroot\template\Core\Model\SmtpSendData.txt
 C:\Users\ygmr4\Desktop\ViFactory\ViFactory\bin\Debug\net7.0\wwwroot\template\Core\Services\ISmtpService.txt
+C:\Users\ygmr4\Desktop\ViFactory\ViFactory\bin\Debug\net7.0\wwwroot\template\Api\wwwroot.txt

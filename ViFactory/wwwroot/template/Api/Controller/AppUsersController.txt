@@ -5,7 +5,6 @@ using [CurrentProjectName].Bll.Dtos.AppUserDtos;
 
 namespace ViFactory.Api.Controllers
 {
-    [Area("MobileServices")]
     [Route("app-api/[controller]")]
     [ApiController]
     public class AppUsersController : Controller

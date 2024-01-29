@@ -226,7 +226,7 @@ class Program
 	}
     #endregion
 
-#region Create Controller
+	#region Create Controller
     static void GenerateApiController(string csprojFilePath, string rootFolderPath, IEnumerable<Type> entities, string currentProjectName)
     {
         string apiControllerFolderPath = Path.Combine(rootFolderPath, "Controllers");
@@ -235,21 +235,24 @@ class Program
         foreach (var entity in entities)
         {
             string pluralEntityName = ToPlural(entity.Name);
+            string singularEntityName = ToSingular(entity.Name);
 
             string controllerClass = Path.Combine(apiControllerFolderPath, $"{pluralEntityName}Controller.cs");
 
             if (entity.Name != "BaseEntity")
             {
-                EnsureFileExists(controllerClass, File.ReadAllText("./Templates/ApiController.txt")
-                    .Replace("[CurrentProjectName]", currentProjectName)
-                    .Replace("[InterfaceName]", entity.Name)
-                    .Replace("[EntityName]", $"{char.ToLower(pluralEntityName[0])}{pluralEntityName.Substring(1)}"));
+				EnsureFileExists(controllerClass, File.ReadAllText("./Templates/ApiController.txt")
+					.Replace("[CurrentProjectName]", currentProjectName)
+					.Replace("[InterfaceName]", entity.Name)
+					.Replace("[ControllerClassName]", $"{char.ToUpper(pluralEntityName[0])}{pluralEntityName.Substring(1)}")
+					.Replace("[InterfaceName]", $"{char.ToLower(pluralEntityName[0])}{pluralEntityName.Substring(1)}")
+					.Replace("[LowerCaseServiceName]", $"{char.ToLower(singularEntityName[0])}{singularEntityName.Substring(1)}"));
             }
         }
     }
     #endregion
 
-    #region Helper Methods
+	#region Helper Methods
     static void EnsureFileExists(string filePath, string content)
 	{
 		if (!File.Exists(filePath))
@@ -257,7 +260,6 @@ class Program
 			File.WriteAllText(filePath, content);
 		}
 	}
-
 	static void EnsureDirectoryExists(string directoryPath)
 	{
 		if (!Directory.Exists(directoryPath))
@@ -265,7 +267,6 @@ class Program
 			Directory.CreateDirectory(directoryPath);
 		}
 	}
-
 	static string GetTableName(string entityName)
 	{
 		string tableName = entityName;
@@ -285,7 +286,6 @@ class Program
 
 		return tableName;
 	}
-
 	static string ToPlural(string singular)
     {
         if (string.IsNullOrEmpty(singular))
@@ -304,5 +304,27 @@ class Program
             return singular + "s";
         }
     }
-	#endregion
+    static string ToSingular(string plural)
+    {
+        if (string.IsNullOrEmpty(plural))
+            return plural;
+
+        if (plural.EndsWith("ies", StringComparison.OrdinalIgnoreCase))
+        {
+            return plural.Substring(0, plural.Length - 3) + "y";
+        }
+        else if (plural.EndsWith("es", StringComparison.OrdinalIgnoreCase))
+        {
+            return plural.Substring(0, plural.Length - 2);
+        }
+        else if (plural.EndsWith("s", StringComparison.OrdinalIgnoreCase))
+        {
+            return plural.Substring(0, plural.Length - 1);
+        }
+        else
+        {
+            return plural;
+        }
+    }
+    #endregion
 }

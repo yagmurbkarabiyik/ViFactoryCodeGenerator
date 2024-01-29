@@ -23,6 +23,7 @@ namespace ViFactory.Api.Extentions
             services.AddScoped<ITokenService, TokenService>();
             services.AddScoped<ISmtpService, SmtpService>();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
+            services.AddScoped<ISmsNetGsmService, SmsNetGsmService>();
             services.AddScoped<ApiContext>();
 
             var bllServices = Assembly.Load("[CurrentProjectName].Bll")

@@ -15,13 +15,14 @@ using [CurrentProjectName].Core.Services;
 using [CurrentProjectName].Bll.Dtos.AppUserDtos;
 using [CurrentProjectName].Dal.Data.IDalRepos;
 using [CurrentProjectName].Core.Models.RepositoryModels;
+using [CurrentProjectName].Bll.Services.Abstract;
 
 namespace [CurrentProjectName].Bll.Services
 {
     /// <summary>
     /// this service contains app operations of appUser
     /// </summary>
-    public partial class AppUserService
+    public partial class AppUserService : IAppUserService
     {
         private readonly UserManager<AppUser> _userManager;
         private readonly SignInManager<AppUser> _signInManager;

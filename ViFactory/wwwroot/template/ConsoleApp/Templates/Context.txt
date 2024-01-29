@@ -1,28 +1,32 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using [CurrentProjectName].Dal.FluentApi;
 using [CurrentProjectName].Domain.Entities.Models;
-[CustomUsing]
+using [CurrentProjectName].Domain.IdentityModels;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+#region CustomUsing
+#endregion CustomUsing
 
 namespace [CurrentProjectName].Dal.Context
 {
-    public class [CurrentProjectName]DbContext : DbContext
+    public class [CurrentProjectName]DbContext : IdentityDbContext<AppUser, AppRole, int>
     {
         public [CurrentProjectName]DbContext(DbContextOptions<[CurrentProjectName]DbContext> ctx) : base(ctx)
         {
-            [CustomConstructor]
+            #region CustomConstructor
+            #endregion CustomConstructor
         }
         
         protected override void OnModelCreating(ModelBuilder builder)
         {
-           [CustomOnModelCreating]
+           #region CustomOnModelCreating
+           #endregion CustomOnModelCreating
 
            [FluentMapApi]
 
            base.OnModelCreating(builder);
         }
-           
-           [CustomCode]
+           #region CustomCode
+           #endregion CustomCode
 
-           [Properties]
     }
 }

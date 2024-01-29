@@ -1,0 +1,51 @@
+ Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0D5732C0-8283-4A2D-AB3F-6CFA32675D8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D5732C0-8283-4A2D-AB3F-6CFA32675D8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D5732C0-8283-4A2D-AB3F-6CFA32675D8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D5732C0-8283-4A2D-AB3F-6CFA32675D8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E43842FC-4B3D-4EF1-BD56-C7B1BBF1D44E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E43842FC-4B3D-4EF1-BD56-C7B1BBF1D44E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E43842FC-4B3D-4EF1-BD56-C7B1BBF1D44E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E43842FC-4B3D-4EF1-BD56-C7B1BBF1D44E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1698C566-0D87-49D4-9AEB-4688F8457C0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1698C566-0D87-49D4-9AEB-4688F8457C0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1698C566-0D87-49D4-9AEB-4688F8457C0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1698C566-0D87-49D4-9AEB-4688F8457C0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5E41540-05DD-4E89-A6A5-CF2987B9C70B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5E41540-05DD-4E89-A6A5-CF2987B9C70B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5E41540-05DD-4E89-A6A5-CF2987B9C70B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5E41540-05DD-4E89-A6A5-CF2987B9C70B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21541020-D4B0-4998-A719-807F2FF11E8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21541020-D4B0-4998-A719-807F2FF11E8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21541020-D4B0-4998-A719-807F2FF11E8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21541020-D4B0-4998-A719-807F2FF11E8D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {83496444-C1AA-495B-A7E7-0C5B6B5448D9}
+	EndGlobalSection
+EndGlobal
+ 
+
+Project("69d8da37-bdc8-47f5-9d54-50872adccb0a") = "Tea.Core", "Tea.Core\Tea.Core.csproj", "f0ecaa95-e93e-4ef6-8a2f-2dfa4f3c520f"
+EndProject
+Project("74c36034-fbd8-4364-874e-f82c4cd55d43") = "ViFactory", "ViFactory\ViFactory.csproj", "7342b132-cee8-4b18-8481-7eabdffc9ca9"
+EndProject
+Project("cb4b7c88-2f54-43ef-b43b-41e22dc6eb14") = "Tea.Dal", "Tea.Dal\Tea.Dal.csproj", "2b72a30d-f4d6-4abf-a739-41d231b84bee"
+EndProject
+Project("8de3c9df-bc38-4999-a77e-490952857ac5") = "Tea.Bll", "Tea.Bll\Tea.Bll.csproj", "6804cc63-ae8c-4634-b693-e08c7f8f3ddd"
+EndProject
+Project("8b571ba2-3561-4468-a573-97c04cda5055") = "Tea.Api", "Tea.Api\Tea.Api.csproj", "d0dcc760-9616-428c-bb9b-aa37f26b8255"
+EndProject
