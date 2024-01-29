@@ -60,7 +60,7 @@ namespace [CurrentProjectName].Api.Controllers
         [ProducesResponseType(400, Type = typeof(ResponseCommon<ResponseExceptionData>))]
         public async Task<IActionResult> Delete(int id)
         {
-            var response = await _[LowerCaseServiceName]Service.SoftDeleteAsync(id);
+            var response = await _[LowerCaseServiceName]Service.HardDeleteAsync(id);
 
             return new ObjectResult(response)
             {
