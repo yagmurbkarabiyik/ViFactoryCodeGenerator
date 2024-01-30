@@ -25,7 +25,10 @@ namespace ViFactory.Services.Generators
 		/// </summary>
 		/// <param name="generateModel"></param>
 		public void GenerateClass(GeneratorModel generateModel);
-
+		/// <summary>
+		/// Create empty wwwroot folder
+		/// </summary>
+		/// <param name="generatorModel"></param>
 		public void GenerateEmptyFolder(GeneratorModel generatorModel);
 		/// <summary>
 		/// Create a class of json

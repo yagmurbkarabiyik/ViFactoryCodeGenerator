@@ -1,0 +1,21 @@
+using [CurrentProjectName].Domain.Entities.Models;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using Microsoft.EntityFrameworkCore;
+
+namespace [CurrentProjectName].Dal.FluentApi
+{
+    public class [EntityName]Map : BaseMap<[EntityName]>
+    {
+        public override void Configure(EntityTypeBuilder<[EntityName]> builder)
+        {
+             base.Configure(builder);
+             builder.ToTable("[TableName]");
+        }
+    }
+}
+
+
+
+
+    
+            

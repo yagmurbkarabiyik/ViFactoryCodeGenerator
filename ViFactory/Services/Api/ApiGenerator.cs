@@ -166,6 +166,10 @@ namespace ViFactory.Services.Api
             _generator.GenerateClass(generateAppUsersController);
         }
         #endregion
+        /// <summary>
+        /// Create empty wwwroot folder
+        /// </summary>
+        /// <param name="outputFilePath"></param>
         public void CreateEmptyFolder( string outputFilePath)
         {
             GeneratorModel generateEmptyFolder = new GeneratorModel()

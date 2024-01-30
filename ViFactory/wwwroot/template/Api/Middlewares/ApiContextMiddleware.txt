@@ -30,7 +30,6 @@ namespace [CurrentProjectName].Api.Middlewares
             if (userEmailClaim != null)
                 apiContext.Email = userEmailClaim.Value;
 
-
             var language = context.Request.Headers["X-Client-Language"];
             if (!string.IsNullOrEmpty(language) && language.Count > 0)
                 apiContext.Language = language.FirstOrDefault() ?? "tr";

@@ -74,6 +74,10 @@ namespace ViFactory.Services.Generators
 
             File.WriteAllText(classFilePath, generatedCode);
         }
+        /// <summary>
+        /// Create empty wwwroot folder
+        /// </summary>
+        /// <param name="generatorModel"></param>
         public void GenerateEmptyFolder(GeneratorModel generatorModel)
         {
             string modelsFolderPath = Path.Combine(generatorModel.OutputFilePath);
