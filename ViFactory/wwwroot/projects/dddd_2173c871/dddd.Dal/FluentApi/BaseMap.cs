@@ -1,8 +1,8 @@
-﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using [CurrentProjectName].Core.Models;
+using dddd.Core.Models;
 
-namespace [CurrentProjectName].Dal.FluentApi
+namespace dddd.Dal.FluentApi
 {
     public abstract class BaseMap<T> : IEntityTypeConfiguration<T> where T : class, IBaseEntity
     {
@@ -15,3 +15,9 @@ namespace [CurrentProjectName].Dal.FluentApi
         }
     }
 }
+
+
+
+
+    
+      

@@ -324,9 +324,6 @@
     <Content Update="wwwroot\template\Api\Middlewares\CustomExceptionMiddleware.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\template\Api\wwwroot.txt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
     <Content Update="wwwroot\template\Bll\AppUserRequestDto.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
