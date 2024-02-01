@@ -1,6 +1,4 @@
-﻿using Microsoft.AspNetCore.Hosting;
-
-namespace ViFactory.BgServices
+﻿namespace ViFactory.BgServices
 {
     public class ProjectDeleteBackgroundService : BackgroundService, IHostedService, IDisposable
     {
@@ -34,10 +32,9 @@ namespace ViFactory.BgServices
 
                     if (creationTime < cutoffTime)
                     {
-                        System.IO.File.Delete(file);
+                       File.Delete(file);
                     }
                 }
-
                 await Task.Delay(TimeSpan.FromMinutes(2), stoppingToken);
             }
         }

@@ -26,8 +26,7 @@ builder.Services.AddScoped<IProjectGenerator, ProjectGenerator>();
 builder.Services.AddScoped<IConsoleGenerator, ConsoleGenerator>();	
 builder.Services.AddScoped<IApiGenerator, ApiGenerator>();
 
-//Hangfire Connection
-var connectionString = builder.Configuration.GetConnectionString("PostreSql");
+//Background Service
 builder.Services.AddHostedService<ProjectDeleteBackgroundService>();
 
 var app = builder.Build();
@@ -50,9 +49,5 @@ app.UseAuthorization();
 app.MapControllerRoute(
 	name: "default",
 	pattern: "{controller=Home}/{action=Index}/{id?}");
-
-//app.UseHangfireServer();
-//app.UseHangfireDashboard("/hangfire");
-
 
 app.Run();
