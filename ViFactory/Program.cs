@@ -8,6 +8,7 @@ using ViFactory.Services.Dtos;
 using ViFactory.Services.Generators;
 using ViFactory.Services.Project;
 using ViFactory.Services.Solution;
+using ViFactory.BgServices;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -24,6 +25,10 @@ builder.Services.AddScoped<ISolutionGenerator, SolutionGenertor>();
 builder.Services.AddScoped<IProjectGenerator, ProjectGenerator>();
 builder.Services.AddScoped<IConsoleGenerator, ConsoleGenerator>();	
 builder.Services.AddScoped<IApiGenerator, ApiGenerator>();
+
+//Hangfire Connection
+var connectionString = builder.Configuration.GetConnectionString("PostreSql");
+builder.Services.AddHostedService<ProjectDeleteBackgroundService>();
 
 var app = builder.Build();
 
@@ -45,5 +50,9 @@ app.UseAuthorization();
 app.MapControllerRoute(
 	name: "default",
 	pattern: "{controller=Home}/{action=Index}/{id?}");
+
+//app.UseHangfireServer();
+//app.UseHangfireDashboard("/hangfire");
+
 
 app.Run();

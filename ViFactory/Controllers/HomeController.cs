@@ -156,5 +156,33 @@ namespace ViFactory.Controllers
 
             return outputFolderPath;
 		}
+
+        #region Delete Old Projects - Hangfire
+        public void DeleteOldProjects()
+        {
+            var projectsDirectory = Path.Combine(_webHostEnvironment.WebRootPath, "projects");
+            var cutoffTime = DateTime.Now.AddMinutes(-1);
+
+            foreach (var directory in Directory.GetDirectories(projectsDirectory))
+            {
+                var creationTime = Directory.GetCreationTime(directory);
+
+                if (creationTime < cutoffTime)
+                {
+                    Directory.Delete(directory, true);
+                }
+            }
+
+            foreach (var file in Directory.GetFiles(projectsDirectory))
+            {
+                var creationTime = Directory.GetCreationTime(file);
+
+                if (creationTime < cutoffTime)
+                {
+                    System.IO.File.Delete(file);	
+                }
+            }
+        }
+        #endregion
     }
 }
